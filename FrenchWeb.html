@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dialogue Studio — Audio Notes + TTS</title>
+<style>
+:root{--bg:#0b1020;--panel:#151d32;--text:#edf2ff;--muted:#a3b1ce;--border:#2b3854;--blue:#7cafff;--mint:#70e2c1;--gold:#ffd38a;--danger:#f28b82;--rec:#e06c75}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 15% 0%,#1c3152 0%,transparent 45%),var(--bg);color:var(--text);font:15px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+.shell{max-width:1150px;margin:auto;padding:32px 20px 70px}
+.top{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+.eyebrow{color:var(--mint);text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:800}
+h1{font-size:clamp(28px,5vw,48px);line-height:1.12;letter-spacing:-.04em;margin:10px 0}
+p{margin:0}
+.sub{color:var(--muted);max-width:650px}
+.badge{background:#203c48;color:var(--mint);padding:9px 14px;border:1px solid #315f64;border-radius:100px;font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
+.stat{padding:18px;background:#151e32cc;border:1px solid var(--border);border-radius:16px}
+.stat strong{font-size:24px;display:block}
+.stat span{color:var(--muted);font-size:12px}
+.layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:22px;align-items:start}
+.side,.main{background:#111a2dcc;border:1px solid var(--border);border-radius:22px}
+.side{padding:20px;position:sticky;top:18px}
+.side h2{font-size:14px;margin:0 0 14px}
+.legend{display:flex;align-items:center;gap:10px;margin:13px 0;color:var(--muted)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--blue)}
+.dot.c{background:var(--mint)}
+.divider{height:1px;background:var(--border);margin:22px 0}
+.check{display:flex;align-items:center;gap:9px;margin:13px 0;color:var(--text);cursor:pointer}
+.check input{accent-color:#71dfbe;width:17px;height:17px}
+.side small{color:var(--muted)}
+.progress{height:8px;background:#2b3854;border-radius:99px;overflow:hidden;margin:12px 0}
+.progress>div{height:100%;background:linear-gradient(90deg,var(--blue),var(--mint));width:0;transition:width .2s}
+.main{overflow:hidden}
+.toolbar{padding:19px 22px;border-bottom:1px solid var(--border);display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.toolbar strong{font-size:16px}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+button,input[type=search]{font:inherit}
+button{border:1px solid var(--border);background:#202b44;color:var(--text);border-radius:10px;padding:9px 12px;cursor:pointer}
+button:hover{border-color:var(--blue)}
+input[type=search]{background:#0c1528;border:1px solid var(--border);border-radius:10px;color:var(--text);padding:10px 12px;width:100%;margin-top:13px;outline:none}
+input[type=search]:focus{border-color:var(--blue)}
+.chat{padding:22px;display:flex;flex-direction:column;gap:18px}
+.row{display:flex;gap:11px;align-items:flex-start}
+.row.c{flex-direction:row-reverse}
+.avatar{width:37px;height:37px;flex:none;display:grid;place-items:center;border-radius:12px;background:#284367;color:#b9d7ff;font-weight:800}
+.row.c .avatar{background:#1e524b;color:#adffdf}
+.bubble{max-width:85%;background:#1c2a45;border:1px solid #304767;padding:15px 17px;border-radius:6px 18px 18px 18px}
+.row.c .bubble{background:#173932;border-color:#2b6257;border-radius:18px 6px 18px 18px}
+.meta{font-size:11px;font-weight:800;letter-spacing:.05em;color:var(--blue);margin-bottom:7px;text-transform:uppercase}
+.row.c .meta{color:var(--mint)}
+.spoken{font-size:15px;line-height:1.8}
+.highlight{color:#ffe09b;background:#66532d70;border-bottom:1px dotted #f8d78b;border-radius:3px;padding:0 2px}
+.notes{margin-top:12px;border-top:1px solid #ffffff22;padding-top:11px}
+.notes summary{cursor:pointer;font-size:12px;color:#bed0eb;font-weight:700}
+.notes .note{margin-top:9px;color:#c4d1e6;font-size:12px}
+.tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.04em;background:#35445f;color:#d5e3ff;padding:2px 7px;border-radius:6px;margin:0 5px 5px 0}
+.row.c .tag{background:#27574d;color:#c1ffe8}
+.hidden-answer .spoken{filter:blur(6px);user-select:none}
+.hidden-answer .spoken.revealed{filter:none;user-select:auto}
+.reveal{margin-top:12px;font-size:12px}
+.empty{color:var(--muted);text-align:center;padding:30px}
+.footer{text-align:center;color:var(--muted);font-size:12px;margin-top:20px}
+.audio-notes{margin-top:12px;border-top:1px solid #ffffff22;padding-top:11px}
+.audio-notes summary{cursor:pointer;font-size:12px;color:#c7b9ff;font-weight:700}
+.audio-panel{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
+.audio-btn{background:#2a344f;border:1px solid #3d4f73;border-radius:24px;padding:5px 12px;font-size:12px;font-weight:600;display:inline-flex;align-items:center;gap:5px;cursor:pointer}
+.audio-btn:hover{background:#35456b;border-color:var(--blue)}
+.audio-btn.recording{background:#4a2a2a;border-color:var(--rec);animation:pulse 1s infinite}
+.audio-btn.speaking{background:#234e52;border-color:var(--mint);color:#a9ffdf}
+.audio-btn.loading{opacity:.7;cursor:wait}
+@keyframes pulse{0%{opacity:1}50%{opacity:.7}100%{opacity:1}}
+.audio-list{margin-top:8px;display:flex;flex-direction:column;gap:6px}
+.audio-item{display:flex;align-items:center;gap:8px;background:#162032;border-radius:10px;padding:6px 10px;font-size:12px}
+.audio-item audio{height:32px;flex:1;min-width:140px;accent-color:var(--mint)}
+.audio-item .del-audio{background:transparent;border:none;color:var(--danger);cursor:pointer;font-size:16px;padding:0 4px}
+.audio-empty{color:var(--muted);font-size:11px;font-style:italic;margin-top:6px}
+@media(max-width:760px){.layout{grid-template-columns:1fr}.side{position:static}.stats{gap:8px}.stat{padding:12px}.chat{padding:14px}.bubble{max-width:calc(100% - 48px)}.toolbar{padding:15px}.shell{padding:20px 12px 40px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="top">
+  <div>
+    <div class="eyebrow">French learning • Conversation practice • Audio + TTS</div>
+    <h1>Dialogue <span style="color:var(--mint)">Studio.</span></h1>
+    <p class="sub">S'inscrire à des cours du soir · Écoutez la prononciation, enregistrez vos notes vocales.</p>
+  </div>
+  <span class="badge">🇫🇷 Français · B1–B2</span>
+</header>
+<section class="stats">
+  <div class="stat"><strong id="count">20</strong><span>Répliques</span></div>
+  <div class="stat"><strong id="exprCount">—</strong><span>Expressions à repérer</span></div>
+  <div class="stat"><strong id="readCount">0 / 20</strong><span>Répliques étudiées</span></div>
+</section>
+<div class="layout">
+<aside class="side">
+  <h2>Participants</h2>
+  <div class="legend"><span class="dot"></span><span><b>E</b> · Employé(e) du centre</span></div>
+  <div class="legend"><span class="dot c"></span><span><b>C</b> · Client(e)</span></div>
+  <div class="divider"></div>
+  <h2>Personnaliser l'étude</h2>
+  <label class="check"><input type="checkbox" id="notesToggle" checked>Afficher les annotations</label>
+  <label class="check"><input type="checkbox" id="highToggle" checked>Surligner les expressions</label>
+  <label class="check"><input type="checkbox" id="practiceToggle">Mode entraînement</label>
+  <small>En mode entraînement, les réponses du client sont masquées.</small>
+  <div class="divider"></div>
+  <h2>Votre progression</h2>
+  <div class="progress"><div id="bar"></div></div>
+  <small id="progressText">0 réplique étudiée sur 20</small>
+  <div style="margin-top:14px"><button id="reset">Réinitialiser</button></div>
+  <div class="divider"></div>
+  <h2>Rechercher</h2>
+  <small>Filtrez le dialogue par texte, fonction ou annotation.</small>
+  <input type="search" id="search" placeholder="Ex. inscription, tarif, donc…">
+  <div class="divider"></div>
+  <h2>🔊 Prononciation</h2>
+  <small>Chaque réplique possède un bouton <b>Écouter</b> (voix Google française). Connexion internet requise.</small>
+</aside>
+<main class="main">
+  <div class="toolbar">
+    <strong>📞 Appel au centre de langues</strong>
+    <div class="tools">
+      <button id="expand">Tout développer</button>
+      <button id="markAll">Tout marquer comme lu</button>
+    </div>
+  </div>
+  <div class="chat" id="chat"></div>
+</main>
+</div>
+<p class="footer">Dialogue interactif · Notes audio + TTS Google (fr)</p>
+</div>
+<script>
+const raw=`E|Centre de langues International, bonjour ! Que puis-je faire pour vous ? [OUVERTURE: Formule d'accueil "Bonjour, je vous appelle parce que..." - établit le contexte et demande la permission de questionner]
+C|Bonjour, je vous appelle parce que je souhaiterais prendre des cours de français du soir pour préparer un examen. Est-ce que vous auriez des places pour la prochaine session ? [OUVERTURE: "je vous appelle parce que" - raison/connector; "Est-ce que vous auriez" - demande polie en conditional]
+E|Oui, bien sûr. Il nous reste quelques places pour la session qui commence le mois prochain. [RESPONSE: Confirmation positive, information de disponibilité]
+C|Ah, très bien, ça m'arrange. Et quels sont les horaires exactement ? Les cours ont lieu en soirée, c'est bien ça ? [ENCHAINEMENT: "Et" - relance; "c'est bien ça?" - vérification/confirmation]
+E|Oui, deux fois par semaine, le mardi et le jeudi, de dix-huit heures trente à vingt heures. [INFORMATION: Horaires précis]
+C|C'est noté. Et à propos du niveau, il faut absolument avoir un niveau minimum pour s'inscrire, ou est-ce qu'on peut commencer même en étant débutant ? [RÉACTION: "C'est noté" (banque de phrases); ENCHAINEMENT: "Et à propos de" - thème suivant; question niveau/prérequis]
+E|Il n'y a pas de niveau minimum, mais nous faisons passer un test de positionnement pour placer chaque personne dans le bon groupe. [INFORMATION: Test de positionnement]
+C|Parfait, c'est bon à savoir. Donc si je comprends bien, le test sert à trouver le groupe qui correspond à mon niveau. Il est gratuit, ce test ? [RÉACTION: "Parfait, c'est bon à savoir" (banque de phrases); ENCHAINEMENT: "Donc si je comprends bien" - motif de résumé/check understanding; question confirmation]
+E|Oui, le test est gratuit et il dure environ quarante minutes. Vous pouvez le faire en ligne ou sur place. [INFORMATION: Durée et options]
+C|D'accord, je préférerais le faire en ligne, ce sera plus simple. Justement, et pour les tarifs, quel est le prix de la session, et qu'est-ce qui est inclus dans ce prix ? [RÉACTION: "D'accord"; ENCHAINEMENT: "Justement, et pour les tarifs" - motif transition prix; question tarif]
+E|C'est quatre cent cinquante dollars pour douze semaines, et ça comprend tous les supports de cours. [INFORMATION: Prix et inclusions]
+C|Hmm, ça me paraît un peu cher, honnêtement. Est-ce qu'il existe des réductions, par exemple pour les étudiants, ou est-ce qu'on peut payer en plusieurs fois ? [RÉACTION: "Hmm, ça me paraît un peu cher, honnêtement" (banque de phrases); question réductions/paiement]
+E|Oui, nous proposons un paiement en trois fois, sans frais supplémentaires. [INFORMATION: Option paiement]
+C|Ah, c'est rassurant, ça change tout pour moi. Et si jamais je ne suis pas disponible le mardi, est-ce qu'il y a une autre formule ou un cours de rattrapage ? [RÉACTION: "Ah, c'est rassurant, ça change tout pour moi" (semblable à "Ça me rassure" banque de phrases); ENCHAINEMENT: "Et si jamais" - motif "si jamais" question alternative; question disponibilité]
+E|Vous pouvez suivre le même cours le samedi matin, ou rattraper avec les enregistrements. [INFORMATION: Alternative offerte]
+C|Très bien, je note. Et concernant l'inscription, quels documents faut-il fournir, et jusqu'à quand peut-on s'inscrire ? [RÉACTION: "Très bien, je note"; ENCHAINEMENT: "Et concernant l'inscription" - motif "concernant"; question inscription]
+E|Il faut une pièce d'identité et une photo, et vous avez jusqu'à la fin du mois. [INFORMATION: Documents requis + date limite]
+C|D'accord. Donc si je résume : je fais le test de positionnement en ligne, j'envoie ma pièce d'identité et une photo, et je règle quatre cent cinquante dollars en trois fois avant la fin du mois. C'est bien ça ? [RÉACTION: "D'accord"; ENCHAINEMENT: "Donc si je résume" - motif clé de la stratégie (obligatoire); récapitulatif final + question confirmation]
+E|C'est exactement ça. [CONFIRMATION]
+C|Parfait. Merci beaucoup pour toutes ces précisions, je vais faire le test dès cette semaine et je vous rappelle pour confirmer mon inscription. Bonne journée ! [RÉACTION: "Parfait"; FERMETURE: "Merci infiniment... Bonne journée!"]`;
+
+const expressions=['je vous appelle parce que','je souhaiterais','Est-ce que vous auriez','ça m’arrange','ça m\'arrange','c’est bien ça','c\'est bien ça','C’est noté','C\'est noté','Et à propos du niveau','c’est bon à savoir','c\'est bon à savoir','Donc si je comprends bien','D’accord','D\'accord','Justement, et pour les tarifs','ça me paraît un peu cher','Et si jamais','ça change tout pour moi','Très bien, je note','Et concernant l’inscription','Et concernant l\'inscription','Donc si je résume','Bonne journée'];
+
+const data=raw.split('\n').map((line,i)=>{const role=line[0];const rest=line.slice(2);const idx=rest.lastIndexOf(' [');return{id:i,role,text:rest.slice(0,idx),annotation:rest.slice(idx+2,-1)}});
+const $=id=>document.getElementById(id);
+let read=new Set(JSON.parse(localStorage.getItem('dialogue-read')||'[]'));
+let expanded=false;
+
+// ---------- Audio notes state ----------
+const audioNotes={};            // { repliqueId: [ {id, blobUrl} ] }
+let mediaRecorder=null, recChunks=[], recRepliqueId=null, recBtn=null;
+
+// ---------- TTS state ----------
+let currentTTSAudio = null;     // the <audio> element playing TTS
+let currentTTSBtn = null;       // button showing "speaking" state
+const ttsCache = new Map();     // text -> blobUrl (basic cache, session only)
+
+function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function hl(t){let s=esc(t);if(!$('highToggle').checked)return s;for(const ph of [...expressions].sort((a,b)=>b.length-a.length)){const p=esc(ph);const i=s.toLowerCase().indexOf(p.toLowerCase());if(i>=0&&!s.slice(i,i+p.length).includes('<'))s=s.slice(0,i)+'<mark class="highlight">'+s.slice(i,i+p.length)+'</mark>'+s.slice(i+p.length)}return s}
+
+// ---------- TTS via Google Translate ----------
+function speak(text, btn){
+  // If already playing the same text, toggle off
+  if (currentTTSBtn === btn && currentTTSAudio && !currentTTSAudio.paused) {
+    currentTTSAudio.pause();
+    resetTTSButton(btn);
+    return;
+  }
+  // Stop any current TTS
+  if (currentTTSAudio) { currentTTSAudio.pause(); }
+  if (currentTTSBtn)    { resetTTSButton(currentTTSBtn); }
+
+  // Split long text into <=200-char chunks at word boundaries
+  const chunks = chunkText(text, 190);
+  if (!chunks.length) return;
+
+  btn.classList.add('loading');
+  btn.disabled = true;
+
+  // Fetch each chunk as a blob, then play sequentially
+  Promise.all(chunks.map(chunkToBlob))
+    .then(blobs => blobs.filter(Boolean))
+    .then(blobs => {
+      if (!blobs.length) throw new Error('empty');
+      playSequential(blobs, btn);
+    })
+    .catch(err => {
+      console.warn('TTS error:', err);
+      btn.classList.remove('loading');
+      btn.disabled = false;
+      alert("Impossible de lire la prononciation.\n\nVérifiez votre connexion internet. Si vous ouvrez le fichier en file://, essayez http://localhost (ex: python3 -m http.server).");
+    });
+}
+
+function chunkText(text, max){
+  // Split at punctuation first, then merge to <= max chars
+  const sentences = text.split(/(?<=[.!?…])\s+/);
+  const out = [];
+  let cur = '';
+  for (const s of sentences) {
+    if ((cur + ' ' + s).trim().length <= max) {
+      cur = (cur ? cur + ' ' : '') + s;
+    } else {
+      if (cur) out.push(cur);
+      if (s.length > max) {
+        // split long sentence at word boundaries
+        let words = s.split(/\s+/);
+        let line = '';
+        for (const w of words) {
+          if ((line + ' ' + w).trim().length <= max) {
+            line = (line ? line + ' ' : '') + w;
+          } else {
+            if (line) out.push(line);
+            line = w;
+          }
+        }
+        if (line) out.push(line);
+        cur = '';
+      } else {
+        cur = s;
+      }
+    }
+  }
+  if (cur) out.push(cur);
+  return out;
+}
+
+function chunkToBlob(chunk){
+  const key = chunk;
+  if (ttsCache.has(key)) return Promise.resolve(ttsCache.get(key));
+  const url = 'https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=fr&q='
+            + encodeURIComponent(chunk);
+  return fetch(url, { mode: 'cors' })
+    .then(r => {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.blob();
+    })
+    .then(blob => {
+      if (blob.size < 500) throw new Error('Blob too small (likely blocked)');
+      const bUrl = URL.createObjectURL(blob);
+      ttsCache.set(key, bUrl);
+      return bUrl;
+    })
+    .catch(err => {
+      console.warn('chunk fetch failed:', err);
+      return null;
+    });
+}
+
+function playSequential(blobs, btn){
+  let i = 0;
+  btn.classList.remove('loading');
+  btn.disabled = false;
+  btn.classList.add('speaking');
+  btn.textContent = '⏸ Pause';
+  currentTTSBtn = btn;
+
+  function next(){
+    if (i >= blobs.length) {
+      resetTTSButton(btn);
+      currentTTSAudio = null;
+      currentTTSBtn = null;
+      return;
+    }
+    const a = new Audio(blobs[i++]);
+    currentTTSAudio = a;
+    a.onended = next;
+    a.onerror = next;
+    a.play().catch(err => {
+      console.warn('play failed:', err);
+      resetTTSButton(btn);
+    });
+  }
+  next();
+}
+
+function resetTTSButton(btn){
+  if (!btn) return;
+  btn.classList.remove('speaking','loading');
+  btn.disabled = false;
+  btn.textContent = '🔊 Écouter';
+}
+
+// ---------- Audio block UI ----------
+function audioBlock(id, text){
+  const notes = audioNotes[id] || [];
+  let h = `<details class="audio-notes" open>
+    <summary>🎙️ Audio & prononciation (${notes.length})</summary>
+    <div class="audio-panel">
+      <button class="audio-btn speak-btn" data-text="${esc(text)}">🔊 Écouter</button>
+      <button class="audio-btn record-btn" data-id="${id}">⏺ Enregistrer</button>
+    </div>`;
+  if (notes.length) {
+    h += `<div class="audio-list">` + notes.map(n =>
+      `<div class="audio-item">
+         <audio controls src="${n.blobUrl}" preload="metadata"></audio>
+         <button class="del-audio" data-note="${n.id}" data-rid="${id}" title="Supprimer">✕</button>
+       </div>`).join('') + `</div>`;
+  } else {
+    h += `<div class="audio-empty">Aucune note vocale personnelle.</div>`;
+  }
+  return h + `</details>`;
+}
+
+// ---------- Render ----------
+function render(){
+  const q = $('search').value.toLocaleLowerCase();
+  const filtered = data.filter(d => (d.text + ' ' + d.annotation).toLocaleLowerCase().includes(q));
+  $('chat').innerHTML = filtered.map(d => {
+    const notes = d.annotation.split(/; (?=[A-ZÉÈÎÔÛ ]+:)/);
+    return `<article class="row ${d.role==='C'?'c':''}" data-id="${d.id}">
+      <div class="avatar">${d.role}</div>
+      <div class="bubble">
+        <div class="meta">${d.role==='E'?'Centre de langues':'Client(e)'} · ${String(d.id+1).padStart(2,'0')}</div>
+        <div class="spoken ${$('practiceToggle').checked&&d.role==='C'?'hidden-answer':''}">${hl(d.text)}</div>
+        ${$('practiceToggle').checked&&d.role==='C'?'<button class="reveal">Révéler / Masquer</button>':''}
+        ${$('notesToggle').checked?`<details class="notes" ${expanded?'open':''}><summary>💡 Analyse & fonctions du langage</summary><div class="note">${notes.map(n=>{const m=n.match(/^([^:]+):\s*(.*)$/);return m?`<div><span class="tag">${esc(m[1])}</span>${esc(m[2])}</div>`:`<div>${esc(n)}</div>`}).join('')}</div></details>`:''}
+        ${audioBlock(d.id, d.text)}
+        <label class="check" style="font-size:11px;margin:11px 0 0;color:var(--muted)"><input class="read" type="checkbox" ${read.has(d.id)?'checked':''}> Étudié</label>
+      </div>
+    </article>`;
+  }).join('') || '<div class="empty">Aucun résultat pour cette recherche.</div>';
+
+  // Wire events
+  $('chat').querySelectorAll('.row').forEach(el => {
+    const id = Number(el.dataset.id);
+    const r = el.querySelector('.read');
+    if (r) r.onchange = e => { e.target.checked ? read.add(id) : read.delete(id); update(); };
+    const rv = el.querySelector('.reveal');
+    if (rv) rv.onclick = () => el.querySelector('.spoken').classList.toggle('revealed');
+
+    // Record button
+    const rb = el.querySelector('.record-btn');
+    if (rb) rb.onclick = e => { e.preventDefault(); e.stopPropagation(); toggleRec(id, rb); };
+
+    // Speak (TTS) button
+    el.querySelectorAll('.speak-btn').forEach(b => {
+      b.onclick = e => {
+        e.preventDefault(); e.stopPropagation();
+        speak(b.dataset.text, b);
+      };
+    });
+
+    // Delete audio note
+    el.querySelectorAll('.del-audio').forEach(b => b.onclick = e => {
+      e.preventDefault(); e.stopPropagation();
+      const nid = b.dataset.note, rid = Number(b.dataset.rid);
+      const arr = audioNotes[rid] || [];
+      const note = arr.find(x => x.id === nid);
+      if (note) URL.revokeObjectURL(note.blobUrl);
+      audioNotes[rid] = arr.filter(x => x.id !== nid);
+      if (!audioNotes[rid].length) delete audioNotes[rid];
+      render();
+    });
+
+    // Auto-pause: user audio pauses TTS, and vice versa
+    el.querySelectorAll('audio').forEach(a => {
+      a.onplay = () => {
+        // pause other user-audio
+        document.querySelectorAll('audio').forEach(o => { if (o !== a && !o.paused) o.pause(); });
+        // pause TTS
+        if (currentTTSAudio && !currentTTSAudio.paused) {
+          currentTTSAudio.pause();
+          if (currentTTSBtn) resetTTSButton(currentTTSBtn);
+        }
+      };
+    });
+  });
+
+  update();
+}
+
+function update(){
+  localStorage.setItem('dialogue-read', JSON.stringify([...read]));
+  $('readCount').textContent = read.size + ' / ' + data.length;
+  $('bar').style.width = (100 * read.size / data.length) + '%';
+  $('progressText').textContent = read.size + ' répliques étudiées sur ' + data.length;
+}
+
+// ---------- Recording ----------
+async function toggleRec(id, btn){
+  if (mediaRecorder && mediaRecorder.state === 'recording' && recRepliqueId === id){
+    mediaRecorder.stop(); return;
+  }
+  if (mediaRecorder && mediaRecorder.state === 'recording') mediaRecorder.stop();
+
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    recChunks = []; recRepliqueId = id; recBtn = btn;
+    mediaRecorder = new MediaRecorder(stream);
+    mediaRecorder.ondataavailable = e => { if (e.data.size) recChunks.push(e.data); };
+    mediaRecorder.onstop = () => {
+      stream.getTracks().forEach(t => t.stop());
+      if (recChunks.length){
+        const blob = new Blob(recChunks, { type: 'audio/webm' });
+        const url = URL.createObjectURL(blob);
+        const note = { id: 'n_' + Date.now() + '_' + Math.random().toString(36).slice(2,8), blobUrl: url };
+        (audioNotes[id] = audioNotes[id] || []).push(note);
+      }
+      if (recBtn){ recBtn.classList.remove('recording'); recBtn.textContent = '⏺ Enregistrer'; }
+      mediaRecorder = null; recRepliqueId = null; recBtn = null; recChunks = [];
+      render();
+    };
+    mediaRecorder.start();
+    btn.classList.add('recording');
+    btn.textContent = '⏹ Arrêter';
+  } catch (err){
+    console.error(err);
+    alert("Accès micro refusé.\n\nSi vous ouvrez le fichier en file://, servez-le en http://localhost (ex: python3 -m http.server).");
+  }
+}
+
+// ---------- Init ----------
+for (const id of ['notesToggle','highToggle','practiceToggle','search'])
+  $(id).addEventListener(id === 'search' ? 'input' : 'change', render);
+$('expand').onclick = () => {
+  expanded = !expanded;
+  $('expand').textContent = expanded ? 'Tout réduire' : 'Tout développer';
+  document.querySelectorAll('details.notes').forEach(x => x.open = expanded);
+};
+$('markAll').onclick = () => { read = new Set(data.map(x => x.id)); render(); };
+$('reset').onclick = () => { read.clear(); render(); };
+$('count').textContent = data.length;
+$('exprCount').textContent = expressions.length;
+render();
+</script>
+</body>
+</html>
