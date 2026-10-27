@@ -705,7 +705,7 @@ const conversations = [
     task: 'tache2',
     speakers: ['E', 'C'],
     lines: 20,
-    audioUrl: 'Dialoguemp3/dialogue1.mp3',
+    audioUrl: 'Dialoguemp3/dialogue1/dialogue1.mp3',
     templateBank: {
       title: "Boîte à outils — Inscription aux cours de français",
       sub: "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
@@ -775,6 +775,23 @@ const conversations = [
     task: 'tache2',
     speakers: ['E', 'C'],
     lines: 15,
+    audioParts: [
+      'Dialoguemp3/dialogue2/part_01.mp3',
+      'Dialoguemp3/dialogue2/part_02.mp3',
+      'Dialoguemp3/dialogue2/part_03.mp3',
+      'Dialoguemp3/dialogue2/part_04.mp3',
+      'Dialoguemp3/dialogue2/part_05.mp3',
+      'Dialoguemp3/dialogue2/part_06.mp3',
+      'Dialoguemp3/dialogue2/part_07.mp3',
+      'Dialoguemp3/dialogue2/part_08.mp3',
+      'Dialoguemp3/dialogue2/part_09.mp3',
+      'Dialoguemp3/dialogue2/part_10.mp3',
+      'Dialoguemp3/dialogue2/part_11.mp3',
+      'Dialoguemp3/dialogue2/part_12.mp3',
+      'Dialoguemp3/dialogue2/part_13.mp3',
+      'Dialoguemp3/dialogue2/part_14.mp3',
+      'Dialoguemp3/dialogue2/part_15.mp3'
+    ],
     templateBank: {
       title: "Boîte à outils — Ouverture de compte bancaire",
       sub: "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
@@ -1058,6 +1075,7 @@ let activeData = data;
 let activeTranslations = translations;
 let activeSpanishPhonetic = spanishPhonetic;
 let activeExpressions = expressions;
+let activeAudioParts = null;   // per-replique MP3 parts for current conversation (dialogue2)
 
 const $=id=>document.getElementById(id);
 let read=new Set(JSON.parse(localStorage.getItem('dialogue-read')||'[]'));
@@ -1361,11 +1379,12 @@ function stopDownloadAudio(){
 }
 
 // ---------- Audio block UI ----------
-function audioBlock(id, text){
+function audioBlock(id, text, partUrl){
   const notes = audioNotes[id] || [];
   let h = `<details class="audio-notes" open>
     <summary>🎙️ Audio & prononciation (${notes.length})</summary>
     <div class="audio-panel">
+    ${partUrl ? '<div class="audio-item"><audio controls src="' + esc(partUrl) + '" preload="metadata"></audio></div>' : ''}
       <button class="audio-btn speak-btn" data-text="${esc(text)}">🔊 Écouter</button>
       <button class="audio-btn stop-btn" data-id="${id}">⏹ Stop</button>
       <button class="audio-btn record-btn" data-id="${id}">⏺ Enregistrer</button>
@@ -1402,7 +1421,7 @@ function render(){
         </details>
         ${$('practiceToggle').checked&&d.role==='C'?'<button class="reveal">Révéler / Masquer</button>':''}
         ${$('notesToggle').checked?`<details class="notes" ${expanded?'open':''}><summary>💡 Analyse & fonctions du langage</summary><div class="note">${notes.map(n=>{const m=n.match(/^([^:]+):\s*(.*)$/);return m?`<div><span class="tag">${esc(m[1])}</span>${esc(m[2])}</div>`:`<div>${esc(n)}</div>`}).join('')}</div></details>`:''}
-        ${audioBlock(d.id, d.text)}
+        ${audioBlock(d.id, d.text, activeAudioParts && activeAudioParts[d.id] || '')}
         <label class="check" style="font-size:11px;margin:11px 0 0;color:var(--muted)"><input class="read" type="checkbox" ${read.has(d.id)?'checked':''}> Étudié</label>
       </div>
     </article>`;
@@ -1675,6 +1694,8 @@ function loadDialogue(id){
     activeSpanishPhonetic = spanishPhonetic;
     activeExpressions = expressions;
   }
+
+  activeAudioParts = conv.audioParts || null;
 
   // Re-render the dialogue
   render();
