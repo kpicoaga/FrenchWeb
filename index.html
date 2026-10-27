@@ -168,6 +168,9 @@ let mediaRecorder=null, recChunks=[], recRepliqueId=null, recBtn=null;
 let currentTTSUtterance = null;
 let currentTTSBtn = null;
 
+function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function hl(t){let s=esc(t);if(!$('highToggle').checked)return s;for(const ph of [...expressions].sort((a,b)=>b.length-a.length)){const p=esc(ph);const i=s.toLowerCase().indexOf(p.toLowerCase());if(i>=0&&!s.slice(i,i+p.length).includes('<'))s=s.slice(0,i)+'<mark class="highlight">'+s.slice(i,i+p.length)+'</mark>'+s.slice(i+p.length)}return s}
+
 function speak(text, btn){
   // If already playing, stop
   if (currentTTSBtn === btn && currentTTSUtterance) {
