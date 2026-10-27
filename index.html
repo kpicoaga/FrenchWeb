@@ -96,6 +96,26 @@ input[type=search]:focus{border-color:var(--blue)}
 .audio-item audio{height:32px;flex:1;min-width:140px;accent-color:var(--mint)}
 .audio-item .del-audio{background:transparent;border:none;color:var(--danger);cursor:pointer;font-size:16px;padding:0 4px}
 .audio-empty{color:var(--muted);font-size:11px;font-style:italic;margin-top:6px}
+/* Boîte à outils — template bank */
+.tb-wrap{margin:26px 0 10px;border:1px solid var(--gold);border-radius:18px;background:linear-gradient(180deg,#1a2138,#141c30);padding:20px}
+.tb-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.tb-head h3{margin:0;font-size:16px;color:var(--gold);letter-spacing:.02em}
+.tb-head small{color:var(--muted);display:block;margin-top:2px}
+.tb-toggle{border-color:#5a4a1f;background:#2a2333;color:var(--gold);font-weight:700;font-size:13px}
+.tb-toggle:hover{background:#3a3050;border-color:var(--gold)}
+.tb-body{margin-top:16px}
+.tb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.tb-cat{background:#0f1626;border:1px solid var(--border);border-radius:14px;padding:16px}
+.tb-cat h4{margin:0 0 10px;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--blue)}
+.tb-cat h4 .icon{margin-right:6px}
+.tb-item{font-size:13px;line-height:1.5;color:var(--text);border-top:1px dashed #2b3854;padding:9px 0}
+.tb-item:first-of-type{border-top:none;padding-top:0}
+.tb-item .fr{font-weight:600}
+.tb-item .role{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:6px;margin-right:6px;vertical-align:1px}
+.tb-item .role.c{background:#1c3a33;color:var(--mint)}
+.tb-item .role.e{background:#1e2c47;color:var(--blue)}
+.tb-item small{color:var(--muted);font-size:11px;display:block;margin-top:3px}
+@media(max-width:760px){.tb-wrap{padding:14px}.tb-grid{grid-template-columns:1fr}}
 @media(max-width:760px){.layout{grid-template-columns:1fr}.side{position:static}.stats{gap:8px}.stat{padding:12px}.chat{padding:14px}.bubble{max-width:calc(100% - 48px)}.toolbar{padding:15px}.shell{padding:20px 12px 40px}}
 </style>
 </head>
@@ -614,7 +634,68 @@ const conversations = [
     topic: 'logement',
     speakers: ['E', 'C'],
     labels: { E: 'Agence immobilière', C: 'Vous' },
-    lines: 27
+    lines: 27,
+    templateBank: {
+      title: "Boîte à outils — Louer un appartement",
+      sub: "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+      toggle: "Afficher les structures utiles",
+      categories: [
+        {
+          name: "L'Ouverture & Clôture",
+          icon: "🚪",
+          role: 'c',
+          items: [
+            { fr: "Bonjour, je vous appelle au sujet de l'annonce que vous avez publiée pour un appartement de deux pièces.", note: "Ouverture réelle du dialogue — contexte + demande", role: 'c' },
+            { fr: "Très bien. Merci beaucoup pour toutes ces précisions, je vous rappelle après la visite. Bonne journée !", note: "Clôture réelle du dialogue — remerciement + suite + salutation", role: 'c' },
+            { fr: "À bientôt, merci à vous, et bonne journée !", note: "Réponse de clôture de l'agence", role: 'e' }
+          ]
+        },
+        {
+          name: "Les Enchaînements",
+          icon: "🔗",
+          role: 'c',
+          items: [
+            { fr: "D'accord, et qu'est-ce que ça comprend exactement, comme charges ?", note: "Rebondir pour préciser", role: 'c' },
+            { fr: "Compris. Et pour le dépôt de garantie, quel est le montant ?", note: "Enchaînement après accord", role: 'c' },
+            { fr: "C'est noté. Et quelle est la durée du bail proposé ?", note: "Acquiescer puis enchaîner", role: 'c' },
+            { fr: "Très bien. Justement, quels sont les documents à fournir pour constituer le dossier ?", note: "Transition vers le thème clé", role: 'c' },
+            { fr: "Je vois. Et si je n'ai pas encore de garant, est-ce que c'est possible ?", note: "Réaction + question de suivi", role: 'c' }
+          ]
+        },
+        {
+          name: "Les Réactions",
+          icon: "😌",
+          role: 'c',
+          items: [
+            { fr: "Très bien.", note: "Accusé de réception positif", role: 'c' },
+            { fr: "D'accord.", note: "Accord neutre", role: 'c' },
+            { fr: "Compris.", note: "Accusé de réception", role: 'c' },
+            { fr: "C'est noté.", note: "Je m'en souviens", role: 'c' },
+            { fr: "Ah, c'est bon à savoir.", note: "Information utile reçue", role: 'c' }
+          ]
+        },
+        {
+          name: "L'Imprévu",
+          icon: "⚠️",
+          role: 'c',
+          items: [
+            { fr: "Et si je n'ai pas encore de garant, est-ce que c'est possible ?", note: "Hypothèse conditionnelle (si + présent) — question de secours", role: 'c' },
+            { fr: "Et à quelle date pourrais-je emménager si je signe le bail ?", note: "Hypothèse liée à un engagement — conditionnel poli", role: 'c' },
+            { fr: "Disons à dix-sept heures, si c'est possible ?", note: "Négociation polie avec conditionnel « Disons »", role: 'c' }
+          ]
+        },
+        {
+          name: "La Grammaire Utile",
+          icon: "📘",
+          role: 'e',
+          items: [
+            { fr: "Il faut que vos revenus mensuels représentent au moins trois fois le montant du loyer.", note: "Subjonctif après « il faut que » (représentent)", role: 'e' },
+            { fr: "Je vous envoie l'adresse par message.", note: "Présent à valeur de futur proche (action programmée)", role: 'e' },
+            { fr: "Une caution locative peut être demandée.", note: "Voix passive (peut être demandée)", role: 'e' }
+          ]
+        }
+      ]
+    }
   }
 ];
 
@@ -879,6 +960,30 @@ function render(){
       };
     });
   });
+
+  // Template bank — rendered from the current conversation's templateBank property (hidden by default)
+  const tb = currentConv && currentConv.templateBank;
+  $('chat').insertAdjacentHTML('beforeend', tb ? `
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <div><h3>🧰 ${esc(tb.title)}</h3><small>${esc(tb.sub)}</small></div>
+        <button class="tb-toggle" type="button" onclick="this.closest('.tb-wrap').querySelector('.tb-body').toggleAttribute('hidden')">${esc(tb.toggle)}</button>
+      </div>
+      <div class="tb-body" hidden>
+        <div class="tb-grid">
+          ${tb.categories.map(cat => `
+            <div class="tb-cat">
+              <h4><span class="icon">${esc(cat.icon)}</span>${esc(cat.name)}</h4>
+              ${cat.items.map(it => `
+                <div class="tb-item">
+                  <span class="role ${(it.role || cat.role) === 'c' ? 'c' : 'e'}">${(it.role || cat.role) === 'c' ? 'C' : 'E'}</span>
+                  <span class="fr">${esc(it.fr)}</span>
+                  ${it.note ? `<small>💡 ${esc(it.note)}</small>` : ''}
+                </div>`).join('')}
+            </div>`).join('')}
+        </div>
+      </div>
+    </div>` : '');
 
   update();
 }
