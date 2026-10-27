@@ -10,6 +10,7 @@
 body{margin:0;background:radial-gradient(ellipse at 15% 0%,#1c3152 0%,transparent 45%),var(--bg);color:var(--text);font:15px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
 .shell{max-width:1150px;margin:auto;padding:32px 20px 70px}
 .top{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+.dialogue-view .top{padding-top:64px}
 .eyebrow{color:var(--mint);text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:800}
 h1{font-size:clamp(28px,5vw,48px);line-height:1.12;letter-spacing:-.04em;margin:10px 0}
 p{margin:0}
@@ -21,7 +22,7 @@ p{margin:0}
 .stat span{color:var(--muted);font-size:12px}
 .layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:22px;align-items:start}
 .side,.main{background:#111a2dcc;border:1px solid var(--border);border-radius:22px}
-.side{padding:20px;position:sticky;top:18px}
+.side{padding:20px;position:sticky;top:70px}
 .side h2{font-size:14px;margin:0 0 14px}
 .legend{display:flex;align-items:center;gap:10px;margin:13px 0;color:var(--muted)}
 .dot{width:10px;height:10px;border-radius:50%;background:var(--blue)}
@@ -97,7 +98,7 @@ input[type=search]:focus{border-color:var(--blue)}
 .card .lines{font-size:11px;color:var(--muted)}
 .back-btn{background:transparent;border:none;color:var(--blue);font-weight:700;cursor:pointer;padding:6px 10px;border-radius:8px;font-size:14px}
 .back-btn:hover{color:var(--mint);background:#203c48}
-.sticky-back-btn{position:sticky;top:10px;z-index:100;background:rgba(11,16,32,.92);backdrop-filter:blur(8px);border:1px solid var(--border);margin:2px 0 16px}
+.sticky-back-btn{position:fixed;top:20px;left:20px;z-index:999;background:#1e293b;padding:9px 14px;border:1px solid var(--border)}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .dialogue-view{animation:fadeIn .4s ease}
 @media(max-width:760px){.cards-grid{grid-template-columns:1fr}.menu-view{padding-top:8px}}
