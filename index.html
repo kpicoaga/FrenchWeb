@@ -676,7 +676,65 @@ const conversations = [
     description: 'Appel téléphonique pour ouvrir un nouveau compte en banque.',
     topic: 'bancaire',
     speakers: ['E', 'C'],
-    lines: 15
+    lines: 15,
+    templateBank: {
+      title: "Boîte à outils — Ouverture de compte bancaire",
+      sub: "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+      toggle: "Afficher les structures utiles",
+      categories: [
+        {
+          name: "L'Ouverture & Clôture",
+          icon: "🚪",
+          role: 'c',
+          items: [
+            { fr: "Bonjour, je vous appelle pour ouvrir un nouveau compte bancaire.", note: "Ouverture réelle du dialogue — contexte + demande", role: 'c' },
+            { fr: "Banque Internationale, bonjour ! Que puis-je faire pour vous ?", note: "Formule d'accueil de la banque — invite à formuler la demande", role: 'e' },
+            { fr: "Parfait, je passerai demain avec ma pièce d'identité et le dépôt. Au revoir !", note: "Clôture réelle du dialogue — accord + suite concrète + salutation", role: 'c' },
+            { fr: "Merci ! À demain. Bonne journée.", note: "Réponse de clôture de la banque", role: 'e' }
+          ]
+        },
+        {
+          name: "Les Enchaînements",
+          icon: "🔗",
+          role: 'c',
+          items: [
+            { fr: "Je pensais à un compte courant avec la banque en ligne.", note: "« Je pensais à » — proposition, lien thématique", role: 'c' },
+            { fr: "Ah, c'est bon à savoir. Et à propos de l'application mobile, comment ça fonctionne ?", note: "« Et à propos de » — enchaîner vers un nouveau thème", role: 'c' },
+            { fr: "Donc je peux ouvrir le compte tout de suite ?", note: "« Donc je peux » — vérification avant engagement", role: 'c' },
+            { fr: "Merci, Kevin. Et quel type de compte souhaitez-vous ouvrir ?", note: "« Et » — question de suivi du conseiller", role: 'e' }
+          ]
+        },
+        {
+          name: "Les Réactions",
+          icon: "😌",
+          role: 'c',
+          items: [
+            { fr: "Hmm, je ne suis pas sûr pour le découvert autorisé.", note: "Expression du doute — phrase banque", role: 'c' },
+            { fr: "Ah, c'est bon à savoir.", note: "Information utile reçue", role: 'c' },
+            { fr: "Très bien ! Pour commencer, puis-je avoir votre nom complet, s'il vous plaît ?", note: "Prise en charge positive de la demande", role: 'e' }
+          ]
+        },
+        {
+          name: "L'Imprévu",
+          icon: "⚠️",
+          role: 'c',
+          items: [
+            { fr: "Oui, si vous fournissez une pièce d'identité et faites un dépôt initial de 100 €.", note: "Condition réelle (si + présent) — les conditions à remplir", role: 'e' },
+            { fr: "Vous pouvez avoir un découvert autorisé jusqu'à 500 €, sans intérêts pendant le premier mois.", note: "Option de secours proposée quand le client hésite", role: 'e' }
+          ]
+        },
+        {
+          name: "La Grammaire Utile",
+          icon: "📘",
+          role: 'c',
+          items: [
+            { fr: "je vous appelle pour ouvrir un nouveau compte bancaire.", note: "« pour + infinitif » — exprimer le but", role: 'c' },
+            { fr: "je passerai demain avec ma pièce d'identité et le dépôt.", note: "Futur simple (je passerai) — action programmée", role: 'c' },
+            { fr: "Et quel type de compte souhaitez-vous ouvrir ?", note: "Inversion sujet-verbe (souhaitez-vous) — question soutenue", role: 'e' }
+          ]
+        }
+      ]
+    }
   },
   {
     id: 'dialogue3',
