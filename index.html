@@ -71,7 +71,26 @@ input[type=search]:focus{border-color:var(--blue)}
 .audio-btn.speaking{background:#234e52;border-color:var(--mint);color:#a9ffdf}
 .audio-btn.paused{background:#3a3a2a;border-color:var(--gold);color:#ffe09b}
 .audio-btn.loading{opacity:.7;cursor:wait}
-@keyframes pulse{0%{opacity:1}50%{opacity:.7}100%{opacity:1}}
+
+/* ---------- Landing page / menu view ---------- */
+.menu-view{animation:fadeIn .4s ease}
+.menu-header .eyebrow{color:var(--gold)}
+.sub-menu{margin-top:10px}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:10px}
+.card{background:#111a2dcc;border:1px solid var(--border);border-radius:20px;padding:18px;cursor:pointer;transition:transform .2s,border-color .2s;display:flex;flex-direction:column;gap:12px}
+.card:hover{transform:translateY(-3px);border-color:var(--blue)}
+.card h3{margin:0;font-size:17px;line-height:1.3}
+.card p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.5}
+.card-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.topic-tag{font-size:10px;font-weight:800;letter-spacing:.04em;background:#35445f;color:#d5e3ff;padding:3px 8px;border-radius:6px}
+.card .roles{font-size:11px;color:var(--muted);margin-top:auto}
+.card .roles b{color:var(--blue)}
+.card .lines{font-size:11px;color:var(--muted)}
+.back-btn{background:transparent;border:none;color:var(--blue);font-weight:700;cursor:pointer;padding:6px 10px;border-radius:8px;font-size:14px}
+.back-btn:hover{color:var(--mint);background:#203c48}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.dialogue-view{animation:fadeIn .4s ease}
+@media(max-width:760px){.cards-grid{grid-template-columns:1fr}.menu-view{padding-top:8px}}
 .audio-list{margin-top:8px;display:flex;flex-direction:column;gap:6px}
 .audio-item{display:flex;align-items:center;gap:8px;background:#162032;border-radius:10px;padding:6px 10px;font-size:12px}
 .audio-item audio{height:32px;flex:1;min-width:140px;accent-color:var(--mint)}
@@ -82,55 +101,78 @@ input[type=search]:focus{border-color:var(--blue)}
 </head>
 <body>
 <div class="shell">
-<header class="top">
-  <div>
-    <div class="eyebrow">French learning • Conversation practice • Audio + TTS</div>
-    <h1>Dialogue <span style="color:var(--mint)">Studio.</span></h1>
-    <p class="sub">S'inscrire à des cours du soir · Écoutez la prononciation, enregistrez vos notes vocales.</p>
-  </div>
-  <span class="badge">🇫🇷 Français · B1–B2</span>
-</header>
-<section class="stats">
-  <div class="stat"><strong id="count">20</strong><span>Répliques</span></div>
-  <div class="stat"><strong id="exprCount">—</strong><span>Expressions à repérer</span></div>
-  <div class="stat"><strong id="readCount">0 / 20</strong><span>Répliques étudiées</span></div>
-</section>
-<div class="layout">
-<aside class="side">
-  <h2>Participants</h2>
-  <div class="legend"><span class="dot"></span><span><b>E</b> · Employé(e) du centre</span></div>
-  <div class="legend"><span class="dot c"></span><span><b>C</b> · Client(e)</span></div>
-  <div class="divider"></div>
-  <h2>Personnaliser l'étude</h2>
-  <label class="check"><input type="checkbox" id="notesToggle" checked>Afficher les annotations</label>
-  <label class="check"><input type="checkbox" id="highToggle" checked>Surligner les expressions</label>
-  <label class="check"><input type="checkbox" id="practiceToggle">Mode entraînement</label>
-  <small>En mode entraînement, les réponses du client sont masquées.</small>
-  <div class="divider"></div>
-  <h2>Votre progression</h2>
-  <div class="progress"><div id="bar"></div></div>
-  <small id="progressText">0 réplique étudiée sur 20</small>
-  <div style="margin-top:14px"><button id="reset">Réinitialiser</button></div>
-  <div class="divider"></div>
-  <h2>Rechercher</h2>
-  <small>Filtrez le dialogue par texte, fonction ou annotation.</small>
-  <input type="search" id="search" placeholder="Ex. inscription, tarif, donc…">
-  <div class="divider"></div>
-  <h2>🔊 Prononciation</h2>
-  <small>Chaque réplique possède un bouton <b>Écouter</b> (voix navigateur française). Appuyez sur un bouton pour lire ou appuyez de nouveau pour arrêter.</small>
-</aside>
-<main class="main">
-  <div class="toolbar">
-    <strong>📞 Appel au centre de langues</strong>
-    <div class="tools">
-      <button id="expand">Tout développer</button>
-      <button id="markAll">Tout marquer comme lu</button>
+  <!-- ================= MENU VIEW (landing page) ================= -->
+  <section class="menu-view" id="menuView">
+    <div class="top menu-header">
+      <div>
+        <div class="eyebrow">TCF Canada Tâche 2</div>
+        <h1>Shadowing <span style="color:var(--mint)">Practice.</span></h1>
+        <p class="sub">TCF Canada Tâche 2 — Shadowing practice for French speaking exam. Choose a conversation, listen, speak, and record your answers.</p>
+      </div>
+      <span class="badge">🇫🇷 Français · B1–B2</span>
     </div>
-  </div>
-  <div class="chat" id="chat"></div>
-</main>
-</div>
-<p class="footer">Dialogue interactif · Notes audio + TTS Google (fr)</p>
+
+    <p class="sub sub-menu" style="max-width:none;margin-bottom:18px">Choisissez une conversation pour commencer l’atelier de shadowing.</p>
+
+    <section class="cards-grid" id="cardsGrid"></section>
+
+    <p class="footer menu-footer">Dialogue interactif · Notes audio + TTS Google (fr)</p>
+  </section>
+
+  <!-- ================= DIALOGUE VIEW (existing app) ================= -->
+  <section class="dialogue-view" id="dialogueView" style="display:none">
+    <header class="top">
+      <div>
+        <button class="back-btn" onclick="showMenu()">← Retour au menu</button>
+        <div class="eyebrow">French learning • Conversation practice • Audio + TTS</div>
+        <h1 id="dialogueTitle">Dialogue <span style="color:var(--mint)">Studio.</span></h1>
+        <p class="sub" id="dialogueSub">S'inscrire à des cours du soir · Écoutez la prononciation, enregistrez vos notes vocales.</p>
+      </div>
+      <span class="badge">🇫🇷 Français · B1–B2</span>
+    </header>
+
+    <section class="stats">
+      <div class="stat"><strong id="count">20</strong><span>Répliques</span></div>
+      <div class="stat"><strong id="exprCount">—</strong><span>Expressions à repérer</span></div>
+      <div class="stat"><strong id="readCount">0 / 20</strong><span>Répliques étudiées</span></div>
+    </section>
+    <div class="layout">
+      <aside class="side">
+        <h2>Participants</h2>
+        <div class="legend"><span class="dot"></span><span><b>E</b> · Employé(e) du centre</span></div>
+        <div class="legend"><span class="dot c"></span><span><b>C</b> · Client(e)</span></div>
+        <div class="divider"></div>
+        <h2>Personnaliser l’étude</h2>
+        <label class="check"><input type="checkbox" id="notesToggle" checked>Afficher les annotations</label>
+        <label class="check"><input type="checkbox" id="highToggle" checked>Surligner les expressions</label>
+        <label class="check"><input type="checkbox" id="practiceToggle">Mode entraînement</label>
+        <small>En mode entraînement, les réponses du client sont masquées.</small>
+        <div class="divider"></div>
+        <h2>Votre progression</h2>
+        <div class="progress"><div id="bar"></div></div>
+        <small id="progressText">0 réplique étudiée sur 20</small>
+        <div style="margin-top:14px"><button id="reset">Réinitialiser</button></div>
+        <div class="divider"></div>
+        <h2>Rechercher</h2>
+        <small>Filtrez le dialogue par texte, fonction ou annotation.</small>
+        <input type="search" id="search" placeholder="Ex. inscription, tarif, donc…">
+        <div class="divider"></div>
+        <h2>🔊 Prononciation</h2>
+        <small>Chaque réplique possède un bouton <b>Écouter</b> (voix navigateur française). Appuyez sur un bouton pour lire ou appuyez de nouveau pour arrêter.</small>
+      </aside>
+      <main class="main">
+        <div class="toolbar">
+          <strong id="toolbarTitle">📞 Appel au centre de langues</strong>
+          <div class="tools">
+            <button id="expand">Tout développer</button>
+            <button id="markAll">Tout marquer comme lu</button>
+          </div>
+        </div>
+        <div class="chat" id="chat"></div>
+      </main>
+    </div>
+    <p class="footer">Dialogue interactif · Notes audio + TTS Google (fr)</p>
+  </section>
 </div>
 <script>
 const raw=`E|Centre de langues International, bonjour ! Que puis-je faire pour vous ? [OUVERTURE: Formule d'accueil "Bonjour, je vous appelle parce que..." - établit le contexte et demande la permission de questionner]
@@ -156,7 +198,26 @@ C|Parfait, merci beaucoup pour toutes ces informations ! Je fais le test cette s
 
 const expressions=['je vous appelle parce que','je voudrais','Est-ce que vous avez','ça m’arrange','c’est bien ça','C’est noté','Et à propos','c’est bon à savoir','Donc si je comprends bien','D’accord','D\'accord','Justement','ça me paraît un peu cher','Et si jamais','ça change tout','Très bien, je note','Et pour l’inscription','Donc si je résumé','Bonne journée'];
 
+const expressions2=['I\'m calling to ask about','My name is','I was thinking of','Hmm, I\'m not sure','that\'s good to know','And what about','award-winning','So I can open','Yes, if you provide','Perfect, I\'ll come by','Au revoir','Have a good day'];
+
 const data=raw.split('\n').map((line,i)=>{
+  // Remove role prefix if present (e.g. "C|" or "E|")
+  let rest = line.trim();
+  let role = rest.startsWith('C') ? 'C' : 'E'; // default based on first char after prefix
+  if (rest.startsWith('C|') || rest.startsWith('E|')) {
+    role = rest[0]; // C or E
+    rest = rest.slice(2);
+  }
+  // Split on last occurrence of ' [' to separate text from annotation
+  const idx = rest.lastIndexOf(' [');
+  if (idx >= 0) {
+    return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.slice(0, idx).trim(), annotation: rest.slice(idx + 2, -1).trim() };
+  }
+  // No annotation — just text
+  return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.trim(), annotation: '' };
+});
+
+const data2=raw2.split('\n').map((line,i)=>{
   // Remove role prefix if present (e.g. "C|" or "E|")
   let rest = line.trim();
   let role = rest.startsWith('C') ? 'C' : 'E'; // default based on first char after prefix
@@ -218,6 +279,81 @@ const spanishPhonetic = [
   'Se eksaktaman sa.',
   'Parfait. Meri mucho por tu se presión, je vais fer el test des esta semana e vou rapeli pa konfirman mi inscripción. Bon jurne!'
 ];
+
+const raw2=`E|Bonjour, welcome to Banque Internationale. How can I help you ? [OUVERTURE: Formule d'accueil - establishes context and asks opening question]
+C|Bonjour, I'm calling to ask about opening a new bank account. [OUVERTURE: "I'm calling to ask about" - context/permission, request]
+E|Certainly! To get started, could I have your full name please ? [RESPONSE: Acknowledgment, initial information request]
+C|My name is Kevin Picoaga. [ENCHAINEMENT: "My name is" - provides information, identification]
+E|Thank you, Kevin. And what type of account were you interested in ? [INFORMATION: Follow-up question, product type]
+C|I was thinking of a current account with online banking. [ENCHAINEMENT: "I was thinking of" - proposition, thematic link]
+E|Our current account has no monthly fee and includes a debit card. [INFORMATION: Product features, tariff details]
+C|Hmm, I'm not sure about the overdraft facility. [RÉACTION: "Hmm, I'm not sure" - common phrase, expression of doubt]
+E|You can have an agreed overdraft up to 500€ with no interest for the first month. [INFORMATION: Additional details, specific offer]
+C|OK, that's good to know. And what about the mobile banking app ? [ENCHAINEMENT: "And what about" - new theme, follow-up]
+E|Our app is award-winning, allowing transfers, payments, and budget tracking. [INFORMATION: Functional description of app]
+C|So I can open the account immediately ? [CONFIRMATION: Conditional confirmation check]
+E|Yes, if you provide ID and make the initial deposit of 100€. [CONFIRMATION: Positive confirmation with conditions]
+C|Perfect, I'll come by tomorrow with my ID and the deposit. Au revoir ! [FERMETURE: Closes the exchange, goodbye]
+E|Thank you! See you tomorrow. Have a good day. [RESPONSE: Closing response, polite formula]`;
+
+const translations2 = [
+  'Hello, welcome to Banque Internationale. How can I help you?',
+  'Hello, I am calling to ask about opening a new bank account.',
+  'Certainly! To get started, could I have your full name please?',
+  'My name is Kevin Picoaga.',
+  'Thank you, Kevin. And what type of account were you interested in?',
+  'I was thinking of a current account with online banking.',
+  'Our current account has no monthly fee and includes a debit card.',
+  'Hmm, I am not sure about the overdraft facility.',
+  'You can have an agreed overdraft up to 500€ with no interest for the first month.',
+  'OK, that is good to know. And what about the mobile banking app?',
+  'Our app is award-winning, allowing transfers, payments, and budget tracking.',
+  'So I can open the account immediately?',
+  'Yes, if you provide ID and make the initial deposit of 100€.',
+  'Perfect, I will come by tomorrow with my ID and the deposit. Goodbye!',
+  'Thank you! See you tomorrow. Have a good day.'
+];
+
+const spanishPhonetic2 = [
+  'Bonshúr, velkome ba banki Internationale. Kou can ai u?',
+  'Bonshúr, ay kalling too ask about openings a nu bank akount.',
+  'Serténi! Té ge tartdé, koi ai hav yur ful neim plé?',
+  'Mai naim iz Kevin Pikoága.',
+  'Tanki, Kevin. E kont what typ o akont wer yu intéressé?',
+  'I wa théjent o a kurrent akont wi onlain banki.',
+  'Our kurrent akont nu montli fii e inklus a debit kard.',
+  'Hum, ay nu sum not kouert abou the overdraft faciliti.',
+  'Yu kan hav an aggid overdraft up tu 500€ wi no intérès fó le first month.',
+  'OK, se good tu now. E kont what abou the móbal banki ak?',
+  'Our app é award-winnining, alléwing tranzfers, payménts, e budgé tracking.',
+  'So ai kan opn the akont immédeatement?',
+  'Ué, si yu próvid AY et mé kil dépozit o 100€.',
+  'Parfait, ai wi kám bi morroú wi AY et de depó. Au revwar!',
+  'Tanki! Si u morroú. Av a good dé.'
+];
+
+// ---------- Conversation listings for landing page ----------
+const conversations = [
+  {
+    id: 'dialogue1',
+    title: 'Inscription aux cours de français',
+    description: 'Appel téléphonique pour s\'inscrire à des cours de français du soir pour préparer l\'examen TCF Canada.',
+    topic: 'scolaire',
+    speakers: ['E', 'C'],
+    lines: 16
+  },
+  {
+    id: 'dialogue2',
+    title: 'Ouverture de compte bancaire',
+    description: 'Appel téléphonique pour ouvrir un nouveau compte en banque.',
+    topic: 'bancaire',
+    speakers: ['E', 'C'],
+    lines: 15
+  }
+];
+
+// ---------- View state ----------
+let currentView = 'menu'; // 'menu' or 'dialogue'
 
 const $=id=>document.getElementById(id);
 let read=new Set(JSON.parse(localStorage.getItem('dialogue-read')||'[]'));
@@ -537,6 +673,58 @@ $('markAll').onclick = () => { read = new Set(data.map(x => x.id)); render(); };
 $('reset').onclick = () => { read.clear(); render(); };
 $('count').textContent = data.length;
 $('exprCount').textContent = expressions.length;
-render();</script>
+
+// ---------- Landing page functions ----------
+function renderMenu(){
+  const grid = $('cardsGrid');
+  grid.innerHTML = conversations.map(c => {
+    // Format speakers with labels
+    const speakerLabels = c.speakers.map(s => {
+      if (s === 'E') return '<span style="color:var(--blue)"><b>E</b></span> = Centre';
+      if (s === 'C') return '<span style="color:var(--mint)"><b>C</b></span> = Client';
+      return s;
+    }).join(' · ');
+    return `
+    <article class="card" onclick="loadDialogue('${c.id}')" role="button" tabindex="0" onkeydown="event.key==='Enter'&&loadDialogue('${c.id}')">
+      <div>
+        <h3>${c.title}</h3>
+        <p>${c.description}</p>
+        <div class="card-meta">
+          <span class="topic-tag">${c.topic}</span>
+        </div>
+      </div>
+      <div class="roles" style="line-height:1.6"><b>Rôles :</b> ${speakerLabels}</div>
+      <div class="lines">${c.lines} répliques</div>
+    </article>
+  `;
+  }).join('');
+}
+
+function loadDialogue(id){
+  const conv = conversations.find(c => c.id === id);
+  if (!conv) return;
+  currentView = 'dialogue';
+  $('menuView').style.display = 'none';
+  $('dialogueView').style.display = 'block';
+  $('dialogueTitle').textContent = conv.title;
+  $('dialogueSub').textContent = conv.description;
+  $('toolbarTitle').textContent = conv.title;
+  // Re-render the dialogue
+  render();
+}
+
+function showMenu(){
+  currentView = 'menu';
+  $('dialogueView').style.display = 'none';
+  $('menuView').style.display = 'block';
+  // Stop any ongoing TTS
+  stopAllTTS();
+}
+
+// Initial render
+renderMenu();
+// Don't auto-render dialogue on load anymore - wait for user selection
+// render();
+</script>
 </body>
 </html>
