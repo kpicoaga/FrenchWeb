@@ -71,6 +71,7 @@ input[type=search]:focus{border-color:var(--blue)}
 .audio-btn.recording{background:#4a2a2a;border-color:var(--rec);animation:pulse 1s infinite}
 .audio-btn.speaking{background:#234e52;border-color:var(--mint);color:#a9ffdf}
 .audio-btn.playall-playing{background:#234e52;border-color:var(--gold);color:#ffe09b}
+#downloadAudio.download-recording{background:#4a2a2a;border-color:var(--rec);animation:pulse 1s infinite}
 .row.playall-active{animation:playall-glow 1.2s ease-in-out infinite alternate}
 @keyframes playall-glow{from{box-shadow:0 0 4px rgba(112,226,193,.25)}to{box-shadow:0 0 18px 3px rgba(112,226,193,.7)}}
 .audio-btn.paused{background:#3a3a2a;border-color:var(--gold);color:#ffe09b}
@@ -201,6 +202,7 @@ input[type=search]:focus{border-color:var(--blue)}
             <button id="expand">Tout développer</button>
             <button id="markAll">Tout marquer comme lu</button>
             <button id="playAll">▶️ Écouter tout le dialogue</button>
+            <button id="downloadAudio">⬇️ Télécharger l'audio</button>
           </div>
         </div>
         <div class="chat" id="chat"></div>
@@ -1069,6 +1071,8 @@ let isPaused = false;
 // Play-all sequence state
 let playAllActive = false;
 let playAllIndex = -1;
+// Download-audio capture state
+let captureRecorder=null, captureChunks=[];
 
 function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function labelFor(role){
@@ -1259,6 +1263,13 @@ function stopPlayAll(){
   clearPlayAllHighlight();
   const btn = $('playAll');
   if (btn) { btn.disabled = false; btn.textContent = '▶️ Écouter tout le dialogue'; btn.classList.remove('playall-playing'); }
+  // If this sequence was a download-capture, finalize the recording (triggers the download)
+  if (downloadAudioRecording){
+    downloadAudioRecording = false;
+    const dab = $('downloadAudio');
+    if (dab){ dab.classList.remove('download-recording'); dab.textContent = '⬇️ Télécharger l\'audio'; }
+    if (captureRecorder && captureRecorder.state === 'recording') captureRecorder.stop();
+  }
 }
 
 function clearPlayAllHighlight(){
@@ -1270,6 +1281,78 @@ function resetTTSButton(btn){
   btn.classList.remove('speaking','paused','loading');
   btn.disabled = false;
   btn.textContent = '🔊 Écouter';
+}
+
+// ---------- Télécharger l'audio (capture TTS) ----------
+let downloadAudioRecording = false;
+
+async function startDownloadAudio(){
+  const btn = $('downloadAudio');
+  if (btn.disabled) return;
+  // Can't share a live MediaRecorder between play-all and per-line recording.
+  if (mediaRecorder && mediaRecorder.state === 'recording'){
+    alert("Arrêtez d'abord l'enregistrement micro en cours avant de lancer le téléchargement audio.");
+    return;
+  }
+  if (playAllActive) stopPlayAll(); // restart a clean sequence once capture starts
+  if (!window.MediaRecorder) {
+    alert("Enregistrement non supporté : votre navigateur ne permet pas de capturer l'audio de sortie. Essayez avec Chrome ou Firefox desktop.");
+    return;
+  }
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    captureChunks = [];
+    captureRecorder = new MediaRecorder(stream);
+    captureRecorder.ondataavailable = e => { if (e.data.size) captureChunks.push(e.data); };
+    captureRecorder.onstop = () => {
+      stream.getTracks().forEach(t => t.stop());
+      captureRecorder = null;
+      btn.classList.remove('download-recording');
+      btn.disabled = false;
+      if (captureChunks.length){
+        const blob = new Blob(captureChunks, { type: 'audio/webm' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'dialogue-' + Date.now() + '.webm';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+      }
+      captureChunks = [];
+    };
+    captureRecorder.start();
+    downloadAudioRecording = true;
+    btn.classList.add('download-recording');
+    btn.textContent = '\u23f9 Enregistrement en cours…';
+    // Kick off the play-all sequence (its completion stops the capture and downloads)
+    playAllActive = true;
+    playAllIndex = 0;
+    // borrow the play-all button state so the toolbar reads coherently
+    const pab = $('playAll');
+    pab.disabled = true;
+    pab.textContent = '\u23f9 Enregistrement…';
+    advancePlayAll();
+    // Safety net: never let recording run forever if the sequence stalls.
+    window.setTimeout(() => { if (downloadAudioRecording && !playAllActive) stopDownloadAudio(); }, 5 * 60 * 1000);
+  } catch (err){
+    console.error(err);
+    let msg = "Impossible de capturer l'audio.\n\n";
+    if (err.name === 'NotAllowed' || err.name === 'PermissionDeniedError') {
+      msg += "Permission micro refusée. Autorisez le micro dans les paramétres du site puis réessayez.";
+    } else if (err.name === 'NotFoundError' || err.name === 'DevicesNotFoundError') {
+      msg += "Aucun micro detecté. La capture de l'audio de sortie passe par le micro (haut-parleurs) sur ce navigateur.";
+    } else {
+      msg += "Erreur: " + err.message;
+    }
+    alert(msg);
+  }
+}
+
+function stopDownloadAudio(){
+  downloadAudioRecording = false;
+  try { window.speechSynthesis.cancel(); } catch(e) {}
+  if (playAllActive) stopPlayAll();
+  if (captureRecorder && captureRecorder.state === 'recording') captureRecorder.stop();
 }
 
 // ---------- Audio block UI ----------
@@ -1474,6 +1557,7 @@ $('expand').onclick = () => {
 };
 $('markAll').onclick = () => { read = new Set(activeData.map(x => x.id)); render(); };
 $('playAll').onclick = () => { playAllActive ? stopPlayAll() : playAllLines(); };
+$('downloadAudio').onclick = () => { downloadAudioRecording ? stopDownloadAudio() : startDownloadAudio(); };
 $('reset').onclick = () => { read.clear(); render(); };
 $('count').textContent = activeData.length;
 $('exprCount').textContent = activeExpressions.length;
