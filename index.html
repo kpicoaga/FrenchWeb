@@ -608,7 +608,67 @@ const conversations = [
     description: 'Appel téléphonique pour s\'inscrire à des cours de français du soir pour préparer l\'examen TCF Canada.',
     topic: 'scolaire',
     speakers: ['E', 'C'],
-    lines: 20
+    lines: 20,
+    templateBank: {
+      title: "Boîte à outils — Inscription aux cours de français",
+      sub: "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+      toggle: "Afficher les structures utiles",
+      categories: [
+        {
+          name: "L'Ouverture & Clôture",
+          icon: "🚪",
+          role: 'c',
+          items: [
+            { fr: "Bonjour, je vous appelle parce que je voudrais prendre des cours de français du soir pour préparer un examen. Avez-vous une place pour la prochaine session ?", note: "Ouverture réelle du dialogue — contexte + permission + demande polie", role: 'c' },
+            { fr: "Centre de langues International, bonjour ! Que puis-je faire pour vous ?", note: "Formule d'accueil du centre — invite à formuler la demande", role: 'e' },
+            { fr: "Parfait, merci beaucoup pour toutes ces informations ! Je fais le test cette semaine et je vous rappelle pour confirmer mon inscription. Bonne journée !", note: "Clôture réelle du dialogue — remerciement + suite + salutation", role: 'c' }
+          ]
+        },
+        {
+          name: "Les Enchaînements",
+          icon: "🔗",
+          role: 'c',
+          items: [
+            { fr: "C'est noté. Et à propos du niveau, faut-il avoir un niveau minimum pour s'inscrire, ou peut-on commencer en étant débutant ?", note: "« Et à propos » — enchaîner vers un nouveau thème", role: 'c' },
+            { fr: "Parfait, c'est bon à savoir. Donc si je comprends bien, le test est pour trouver le groupe qui correspond à mon niveau. Il est gratuit, ce test ?", note: "« Donc si je comprends bien » — résumé/vérification", role: 'c' },
+            { fr: "D'accord, je préférerais le faire en ligne, ce sera plus simple. Justement, et pour les tarifs, quel est le prix de la session ?", note: "« Justement » — transition vers le thème clé", role: 'c' },
+            { fr: "Très bien, je note. Et pour l'inscription, quels documents on doit donner, et jusqu'à quand on peut s'inscrire ?", note: "« Et pour l'inscription » — enchaîner sur le motif", role: 'c' },
+            { fr: "D'accord. Donc si je résume : je fais le test de positionnement en ligne, j'envoie ma pièce d'identité et une photo, et je règle en trois fois avant la fin du mois. C'est bien ça ?", note: "« Donc si je résume » — récapitulatif final + confirmation", role: 'c' }
+          ]
+        },
+        {
+          name: "Les Réactions",
+          icon: "😌",
+          role: 'c',
+          items: [
+            { fr: "Ah, très bien, ça m'arrange.", note: "Accord + convenance personnelle", role: 'c' },
+            { fr: "C'est noté.", note: "Accusé de réception", role: 'c' },
+            { fr: "Parfait, c'est bon à savoir.", note: "Information utile reçue", role: 'c' },
+            { fr: "Hmm, ça me paraît un peu cher, honnêtement.", note: "Réaction polie sur le prix — phrase banque", role: 'c' },
+            { fr: "Ah, tant mieux ! Ça change tout pour moi.", note: "Soulagement — semblable à « ça me rassure »", role: 'c' }
+          ]
+        },
+        {
+          name: "L'Imprévu",
+          icon: "⚠️",
+          role: 'c',
+          items: [
+            { fr: "Et si un mardi je ne suis pas disponible, il y a un cours de rattrapage ?", note: "Hypothèse (si + présent) — question de secours", role: 'c' },
+            { fr: "Existe-t-il des réductions, par exemple pour les étudiants, ou peut-on payer en plusieurs fois ?", note: "Négociation polie (alternative + paiement échelonné)", role: 'c' }
+          ]
+        },
+        {
+          name: "La Grammaire Utile",
+          icon: "📘",
+          role: 'c',
+          items: [
+            { fr: "je voudrais prendre des cours de français du soir pour préparer un examen.", note: "Conditionnel de politesse (je voudrais + infinitif)", role: 'c' },
+            { fr: "D'accord, je préférerais le faire en ligne, ce sera plus simple.", note: "Conditionnel présent (préférerais) puis futur simple (sera)", role: 'c' },
+            { fr: "Existe-t-il des réductions, par exemple pour les étudiants, ou peut-on payer en plusieurs fois ?", note: "Inversion sujet-verbe — registre soutenu (Existe-t-il / peut-on)", role: 'c' }
+          ]
+        }
+      ]
+    }
   },
   {
     id: 'dialogue2',
