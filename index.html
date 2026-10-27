@@ -69,6 +69,7 @@ input[type=search]:focus{border-color:var(--blue)}
 .audio-btn:hover{background:#35456b;border-color:var(--blue)}
 .audio-btn.recording{background:#4a2a2a;border-color:var(--rec);animation:pulse 1s infinite}
 .audio-btn.speaking{background:#234e52;border-color:var(--mint);color:#a9ffdf}
+.audio-btn.paused{background:#3a3a2a;border-color:var(--gold);color:#ffe09b}
 .audio-btn.loading{opacity:.7;cursor:wait}
 @keyframes pulse{0%{opacity:1}50%{opacity:.7}100%{opacity:1}}
 .audio-list{margin-top:8px;display:flex;flex-direction:column;gap:6px}
@@ -180,20 +181,22 @@ function speak(text, btn){
     return;
   }
 
-  // If same button clicked while speaking → pause
+  // If same button clicked while speaking → PAUSE
   if (currentTTSBtn === btn && currentTTSUtterance && !isPaused) {
     try { window.speechSynthesis.pause(); } catch(e) {}
     isPaused = true;
     btn.textContent = '▶ Reprendre';
     btn.classList.remove('speaking');
+    btn.classList.add('paused');
     btn.disabled = false;
     return;
   }
-  // If same button clicked while paused → resume
+  // If same button clicked while paused → RESUME
   if (currentTTSBtn === btn && currentTTSUtterance && isPaused) {
     try { window.speechSynthesis.resume(); } catch(e) { window.speechSynthesis.speak(currentTTSUtterance); }
     isPaused = false;
     btn.textContent = '⏸ Pause';
+    btn.classList.remove('paused');
     btn.classList.add('speaking');
     return;
   }
@@ -252,9 +255,18 @@ function speak(text, btn){
   }
 }
 
+// Global stop — used by Stop button
+function stopAllTTS(){
+  try { window.speechSynthesis.cancel(); } catch(e) {}
+  isPaused = false;
+  if (currentTTSBtn) resetTTSButton(currentTTSBtn);
+  currentTTSUtterance = null;
+  currentTTSBtn = null;
+}
+
 function resetTTSButton(btn){
   if (!btn) return;
-  btn.classList.remove('speaking','loading');
+  btn.classList.remove('speaking','paused','loading');
   btn.disabled = false;
   btn.textContent = '🔊 Écouter';
   isPaused = false;
@@ -267,6 +279,7 @@ function audioBlock(id, text){
     <summary>🎙️ Audio & prononciation (${notes.length})</summary>
     <div class="audio-panel">
       <button class="audio-btn speak-btn" data-text="${esc(text)}">🔊 Écouter</button>
+      <button class="audio-btn stop-btn" data-id="${id}">⏹ Stop</button>
       <button class="audio-btn record-btn" data-id="${id}">⏺ Enregistrer</button>
     </div>`;
   if (notes.length) {
@@ -317,6 +330,14 @@ function render(){
       b.onclick = e => {
         e.preventDefault(); e.stopPropagation();
         speak(b.dataset.text, b);
+      };
+    });
+
+    // Stop button
+    el.querySelectorAll('.stop-btn').forEach(b => {
+      b.onclick = e => {
+        e.preventDefault(); e.stopPropagation();
+        stopAllTTS();
       };
     });
 
