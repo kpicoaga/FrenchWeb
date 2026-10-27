@@ -83,6 +83,12 @@ input[type=search]:focus{border-color:var(--blue)}
 .card p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.5}
 .card-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .topic-tag{font-size:10px;font-weight:800;letter-spacing:.04em;background:#35445f;color:#d5e3ff;padding:3px 8px;border-radius:6px}
+.task-section{margin:22px 0 6px}
+.task-section h2{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:800;letter-spacing:.03em;margin:0 0 12px}
+.task-section .task-badge{font-size:10px;font-weight:800;letter-spacing:.04em;background:#203c48;color:var(--mint);border:1px solid #315f64;padding:2px 8px;border-radius:100px}
+.task-section.tache3 h2 .task-badge{background:#4a2e1d;color:#ffd9a8;border-color:#7a4d2a}
+.card .task-chip{font-size:9px;font-weight:800;letter-spacing:.05em;background:#35445f;color:#d5e3ff;padding:2px 6px;border-radius:6px;vertical-align:2px}
+.card.tache3 .task-chip{background:#4a2e1d;color:#ffd9a8}
 .card .roles{font-size:11px;color:var(--muted);margin-top:auto}
 .card .roles b{color:var(--blue)}
 .card .lines{font-size:11px;color:var(--muted)}
@@ -681,6 +687,7 @@ const conversations = [
     title: 'Inscription aux cours de français',
     description: 'Appel téléphonique pour s\'inscrire à des cours de français du soir pour préparer l\'examen TCF Canada.',
     topic: 'scolaire',
+    task: 'tache2',
     speakers: ['E', 'C'],
     lines: 20,
     templateBank: {
@@ -749,6 +756,7 @@ const conversations = [
     title: 'Ouverture de compte bancaire',
     description: 'Appel téléphonique pour ouvrir un nouveau compte en banque.',
     topic: 'bancaire',
+    task: 'tache2',
     speakers: ['E', 'C'],
     lines: 15,
     templateBank: {
@@ -815,6 +823,7 @@ const conversations = [
     title: 'Garder l\'appartement d\'un ami',
     description: 'Un ami part quelques jours et vous demande de vous occuper de son appartement : plantes, courrier, poubelles et urgences.',
     topic: 'quotidien',
+    task: 'tache2',
     speakers: ['E', 'C'],
     labels: { E: 'Votre ami(e)', C: 'Vous' },
     lines: 38,
@@ -886,6 +895,7 @@ const conversations = [
     title: 'Louer un appartement',
     description: 'Appel à une agence immobilière pour se renseigner sur un appartement : loyer, charges, dépôt de garantie, bail et visite.',
     topic: 'logement',
+    task: 'tache2',
     speakers: ['E', 'C'],
     labels: { E: 'Agence immobilière', C: 'Vous' },
     lines: 27,
@@ -956,6 +966,7 @@ const conversations = [
     title: 'Apprendre une langue étrangère dès l\'enfance',
     description: 'Simulation TCF : réponse argumentée sur l\'apprentissage précoce des langues — avantages linguistiques, cognitifs et culturels.',
     topic: 'expression orale',
+    task: 'tache3',
     speakers: ['E', 'C'],
     labels: { E: 'Examinatrice', C: 'Candidat(e)' },
     lines: 16,
@@ -1384,26 +1395,39 @@ $('exprCount').textContent = activeExpressions.length;
 // ---------- Landing page functions ----------
 function renderMenu(){
   const grid = $('cardsGrid');
-  grid.innerHTML = conversations.map(c => {
-    // Format speakers with labels
-    const speakerLabels = c.speakers.map(s => {
-      if (s === 'E') return '<span style="color:var(--blue)"><b>E</b></span> = ' + (c.labels && c.labels.E ? c.labels.E : 'Centre');
-      if (s === 'C') return '<span style="color:var(--mint)"><b>C</b></span> = ' + (c.labels && c.labels.C ? c.labels.C : 'Client');
-      return s;
-    }).join(' · ');
-    return `
-    <article class="card" onclick="loadDialogue('${c.id}')" role="button" tabindex="0" onkeydown="event.key==='Enter'&&loadDialogue('${c.id}')">
-      <div>
-        <h3>${c.title}</h3>
-        <p>${c.description}</p>
-        <div class="card-meta">
-          <span class="topic-tag">${c.topic}</span>
+  const sections = [
+    { key: 'tache2', title: 'Tâche 2 : Interaction', hint: 'Dialogues téléphoniques — vous posez les questions, l\'interlocuteur répond.' },
+    { key: 'tache3', title: 'Tâche 3 : Expression orale (Monologue)', hint: 'Monologue argumenté — vous développez une opinion pendant 4 min 30.' }
+  ];
+  grid.innerHTML = sections.map(sec => {
+    const list = conversations.filter(c => (c.task || 'tache2') === sec.key);
+    if (!list.length) return '';
+    const cards = list.map(c => {
+      // Format speakers with labels
+      const speakerLabels = c.speakers.map(s => {
+        if (s === 'E') return '<span style="color:var(--blue)"><b>E</b></span> = ' + (c.labels && c.labels.E ? c.labels.E : 'Centre');
+        if (s === 'C') return '<span style="color:var(--mint)"><b>C</b></span> = ' + (c.labels && c.labels.C ? c.labels.C : 'Client');
+        return s;
+      }).join(' · ');
+      return `
+      <article class="card ${sec.key}" onclick="loadDialogue('${c.id}')" role="button" tabindex="0" onkeydown="event.key==='Enter'&&loadDialogue('${c.id}')">
+        <div>
+          <h3>${c.title} <span class="task-chip">${sec.key === 'tache2' ? 'Tâche 2' : 'Tâche 3'}</span></h3>
+          <p>${c.description}</p>
+          <div class="card-meta">
+            <span class="topic-tag">${c.topic}</span>
+          </div>
         </div>
-      </div>
-      <div class="roles" style="line-height:1.6"><b>Rôles :</b> ${speakerLabels}</div>
-      <div class="lines">${c.lines} répliques</div>
-    </article>
-  `;
+        <div class="roles" style="line-height:1.6"><b>Rôles :</b> ${speakerLabels}</div>
+        <div class="lines">${c.lines} répliques</div>
+      </article>
+      `;
+    }).join('');
+    return `<div class="task-section ${sec.key}">
+              <h2><span class="task-badge">${sec.key === 'tache2' ? 'Tâche 2' : 'Tâche 3'}</span> ${sec.title}</h2>
+              <p class="sub" style="font-size:12.5px;margin:0 0 12px">${sec.hint}</p>
+              <div class="cards-grid">${cards}</div>
+            </div>`;
   }).join('');
 }
 
