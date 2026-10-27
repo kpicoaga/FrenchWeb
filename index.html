@@ -76,6 +76,7 @@ input[type=search]:focus{border-color:var(--blue)}
 .menu-view{animation:fadeIn .4s ease}
 .menu-header .eyebrow{color:var(--gold)}
 .sub-menu{margin-top:10px}
+#cardsGrid{display:block;margin-top:10px}
 .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:10px}
 .card{background:#111a2dcc;border:1px solid var(--border);border-radius:20px;padding:18px;cursor:pointer;transition:transform .2s,border-color .2s;display:flex;flex-direction:column;gap:12px}
 .card:hover{transform:translateY(-3px);border-color:var(--blue)}
@@ -83,8 +84,10 @@ input[type=search]:focus{border-color:var(--blue)}
 .card p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.5}
 .card-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .topic-tag{font-size:10px;font-weight:800;letter-spacing:.04em;background:#35445f;color:#d5e3ff;padding:3px 8px;border-radius:6px}
-.task-section{margin:22px 0 6px}
-.task-section h2{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:800;letter-spacing:.03em;margin:0 0 12px}
+.task-section{display:block;width:100%;margin:0 0 10px}
+.task-section + .task-section{margin-top:34px}
+.task-section h2{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:800;letter-spacing:.03em;margin:0 0 12px;text-align:left}
+.task-section .cards-grid{margin-top:0}
 .task-section .task-badge{font-size:10px;font-weight:800;letter-spacing:.04em;background:#203c48;color:var(--mint);border:1px solid #315f64;padding:2px 8px;border-radius:100px}
 .task-section.tache3 h2 .task-badge{background:#4a2e1d;color:#ffd9a8;border-color:#7a4d2a}
 .card .task-chip{font-size:9px;font-weight:800;letter-spacing:.05em;background:#35445f;color:#d5e3ff;padding:2px 6px;border-radius:6px;vertical-align:2px}
