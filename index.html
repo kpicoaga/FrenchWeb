@@ -383,11 +383,10 @@ function render(){
         <details class="translate-box" style="margin-top:8px;border:1px solid var(--border);border-radius:8px;background:#18243c;padding:8px">
           <summary style="cursor:pointer;color:var(--blue);font-size:11px;font-weight:600">🇺🇸 English · 🇪🇸 Fonética español</summary>
           <div style="margin-top:6px;font-size:11px;color:var(--muted);line-height:1.4">
-            <div style="color:#d0b0ff"><b>EN:</b> ${esc(translations[id] || '')}</div>
-            <div style="color:#b0e0ff"><b>ES (fonética):</b> ${esc(spanishPhonetic[id] || '')}</div>
+            <div style="color:#d0b0ff"><b>EN:</b> ${esc(translations[d.id] || '')}</div>
+            <div style="color:#b0e0ff"><b>ES (fonética):</b> ${esc(spanishPhonetic[d.id] || '')}</div>
           </div>
         </details>
-        ${$('practiceToggle').checked&&d.role==='C'?'<button class="reveal">Révéler / Masquer</button>':''}
         ${$('practiceToggle').checked&&d.role==='C'?'<button class="reveal">Révéler / Masquer</button>':''}
         ${$('notesToggle').checked?`<details class="notes" ${expanded?'open':''}><summary>💡 Analyse & fonctions du langage</summary><div class="note">${notes.map(n=>{const m=n.match(/^([^:]+):\s*(.*)$/);return m?`<div><span class="tag">${esc(m[1])}</span>${esc(m[2])}</div>`:`<div>${esc(n)}</div>`}).join('')}</div></details>`:''}
         ${audioBlock(d.id, d.text)}
