@@ -314,6 +314,12 @@ async function toggleRec(id, btn){
   }
   if (mediaRecorder && mediaRecorder.state === 'recording') mediaRecorder.stop();
 
+  // Check MediaRecorder support
+  if (typeof MediaRecorder === 'undefined') {
+    alert("Enregistrement non supporté.\n\nVotre navigateur (iPad) ne supporte pas l'enregistrement audio. Essayez avec Chrome desktop ou Firefox.");
+    return;
+  }
+
   try {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
     recChunks = []; recRepliqueId = id; recBtn = btn;
@@ -336,7 +342,17 @@ async function toggleRec(id, btn){
     btn.textContent = '⏹ Arrêter';
   } catch (err){
     console.error(err);
-    alert("Accès micro refusé.\n\nSi vous ouvrez le fichier en file://, servez-le en http://localhost (ex: python3 -m http.server).");
+    let msg = "Impossible d'accéder au micro.\n\n";
+    if (err.name === 'NotAllowed' || err.name === 'PermissionDeniedError') {
+      msg += "Permission micro refusée. Allez dans les paramètres du navigateur → Site → Micro → Autoriser.";
+    } else if (err.name === 'NotFoundError' || err.name === 'DevicesNotFoundError') {
+      msg += "Aucun microphone détecté sur cet appareil.";
+    } else if (err.name === 'NotSupportedError') {
+      msg += "Votre navigateur ne supporte pas l'accès micro.";
+    } else {
+      msg += "Erreur: " + err.message + "\n\nEssayez avec un navigateur différent (Chrome/Firefox desktop).";
+    }
+    alert(msg);
   }
 }
 
