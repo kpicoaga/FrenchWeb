@@ -176,19 +176,19 @@ input[type=search]:focus{border-color:var(--blue)}
 </div>
 <script>
 const raw=`E|Centre de langues International, bonjour ! Que puis-je faire pour vous ? [OUVERTURE: Formule d'accueil "Bonjour, je vous appelle parce que..." - établit le contexte et demande la permission de questionner]
-C|Bonjour, je vous appelle parce que je voudrais prendre des cours de français du soir pour préparer un examen. Est-ce que vous avez des places pour la prochaine session? [OUVERTURE: "Je vous appelle parce que" - contexte/permission; "Est-ce que vous avez" - demande polie]
+C|Bonjour, je vous appelle parce que je voudrais prendre des cours de français du soir pour préparer un examen. Avez-vous une place pour la prochaine session? [OUVERTURE: "Je vous appelle parce que" - contexte/permission; "Avez-vous" - demande polie]
 E|Oui, bien sûr. Il nous reste quelques places pour la session qui commence le mois prochain. [RESPONSE: Confirmation positive, information de disponibilité]
 C|Ah, très bien, ça m'arrange. Et quels sont les horaires exactement ? Les cours (ont lieu)/(sont) en soirée, c'est bien ça ? [ENCHAINEMENT: "Et" - relance; "c'est bien ça?" - vérification/confirmation]
 E|Oui, deux fois par semaine, le mardi et le jeudi, de dix-huit heures trente à vingt heures. [INFORMATION: Horaires précis]
 C|C'est noté. (Et à propos / Et concernant) le niveau, (il faut avoir / il y a) un niveau minimum pour s'inscrire, ou peut-on commencer (au niveau) / en étant débutant ? [ENCHAINEMENT: "Et à propos" / "Et concernant" - thème niveau; question prérequis]
 E|Il n'y a pas de niveau minimum, mais nous faisons passer un test de positionnement pour placer chaque personne dans le bon groupe. [INFORMATION: Test de positionnement]
-C|Parfait, c'est bon à savoir. Donc si je comprends bien, le test c'est pour trouver le groupe qui correspond à mon niveau. Il est gratuit, ce test ? [ENCHAINEMENT: "Donc si je comprends bien" - résumé/check; question gratuité]
+C|Parfait, c'est bon à savoir. Donc si je comprends bien, le test est pour trouver le groupe qui correspond à mon niveau. Il est gratuit, ce test ? [ENCHAINEMENT: "Donc si je comprends bien" - résumé/check; question gratuité]
 E|Oui, le test est gratuit et il dure environ quarante minutes. Vous pouvez le faire en ligne ou sur place. [INFORMATION: Durée et options]
 C|D'accord, je préférerais le faire en ligne, ce sera plus simple. Justement, et pour les tarifs, quel est le prix de la session, et qu'est-ce que le prix comprend ? / Qu'est-ce qui est inclus dans le prix ? [ENCHAINEMENT: "Justement" - transition tarif; question inclusions]
 E|C'est quatre cent cinquante dollars pour douze semaines, et ça comprend tous les supports de cours. [INFORMATION: Prix et inclusions]
-C|Hmm, ça me paraît un peu cher, honnêtement. Est-ce qu'il existe des réductions, par exemple pour les étudiants, ou est-ce qu'on peut payer en plusieurs fois ? [RÉACTION: "Hmm, ça me paraît un peu cher, honnêtement" - banque phrases; question réductions]
+C|Hmm, ça me paraît un peu cher, honnêtement. Existe-t-il des réductions, par exemple pour les étudiants, ou peut-on payer en plusieurs fois ? [RÉACTION: "Hmm, ça me paraît un peu cher, honnêtement" - banque phrases; question réductions]
 E|Oui, nous proposons un paiement en trois fois, sans frais supplémentaires. [INFORMATION: Option paiement]
-C|Ah, tant mieux !, ça change tout pour moi. Et si un mardi je ne suis pas disponible, il y a un cours de rattrapage ? [RÉACTION: "Ah, tant mieux!" - semblable à "Ça me rassure"; ENCHAINEMENT: "Et si un mardi" - question alternative disponibilité]
+C|Ah, tant mieux ! Ça change tout pour moi. Et si un mardi je ne suis pas disponible, il y a un cours de rattrapage ? [RÉACTION: "Ah, tant mieux!" - semblable à "Ça me rassure"; ENCHAINEMENT: "Et si un mardi" - question alternative disponibilité]
 E|Vous pouvez suivre le même cours le samedi matin, ou rattraper avec les enregistrements. [INFORMATION: Alternative offerte]
 C|Très bien, je note. Et pour l'inscription, quels documents on doit donner, et jusqu'à quand on peut s'inscrire ? [ENCHAINEMENT: "Et pour l'inscription" - motif inscription; question documents]
 E|Il faut une pièce d'identité et une photo, et vous avez jusqu'à la fin du mois. [INFORMATION: Documents requis + date limite]
@@ -196,7 +196,7 @@ C|D'accord. Donc si je résume : je fais le test de positionnement en ligne, j'e
 E|C'est exactement ça. [CONFIRMATION]
 C|Parfait, merci beaucoup pour toutes ces informations ! Je fais le test cette semaine et je vous rappelle pour confirmer mon inscription. Bonne journée ! [RÉACTION: "Parfait"; FERMETURE: "Bonne journée!"]`;
 
-const expressions=['je vous appelle parce que','je voudrais','Est-ce que vous avez','ça m’arrange','c’est bien ça','C’est noté','Et à propos','c’est bon à savoir','Donc si je comprends bien','D’accord','D\'accord','Justement','ça me paraît un peu cher','Et si jamais','ça change tout','Très bien, je note','Et pour l’inscription','Donc si je résumé','Bonne journée'];
+const expressions=['je vous appelle parce que','je voudrais','Avez-vous','ça m’arrange','c’est bien ça','C’est noté','Et à propos','c’est bon à savoir','Donc si je comprends bien','D’accord','D\'accord','Justement','ça me paraît un peu cher','Et si jamais','ça change tout','Très bien, je note','Et pour l’inscription','Donc si je résumé','Bonne journée'];
 
 const expressions2=['I\'m calling to ask about','My name is','I was thinking of','Hmm, I\'m not sure','that\'s good to know','And what about','award-winning','So I can open','Yes, if you provide','Perfect, I\'ll come by','Au revoir','Have a good day'];
 
@@ -523,7 +523,7 @@ function audioBlock(id, text){
 // ---------- Render ----------
 function render(){
   const q = $('search').value.toLocaleLowerCase();
-  const filtered = data.filter(d => (d.text + ' ' + d.annotation).toLocaleLowerCase().includes(q));
+  const filtered = activeData.filter(d => (d.text + ' ' + d.annotation).toLocaleLowerCase().includes(q));
   $('chat').innerHTML = filtered.map(d => {
     const notes = d.annotation.split(/; (?=[A-ZÉÈÎÔÛ ]+:)/);
     return `<article class="row ${d.role==='C'?'c':''}" data-id="${d.id}">
@@ -534,8 +534,8 @@ function render(){
         <details class="translate-box" style="margin-top:8px;border:1px solid var(--border);border-radius:8px;background:#18243c;padding:8px">
           <summary style="cursor:pointer;color:var(--blue);font-size:11px;font-weight:600">🇺🇸 English · 🇪🇸 Fonética español</summary>
           <div style="margin-top:6px;font-size:11px;color:var(--muted);line-height:1.4">
-            <div style="color:#d0b0ff"><b>EN:</b> ${esc(translations[d.id] || '')}</div>
-            <div style="color:#b0e0ff"><b>ES (fonética):</b> ${esc(spanishPhonetic[d.id] || '')}</div>
+            <div style="color:#d0b0ff"><b>EN:</b> ${esc(activeTranslations[d.id] || '')}</div>
+            <div style="color:#b0e0ff"><b>ES (fonética):</b> ${esc(activeSpanishPhonetic[d.id] || '')}</div>
           </div>
         </details>
         ${$('practiceToggle').checked&&d.role==='C'?'<button class="reveal">Révéler / Masquer</button>':''}
@@ -608,9 +608,9 @@ function render(){
 
 function update(){
   localStorage.setItem('dialogue-read', JSON.stringify([...read]));
-  $('readCount').textContent = read.size + ' / ' + data.length;
-  $('bar').style.width = (100 * read.size / data.length) + '%';
-  $('progressText').textContent = read.size + ' répliques étudiées sur ' + data.length;}
+  $('readCount').textContent = read.size + ' / ' + activeData.length;
+  $('bar').style.width = (100 * read.size / activeData.length) + '%';
+  $('progressText').textContent = read.size + ' répliques étudiées sur ' + activeData.length;}
 
 // ---------- Recording ----------
 async function toggleRec(id, btn){
@@ -700,6 +700,12 @@ function renderMenu(){
   }).join('');
 }
 
+// Active dialogue data (switched by loadDialogue)
+let activeData = data;
+let activeTranslations = translations;
+let activeSpanishPhonetic = spanishPhonetic;
+let activeExpressions = expressions;
+
 function loadDialogue(id){
   const conv = conversations.find(c => c.id === id);
   if (!conv) return;
@@ -709,6 +715,20 @@ function loadDialogue(id){
   $('dialogueTitle').textContent = conv.title;
   $('dialogueSub').textContent = conv.description;
   $('toolbarTitle').textContent = conv.title;
+
+  // Switch active arrays based on conversation
+  if (id === 'dialogue2') {
+    activeData = data2;
+    activeTranslations = translations2;
+    activeSpanishPhonetic = spanishPhonetic2;
+    activeExpressions = expressions2;
+  } else {
+    activeData = data;
+    activeTranslations = translations;
+    activeSpanishPhonetic = spanishPhonetic;
+    activeExpressions = expressions;
+  }
+
   // Re-render the dialogue
   render();
 }
