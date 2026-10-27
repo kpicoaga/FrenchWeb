@@ -91,9 +91,9 @@ input[type=search]:focus{border-color:var(--blue)}
   <span class="badge">🇫🇷 Français · B1–B2</span>
 </header>
 <section class="stats">
-  <div class="stat"><strong id="count">20</strong><span>Répliques</span></div>
+  <div class="stat"><strong id="count">14</strong><span>Répliques</span></div>
   <div class="stat"><strong id="exprCount">—</strong><span>Expressions à repérer</span></div>
-  <div class="stat"><strong id="readCount">0 / 20</strong><span>Répliques étudiées</span></div>
+  <div class="stat"><strong id="readCount">0 / 14</strong><span>Répliques étudiées</span></div>
 </section>
 <div class="layout">
 <aside class="side">
@@ -133,75 +133,72 @@ input[type=search]:focus{border-color:var(--blue)}
 <p class="footer">Dialogue interactif · Notes audio + TTS Google (fr)</p>
 </div>
 <script>
-const raw=`E|Centre de langues International, bonjour ! Que puis-je faire pour vous ? [OUVERTURE: Formule d'accueil "Bonjour, je vous appelle parce que..." - établit le contexte et demande la permission de questionner]
-C|Bonjour, je vous appelle parce que je souhaiterais prendre des cours de français du soir pour préparer un examen. Est-ce que vous auriez des places pour la prochaine session ? [OUVERTURE: "je vous appelle parce que" - raison/connector; "Est-ce que vous auriez" - demande polie en conditional]
-E|Oui, bien sûr. Il nous reste quelques places pour la session qui commence le mois prochain. [RESPONSE: Confirmation positive, information de disponibilité]
-C|Ah, très bien, ça m'arrange. Et quels sont les horaires exactement ? Les cours ont lieu en soirée, c'est bien ça ? [ENCHAINEMENT: "Et" - relance; "c'est bien ça?" - vérification/confirmation]
-E|Oui, deux fois par semaine, le mardi et le jeudi, de dix-huit heures trente à vingt heures. [INFORMATION: Horaires précis]
-C|C'est noté. Et à propos du niveau, il faut absolument avoir un niveau minimum pour s'inscrire, ou est-ce qu'on peut commencer même en étant débutant ? [RÉACTION: "C'est noté" (banque de phrases); ENCHAINEMENT: "Et à propos de" - thème suivant; question niveau/prérequis]
-E|Il n'y a pas de niveau minimum, mais nous faisons passer un test de positionnement pour placer chaque personne dans le bon groupe. [INFORMATION: Test de positionnement]
-C|Parfait, c'est bon à savoir. Donc si je comprends bien, le test sert à trouver le groupe qui correspond à mon niveau. Il est gratuit, ce test ? [RÉACTION: "Parfait, c'est bon à savoir" (banque de phrases); ENCHAINEMENT: "Donc si je comprends bien" - motif de résumé/check understanding; question confirmation]
-E|Oui, le test est gratuit et il dure environ quarante minutes. Vous pouvez le faire en ligne ou sur place. [INFORMATION: Durée et options]
-C|D'accord, je préférerais le faire en ligne, ce sera plus simple. Justement, et pour les tarifs, quel est le prix de la session, et qu'est-ce qui est inclus dans ce prix ? [RÉACTION: "D'accord"; ENCHAINEMENT: "Justement, et pour les tarifs" - motif transition prix; question tarif]
-E|C'est quatre cent cinquante dollars pour douze semaines, et ça comprend tous les supports de cours. [INFORMATION: Prix et inclusions]
-C|Hmm, ça me paraît un peu cher, honnêtement. Est-ce qu'il existe des réductions, par exemple pour les étudiants, ou est-ce qu'on peut payer en plusieurs fois ? [RÉACTION: "Hmm, ça me paraît un peu cher, honnêtement" (banque de phrases); question réductions/paiement]
-E|Oui, nous proposons un paiement en trois fois, sans frais supplémentaires. [INFORMATION: Option paiement]
-C|Ah, c'est rassurant, ça change tout pour moi. Et si jamais je ne suis pas disponible le mardi, est-ce qu'il y a une autre formule ou un cours de rattrapage ? [RÉACTION: "Ah, c'est rassurant, ça change tout pour moi" (semblable à "Ça me rassure" banque de phrases); ENCHAINEMENT: "Et si jamais" - motif "si jamais" question alternative; question disponibilité]
-E|Vous pouvez suivre le même cours le samedi matin, ou rattraper avec les enregistrements. [INFORMATION: Alternative offerte]
-C|Très bien, je note. Et concernant l'inscription, quels documents faut-il fournir, et jusqu'à quand peut-on s'inscrire ? [RÉACTION: "Très bien, je note"; ENCHAINEMENT: "Et concernant l'inscription" - motif "concernant"; question inscription]
-E|Il faut une pièce d'identité et une photo, et vous avez jusqu'à la fin du mois. [INFORMATION: Documents requis + date limite]
-C|D'accord. Donc si je résume : je fais le test de positionnement en ligne, j'envoie ma pièce d'identité et une photo, et je règle quatre cent cinquante dollars en trois fois avant la fin du mois. C'est bien ça ? [RÉACTION: "D'accord"; ENCHAINEMENT: "Donc si je résume" - motif clé de la stratégie (obligatoire); récapitulatif final + question confirmation]
-E|C'est exactement ça. [CONFIRMATION]
-C|Parfait. Merci beaucoup pour toutes ces précisions, je vais faire le test dès cette semaine et je vous rappelle pour confirmer mon inscription. Bonne journée ! [RÉACTION: "Parfait"; FERMETURE: "Merci infiniment... Bonne journée!"]`;
+const raw=`C|Bonjour, je vous appelle parce que je voudrais prendre des cours de français du soir pour préparer un examen. Est-ce que vous avez des places pour la prochaine session ? [OUVERTURE: "Je vous appelle parce que" - contexte/permission; "Est-ce que vous avez" - demande polie]
+E|Ah, très bien, ça m'arrange. Et quels sont les horaires exactement ? Les cours (ont lieu)/(sont) en soirée, c'est bien ça ? [INFORMATION: Disponibilité et horaires]
+C|C'est noté. (Et à propos / Et concernant) le niveau, (il faut avoir / il y a) un niveau minimum pour s'inscrire, ou peut-on commencer (au niveau) / en étant débutant ? [ENCHAINEMENT: "Et à propos" / "Et concernant" - thème niveau; question prérequis]
+E|Parfait, c'est bon à savoir. Donc si je comprends bien, le test, c'est pour trouver le groupe qui correspond à mon niveau. Il est gratuit, ce test ? [ENCHAINEMENT: "Donc si je comprends bien" - résumé/check; question gratuité]
+E|D'accord, je préférerais le faire en ligne, ce sera plus simple. Justement, et pour les tarifs, quel est le prix de la session, et qu'est-ce que le prix comprend ? / Qu'est-ce qui est inclus dans le prix ? [ENCHAINEMENT: "Justement" - transition tarif; question inclusions]
+C|c'est un peu cher pour moi
+C|ça me semble un peu cher,
+E|Hmm, ça me paraît un peu cher, honnêtement. Est-ce qu'il existe des réductions, par exemple pour les étudiants, ou est-ce qu'on peut payer en plusieurs fois ? [RÉACTION: "Hmm, ça me paraît un peu cher, honnêtement" - banque phrases; question réductions]
+C|Ah, tant mieux !, ça change tout pour moi. Et si un mardi je ne suis pas disponible, il y a un cours de rattrapage ?
+E|Tant mieux, ça change tout pour moi. Et par exemple, si je ne suis pas disponible le mardi, il y a un cours de rattrapage ?
+E|Très bien, je note. Et pour l'inscription, quels documents on doit donner, et jusqu'à quand on peut s'inscrire ?
+E|D'accord. Donc si je résume : je fais le test de positionnement en ligne, j'envoie ma pièce d'identité et une photo, et je règle en trois fois avant la fin du mois. C'est bien ça ?
+E|D'accord. Donc en résumé : je fais le test en ligne, j'envoie ma pièce d'identité et une photo, et je paie en trois fois avant la fin du mois. C'est bien ça ?
+E|Parfait, merci beaucoup pour toutes ces informations ! Je fais le test cette semaine et je vous rappelle pour confirmer mon inscription. Bonne journée !`;
 
-const expressions=['je vous appelle parce que','je souhaiterais','Est-ce que vous auriez','ça m’arrange','ça m\'arrange','c’est bien ça','c\'est bien ça','C’est noté','C\'est noté','Et à propos du niveau','c’est bon à savoir','c\'est bon à savoir','Donc si je comprends bien','D’accord','D\'accord','Justement, et pour les tarifs','ça me paraît un peu cher','Et si jamais','ça change tout pour moi','Très bien, je note','Et concernant l’inscription','Et concernant l\'inscription','Donc si je résume','Bonne journée'];
+const expressions=['je vous appelle parce que','je voudrais','Est-ce que vous avez','ça m’arrange','c’est bien ça','C’est noté','Et à propos','c’est bon à savoir','Donc si je comprends bien','D’accord','D\'accord','Justement','ça me paraît un peu cher','Et si jamais','ça change tout','Très bien, je note','Et pour l’inscription','Donc si je résumé','Bonne journée'];
 
-const data=raw.split('\n').map((line,i)=>{const role=line[0];const rest=line.slice(2);const idx=rest.lastIndexOf(' [');return{id:i,role,text:rest.slice(0,idx),annotation:rest.slice(idx+2,-1)}});
+const data=raw.split('\n').map((line,i)=>{
+  // Remove role prefix if present (e.g. "C|" or "E|")
+  let rest = line.trim();
+  let role = rest.startsWith('C') ? 'C' : 'E'; // default based on first char after prefix
+  if (rest.startsWith('C|') || rest.startsWith('E|')) {
+    role = rest[0]; // C or E
+    rest = rest.slice(2);
+  }
+  // Split on last occurrence of ' [' to separate text from annotation
+  const idx = rest.lastIndexOf(' [');
+  if (idx >= 0) {
+    return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.slice(0, idx).trim(), annotation: rest.slice(idx + 2, -1).trim() };
+  }
+  // No annotation — just text
+  return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.trim(), annotation: '' };
+});
 
 const translations = [
-  'Hello, this is Centre de langues International. How can I help you?',
   'Hello, I am calling because I would like to sign up for evening French courses to prepare for an exam. Do you have any spots available for the next session?',
-  'Yes, of course. We still have a few spots available for the session starting next month.',
-  'Great, that works for me. And what are the exact hours? The courses are in the evening, right?',
-  'Yes, twice a week, on Tuesday and Thursday, from 6:30 PM to 8:00 PM.',
+  'Ah, very good, that suits me. And what are the exact hours? The courses are in the evening, right?',
   'Noted. And about the level, is there absolutely a minimum level required to register, or can we start even as a beginner?',
-  'There is no minimum level, but we give each person a placement test to place them in the right group.',
   'Great, good to know. So if I understand correctly, the test is to find the group that matches my level. Is the test free?',
-  'Yes, the test is free and it takes about forty minutes. You can do it online or in person.',
-  'Okay, I would prefer to do it online, that will be simpler. By the way, about the rates, what is the price of the session and what is included in the price?',
-  'It is four hundred fifty dollars for twelve weeks, and it includes all course materials.',
+  'Okay, I would prefer to do it online, that will be simpler. By the way, about the rates, what is the price of the session and what does the price include? / What is included in the price?',
+  'It is a bit expensive for me',
+  'It seems a bit expensive to me',
   'Hmm, that seems a bit expensive to me, honestly. Are there any discounts, for example for students, or can we pay in several installments?',
-  'Yes, we offer payment in three installments, without additional fees.',
-  'Ah, that is reassuring, that changes everything for me. And if ever I am not available on Tuesday, is there another formula or a make-up class?',
-  'You can follow the same course on Saturday morning, or make it up with recordings.',
-  'Very well, noted. And about registration, what documents need to be provided, and until when can we register?',
-  'You need an ID card and a photo, and you have until the end of the month.',
-  'Okay. So if I summarize: I take the placement test online, I send my ID card and a photo, and I pay four hundred fifty dollars in three installments before the end of the month. Is that right?',
-  'That is exactly right.',
-  'Perfect. Thank you very much for all these details, I will take the test this week and I will call you back to confirm my registration. Have a good day!'
+  'Ah, great! That changes everything for me. And if one Tuesday I am not available, is there a make-up class?',
+  'Great, that changes everything for me. And for example, if I am not available on Tuesday, is there a make-up class?',
+  'Very well, noted. And about registration, what documents do we need to provide, and until when can we register?',
+  'Okay. So if I summarize: I take the placement test online, I send my ID card and a photo, and I pay in three installments before the end of the month. Is that right?',
+  'Okay. So in summary: I take the test online, I send my ID card and a photo, and I pay in three installments before the end of the month. Is that right?',
+  'Perfect, thank you very much for all this information! I will take the test this week and I will call you back to confirm my registration. Have a good day!'
 ];
 
 const spanishPhonetic = [
-  'Centro de idiomas Internacional, buenos días. ¿En qué puedo ayudarle hoy?',
   'Bonshúr, yú vú apél pársk kú yú suitré prondr de cúr de fransé dú suár pur preparé án egzamén. Ésk kú vú aurié de plas pur la próshén sesión?',
-  'Uí, bien sûr. Il nu resta kelke plas pour la session qui komansa le mwua prochain.',
   'Ah, très bien, ça m’arrange. Et ke son les orares egzaman? Le kurs ont lieu en soiré, c’est bien ça?',
-  'Uí, dous fois par semaine, le mardi et le jeudi, de dix-huit heures trenta à vingt heures.',
-  'Se noté. Et a propu du niveau, il fa absolutamente aver un niveau minimum para inscribir, o est ke pon komansar même en étant débutant?',
-  'Il ni a pa de niveau minimum, mais nous faisons passer un test de positionnement para placer chaque persona dans le bon grup.',
-  'Parfait, se bon a saver. Donc si kompran bien, le test servar à trouv le grup qui korason a mon nivel. Il es gratui, ce test?',
-  'Uí, le test es gratui et il durar environ quarante minutes. Vous pouvez le fer en ligne ou sur place.',
-  'Daccord, je préférerai le fer en ligne, ce serar plu simple. Justeman, et por les tarif, kel es le pri de la session, et kes ke se inklu dan se pri?',
-  'Se katr sen sankant dólares pour douz semaines, et sa comprend tu les suport de kurs.',
-  'Hum, ça me parai un peu cher, honnêtement. Est-ce quil ekziste des réduksion, por ejemplo pour les etudian, u est ke pon peier en pluri fois?',
-  'Uí, nu propon un paiment en troi fois, san fra suplementar.',
-  'Ah, c est rassurant, ça changar tout por moi. Et si jamais je ne sui pa disponible le mardi, est-ce quil y a un autra formulu u un kur de rattrap?',
-  'Vous pouvez suivr le mem kur le samdi matin, ou ratrapar avec les enregistrement.',
-  'Très bien, je notai. Et concernant linskrision, kel dokument fu-it furnir, e ju-ska kan pon se inscribir?',
-  'Il fa una pièce didentité et una foto, et vous avez jusquà la fin du mois.',
-  'Daccord. Donc si je resume: je fer le test de positionnement en ligne, je envoi ma pièce didentité et una foto, et je regle katr sen sankant dólares en troi fois avant la fin du mois. C’est bien ça?',
-  'Se eksaktaman sa.',
-  'Parfait. Merci beaucoup por tu se presision, je vais fer le test des esta semana e je vous raperai para konfirmar mi inskripsyon. Bon journei!'
+  'Se noté. Et a propu del nivel, il fa absolutamente aver un nivel minimum para inscribir, o est ke pon komansar mesmo en siendo débutant?',
+  'Parfait, se bon a saver. Donc si kompran bien, le test es para trouv le grup qui korason a mon nivel. Il es gratui, ce test?',
+  'Daccord, je préférerai le fer en línea, ce serar plu simple. Justeman, et por les tarif, kel es le pri de la session, et kes ke se inklu dan se pri?',
+  'Se un poco cher por moi',
+  'Se me parece un poco cher,',
+  'Hmm, ça me parai un poco cher, honnêtement. Est-ce ke il ekziste des réduksion, por ejemplo pour les etudian, o est ke pon peier en pluri fois?',
+  'Ah, tan mejo !, ça changar tout por moi. Et si un martes je ne sui pa disponible, il y a un kur de rattrap?',
+  'Tan mejo, ça changar tout por moi. Et por ejemplo, si je ne sui pa disponible le martes, il y a un kur de rattrap?',
+  'Très bien, je notai. Et por la inskripsyon, kel dokument on debe dar, e hasta ke pon se inscribir?',
+  'Daccord. Donc si je resume: je fer le test de positionnement en línea, je envoi ma pièce didentité y una foto, y je regle en troi veces antes la fin del mois. C’est bien ça?',
+  'Daccord. Donc en resumen: je fer le test en línea, je envoi ma pièce didentité y una foto, y je paye en troi veces avant la fin del mois. C’est bien ça?',
+  'Parfait. Merci mucho por todas esas informaciones ! Je fer le test esta semana y je vous raperai para konfirmar mi inskripsyon. Bon journei!'
 ];
 
 const $=id=>document.getElementById(id);
@@ -459,8 +456,7 @@ function update(){
   localStorage.setItem('dialogue-read', JSON.stringify([...read]));
   $('readCount').textContent = read.size + ' / ' + data.length;
   $('bar').style.width = (100 * read.size / data.length) + '%';
-  $('progressText').textContent = read.size + ' répliques étudiées sur ' + data.length;
-}
+  $('progressText').textContent = read.size + ' répliques étudiées sur ' + data.length;}
 
 // ---------- Recording ----------
 async function toggleRec(id, btn){
@@ -523,7 +519,6 @@ $('markAll').onclick = () => { read = new Set(data.map(x => x.id)); render(); };
 $('reset').onclick = () => { read.clear(); render(); };
 $('count').textContent = data.length;
 $('exprCount').textContent = expressions.length;
-render();
-</script>
+render();</script>
 </body>
 </html>
