@@ -1,5 +1,4 @@
 .DS_Store
-*.mp3
 *.webm
 node_modules/
 .env
