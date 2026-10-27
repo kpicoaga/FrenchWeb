@@ -168,6 +168,9 @@ let mediaRecorder=null, recChunks=[], recRepliqueId=null, recBtn=null;
 // ---------- TTS via Web Speech API ----------
 let currentTTSUtterance = null;
 let currentTTSBtn = null;
+let currentText = '';        // full text being spoken
+let currentOffset = 0;       // character offset where speech is
+let isPaused = false;
 
 function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function hl(t){let s=esc(t);if(!$('highToggle').checked)return s;for(const ph of [...expressions].sort((a,b)=>b.length-a.length)){const p=esc(ph);const i=s.toLowerCase().indexOf(p.toLowerCase());if(i>=0&&!s.slice(i,i+p.length).includes('<'))s=s.slice(0,i)+'<mark class="highlight">'+s.slice(i,i+p.length)+'</mark>'+s.slice(i+p.length)}return s}
@@ -180,30 +183,64 @@ function speak(text, btn){
     return;
   }
 
-  // If same button clicked while speaking → STOP
-  if (currentTTSBtn === btn && currentTTSUtterance) {
+  // If same button clicked while speaking → PAUSE
+  if (currentTTSBtn === btn && currentTTSUtterance && !isPaused) {
     try { window.speechSynthesis.cancel(); } catch(e) {}
-    resetTTSButton(btn);
-    currentTTSUtterance = null;
-    currentTTSBtn = null;
+    isPaused = true;
+    btn.textContent = '▶ Reprendre';
+    btn.classList.remove('speaking');
+    btn.classList.add('paused');
+    return;
+  }
+  // If same button clicked while paused → RESUME from offset
+  if (currentTTSBtn === btn && isPaused) {
+    isPaused = false;
+    btn.textContent = '⏸ Pause';
+    btn.classList.remove('paused');
+    btn.classList.add('speaking');
+    // Speak remaining text from currentOffset
+    const remaining = currentText.slice(currentOffset);
+    if (remaining.length > 0) {
+      const u = new SpeechSynthesisUtterance(remaining);
+      u.lang = 'fr-FR';
+      u.rate = 0.9;
+      u.pitch = 1.0;
+      const voices = window.speechSynthesis.getVoices();
+      const frVoices = voices.filter(v => v.lang.startsWith('fr'));
+      if (frVoices.length) u.voice = frVoices[0];
+      
+      u.onboundary = (e) => { currentOffset += (e.charIndex || 0) + (e.charLength || 0); };
+      u.onend = () => { resetTTSButton(btn); currentTTSUtterance = null; currentTTSBtn = null; isPaused = false; };
+      u.onerror = () => { resetTTSButton(btn); currentTTSUtterance = null; currentTTSBtn = null; isPaused = false; };
+      
+      currentTTSUtterance = u;
+      try { window.speechSynthesis.speak(u); } catch(e) { resetTTSButton(btn); currentTTSUtterance = null; currentTTSBtn = null; isPaused = false; }
+    } else {
+      resetTTSButton(btn);
+      currentTTSUtterance = null;
+      currentTTSBtn = null;
+      isPaused = false;
+    }
     return;
   }
   // Stop any current TTS from another button
   if (currentTTSUtterance) {
     try { window.speechSynthesis.cancel(); } catch(e) {}
+    isPaused = false;
     if (currentTTSBtn) resetTTSButton(currentTTSBtn);
   }
 
+  // Start fresh
+  currentText = text;
+  currentOffset = 0;
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'fr-FR';
   u.rate = 0.9;
   u.pitch = 1.0;
 
-  // Pick a French voice
   const voices = window.speechSynthesis.getVoices();
   const frVoices = voices.filter(v => v.lang.startsWith('fr'));
   if (frVoices.length) u.voice = frVoices[0];
-  // iPad: voices load async, try again after 500ms
   else if (voices.length === 0) {
     setTimeout(() => {
       const v2 = window.speechSynthesis.getVoices();
@@ -212,8 +249,12 @@ function speak(text, btn){
     }, 500);
   }
 
+  // Track position for pause/resume
+  u.onboundary = (e) => { 
+    currentOffset += (e.charIndex || 0) + (e.charLength || 0);
+  };
+
   btn.classList.add('speaking');
-  btn.disabled = false;
   btn.textContent = '⏸ Pause';
   currentTTSBtn = btn;
   currentTTSUtterance = u;
@@ -222,11 +263,13 @@ function speak(text, btn){
     resetTTSButton(btn); 
     currentTTSUtterance = null; 
     currentTTSBtn = null; 
+    isPaused = false; 
   };
   u.onerror = () => {
     resetTTSButton(btn);
     currentTTSUtterance = null;
     currentTTSBtn = null;
+    isPaused = false;
   };
 
   try {
@@ -235,15 +278,19 @@ function speak(text, btn){
     resetTTSButton(btn);
     currentTTSUtterance = null;
     currentTTSBtn = null;
+    isPaused = false;
   }
 }
 
 // Global stop — used by Stop button
 function stopAllTTS(){
   try { window.speechSynthesis.cancel(); } catch(e) {}
+  isPaused = false;
   if (currentTTSBtn) resetTTSButton(currentTTSBtn);
   currentTTSUtterance = null;
   currentTTSBtn = null;
+  currentText = '';
+  currentOffset = 0;
 }
 
 function resetTTSButton(btn){
