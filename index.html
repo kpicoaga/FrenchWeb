@@ -116,7 +116,7 @@ input[type=search]:focus{border-color:var(--blue)}
   <input type="search" id="search" placeholder="Ex. inscription, tarif, donc…">
   <div class="divider"></div>
   <h2>🔊 Prononciation</h2>
-  <small>Chaque réplique possède un bouton <b>Écouter</b> (voix Google française). Connexion internet requise.</small>
+  <small>Chaque réplique possède un bouton <b>Écouter</b> (voix navigateur française). Appuyez sur un bouton pour lire ou appuyez de nouveau pour arrêter.</small>
 </aside>
 <main class="main">
   <div class="toolbar">
@@ -164,128 +164,41 @@ let expanded=false;
 const audioNotes={};            // { repliqueId: [ {id, blobUrl} ] }
 let mediaRecorder=null, recChunks=[], recRepliqueId=null, recBtn=null;
 
-// ---------- TTS state ----------
-let currentTTSAudio = null;     // the <audio> element playing TTS
-let currentTTSBtn = null;       // button showing "speaking" state
-const ttsCache = new Map();     // text -> blobUrl (basic cache, session only)
+// ---------- TTS via Web Speech API ----------
+let currentTTSUtterance = null;
+let currentTTSBtn = null;
 
-function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function hl(t){let s=esc(t);if(!$('highToggle').checked)return s;for(const ph of [...expressions].sort((a,b)=>b.length-a.length)){const p=esc(ph);const i=s.toLowerCase().indexOf(p.toLowerCase());if(i>=0&&!s.slice(i,i+p.length).includes('<'))s=s.slice(0,i)+'<mark class="highlight">'+s.slice(i,i+p.length)+'</mark>'+s.slice(i+p.length)}return s}
-
-// ---------- TTS via Google Translate ----------
 function speak(text, btn){
-  // If already playing the same text, toggle off
-  if (currentTTSBtn === btn && currentTTSAudio && !currentTTSAudio.paused) {
-    currentTTSAudio.pause();
+  // If already playing, stop
+  if (currentTTSBtn === btn && currentTTSUtterance) {
+    window.speechSynthesis.cancel();
     resetTTSButton(btn);
     return;
   }
   // Stop any current TTS
-  if (currentTTSAudio) { currentTTSAudio.pause(); }
-  if (currentTTSBtn)    { resetTTSButton(currentTTSBtn); }
+  if (currentTTSUtterance) window.speechSynthesis.cancel();
+  if (currentTTSBtn) resetTTSButton(currentTTSBtn);
 
-  // Split long text into <=200-char chunks at word boundaries
-  const chunks = chunkText(text, 190);
-  if (!chunks.length) return;
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'fr-FR';
+  u.rate = 0.9;
+  u.pitch = 1.0;
 
-  btn.classList.add('loading');
-  btn.disabled = true;
+  // Try to pick a French voice
+  const voices = window.speechSynthesis.getVoices();
+  const frVoices = voices.filter(v => v.lang.startsWith('fr'));
+  if (frVoices.length) u.voice = frVoices[0];
 
-  // Fetch each chunk as a blob, then play sequentially
-  Promise.all(chunks.map(chunkToBlob))
-    .then(blobs => blobs.filter(Boolean))
-    .then(blobs => {
-      if (!blobs.length) throw new Error('empty');
-      playSequential(blobs, btn);
-    })
-    .catch(err => {
-      console.warn('TTS error:', err);
-      btn.classList.remove('loading');
-      btn.disabled = false;
-      alert("Impossible de lire la prononciation.\n\nVérifiez votre connexion internet. Si vous ouvrez le fichier en file://, essayez http://localhost (ex: python3 -m http.server).");
-    });
-}
-
-function chunkText(text, max){
-  // Split at punctuation first, then merge to <= max chars
-  const sentences = text.split(/(?<=[.!?…])\s+/);
-  const out = [];
-  let cur = '';
-  for (const s of sentences) {
-    if ((cur + ' ' + s).trim().length <= max) {
-      cur = (cur ? cur + ' ' : '') + s;
-    } else {
-      if (cur) out.push(cur);
-      if (s.length > max) {
-        // split long sentence at word boundaries
-        let words = s.split(/\s+/);
-        let line = '';
-        for (const w of words) {
-          if ((line + ' ' + w).trim().length <= max) {
-            line = (line ? line + ' ' : '') + w;
-          } else {
-            if (line) out.push(line);
-            line = w;
-          }
-        }
-        if (line) out.push(line);
-        cur = '';
-      } else {
-        cur = s;
-      }
-    }
-  }
-  if (cur) out.push(cur);
-  return out;
-}
-
-function chunkToBlob(chunk){
-  const key = chunk;
-  if (ttsCache.has(key)) return Promise.resolve(ttsCache.get(key));
-  const url = 'https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=fr&q='
-            + encodeURIComponent(chunk);
-  return fetch(url, { mode: 'cors' })
-    .then(r => {
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return r.blob();
-    })
-    .then(blob => {
-      if (blob.size < 500) throw new Error('Blob too small (likely blocked)');
-      const bUrl = URL.createObjectURL(blob);
-      ttsCache.set(key, bUrl);
-      return bUrl;
-    })
-    .catch(err => {
-      console.warn('chunk fetch failed:', err);
-      return null;
-    });
-}
-
-function playSequential(blobs, btn){
-  let i = 0;
-  btn.classList.remove('loading');
-  btn.disabled = false;
   btn.classList.add('speaking');
+  btn.disabled = true;
   btn.textContent = '⏸ Pause';
   currentTTSBtn = btn;
+  currentTTSUtterance = u;
 
-  function next(){
-    if (i >= blobs.length) {
-      resetTTSButton(btn);
-      currentTTSAudio = null;
-      currentTTSBtn = null;
-      return;
-    }
-    const a = new Audio(blobs[i++]);
-    currentTTSAudio = a;
-    a.onended = next;
-    a.onerror = next;
-    a.play().catch(err => {
-      console.warn('play failed:', err);
-      resetTTSButton(btn);
-    });
-  }
-  next();
+  u.onend = () => { resetTTSButton(btn); currentTTSUtterance = null; currentTTSBtn = null; };
+  u.onerror = () => { resetTTSButton(btn); currentTTSUtterance = null; currentTTSBtn = null; };
+
+  window.speechSynthesis.speak(u);
 }
 
 function resetTTSButton(btn){
@@ -373,8 +286,8 @@ function render(){
         // pause other user-audio
         document.querySelectorAll('audio').forEach(o => { if (o !== a && !o.paused) o.pause(); });
         // pause TTS
-        if (currentTTSAudio && !currentTTSAudio.paused) {
-          currentTTSAudio.pause();
+        if (window.speechSynthesis && window.speechSynthesis.speaking) {
+          window.speechSynthesis.cancel();
           if (currentTTSBtn) resetTTSButton(currentTTSBtn);
         }
       };
