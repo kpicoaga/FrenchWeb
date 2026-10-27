@@ -180,11 +180,11 @@ C|Bonjour, je vous appelle parce que je voudrais prendre des cours de français 
 E|Oui, bien sûr. Il nous reste quelques places pour la session qui commence le mois prochain. [RESPONSE: Confirmation positive, information de disponibilité]
 C|Ah, très bien, ça m'arrange. Et quels sont les horaires exactement ? Les cours (ont lieu)/(sont) en soirée, c'est bien ça ? [ENCHAINEMENT: "Et" - relance; "c'est bien ça?" - vérification/confirmation]
 E|Oui, deux fois par semaine, le mardi et le jeudi, de dix-huit heures trente à vingt heures. [INFORMATION: Horaires précis]
-C|C'est noté. (Et à propos / Et concernant) le niveau, (il faut avoir / il y a) un niveau minimum pour s'inscrire, ou peut-on commencer (au niveau) / en étant débutant ? [ENCHAINEMENT: "Et à propos" / "Et concernant" - thème niveau; question prérequis]
+C|C'est noté. Et à propos du niveau, faut-il avoir un niveau minimum pour s'inscrire, ou peut-on commencer en étant débutant ? [ENCHAINEMENT: "Et à propos" / "Et concernant" - thème niveau; question prérequis]
 E|Il n'y a pas de niveau minimum, mais nous faisons passer un test de positionnement pour placer chaque personne dans le bon groupe. [INFORMATION: Test de positionnement]
 C|Parfait, c'est bon à savoir. Donc si je comprends bien, le test est pour trouver le groupe qui correspond à mon niveau. Il est gratuit, ce test ? [ENCHAINEMENT: "Donc si je comprends bien" - résumé/check; question gratuité]
 E|Oui, le test est gratuit et il dure environ quarante minutes. Vous pouvez le faire en ligne ou sur place. [INFORMATION: Durée et options]
-C|D'accord, je préférerais le faire en ligne, ce sera plus simple. Justement, et pour les tarifs, quel est le prix de la session, et qu'est-ce que le prix comprend ? / Qu'est-ce qui est inclus dans le prix ? [ENCHAINEMENT: "Justement" - transition tarif; question inclusions]
+C|D'accord, je préférerais le faire en ligne, ce sera plus simple. Justement, et pour les tarifs, quel est le prix de la session, et qu'est-ce que le prix comprend ? [ENCHAINEMENT: "Justement" - transition tarif; question inclusions]
 E|C'est quatre cent cinquante dollars pour douze semaines, et ça comprend tous les supports de cours. [INFORMATION: Prix et inclusions]
 C|Hmm, ça me paraît un peu cher, honnêtement. Existe-t-il des réductions, par exemple pour les étudiants, ou peut-on payer en plusieurs fois ? [RÉACTION: "Hmm, ça me paraît un peu cher, honnêtement" - banque phrases; question réductions]
 E|Oui, nous proposons un paiement en trois fois, sans frais supplémentaires. [INFORMATION: Option paiement]
@@ -196,7 +196,7 @@ C|D'accord. Donc si je résume : je fais le test de positionnement en ligne, j'e
 E|C'est exactement ça. [CONFIRMATION]
 C|Parfait, merci beaucoup pour toutes ces informations ! Je fais le test cette semaine et je vous rappelle pour confirmer mon inscription. Bonne journée ! [RÉACTION: "Parfait"; FERMETURE: "Bonne journée!"]`;
 
-const expressions=['je vous appelle parce que','je voudrais','Avez-vous','ça m’arrange','c’est bien ça','C’est noté','Et à propos','c’est bon à savoir','Donc si je comprends bien','D’accord','D\'accord','Justement','ça me paraît un peu cher','Et si jamais','ça change tout','Très bien, je note','Et pour l’inscription','Donc si je résumé','Bonne journée'];
+const expressions=['je vous appelle parce que','je voudrais','Avez-vous','ça m\'arrange','c\'est bien ça','C\'est noté','Et à propos','c\'est bon à savoir','Donc si je comprends bien','D\'accord','Justement','ça me paraît un peu cher','Et si jamais','ça change tout','Très bien, je note','Et pour l\'inscription','Donc si je résume','Bonne journée'];
 
 const expressions2=['je vous appelle pour','Je m\'appelle','je pensais à','je ne suis pas sûr','c\'est bon à savoir','Et à propos de','comment ça fonctionne','Donc je peux','si vous fournissez','je passerai demain','Au revoir','Bonne journée'];
 
@@ -472,6 +472,114 @@ const spanishPhonetic3 = [
 
 const expressions3=['avant que tu partes','D\'abord','Et pendant','quelles sont les tâches','À propos des plantes','à quelle fréquence','Deux fois par semaine','des soins particuliers','Et concernant','une fois que','Justement','Et si jamais','au cas où','Dis-moi','un système d\'alarme','Si tu pouvais','Une autre chose','avant que ça expire','Ah, j\'y pense','Dernière question','Je m\'occupe de tout','ne t\'inquiète pas'];
 
+// ---------- Dialogue 4 : Louer un appartement ----------
+const raw4=`E|Bonjour, agence Lachance immobilier ! Comment puis-je vous aider ? [OUVERTURE: Formule d'accueil professionnelle - établit le contexte et la permission de questionner]
+C|Bonjour, je vous appelle au sujet de l'annonce que vous avez publiée pour un appartement de deux pièces. Est-il toujours disponible ? [OUVERTURE: "Je vous appelle au sujet de" - contexte et demande initiale]
+E|Oui, absolument, il est toujours libre. C'est un deux pièces de cinquante-cinq mètres carrés, au troisième étage, avec ascenseur. [RESPONSE: Confirmation positive + description sommaire]
+C|Très bien. Et quel est le loyer mensuel, s'il vous plaît ? [ENCHAINEMENT: "Et quel est" - question sur le loyer]
+E|Le loyer est de huit cent cinquante euros par mois, charges comprises. [INFORMATION: Loyer précis, charges incluses]
+C|D'accord, et qu'est-ce que ça comprend exactement, comme charges ? [ENCHAINEMENT: "D'accord, et qu'est-ce que" - précision sur les charges]
+E|L'eau, le chauffage collectif et l'entretien des parties communes. En revanche, l'électricité reste à votre charge. [INFORMATION: Détail des charges + exception électricité]
+C|Compris. Et pour le dépôt de garantie, quel est le montant ? [ENCHAINEMENT: "Compris. Et" - nouveau thème, dépôt de garantie]
+E|Le dépôt de garantie équivaut à un mois de loyer, soit huit cent cinquante euros, qui vous seront restitués à la fin du bail. [INFORMATION: Montant du dépôt + restitution]
+C|C'est noté. Et quelle est la durée du bail proposé ? [ENCHAINEMENT: "C'est noté. Et" - question sur la durée du bail]
+E|Le bail est d'une durée d'un an, renouvelable par tacite reconduction. [INFORMATION: Durée du bail + renouvellement automatique]
+C|Parfait. Et à quelle date pourrais-je emménager si je signe le bail ? [ENCHAINEMENT: "Parfait. Et" - question sur la date d'emménagement]
+E|Vous pourrez emménager dès le premier du mois prochain, si le dossier est complet. [INFORMATION: Date d'emménagement conditionnelle]
+C|Très bien. Justement, quels sont les documents à fournir pour constituer le dossier ? [ENCHAINEMENT: "Justement" - motif clé de la stratégie, le dossier]
+E|Il faut fournir une pièce d'identité, vos trois derniers bulletins de salaire et un justificatif de domicile. [INFORMATION: Liste des documents requis]
+C|D'accord. Et y a-t-il des conditions de revenus, un salaire minimum à justifier ? [ENCHAINEMENT: "D'accord. Et" - question sur les conditions de revenus]
+E|Oui, il faut que vos revenus mensuels représentent au moins trois fois le montant du loyer. [INFORMATION: Condition de revenus]
+C|Je vois. Et si je n'ai pas encore de garant, est-ce que c'est possible ? [ENCHAINEMENT: "Je vois. Et" - précision sur la caution]
+E|Un garant n'est pas obligatoire si vos revenus suffisent. Sinon, une caution locative peut être demandée. [INFORMATION: Alternative - garant ou caution]
+C|Ah, c'est bon à savoir. Et est-ce que je peux visiter l'appartement avant de signer ? [RÉACTION: "Ah, c'est bon à savoir"; ENCHAINEMENT: "Et est-ce que" - demande de visite]
+E|Bien sûr, je vous propose une visite jeudi après-midi. À quelle heure vous conviendrait-il ? [CONFIRMATION: Accord + proposition de créneau]
+C|Disons à dix-sept heures, si c'est possible ? [INFORMATION: Créneau proposé]
+E|Très bien, je note : jeudi à dix-sept heures. Je vous envoie l'adresse par message. [CONFIRMATION: Confirmation du rendez-vous]
+C|Parfait. Et une dernière question : les animaux sont-ils acceptés dans l'immeuble ? [ENCHAINEMENT: "Et une dernière question" - question supplémentaire, animaux]
+E|Oui, les animaux de petite taille sont acceptés, sous réserve de l'accord du propriétaire. [INFORMATION: Politique sur les animaux]
+C|Très bien. Merci beaucoup pour toutes ces précisions, je vous rappelle après la visite. Bonne journée ! [FERMETURE: "Merci" + formule de clôture]
+E|À bientôt, merci à vous, et bonne journée ! [RESPONSE: Réponse de clôture, formule polie]`;
+
+const data4=raw4.split('\n').map((line,i)=>{
+  // Remove role prefix if present (e.g. "C|" or "E|")
+  let rest = line.trim();
+  let role = rest.startsWith('C') ? 'C' : 'E'; // default based on first char after prefix
+  if (rest.startsWith('C|') || rest.startsWith('E|')) {
+    role = rest[0]; // C or E
+    rest = rest.slice(2);
+  }
+  // Split on last occurrence of ' [' to separate text from annotation
+  const idx = rest.lastIndexOf(' [');
+  if (idx >= 0) {
+    return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.slice(0, idx).trim(), annotation: rest.slice(idx + 2, -1).trim() };
+  }
+  // No annotation — just text
+  return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.trim(), annotation: '' };
+});
+
+const translations4 = [
+  'Hello, Lachance real estate agency! How can I help you?',
+  'Hello, I am calling about the advertisement you posted for a two-room apartment. Is it still available?',
+  'Yes, absolutely, it is still free. It is a two-room apartment of fifty-five square metres, on the third floor, with a lift.',
+  'Very good. And what is the monthly rent, please?',
+  'The rent is eight hundred and fifty euros per month, service charges included.',
+  'Okay, and what exactly does that cover, as far as charges?',
+  'Water, communal heating and maintenance of the common areas. However, electricity remains at your expense.',
+  'Understood. And for the security deposit, what is the amount?',
+  'The security deposit amounts to one month\'s rent, that is eight hundred and fifty euros, which will be returned to you at the end of the lease.',
+  'Noted. And what is the proposed lease length?',
+  'The lease is for a duration of one year, renewable by tacit agreement.',
+  'Perfect. And on what date could I move in if I sign the lease?',
+  'You can move in as early as the first of next month, provided the file is complete.',
+  'Very good. Actually, what documents do I need to provide to put the file together?',
+  'You need to provide an ID document, your three most recent pay slips and a proof of address.',
+  'Okay. And are there income requirements, a minimum salary to justify?',
+  'Yes, your monthly income must represent at least three times the amount of the rent.',
+  'I see. And if I do not have a guarantor yet, is that possible?',
+  'A guarantor is not compulsory if your income is sufficient. Otherwise, a rental guarantee may be requested.',
+  'Ah, that is good to know. And can I visit the apartment before signing?',
+  'Of course, I suggest a visit on Thursday afternoon. What time would suit you?',
+  'Let us say at five o\'clock, if that is possible?',
+  'Very good, I am writing it down: Thursday at five o\'clock. I am sending you the address by message.',
+  'Perfect. And one last question: are animals accepted in the building?',
+  'Yes, small animals are accepted, subject to the owner\'s agreement.',
+  'Very good. Thank you very much for all these details, I will call you back after the visit. Have a good day!',
+  'See you soon, thank you, and have a good day!'
+];
+
+const spanishPhonetic4 = [
+  'Bonzhur, Madam Lashans inmovilier, bonzhur ! Komán puis-zhu vuz e-de?',
+  'Bonzhur, zhu vu z-apel o suezh de lansons ke vuz ave publie pur un apartmán de do pyes. E-til tuzhur dispanibl?',
+  'Uí, absolumán, il e tuzhur libr. Se un do pyes de senkant-senk metr karre, o trwaziem etazh, avek asansér.',
+  'Tré bien. E kel e l luié mansuel, sil vu plé?',
+  'L luié e de wit san senkant euro par mua, sharzh kompriz.',
+  'Dakor, e kes-ke sa kompran egzaktemán, kom sharzh?',
+  'Leau, l chofaz kolektif e lantretien de le parti komin. An revánsh, lelek trisi te rest a votr sharzh.',
+  'Kompri. E pur l depo de garanti, kel e l montán?',
+  'L depo de garanti ekival a un mua de luié, sua wit san senkant euro, ki vu seron restitue a la fin dü bai.',
+  'Se note. E kel e la duré dü bai proposé?',
+  'L bai e dune duré dun an, rénuvabl par takit rekondüksión.',
+  'Parfé. E a kel dat puré-zh eménazhé si zhu sin l bai?',
+  'Vuz puré eménazhé dé l premié dü mua prochen, si l dosié e komplé.',
+  'Tré bien. Zhustemán, kel son le dokumán a furnir pur konstitue l dosié?',
+  'Il fo furnir un pyes didentite, vo trwa dernié bülten de salér e un zhustifikatif de domisil.',
+  'Dakor. E y a-til de kondisyon de revnu, un salér minimom a zhustifie?',
+  'Uí, il fo ke vo revnu mansiuel reprezant o mwen trwa fua l montán dü luié.',
+  'Zhu vua. E si zhu né pa ankor de garán, esk se posibl?',
+  'Un garán né pa obligatuár si vo revnu sífiz. Sinon, un kosión lokativ pé etr demandé.',
+  'A, se bon a savuar. E esk zhu pé vizité lapatimán avan de siné?',
+  'Biensur, zhu vu propos un vizit yödi aprémidi. A kel er vu konviendr-t-il?',
+  'Dizón a diset er, si se posibl?',
+  'Tré bien, zhu not : yödi a diset er. Zhu tanvoé ladres par mesash.',
+  'Parfé. E un dernyer kesción : le zanimo son-til aksepté dan limobl?',
+  'Uí, le zanimo de pétit tai son aksepté, sur rézerv de lakor dü propriétér.',
+  'Tré bien. Mersí bokuo pur tut se presisión, zhu vu rapel apré la vizit. Bonzhurne !',
+  'A byento, mersí a vu, e bonzhurne !'
+];
+
+const expressions4=['au sujet de','Est-il toujours disponible','Très bien','quel est le loyer mensuel','s\'il vous plaît','charges comprises','qu\'est-ce que ça comprend','En revanche','Compris','dépôt de garantie','C\'est noté','durée du bail','tacite reconduction','pourrais-je emménager','Justement','le dossier','bulletins de salaire','justificatif de domicile','conditions de revenus','au moins','Je vois','un garant','caution locative','c\'est bon à savoir','je peux visiter','je vous propose','Disons à','Je vous envoie','une dernière question','les animaux sont-ils','sous réserve','Je vous rappelle','Bonne journée'];
+
 // ---------- Conversation listings for landing page ----------
 const conversations = [
   {
@@ -498,6 +606,15 @@ const conversations = [
     speakers: ['E', 'C'],
     labels: { E: 'Votre ami(e)', C: 'Vous' },
     lines: 38
+  },
+  {
+    id: 'dialogue4',
+    title: 'Louer un appartement',
+    description: 'Appel à une agence immobilière pour se renseigner sur un appartement : loyer, charges, dépôt de garantie, bail et visite.',
+    topic: 'logement',
+    speakers: ['E', 'C'],
+    labels: { E: 'Agence immobilière', C: 'Vous' },
+    lines: 27
   }
 ];
 
@@ -531,7 +648,7 @@ function labelFor(role){
   if (currentConv && currentConv.labels && currentConv.labels[role]) return currentConv.labels[role];
   return role === 'E' ? 'Centre de langues' : 'Client(e)';
 }
-function hl(t){let s=esc(t);if(!$('highToggle').checked)return s;for(const ph of [...expressions].sort((a,b)=>b.length-a.length)){const p=esc(ph);const i=s.toLowerCase().indexOf(p.toLowerCase());if(i>=0&&!s.slice(i,i+p.length).includes('<'))s=s.slice(0,i)+'<mark class="highlight">'+s.slice(i,i+p.length)+'</mark>'+s.slice(i+p.length)}return s}
+function hl(t){let s=esc(t);if(!$('highToggle').checked)return s;for(const ph of [...activeExpressions].sort((a,b)=>b.length-a.length)){const p=esc(ph);const i=s.toLowerCase().indexOf(p.toLowerCase());if(i>=0&&!s.slice(i,i+p.length).includes('<'))s=s.slice(0,i)+'<mark class="highlight">'+s.slice(i,i+p.length)+'</mark>'+s.slice(i+p.length)}return s}
 
 function speak(text, btn){
   // Check support
@@ -887,6 +1004,11 @@ function loadDialogue(id){
     activeTranslations = translations3;
     activeSpanishPhonetic = spanishPhonetic3;
     activeExpressions = expressions3;
+  } else if (id === 'dialogue4') {
+    activeData = data4;
+    activeTranslations = translations4;
+    activeSpanishPhonetic = spanishPhonetic4;
+    activeExpressions = expressions4;
   } else {
     activeData = data;
     activeTranslations = translations;
