@@ -743,7 +743,69 @@ const conversations = [
     topic: 'quotidien',
     speakers: ['E', 'C'],
     labels: { E: 'Votre ami(e)', C: 'Vous' },
-    lines: 38
+    lines: 38,
+    templateBank: {
+      title: "Boîte à outils — Garder l'appartement d'un ami",
+      sub: "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+      toggle: "Afficher les structures utiles",
+      categories: [
+        {
+          name: "L'Ouverture & Clôture",
+          icon: "🚪",
+          role: 'c',
+          items: [
+            { fr: "Salut, ça va ?", note: "Ouverture informelle de l'ami — salutation entre amis", role: 'e' },
+            { fr: "Alors, avant que tu partes, j'aimerais te poser quelques questions pour être sûr de bien m'occuper de ton appartement. D'abord, quelles sont les dates exactes de ton absence ?", note: "Ouverture de la demande — annonce du début des questions", role: 'c' },
+            { fr: "Parfait. Merci pour toutes ces précisions. Je m'occupe de tout.", note: "Clôture réelle du dialogue — remerciement + assurance finale", role: 'c' }
+          ]
+        },
+        {
+          name: "Les Enchaînements",
+          icon: "🔗",
+          role: 'c',
+          items: [
+            { fr: "Très bien. Et pendant ton absence, quelles sont les tâches les plus importantes que tu veux que je fasse ?", note: "« Et pendant » — enchaîner vers les tâches", role: 'c' },
+            { fr: "Et concernant ton courrier, où dois-je le déposer une fois que je l'ai récupéré ?", note: "« Et concernant » — nouveau thème, le courrier", role: 'c' },
+            { fr: "Justement, y a-t-il quelqu'un qui pourrait passer pendant ton absence ? Un voisin ou un technicien que je devrais recevoir ?", note: "« Justement » — question sur les visiteurs potentiels", role: 'c' },
+            { fr: "Une autre chose, dois-je ouvrir un peu les fenêtres de temps en temps pour aérer l'appartement ?", note: "« Une autre chose » — question supplémentaire", role: 'c' },
+            { fr: "Ah, j'y pense. Dois-je vérifier quelque chose concernant le chauffage ou la climatisation pendant que tu n'es pas là ?", note: "« Ah, j'y pense » — pensée ajoutée en cours d'échange", role: 'c' }
+          ]
+        },
+        {
+          name: "Les Réactions",
+          icon: "😌",
+          role: 'c',
+          items: [
+            { fr: "Salut ! Oui, ça va bien. Et toi ?", note: "Réponse à la salutation + question miroir", role: 'c' },
+            { fr: "Très bien.", note: "Accusé de réception (récurent)", role: 'c' },
+            { fr: "Parfait.", note: "Accord positif (récurent)", role: 'c' },
+            { fr: "D'accord.", note: "Accord neutre", role: 'c' },
+            { fr: "Je m'occupe de tout.", note: "Réassurance finale — prise en charge complète", role: 'c' }
+          ]
+        },
+        {
+          name: "L'Imprévu",
+          icon: "⚠️",
+          role: 'c',
+          items: [
+            { fr: "Très bien. Et si jamais il y a un problème avec l'appartement, à qui dois-je téléphoner ?", note: "« Et si jamais » — scénario de secours, contact en cas de problème", role: 'c' },
+            { fr: "Très bien. Et où se trouve le disjoncteur au cas où il y aurait une coupure d'électricité ?", note: "« Au cas où » + conditionnel (il y aurait) — question de secours", role: 'c' },
+            { fr: "Très bien. Dernière question au cas où tu rentrerais plus tôt ou plus tard : comment puis-je être informé ?", note: "« Au cas où » + conditionnel (tu rentrerais) — clôture des questions", role: 'c' },
+            { fr: "Si tu pouvais les sortir jeudi soir, ce serait parfait.", note: "Demande polie avec conditionnel (si + imparfait → conditionnel)", role: 'e' }
+          ]
+        },
+        {
+          name: "La Grammaire Utile",
+          icon: "📘",
+          role: 'c',
+          items: [
+            { fr: "avant que tu partes, j'aimerais te poser quelques questions", note: "Subjonctif après « avant que » (partes)", role: 'c' },
+            { fr: "quelles sont les tâches les plus importantes que tu veux que je fasse ?", note: "Subjonctif après « veux que » (fasse)", role: 'c' },
+            { fr: "au cas où il y aurait une coupure d'électricité", note: "Conditionnel après « au cas où » (il y aurait)", role: 'c' }
+          ]
+        }
+      ]
+    }
   },
   {
     id: 'dialogue4',
