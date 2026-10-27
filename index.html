@@ -70,6 +70,9 @@ input[type=search]:focus{border-color:var(--blue)}
 .audio-btn:hover{background:#35456b;border-color:var(--blue)}
 .audio-btn.recording{background:#4a2a2a;border-color:var(--rec);animation:pulse 1s infinite}
 .audio-btn.speaking{background:#234e52;border-color:var(--mint);color:#a9ffdf}
+.audio-btn.playall-playing{background:#234e52;border-color:var(--gold);color:#ffe09b}
+.row.playall-active{animation:playall-glow 1.2s ease-in-out infinite alternate}
+@keyframes playall-glow{from{box-shadow:0 0 4px rgba(112,226,193,.25)}to{box-shadow:0 0 18px 3px rgba(112,226,193,.7)}}
 .audio-btn.paused{background:#3a3a2a;border-color:var(--gold);color:#ffe09b}
 .audio-btn.loading{opacity:.7;cursor:wait}
 
@@ -197,6 +200,7 @@ input[type=search]:focus{border-color:var(--blue)}
           <div class="tools">
             <button id="expand">Tout développer</button>
             <button id="markAll">Tout marquer comme lu</button>
+            <button id="playAll">▶️ Écouter tout le dialogue</button>
           </div>
         </div>
         <div class="chat" id="chat"></div>
@@ -1062,6 +1066,9 @@ let currentTTSBtn = null;
 let currentText = '';        // full text being spoken
 let currentOffset = 0;       // character offset where speech is
 let isPaused = false;
+// Play-all sequence state
+let playAllActive = false;
+let playAllIndex = -1;
 
 function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function labelFor(role){
@@ -1188,6 +1195,76 @@ function stopAllTTS(){
   currentOffset = 0;
 }
 
+// ---------- Écouter tout le dialogue ----------
+function playAllLines(){
+  const btn = $('playAll');
+  if (btn.disabled) return;
+  btn.disabled = true;
+  playAllActive = true;
+  playAllIndex = 0;
+  btn.textContent = '⏹ Arrêter';
+  btn.classList.add('playall-playing');
+  advancePlayAll();
+}
+
+function advancePlayAll(){
+  if (!playAllActive || playAllIndex >= activeData.length) { stopPlayAll(); return; }
+  const d = activeData[playAllIndex];
+  // Highlight the row
+  clearPlayAllHighlight();
+  const row = $('chat').querySelector(`.row[data-id="${d.id}"]`);
+  if (row) row.classList.add('playall-active');
+  // Scroll the highlighted row into view
+  if (row && row.scrollIntoView) row.scrollIntoView({behavior:'smooth', block:'center'});
+  // Speak with callbacks driving the sequence
+  const onDone = () => {
+    if (!playAllActive) return;
+    playAllIndex++;
+    advancePlayAll();
+  };
+  speakPlayAll(d.text, onDone);
+}
+
+function speakPlayAll(text, onDone){
+  if (!window.speechSynthesis) { onDone(); return; }
+  // Stop any other ongoing TTS first
+  try { window.speechSynthesis.cancel(); } catch(e) {}
+  isPaused = false;
+  if (currentTTSBtn) resetTTSButton(currentTTSBtn);
+
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'fr-FR';
+  u.rate = 0.9;
+  u.pitch = 1.0;
+  const voices = window.speechSynthesis.getVoices();
+  const frVoices = voices.filter(v => v.lang.startsWith('fr'));
+  if (frVoices.length) u.voice = frVoices[0];
+  currentTTSUtterance = u;
+  currentTTSBtn = null;
+  currentText = text;
+  currentOffset = 0;
+
+  u.onend = () => { currentTTSUtterance = null; onDone(); };
+  u.onerror = () => { currentTTSUtterance = null; onDone(); };
+
+  try { window.speechSynthesis.speak(u); } catch(e) { currentTTSUtterance = null; onDone(); }
+}
+
+function stopPlayAll(){
+  playAllActive = false;
+  try { window.speechSynthesis.cancel(); } catch(e) {}
+  isPaused = false;
+  if (currentTTSBtn) resetTTSButton(currentTTSBtn);
+  currentTTSUtterance = null;
+  clearPlayAllHighlight();
+  const btn = $('playAll');
+  if (btn) { btn.disabled = false; btn.textContent = '▶️ Écouter tout le dialogue'; btn.classList.remove('playall-playing'); }
+}
+
+function clearPlayAllHighlight(){
+  document.querySelectorAll('.row.playall-active').forEach(r => r.classList.remove('playall-active'));
+}
+
 function resetTTSButton(btn){
   if (!btn) return;
   btn.classList.remove('speaking','paused','loading');
@@ -1262,6 +1339,7 @@ function render(){
     el.querySelectorAll('.speak-btn').forEach(b => {
       b.onclick = e => {
         e.preventDefault(); e.stopPropagation();
+        if (playAllActive) stopPlayAll(); // single-line Écouter interrupts play-all
         speak(b.dataset.text, b);
       };
     });
@@ -1270,6 +1348,7 @@ function render(){
     el.querySelectorAll('.stop-btn').forEach(b => {
       b.onclick = e => {
         e.preventDefault(); e.stopPropagation();
+        if (playAllActive) stopPlayAll();
         stopAllTTS();
       };
     });
@@ -1293,6 +1372,7 @@ function render(){
         document.querySelectorAll('audio').forEach(o => { if (o !== a && !o.paused) o.pause(); });
         // pause TTS
         if (window.speechSynthesis && window.speechSynthesis.speaking) {
+          if (playAllActive) stopPlayAll();
           window.speechSynthesis.cancel();
           if (currentTTSBtn) resetTTSButton(currentTTSBtn);
         }
@@ -1393,6 +1473,7 @@ $('expand').onclick = () => {
   document.querySelectorAll('details.notes').forEach(x => x.open = expanded);
 };
 $('markAll').onclick = () => { read = new Set(activeData.map(x => x.id)); render(); };
+$('playAll').onclick = () => { playAllActive ? stopPlayAll() : playAllLines(); };
 $('reset').onclick = () => { read.clear(); render(); };
 $('count').textContent = activeData.length;
 $('exprCount').textContent = activeExpressions.length;
