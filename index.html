@@ -83,7 +83,7 @@ input[type=search]:focus{border-color:var(--blue)}
 .card h3{margin:0;font-size:17px;line-height:1.3}
 .card p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.5}
 .card-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.topic-tag{font-size:10px;font-weight:800;letter-spacing:.04em;background:#35445f;color:#d5e3ff;padding:3px 8px;border-radius:6px}
+.topic-tag{display:inline-block;max-width:100%;white-space:normal;line-height:1.35;font-size:10px;font-weight:800;letter-spacing:.04em;background:#35445f;color:#d5e3ff;padding:3px 8px;border-radius:6px}
 .task-section{display:block;width:100%;margin:0 0 10px}
 .task-section + .task-section{margin-top:34px}
 .task-section h2{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:800;letter-spacing:.03em;margin:0 0 12px;text-align:left}
@@ -689,7 +689,7 @@ const conversations = [
     id: 'dialogue1',
     title: 'Inscription aux cours de français',
     description: 'Appel téléphonique pour s\'inscrire à des cours de français du soir pour préparer l\'examen TCF Canada.',
-    topic: 'scolaire',
+    topic: '4. Education',
     task: 'tache2',
     speakers: ['E', 'C'],
     lines: 20,
@@ -758,7 +758,7 @@ const conversations = [
     id: 'dialogue2',
     title: 'Ouverture de compte bancaire',
     description: 'Appel téléphonique pour ouvrir un nouveau compte en banque.',
-    topic: 'bancaire',
+    topic: '13. Administrative & banking',
     task: 'tache2',
     speakers: ['E', 'C'],
     lines: 15,
@@ -825,7 +825,7 @@ const conversations = [
     id: 'dialogue3',
     title: 'Garder l\'appartement d\'un ami',
     description: 'Un ami part quelques jours et vous demande de vous occuper de son appartement : plantes, courrier, poubelles et urgences.',
-    topic: 'quotidien',
+    topic: '1. Housing',
     task: 'tache2',
     speakers: ['E', 'C'],
     labels: { E: 'Votre ami(e)', C: 'Vous' },
@@ -897,7 +897,7 @@ const conversations = [
     id: 'dialogue4',
     title: 'Louer un appartement',
     description: 'Appel à une agence immobilière pour se renseigner sur un appartement : loyer, charges, dépôt de garantie, bail et visite.',
-    topic: 'logement',
+    topic: '1. Housing',
     task: 'tache2',
     speakers: ['E', 'C'],
     labels: { E: 'Agence immobilière', C: 'Vous' },
@@ -968,7 +968,7 @@ const conversations = [
     id: 'dialogue5',
     title: 'Apprendre une langue étrangère dès l\'enfance',
     description: 'Simulation TCF : réponse argumentée sur l\'apprentissage précoce des langues — avantages linguistiques, cognitifs et culturels.',
-    topic: 'expression orale',
+    topic: '4. Education',
     task: 'tache3',
     speakers: ['E', 'C'],
     labels: { E: 'Examinatrice', C: 'Candidat(e)' },
