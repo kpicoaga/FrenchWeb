@@ -1385,7 +1385,7 @@ function audioBlock(id, text, partUrl){
   let h = `<details class="audio-notes" open>
     <summary>🎙️ Audio & prononciation (${notes.length})</summary>
     <div class="audio-panel">
-    ${partUrl ? '<div class="audio-item"><audio controls src="' + esc(partUrl) + '" preload="metadata"></audio></div>' : ''}
+    ${partUrl ? '<div class="audio-item"><audio controls src="' + esc(partUrl) + '" preload="metadata" onerror="this.closest(\'.audio-item\').style.display=\'none\'"></audio></div>' : ''}
       <button class="audio-btn speak-btn" data-text="${esc(text)}">🔊 Écouter</button>
       <button class="audio-btn stop-btn" data-id="${id}">⏹ Stop</button>
       <button class="audio-btn record-btn" data-id="${id}">⏺ Enregistrer</button>
@@ -1696,7 +1696,12 @@ function loadDialogue(id){
     activeExpressions = expressions;
   }
 
-  activeAudioParts = conv.audioParts || null;
+  // Per-line MP3 parts: use an explicit audioParts array if present (dialogue2),
+  // otherwise auto-discover them from the folder convention part_01..part_NN.
+  activeAudioParts = Array.isArray(conv.audioParts)
+    ? conv.audioParts
+    : Array.from({ length: activeData.length }, (_, i) =>
+        'Dialoguemp3/' + id + '/part_' + String(i + 1).padStart(2, '0') + '.mp3');
 
   // Re-render the dialogue
   render();
