@@ -139,8 +139,8 @@ input[type=search]:focus{border-color:var(--blue)}
     <div class="layout">
       <aside class="side">
         <h2>Participants</h2>
-        <div class="legend"><span class="dot"></span><span><b>E</b> · Employé(e) du centre</span></div>
-        <div class="legend"><span class="dot c"></span><span><b>C</b> · Client(e)</span></div>
+        <div class="legend"><span class="dot"></span><span><b>E</b> · <span id="legendE">Employé(e) du centre</span></span></div>
+        <div class="legend"><span class="dot c"></span><span><b>C</b> · <span id="legendC">Client(e)</span></span></div>
         <div class="divider"></div>
         <h2>Personnaliser l’étude</h2>
         <label class="check"><input type="checkbox" id="notesToggle" checked>Afficher les annotations</label>
@@ -332,6 +332,146 @@ const spanishPhonetic2 = [
   'Mersí! A demán. Bon jurne.'
 ];
 
+const raw3=`E|Salut, ça va ? [OUVERTURE: Formule de salutation informelle entre amis]
+C|Salut ! Oui, ça va bien. Et toi ? [RESPONSE: Réponse à la salutation + question miroir]
+E|Je vais bien, merci. [RESPONSE: Réponse polie à la question]
+C|Alors, avant que tu partes, j'aimerais te poser quelques questions pour être sûr de bien m'occuper de ton appartement. D'abord, quelles sont les dates exactes de ton absence ? [OUVERTURE: "Avant que tu partes" - annonce le début des questions; première question sur les dates]
+E|Je pars du 12 au 17. [INFORMATION: Dates de l'absence]
+C|Très bien. Et pendant ton absence, quelles sont les tâches les plus importantes que tu veux que je fasse ? [RÉACTION: "Très bien"; ENCHAINEMENT: "Et pendant" - nouvelle question sur les tâches]
+E|Principalement arroser les plantes et vérifier le courrier. [INFORMATION: Tâches principales]
+C|À propos des plantes, à quelle fréquence veux-tu que je les arrose ? [ENCHAINEMENT: "À propos de" - précision sur les plantes]
+E|Deux fois par semaine, c'est suffisant. [INFORMATION: Fréquence précise]
+C|Parfait. Et où se trouvent les produits pour les plantes ? Je préfère vérifier avant. [RÉACTION: "Parfait"; ENCHAINEMENT: "Et où" - localisation des produits]
+E|Ils sont dans le placard sous l'évier. [INFORMATION: Localisation précise]
+C|Très bien. Est-ce que certaines plantes demandent des soins particuliers ? [ENCHAINEMENT: "Est-ce que" - question sur les soins particuliers]
+E|Oui, seulement celle du salon. Elle aime avoir peu d'eau. [INFORMATION: Soin particulier]
+C|Et concernant ton courrier, où dois-je le déposer une fois que je l'ai récupéré ? [ENCHAINEMENT: "Et concernant" - nouveau thème, le courrier]
+E|Tu peux le laisser sur la table de la cuisine. [INFORMATION: Endroit pour le courrier]
+C|Justement, y a-t-il quelqu'un qui pourrait passer pendant ton absence ? Un voisin ou un technicien que je devrais recevoir ? [ENCHAINEMENT: "Justement" - question sur les visiteurs potentiels]
+E|Non, personne de prévu. [INFORMATION: Réponse négative]
+C|Très bien. Et si jamais il y a un problème avec l'appartement, à qui dois-je téléphoner ? [ENCHAINEMENT: "Et si jamais" - question d'urgence, motif clé de la stratégie]
+E|Appelle simplement mon propriétaire. Son numéro est sur le frigo. [INFORMATION: Contact en cas de problème]
+C|Parfait. Dis-moi, y a-t-il un système d'alarme ? Si oui, comment puis-je l'activer ou le désactiver ? [RÉACTION: "Parfait, dis-moi"; ENCHAINEMENT: question sur le système d'alarme]
+E|Non, je n'ai pas d'alarme, rien à faire de ce côté-là. [INFORMATION: Pas de système d'alarme]
+C|D'accord. Et pour les poubelles, veux-tu que je les sorte à un moment précis ? [ENCHAINEMENT: "D'accord. Et pour" - nouvelle question, les poubelles]
+E|Si tu pouvais les sortir jeudi soir, ce serait parfait. [INFORMATION: Jour précis pour les poubelles]
+C|Très bien. Où dois-je trouver les sacs de rechange ? [ENCHAINEMENT: Question de suivi, les sacs de rechange]
+E|Dans le premier tiroir à droite de l'évier. [INFORMATION: Localisation des sacs]
+C|Une autre chose, dois-je ouvrir un peu les fenêtres de temps en temps pour aérer l'appartement ? [ENCHAINEMENT: "Une autre chose" - nouvelle question, l'aération]
+E|Oui, si tu peux aérer dix minutes à chaque visite, c'est super. [INFORMATION: Recommandation d'aération]
+C|Parfait. Et au niveau de la nourriture dans le frigo, veux-tu que je jette quelque chose avant que ça expire ? [RÉACTION: "Parfait"; ENCHAINEMENT: "Et au niveau de" - la nourriture]
+E|Oui, il y a quelques fruits que tu peux jeter si tu vois qu'ils ne sont plus bons. [INFORMATION: Nourriture à jeter]
+C|Ah, j'y pense. Dois-je vérifier quelque chose concernant le chauffage ou la climatisation pendant que tu n'es pas là ? [ENCHAINEMENT: "Ah, j'y pense" - question supplémentaire, chauffage]
+E|Oui, laisse le chauffage au niveau deux, ça suffit. [INFORMATION: Consigne pour le chauffage]
+C|Très bien. Et où se trouve le disjoncteur au cas où il y aurait une coupure d'électricité ? [ENCHAINEMENT: "Au cas où" - question de secours, le disjoncteur]
+E|Il est dans le petit placard à côté de la salle de bain. [INFORMATION: Localisation du disjoncteur]
+C|D'accord. Veux-tu que je m'occupe aussi de ton chat, ou n'y a-t-il aucun animal à la maison ? [ENCHAINEMENT: "Veux-tu" - dernière vérification, les animaux]
+E|Aucun animal, donc rien à faire de ce côté-là. [INFORMATION: Réponse sur les animaux]
+C|Très bien. Dernière question au cas où tu rentrerais plus tôt ou plus tard : comment puis-je être informé ? [ENCHAINEMENT: "Dernière question" - clôture des questions]
+E|Je t'enverrai un message, ne t'inquiète pas. [RESPONSE: Réponse rassurante]
+C|Parfait. Merci pour toutes ces précisions. Je m'occupe de tout. [FERMETURE: "Merci" + formule de clôture de l'échange]`;
+
+const data3=raw3.split('\n').map((line,i)=>{
+  // Remove role prefix if present (e.g. "C|" or "E|")
+  let rest = line.trim();
+  let role = rest.startsWith('C') ? 'C' : 'E'; // default based on first char after prefix
+  if (rest.startsWith('C|') || rest.startsWith('E|')) {
+    role = rest[0]; // C or E
+    rest = rest.slice(2);
+  }
+  // Split on last occurrence of ' [' to separate text from annotation
+  const idx = rest.lastIndexOf(' [');
+  if (idx >= 0) {
+    return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.slice(0, idx).trim(), annotation: rest.slice(idx + 2, -1).trim() };
+  }
+  // No annotation — just text
+  return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.trim(), annotation: '' };
+});
+
+const translations3 = [
+  'Hi, how are you?',
+  'Hi! I am doing well. And you?',
+  'I am doing fine, thanks.',
+  'So, before you leave, I would like to ask you a few questions to make sure I take good care of your apartment. First, what are the exact dates of your absence?',
+  'I am leaving from the 12th to the 17th.',
+  'Very good. And while you are away, what are the most important tasks you want me to do?',
+  'Mainly watering the plants and checking the mail.',
+  'About the plants, how often do you want me to water them?',
+  'Twice a week is enough.',
+  'Perfect. And where are the plant products? I would rather check beforehand.',
+  'They are in the cupboard under the sink.',
+  'Very good. Do some plants need special care?',
+  'Yes, only the one in the living room. It likes very little water.',
+  'And regarding your mail, where should I put it once I have picked it up?',
+  'You can leave it on the kitchen table.',
+  'Actually, is there anyone who might come by while you are away? A neighbour or a technician I should receive?',
+  'No, no one is planned.',
+  'Very good. And if there is ever a problem with the apartment, who should I call?',
+  'Just call my landlord. His number is on the fridge.',
+  'Perfect. Tell me, is there a burglar alarm? If so, how do I turn it on or off?',
+  'No, I do not have an alarm, nothing to do on that front.',
+  'Okay. And about the rubbish, do you want me to take it out at a specific time?',
+  'If you could take it out on Thursday evening, that would be perfect.',
+  'Very good. Where should I find the spare bags?',
+  'In the first drawer to the right of the sink.',
+  'One more thing, should I open the windows from time to time to air out the apartment?',
+  'Yes, if you can air it out for ten minutes each visit, that is great.',
+  'Perfect. And what about the food in the fridge, do you want me to throw anything away before it expires?',
+  'Yes, there are a few fruits you can throw away if you see they are no longer good.',
+  'Oh, that reminds me. Should I check anything regarding the heating or the air conditioning while you are away?',
+  'Yes, leave the heating at level two, that is enough.',
+  'Very good. And where is the circuit breaker in case there is a power cut?',
+  'It is in the small cupboard next to the bathroom.',
+  'Okay. Do you want me to also take care of your cat, or is there no animal at home?',
+  'No animal, so nothing to do on that front.',
+  'Very good. Last question, in case you come back earlier or later: how can I be informed?',
+  'I will send you a message, do not worry.',
+  'Perfect. Thank you for all these details. I will take care of everything.'
+];
+
+const spanishPhonetic3 = [
+  'Saliu, sa va?',
+  'Saliu ! Uí, sa va bién. E tua?',
+  'Yu va bién, mersí.',
+  'Alór, avan ke tu part, yomeré te posé kelk kesción pur ètr sir de bién mokupe de ton apartmán. Dabor, kel son le dat egzakt de ton absáns?',
+  'Yu par du duz o diset.',
+  'Tré bien. E pandán ton absáns, kel son le tás le plu impotan ke tu vé ke yu fás?',
+  'Pransipalman arrosé le plant e verifié le kurier.',
+  'A própu de plant, a kel frékans vé-tu ke yu le zarros?',
+  'Dé fua par seman, se sífizán.',
+  'Parfé. E u se truv le produi pur le plant? Yu préfér verifie avan.',
+  'Il son dan le plakár su lévie.',
+  'Tré bien. Esk cierten plant demand de suen partikulier?',
+  'Uí, sulman selui dü salon. El em avuar pu do.',
+  'E konsernán ton kurier, u duazh yu le dépozé un fua ke yu le rékupéré?',
+  'Tu pé le lesé sur la tabl de la kuisin.',
+  'Justemán, y a-til kelkún ki puré pasé pandán ton absáns? Un vuazin u un teknikien ke yu duéré resuavuar?',
+  'Non, person de prévu.',
+  'Tré bien. E si yamé il ya un problem avek lapatimán, a ki duazh yu tele foné?',
+  'Apel senciman mon propietér. Son numéro e sur le frigo.',
+  'Parfé. Di-mua, y a-til un sistém dalarm? Si ua, komán puis-yu laktive o le desaktive?',
+  'Non, yu né pa dalarm, rien a fer de s koté la.',
+  'Dakor. E pur le pubel, vé-tu ke yu le sort a un momán presi?',
+  'Si tu puvé le sorti yudi suar, se seré parfé.',
+  'Tré bien. U duazh yu truvé le sak de rechánzh?',
+  'Dan l premié tiruár a drut de lévie.',
+  'Un otr chos, duazh yu uvrir un pu le fanetr de tan an tan pur aeré lapatimán?',
+  'Uí, si tu pé aeré dis minut a sak vizit, se super.',
+  'Parfé. E o nivó de la nouritur dan l frigo, vé-tu ke yu yet kelk chos avan ke sa expir?',
+  'Uí, il ya kelk frui ke tu pé yeté si tu vua kil né plu bon.',
+  'A, yu pense. Duazh yu verifie kelk chos konsernán le chofaj o la klimatisasión pandán ke tu né pa la?',
+  'Uí, les le chofaj o nivó do, sa sífiz.',
+  'Tré bien. E u se truv le disyontér o kaz u il yoré un kupur delek trisité?',
+  'Il e dan l peti plakár a koté de la sal de bén.',
+  'Dakor. Vé-tu ke yu mokupe osi de ton cha, u néa til okun animó a la mezon?',
+  'Okun animó, donk rien a fer de s koté la.',
+  'Tré bien. Dernier kesción o kaz u tu rantré plu tor o plu tar : komán puis-zh ètr informé?',
+  'Yu tanveré un mesash, ne tenkiet pa.',
+  'Parfé. Mersí pur tut se presisión. Yu mokupe de tu.'
+];
+
+const expressions3=['avant que tu partes','D\'abord','Et pendant','quelles sont les tâches','À propos des plantes','à quelle fréquence','Deux fois par semaine','des soins particuliers','Et concernant','une fois que','Justement','Et si jamais','au cas où','Dis-moi','un système d\'alarme','Si tu pouvais','Une autre chose','avant que ça expire','Ah, j\'y pense','Dernière question','Je m\'occupe de tout','ne t\'inquiète pas'];
+
 // ---------- Conversation listings for landing page ----------
 const conversations = [
   {
@@ -349,11 +489,21 @@ const conversations = [
     topic: 'bancaire',
     speakers: ['E', 'C'],
     lines: 15
+  },
+  {
+    id: 'dialogue3',
+    title: 'Garder l\'appartement d\'un ami',
+    description: 'Un ami part quelques jours et vous demande de vous occuper de son appartement : plantes, courrier, poubelles et urgences.',
+    topic: 'quotidien',
+    speakers: ['E', 'C'],
+    labels: { E: 'Votre ami(e)', C: 'Vous' },
+    lines: 38
   }
 ];
 
 // ---------- View state ----------
 let currentView = 'menu'; // 'menu' or 'dialogue'
+let currentConv = null;   // active conversation object (for role labels)
 
 // Active dialogue data (switched by loadDialogue)
 let activeData = data;
@@ -377,6 +527,10 @@ let currentOffset = 0;       // character offset where speech is
 let isPaused = false;
 
 function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function labelFor(role){
+  if (currentConv && currentConv.labels && currentConv.labels[role]) return currentConv.labels[role];
+  return role === 'E' ? 'Centre de langues' : 'Client(e)';
+}
 function hl(t){let s=esc(t);if(!$('highToggle').checked)return s;for(const ph of [...expressions].sort((a,b)=>b.length-a.length)){const p=esc(ph);const i=s.toLowerCase().indexOf(p.toLowerCase());if(i>=0&&!s.slice(i,i+p.length).includes('<'))s=s.slice(0,i)+'<mark class="highlight">'+s.slice(i,i+p.length)+'</mark>'+s.slice(i+p.length)}return s}
 
 function speak(text, btn){
@@ -535,7 +689,7 @@ function render(){
     return `<article class="row ${d.role==='C'?'c':''}" data-id="${d.id}">
       <div class="avatar">${d.role}</div>
       <div class="bubble">
-        <div class="meta">${d.role==='E'?'Centre de langues':'Client(e)'} · ${String(d.id+1).padStart(2,'0')}</div>
+        <div class="meta">${labelFor(d.role)} · ${String(d.id+1).padStart(2,'0')}</div>
         <div class="spoken ${$('practiceToggle').checked&&d.role==='C'?'hidden-answer':''}">${hl(d.text)}</div>
         <details class="translate-box" style="margin-top:8px;border:1px solid var(--border);border-radius:8px;background:#18243c;padding:8px">
           <summary style="cursor:pointer;color:var(--blue);font-size:11px;font-weight:600">🇺🇸 English · 🇪🇸 Fonética español</summary>
@@ -688,8 +842,8 @@ function renderMenu(){
   grid.innerHTML = conversations.map(c => {
     // Format speakers with labels
     const speakerLabels = c.speakers.map(s => {
-      if (s === 'E') return '<span style="color:var(--blue)"><b>E</b></span> = Centre';
-      if (s === 'C') return '<span style="color:var(--mint)"><b>C</b></span> = Client';
+      if (s === 'E') return '<span style="color:var(--blue)"><b>E</b></span> = ' + (c.labels && c.labels.E ? c.labels.E : 'Centre');
+      if (s === 'C') return '<span style="color:var(--mint)"><b>C</b></span> = ' + (c.labels && c.labels.C ? c.labels.C : 'Client');
       return s;
     }).join(' · ');
     return `
@@ -712,11 +866,15 @@ function loadDialogue(id){
   const conv = conversations.find(c => c.id === id);
   if (!conv) return;
   currentView = 'dialogue';
+  currentConv = conv;
   $('menuView').style.display = 'none';
   $('dialogueView').style.display = 'block';
   $('dialogueTitle').textContent = conv.title;
   $('dialogueSub').textContent = conv.description;
   $('toolbarTitle').textContent = conv.title;
+  // Per-conversation role labels (e.g. friends instead of centre de langues)
+  $('legendE').textContent = labelFor('E');
+  $('legendC').textContent = labelFor('C');
 
   // Switch active arrays based on conversation
   if (id === 'dialogue2') {
@@ -724,6 +882,11 @@ function loadDialogue(id){
     activeTranslations = translations2;
     activeSpanishPhonetic = spanishPhonetic2;
     activeExpressions = expressions2;
+  } else if (id === 'dialogue3') {
+    activeData = data3;
+    activeTranslations = translations3;
+    activeSpanishPhonetic = spanishPhonetic3;
+    activeExpressions = expressions3;
   } else {
     activeData = data;
     activeTranslations = translations;
