@@ -157,6 +157,53 @@ C|Parfait. Merci beaucoup pour toutes ces précisions, je vais faire le test dè
 const expressions=['je vous appelle parce que','je souhaiterais','Est-ce que vous auriez','ça m’arrange','ça m\'arrange','c’est bien ça','c\'est bien ça','C’est noté','C\'est noté','Et à propos du niveau','c’est bon à savoir','c\'est bon à savoir','Donc si je comprends bien','D’accord','D\'accord','Justement, et pour les tarifs','ça me paraît un peu cher','Et si jamais','ça change tout pour moi','Très bien, je note','Et concernant l’inscription','Et concernant l\'inscription','Donc si je résume','Bonne journée'];
 
 const data=raw.split('\n').map((line,i)=>{const role=line[0];const rest=line.slice(2);const idx=rest.lastIndexOf(' [');return{id:i,role,text:rest.slice(0,idx),annotation:rest.slice(idx+2,-1)}});
+
+const translations = [
+  'Hello, this is Centre de langues International. How can I help you?',
+  'Hello, I am calling because I would like to sign up for evening French courses to prepare for an exam. Do you have any spots available for the next session?',
+  'Yes, of course. We still have a few spots available for the session starting next month.',
+  'Great, that works for me. And what are the exact hours? The courses are in the evening, right?',
+  'Yes, twice a week, on Tuesday and Thursday, from 6:30 PM to 8:00 PM.',
+  'Noted. And about the level, is there absolutely a minimum level required to register, or can we start even as a beginner?',
+  'There is no minimum level, but we give each person a placement test to place them in the right group.',
+  'Great, good to know. So if I understand correctly, the test is to find the group that matches my level. Is the test free?',
+  'Yes, the test is free and it takes about forty minutes. You can do it online or in person.',
+  'Okay, I would prefer to do it online, that will be simpler. By the way, about the rates, what is the price of the session and what is included in the price?',
+  'It is four hundred fifty dollars for twelve weeks, and it includes all course materials.',
+  'Hmm, that seems a bit expensive to me, honestly. Are there any discounts, for example for students, or can we pay in several installments?',
+  'Yes, we offer payment in three installments, without additional fees.',
+  'Ah, that is reassuring, that changes everything for me. And if ever I am not available on Tuesday, is there another formula or a make-up class?',
+  'You can follow the same course on Saturday morning, or make it up with recordings.',
+  'Very well, noted. And about registration, what documents need to be provided, and until when can we register?',
+  'You need an ID card and a photo, and you have until the end of the month.',
+  'Okay. So if I summarize: I take the placement test online, I send my ID card and a photo, and I pay four hundred fifty dollars in three installments before the end of the month. Is that right?',
+  'That is exactly right.',
+  'Perfect. Thank you very much for all these details, I will take the test this week and I will call you back to confirm my registration. Have a good day!'
+];
+
+const spanishPhonetic = [
+  'Olo, esto es Centro de línguas Internasional. ¿Puede ayudarme usted?',
+  'Olo, llamo porque me gustaría apuntarme a cursos de francés por la noche para preparar un examen. ¿Tiene plazas disponibles para la próxima sesión?',
+  'Sí, claro. Aún tenemos algunas plazas disponibles para la sesión que empieza el mes que viene.',
+  'Bien, eso me viene bien. ¿Y cuáles son los horarios exactos? Los cursos son por la noche, ¿verdad?',
+  'Sí, dos veces por semana, martes y jueves, de seis y media a ocho de la tarde.',
+  'Notado. ¿Y sobre el nivel, ¿hay un nivel mínimo obligatorio para inscribirse, o se puede empezar aunque sea principiante?',
+  'No hay nivel mínimo, pero hacemos una prueba de nivel a cada persona para ponerla en el grupo adecuado.',
+  'Bien, está bien saberlo. Entonces, si entiendo bien, la prueba es para encontrar el grupo que corresponde a mi nivel. ¿Es gratis la prueba?',
+  'Sí, la prueba es gratis y dura unos cuarenta minutos. Puede hacerla online o presencialmente.',
+  'Vale, preferiría hacerla online, será más sencillo. Oye, sobre las tarifas, ¿cuál es el precio de la sesión y qué incluye el precio?',
+  'Son cuatrocientos cincuenta dólares por doce semanas, e incluye todos los materiales del curso.',
+  'Hmm, me parece un poco caro, sinceramente. ¿Hay algún descuento, por ejemplo para estudiantes, o se puede pagar en varios plazos?',
+  'Sí, ofrecemos pago en tres plazos, sin cargos adicionales.',
+  'Ah, eso es tranquilizador, eso lo cambia todo para mí. ¿Y si alguna vez no estoy disponible el martes, hay otra fórmula o una clase de recuperación?',
+  'Puede seguir el mismo curso el sábado por la mañana, o recuperarlo con grabaciones.',
+  'Muy bien, anotado. ¿Y sobre la inscripción, qué documentos hay que presentar, y hasta cuándo se puede inscribir?',
+  'Necesita un documento de identidad y una foto, y tiene hasta final de mes.',
+  'Vale. Entonces, si resumo: hago la prueba de nivel online, envío mi documento de identidad y una foto, y pago cuatrocientos cincuenta dólares en tres plazos antes de final de mes. ¿Está bien así?',
+  'Eso es exactamente correcto.',
+  'Perfecto. Muchas gracias por todos estos detalles, haré la prueba esta semana y le llamaré para confirmar mi inscripción. ¡Que tenga un buen día!'
+];
+
 const $=id=>document.getElementById(id);
 let read=new Set(JSON.parse(localStorage.getItem('dialogue-read')||'[]'));
 let expanded=false;
@@ -333,6 +380,14 @@ function render(){
       <div class="bubble">
         <div class="meta">${d.role==='E'?'Centre de langues':'Client(e)'} · ${String(d.id+1).padStart(2,'0')}</div>
         <div class="spoken ${$('practiceToggle').checked&&d.role==='C'?'hidden-answer':''}">${hl(d.text)}</div>
+        <details class="translate-box" style="margin-top:8px;border:1px solid var(--border);border-radius:8px;background:#18243c;padding:8px">
+          <summary style="cursor:pointer;color:var(--blue);font-size:11px;font-weight:600">🇺🇸 English · 🇪🇸 Fonética español</summary>
+          <div style="margin-top:6px;font-size:11px;color:var(--muted);line-height:1.4">
+            <div style="color:#d0b0ff"><b>EN:</b> ${esc(translations[id] || '')}</div>
+            <div style="color:#b0e0ff"><b>ES (fonética):</b> ${esc(spanishPhonetic[id] || '')}</div>
+          </div>
+        </details>
+        ${$('practiceToggle').checked&&d.role==='C'?'<button class="reveal">Révéler / Masquer</button>':''}
         ${$('practiceToggle').checked&&d.role==='C'?'<button class="reveal">Révéler / Masquer</button>':''}
         ${$('notesToggle').checked?`<details class="notes" ${expanded?'open':''}><summary>💡 Analyse & fonctions du langage</summary><div class="note">${notes.map(n=>{const m=n.match(/^([^:]+):\s*(.*)$/);return m?`<div><span class="tag">${esc(m[1])}</span>${esc(m[2])}</div>`:`<div>${esc(n)}</div>`}).join('')}</div></details>`:''}
         ${audioBlock(d.id, d.text)}
