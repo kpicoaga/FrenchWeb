@@ -1642,14 +1642,17 @@ function loadDialogue(id){
   if (!conv) return;
   currentView = 'dialogue';
   currentConv = conv;
+  // Full-dialogue audio: use the explicit audioUrl if present, otherwise
+  // auto-discover Dialoguemp3/<id>/<id>.mp3 (uploading the file is enough).
+  const audioUrl = conv.audioUrl || 'Dialoguemp3/' + id + '/' + id + '.mp3';
   // Toggle MP3 player for conversations that have one
   const audioEl = $('dialogueAudio');
   const dlBtn = $('downloadAudioMp3');
-  if (conv.audioUrl) {
-    audioEl.src = conv.audioUrl;
+  if (audioUrl) {
+    audioEl.src = audioUrl;
     audioEl.style.display = 'block';
     audioEl.load();
-    dlBtn.dataset.url = conv.audioUrl;
+    dlBtn.dataset.url = audioUrl;
     dlBtn.style.display = 'inline-block';
   } else {
     audioEl.pause();
