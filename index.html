@@ -197,7 +197,11 @@ input[type=search]:focus{border-color:var(--blue)}
       </aside>
       <main class="main">
         <div class="toolbar">
-          <strong id="toolbarTitle">📞 Appel au centre de langues</strong>
+          <div style="flex-basis:100%;display:flex;flex-direction:column">
+            <strong id="toolbarTitle">📞 Appel au centre de langues</strong>
+            <audio id="dialogueAudio" controls preload="metadata" style="width:100%;margin-top:10px;display:none"></audio>
+            <button id="downloadAudioMp3" style="display:none;margin-top:8px">⬇️ Télécharger le MP3</button>
+          </div>
           <div class="tools">
             <button id="expand">Tout développer</button>
             <button id="markAll">Tout marquer comme lu</button>
@@ -701,6 +705,7 @@ const conversations = [
     task: 'tache2',
     speakers: ['E', 'C'],
     lines: 20,
+    audioUrl: 'dialogue1.mp3',
     templateBank: {
       title: "Boîte à outils — Inscription aux cours de français",
       sub: "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
@@ -1558,6 +1563,17 @@ $('expand').onclick = () => {
 $('markAll').onclick = () => { read = new Set(activeData.map(x => x.id)); render(); };
 $('playAll').onclick = () => { playAllActive ? stopPlayAll() : playAllLines(); };
 $('downloadAudio').onclick = () => { downloadAudioRecording ? stopDownloadAudio() : startDownloadAudio(); };
+$('downloadAudioMp3').onclick = e => {
+  const u = e.currentTarget.dataset.url;
+  if (!u) return;
+  const a = document.createElement('a');
+  a.href = u;
+  a.download = u;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+};
+
 $('reset').onclick = () => { read.clear(); render(); };
 $('count').textContent = activeData.length;
 $('exprCount').textContent = activeExpressions.length;
@@ -1606,6 +1622,23 @@ function loadDialogue(id){
   if (!conv) return;
   currentView = 'dialogue';
   currentConv = conv;
+  // Toggle MP3 player for conversations that have one
+  const audioEl = $('dialogueAudio');
+  const dlBtn = $('downloadAudioMp3');
+  if (conv.audioUrl) {
+    audioEl.src = conv.audioUrl;
+    audioEl.style.display = 'block';
+    audioEl.load();
+    dlBtn.dataset.url = conv.audioUrl;
+    dlBtn.style.display = 'inline-block';
+  } else {
+    audioEl.pause();
+    audioEl.removeAttribute('src');
+    audioEl.style.display = 'none';
+    dlBtn.style.display = 'none';
+    delete dlBtn.dataset.url;
+  }
+
   $('menuView').style.display = 'none';
   $('dialogueView').style.display = 'block';
   $('dialogueTitle').textContent = conv.title;
