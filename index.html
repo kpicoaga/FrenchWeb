@@ -57,8 +57,8 @@ input[type=search]:focus{border-color:var(--blue)}
 .notes .note{margin-top:9px;color:#c4d1e6;font-size:12px}
 .tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.04em;background:#35445f;color:#d5e3ff;padding:2px 7px;border-radius:6px;margin:0 5px 5px 0}
 .row.c .tag{background:#27574d;color:#c1ffe8}
-.hidden-answer .spoken{filter:blur(6px);user-select:none}
-.hidden-answer .spoken.revealed{filter:none;user-select:auto}
+.spoken.hidden-answer{filter:blur(6px);user-select:none}
+.spoken.hidden-answer.revealed{filter:none;user-select:auto}
 .reveal{margin-top:12px;font-size:12px}
 .empty{color:var(--muted);text-align:center;padding:30px}
 .footer{text-align:center;color:var(--muted);font-size:12px;margin-top:20px}
@@ -401,7 +401,10 @@ function render(){
     const r = el.querySelector('.read');
     if (r) r.onchange = e => { e.target.checked ? read.add(id) : read.delete(id); update(); };
     const rv = el.querySelector('.reveal');
-    if (rv) rv.onclick = () => el.querySelector('.spoken').classList.toggle('revealed');
+    if (rv) rv.onclick = () => {
+      const spoken = el.querySelector('.spoken');
+      if (spoken) spoken.classList.toggle('revealed');
+    };
 
     // Record button
     const rb = el.querySelector('.record-btn');
