@@ -198,26 +198,9 @@ C|Parfait, merci beaucoup pour toutes ces informations ! Je fais le test cette s
 
 const expressions=['je vous appelle parce que','je voudrais','Avez-vous','ça m’arrange','c’est bien ça','C’est noté','Et à propos','c’est bon à savoir','Donc si je comprends bien','D’accord','D\'accord','Justement','ça me paraît un peu cher','Et si jamais','ça change tout','Très bien, je note','Et pour l’inscription','Donc si je résumé','Bonne journée'];
 
-const expressions2=['I\'m calling to ask about','My name is','I was thinking of','Hmm, I\'m not sure','that\'s good to know','And what about','award-winning','So I can open','Yes, if you provide','Perfect, I\'ll come by','Au revoir','Have a good day'];
+const expressions2=['je vous appelle pour','Je m\'appelle','je pensais à','je ne suis pas sûr','c\'est bon à savoir','Et à propos de','comment ça fonctionne','Donc je peux','si vous fournissez','je passerai demain','Au revoir','Bonne journée'];
 
 const data=raw.split('\n').map((line,i)=>{
-  // Remove role prefix if present (e.g. "C|" or "E|")
-  let rest = line.trim();
-  let role = rest.startsWith('C') ? 'C' : 'E'; // default based on first char after prefix
-  if (rest.startsWith('C|') || rest.startsWith('E|')) {
-    role = rest[0]; // C or E
-    rest = rest.slice(2);
-  }
-  // Split on last occurrence of ' [' to separate text from annotation
-  const idx = rest.lastIndexOf(' [');
-  if (idx >= 0) {
-    return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.slice(0, idx).trim(), annotation: rest.slice(idx + 2, -1).trim() };
-  }
-  // No annotation — just text
-  return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.trim(), annotation: '' };
-});
-
-const data2=raw2.split('\n').map((line,i)=>{
   // Remove role prefix if present (e.g. "C|" or "E|")
   let rest = line.trim();
   let role = rest.startsWith('C') ? 'C' : 'E'; // default based on first char after prefix
@@ -280,56 +263,73 @@ const spanishPhonetic = [
   'Parfait. Meri mucho por tu se presión, je vais fer el test des esta semana e vou rapeli pa konfirman mi inscripción. Bon jurne!'
 ];
 
-const raw2=`E|Bonjour, welcome to Banque Internationale. How can I help you ? [OUVERTURE: Formule d'accueil - establishes context and asks opening question]
-C|Bonjour, I'm calling to ask about opening a new bank account. [OUVERTURE: "I'm calling to ask about" - context/permission, request]
-E|Certainly! To get started, could I have your full name please ? [RESPONSE: Acknowledgment, initial information request]
-C|My name is Kevin Picoaga. [ENCHAINEMENT: "My name is" - provides information, identification]
-E|Thank you, Kevin. And what type of account were you interested in ? [INFORMATION: Follow-up question, product type]
-C|I was thinking of a current account with online banking. [ENCHAINEMENT: "I was thinking of" - proposition, thematic link]
-E|Our current account has no monthly fee and includes a debit card. [INFORMATION: Product features, tariff details]
-C|Hmm, I'm not sure about the overdraft facility. [RÉACTION: "Hmm, I'm not sure" - common phrase, expression of doubt]
-E|You can have an agreed overdraft up to 500€ with no interest for the first month. [INFORMATION: Additional details, specific offer]
-C|OK, that's good to know. And what about the mobile banking app ? [ENCHAINEMENT: "And what about" - new theme, follow-up]
-E|Our app is award-winning, allowing transfers, payments, and budget tracking. [INFORMATION: Functional description of app]
-C|So I can open the account immediately ? [CONFIRMATION: Conditional confirmation check]
-E|Yes, if you provide ID and make the initial deposit of 100€. [CONFIRMATION: Positive confirmation with conditions]
-C|Perfect, I'll come by tomorrow with my ID and the deposit. Au revoir ! [FERMETURE: Closes the exchange, goodbye]
-E|Thank you! See you tomorrow. Have a good day. [RESPONSE: Closing response, polite formula]`;
+const raw2=`E|Banque Internationale, bonjour ! Que puis-je faire pour vous ? [OUVERTURE: Formule d'accueil - établit le contexte et la permission de questionner]
+C|Bonjour, je vous appelle pour ouvrir un nouveau compte bancaire. [OUVERTURE: "Je vous appelle pour" - contexte et demande]
+E|Très bien ! Pour commencer, puis-je avoir votre nom complet, s'il vous plaît ? [RESPONSE: Prise en charge de la demande, demande d'information initiale]
+C|Je m'appelle Kevin Picoaga. [ENCHAINEMENT: "Je m'appelle" - fournit l'information, identification]
+E|Merci, Kevin. Et quel type de compte souhaitez-vous ouvrir ? [INFORMATION: Question de suivi, type de produit]
+C|Je pensais à un compte courant avec la banque en ligne. [ENCHAINEMENT: "Je pensais à" - proposition, lien thématique]
+E|Notre compte courant est sans frais mensuels et comprend une carte de débit. [INFORMATION: Caractéristiques du produit, détails tarifaires]
+C|Hmm, je ne suis pas sûr pour le découvert autorisé. [RÉACTION: "Hmm, je ne suis pas sûr" - expression du doute]
+E|Vous pouvez avoir un découvert autorisé jusqu'à 500 €, sans intérêts pendant le premier mois. [INFORMATION: Détails supplémentaires, offre spécifique]
+C|Ah, c'est bon à savoir. Et à propos de l'application mobile, comment ça fonctionne ? [ENCHAINEMENT: "Et à propos de" - nouveau thème, question de suivi]
+E|Notre application primée permet de faire des virements, des paiements et de suivre votre budget. [INFORMATION: Description fonctionnelle de l'application]
+C|Donc je peux ouvrir le compte tout de suite ? [CONFIRMATION: Vérification de confirmation conditionnelle]
+E|Oui, si vous fournissez une pièce d'identité et faites un dépôt initial de 100 €. [CONFIRMATION: Confirmation positive avec conditions]
+C|Parfait, je passerai demain avec ma pièce d'identité et le dépôt. Au revoir ! [FERMETURE: Clôture de l'échange, formule de salutation]
+E|Merci ! À demain. Bonne journée. [RESPONSE: Réponse de clôture, formule polie]`;
+
+const data2=raw2.split('\n').map((line,i)=>{
+  // Remove role prefix if present (e.g. "C|" or "E|")
+  let rest = line.trim();
+  let role = rest.startsWith('C') ? 'C' : 'E'; // default based on first char after prefix
+  if (rest.startsWith('C|') || rest.startsWith('E|')) {
+    role = rest[0]; // C or E
+    rest = rest.slice(2);
+  }
+  // Split on last occurrence of ' [' to separate text from annotation
+  const idx = rest.lastIndexOf(' [');
+  if (idx >= 0) {
+    return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.slice(0, idx).trim(), annotation: rest.slice(idx + 2, -1).trim() };
+  }
+  // No annotation — just text
+  return { id: i, role: role === 'C' ? 'C' : 'E', text: rest.trim(), annotation: '' };
+});
 
 const translations2 = [
-  'Hello, welcome to Banque Internationale. How can I help you?',
-  'Hello, I am calling to ask about opening a new bank account.',
-  'Certainly! To get started, could I have your full name please?',
+  'Hello, Banque Internationale! How can I help you?',
+  'Hello, I am calling to open a new bank account.',
+  'Very well! To start, could I have your full name, please?',
   'My name is Kevin Picoaga.',
-  'Thank you, Kevin. And what type of account were you interested in?',
+  'Thank you, Kevin. And what type of account would you like to open?',
   'I was thinking of a current account with online banking.',
-  'Our current account has no monthly fee and includes a debit card.',
-  'Hmm, I am not sure about the overdraft facility.',
-  'You can have an agreed overdraft up to 500€ with no interest for the first month.',
-  'OK, that is good to know. And what about the mobile banking app?',
-  'Our app is award-winning, allowing transfers, payments, and budget tracking.',
-  'So I can open the account immediately?',
-  'Yes, if you provide ID and make the initial deposit of 100€.',
+  'Our current account has no monthly fees and includes a debit card.',
+  'Hmm, I am not sure about the authorized overdraft.',
+  'You can have an authorized overdraft of up to 500€, interest-free for the first month.',
+  'Ah, good to know. And about the mobile app, how does it work?',
+  'Our award-winning app lets you make transfers, payments, and track your budget.',
+  'So I can open the account right away?',
+  'Yes, if you provide an ID and make an initial deposit of 100€.',
   'Perfect, I will come by tomorrow with my ID and the deposit. Goodbye!',
   'Thank you! See you tomorrow. Have a good day.'
 ];
 
 const spanishPhonetic2 = [
-  'Bonshúr, velkome ba banki Internationale. Kou can ai u?',
-  'Bonshúr, ay kalling too ask about openings a nu bank akount.',
-  'Serténi! Té ge tartdé, koi ai hav yur ful neim plé?',
-  'Mai naim iz Kevin Pikoága.',
-  'Tanki, Kevin. E kont what typ o akont wer yu intéressé?',
-  'I wa théjent o a kurrent akont wi onlain banki.',
-  'Our kurrent akont nu montli fii e inklus a debit kard.',
-  'Hum, ay nu sum not kouert abou the overdraft faciliti.',
-  'Yu kan hav an aggid overdraft up tu 500€ wi no intérès fó le first month.',
-  'OK, se good tu now. E kont what abou the móbal banki ak?',
-  'Our app é award-winnining, alléwing tranzfers, payménts, e budgé tracking.',
-  'So ai kan opn the akont immédeatement?',
-  'Ué, si yu próvid AY et mé kil dépozit o 100€.',
-  'Parfait, ai wi kám bi morroú wi AY et de depó. Au revwar!',
-  'Tanki! Si u morroú. Av a good dé.'
+  'Banguk International, bonshur ! Ke puiske fer pur vu?',
+  'Bonshur, yu vu apel pur uvrir un nuvo kount bankér.',
+  'Tré bien ! Pur komansé, puizh avuar vor nom konple, sil vu plé?',
+  'Yu mapel Kevín Pikoága.',
+  'Merkí, Kevín. E kel tip de kount suetez-vu uvrir?',
+  'Yu pansa a un kount kuran avek la bank an lolin. Y.',
+  'Notr kount kuran e san fré mánsuel e komprán una kart de débí.',
+  'Um, yu nu sui pa sir pur le dékúvar othorizé.',
+  'Vu puvé avuar un dékúvar othorizé juská sánk san euró, san éntérés pandán l primer mua.',
+  'A, se bon a savuar. E a própu de lap likasión móvil, komán sa fonsion?',
+  'Notr aplicasión primé permit de fer dé virman, dé péman e de suivr votr bugué.',
+  'Donk yu pó ovrir le kount tu de suit?',
+  'Uí, si vu furnisé un piés didentité e fé un dépo inicial de san euró.',
+  'Parfé, yu pasré demán avek ma piés didentité e l dépo. Orvuár!',
+  'Mersí! A demán. Bon jurne.'
 ];
 
 // ---------- Conversation listings for landing page ----------
@@ -340,7 +340,7 @@ const conversations = [
     description: 'Appel téléphonique pour s\'inscrire à des cours de français du soir pour préparer l\'examen TCF Canada.',
     topic: 'scolaire',
     speakers: ['E', 'C'],
-    lines: 16
+    lines: 20
   },
   {
     id: 'dialogue2',
@@ -354,6 +354,12 @@ const conversations = [
 
 // ---------- View state ----------
 let currentView = 'menu'; // 'menu' or 'dialogue'
+
+// Active dialogue data (switched by loadDialogue)
+let activeData = data;
+let activeTranslations = translations;
+let activeSpanishPhonetic = spanishPhonetic;
+let activeExpressions = expressions;
 
 const $=id=>document.getElementById(id);
 let read=new Set(JSON.parse(localStorage.getItem('dialogue-read')||'[]'));
@@ -608,6 +614,8 @@ function render(){
 
 function update(){
   localStorage.setItem('dialogue-read', JSON.stringify([...read]));
+  $('count').textContent = activeData.length;
+  $('exprCount').textContent = activeExpressions.length;
   $('readCount').textContent = read.size + ' / ' + activeData.length;
   $('bar').style.width = (100 * read.size / activeData.length) + '%';
   $('progressText').textContent = read.size + ' répliques étudiées sur ' + activeData.length;}
@@ -669,10 +677,10 @@ $('expand').onclick = () => {
   $('expand').textContent = expanded ? 'Tout réduire' : 'Tout développer';
   document.querySelectorAll('details.notes').forEach(x => x.open = expanded);
 };
-$('markAll').onclick = () => { read = new Set(data.map(x => x.id)); render(); };
+$('markAll').onclick = () => { read = new Set(activeData.map(x => x.id)); render(); };
 $('reset').onclick = () => { read.clear(); render(); };
-$('count').textContent = data.length;
-$('exprCount').textContent = expressions.length;
+$('count').textContent = activeData.length;
+$('exprCount').textContent = activeExpressions.length;
 
 // ---------- Landing page functions ----------
 function renderMenu(){
@@ -699,12 +707,6 @@ function renderMenu(){
   `;
   }).join('');
 }
-
-// Active dialogue data (switched by loadDialogue)
-let activeData = data;
-let activeTranslations = translations;
-let activeSpanishPhonetic = spanishPhonetic;
-let activeExpressions = expressions;
 
 function loadDialogue(id){
   const conv = conversations.find(c => c.id === id);
