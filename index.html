@@ -1413,15 +1413,15 @@ function render(){
       <div class="bubble">
         <div class="meta">${labelFor(d.role)} · ${String(d.id+1).padStart(2,'0')}</div>
         <div class="spoken ${$('practiceToggle').checked&&d.role==='C'?'hidden-answer':''}">${hl(d.text)}</div>
-        <details class="translate-box" style="margin-top:8px;border:1px solid var(--border);border-radius:8px;background:#18243c;padding:8px">
+        ${(activeTranslations[d.id] || activeSpanishPhonetic[d.id]) ? `<details class="translate-box" style="margin-top:8px;border:1px solid var(--border);border-radius:8px;background:#18243c;padding:8px">
           <summary style="cursor:pointer;color:var(--blue);font-size:11px;font-weight:600">🇺🇸 English · 🇪🇸 Fonética español</summary>
           <div style="margin-top:6px;font-size:11px;color:var(--muted);line-height:1.4">
             <div style="color:#d0b0ff"><b>EN:</b> ${esc(activeTranslations[d.id] || '')}</div>
             <div style="color:#b0e0ff"><b>ES (fonética):</b> ${esc(activeSpanishPhonetic[d.id] || '')}</div>
           </div>
-        </details>
+        </details>` : ''}
         ${$('practiceToggle').checked&&d.role==='C'?'<button class="reveal">Révéler / Masquer</button>':''}
-        ${$('notesToggle').checked?`<details class="notes" ${expanded?'open':''}><summary>💡 Analyse & fonctions du langage</summary><div class="note">${notes.map(n=>{const m=n.match(/^([^:]+):\s*(.*)$/);return m?`<div><span class="tag">${esc(m[1])}</span>${esc(m[2])}</div>`:`<div>${esc(n)}</div>`}).join('')}</div></details>`:''}
+        ${($('notesToggle').checked && d.annotation)?`<details class="notes" ${expanded?'open':''}><summary>💡 Analyse & fonctions du langage</summary><div class="note">${notes.map(n=>{const m=n.match(/^([^:]+):\s*(.*)$/);return m?`<div><span class="tag">${esc(m[1])}</span>${esc(m[2])}</div>`:`<div>${esc(n)}</div>`}).join('')}</div></details>`:''}
         ${audioBlock(d.id, d.text, activeAudioParts && activeAudioParts[d.id] || '')}
         <label class="check" style="font-size:11px;margin:11px 0 0;color:var(--muted)"><input class="read" type="checkbox" ${read.has(d.id)?'checked':''}> Étudié</label>
       </div>
@@ -1672,7 +1672,13 @@ function loadDialogue(id){
   $('legendC').textContent = labelFor('C');
 
   // Switch active arrays based on conversation
-  if (id === 'dialogue2') {
+  if (conv._data) {
+    // Conversation loaded from dialoguejson/*.json
+    activeData = conv._data;
+    activeTranslations = conv._translations;
+    activeSpanishPhonetic = conv._phonetic;
+    activeExpressions = conv._expressions;
+  } else if (id === 'dialogue2') {
     activeData = data2;
     activeTranslations = translations2;
     activeSpanishPhonetic = spanishPhonetic2;
@@ -1718,8 +1724,88 @@ function showMenu(){
   stopAllTTS();
 }
 
+// ---------- Auto-load dialogues from the dialoguejson/ folder ----------
+const JSON_DIR = 'dialoguejson';
+
+function jsonToConversation(id, j){
+  const names = Object.keys(j.speakers || {});
+  // Speaker 1 = interlocuteur (E), any other speaker = candidat (C). Override with "roles".
+  const roleOf = s => (j.roles && j.roles[s]) || (s === names[0] ? 'E' : 'C');
+  const turns = j.turns || [];
+  const lines = turns.map((t, i) => ({
+    id: i, role: roleOf(t.speaker) === 'C' ? 'C' : 'E',
+    text: (t.text || '').trim(), annotation: (t.note || '').trim()
+  }));
+  return {
+    id,
+    title: j.title || id,
+    description: j.description || j.title || '',
+    topic: j.topic || 'Dialogue',
+    task: j.task || (/t[âa]che\s*3/i.test(j.title || '') ? 'tache3' : 'tache2'),
+    speakers: ['E', 'C'],
+    labels: j.labels || { E: 'Interlocuteur', C: 'Candidat(e)' },
+    lines: lines.length,
+    _data: lines,
+    _translations: turns.map(t => t.en || ''),
+    _phonetic: turns.map(t => t.es || ''),
+    _expressions: j.expressions || [],
+    templateBank: buildTemplateBank(id, j)
+  };
+}
+
+function buildTemplateBank(id, j){
+  const tb = j.templateBank;
+  if (!tb || !Array.isArray(tb.categories) || !tb.categories.length) return null;
+  return {
+    title: tb.title || 'Boîte à outils — ' + (j.title || id),
+    sub: tb.sub || "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+    toggle: tb.toggle || 'Afficher les structures utiles',
+    categories: tb.categories.map(c => ({ icon: '💡', role: 'c', items: [], ...c }))
+  };
+}
+
+async function listJsonFiles(){
+  // 1) On GitHub Pages, ask the GitHub API which files are in the folder
+  const m = location.hostname.match(/^(.+)\.github\.io$/);
+  if (m) {
+    const first = location.pathname.split('/').filter(Boolean)[0];
+    const repo = (first && !/\.html?$/i.test(first)) ? first : location.hostname;
+    try {
+      const r = await fetch('https://api.github.com/repos/' + m[1] + '/' + repo + '/contents/' + JSON_DIR);
+      if (r.ok) {
+        const files = await r.json();
+        return files.map(f => f.name).filter(n => /\.json$/i.test(n) && n.toLowerCase() !== 'index.json');
+      }
+    } catch (e) {}
+  }
+  // 2) Fallback: optional manifest dialoguejson/index.json  ->  ["dialogue6.json", ...]
+  try {
+    const r = await fetch(JSON_DIR + '/index.json', { cache: 'no-store' });
+    if (r.ok) return (await r.json()).map(String);
+  } catch (e) {}
+  return [];
+}
+
+async function loadJsonDialogues(){
+  const names = (await listJsonFiles()).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+  let added = 0;
+  for (const name of names) {
+    // "1793144653525_dialogue6.json" -> "dialogue6"
+    const id = name.replace(/\.json$/i, '').replace(/^\d+_/, '').replace(/[^\w-]/g, '_');
+    if (conversations.some(c => c.id === id)) continue;
+    try {
+      const r = await fetch(JSON_DIR + '/' + encodeURIComponent(name), { cache: 'no-store' });
+      if (!r.ok) continue;
+      conversations.push(jsonToConversation(id, await r.json()));
+      added++;
+    } catch (e) { console.warn('Dialogue JSON ignoré :', name, e); }
+  }
+  if (added) renderMenu();
+}
+
 // Initial render
 renderMenu();
+loadJsonDialogues();
 // Don't auto-render dialogue on load anymore - wait for user selection
 // render();
 </script>

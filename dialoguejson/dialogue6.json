@@ -1,0 +1,337 @@
+{
+    "title": "Transports au Canada – TCF B2 Tâche 2",
+    "task": "tache2",
+    "topic": "Transports",
+    "description": "Appel à un ami installé au Canada pour se renseigner sur les transports avant un déménagement : moyens disponibles, prix, horaires, rapidité et organisation.",
+    "labels": {
+        "E": "Ami(e) au Canada",
+        "C": "Modibo (candidat)"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'ai entendu dire que",
+        "Comme je prévois d'y déménager",
+        "j'aimerais obtenir",
+        "Puis-je te poser quelques questions",
+        "Tout d'abord",
+        "Et parmi ces moyens de transport",
+        "Personnellement",
+        "Cela dépend de",
+        "Et concernant les horaires",
+        "Cependant",
+        "Oui, dans l'ensemble",
+        "Merci beaucoup pour toutes ces informations"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Transports au Canada",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour, j'ai entendu dire que tu habites au Canada. Comme je prévois d'y déménager bientôt, j'aimerais obtenir quelques renseignements sur les transports. Puis-je te poser quelques questions ?",
+                        "note": "Ouverture réelle du dialogue — contexte + raison + demande de permission polie",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour Modibo.",
+                        "note": "Accueil amical — l'interlocuteur appelle la personne par son prénom",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Bien sûr, avec plaisir. Je t'écoute.",
+                        "note": "Accord + invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci beaucoup pour toutes ces informations. Elles me sont très utiles pour préparer mon déménagement et mieux comprendre les différentes options de déplacement.",
+                        "note": "Clôture réelle du dialogue — remerciement + utilité + but",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Tout le plaisir est pour moi, Modibo. Je suis ravi d'avoir pu te renseigner.",
+                        "note": "Réponse polie au remerciement",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Tout d'abord, quels sont les principaux moyens de transport disponibles au Canada ?",
+                        "note": "« Tout d'abord » — lancer la première question",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Et parmi ces moyens de transport, lequel utilises-tu le plus souvent ?",
+                        "note": "« Et parmi » — relancer en restreignant le choix",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Les transports en commun sont-ils chers au Canada ?",
+                        "note": "Enchaîner sur un nouveau thème : le prix",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Et concernant les horaires, est-il facile de trouver des transports tôt le matin ou tard le soir ?",
+                        "note": "« Et concernant » — enchaîner vers un nouveau thème",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Les transports sont-ils généralement rapides ?",
+                        "note": "Enchaîner sur la rapidité — question directe",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Les transports sont-ils bien organisés ?",
+                        "note": "Dernier thème : l'organisation générale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ah, d'accord, je vois.",
+                        "note": "Accusé de réception — phrase banque",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est bon à savoir.",
+                        "note": "Information utile reçue — phrase banque",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est plutôt pratique !",
+                        "note": "Réaction positive — phrase banque",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Hmm, ça me semble un peu compliqué, honnêtement.",
+                        "note": "Réaction polie nuancée — phrase banque",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, tant mieux ! Ça me rassure.",
+                        "note": "Soulagement — phrase banque",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Et si je n'ai pas de voiture, est-ce que je peux quand même me déplacer facilement en hiver ?",
+                        "note": "Hypothèse (si + présent) — question de secours — phrase banque",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Est-ce qu'il existe des tarifs réduits, par exemple pour les étudiants ?",
+                        "note": "Négociation polie (alternative + exemple) — phrase banque",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "j'aimerais obtenir quelques renseignements sur les transports.",
+                        "note": "Conditionnel de politesse (j'aimerais + infinitif)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Puis-je te poser quelques questions ?",
+                        "note": "Inversion sujet-verbe (puis-je) — registre soutenu et poli",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Les transports en commun sont-ils chers au Canada ?",
+                        "note": "Inversion avec sujet nominal (les transports… sont-ils)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Et parmi ces moyens de transport, lequel utilises-tu le plus souvent ?",
+                        "note": "Pronom interrogatif « lequel » + inversion (utilises-tu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Comme je prévois d'y déménager bientôt, j'aimerais obtenir quelques renseignements.",
+                        "note": "« Comme » (cause) + pronom « y » = au Canada",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "est-il facile de trouver des transports tôt le matin ou tard le soir ?",
+                        "note": "Structure impersonnelle : est-il facile de + infinitif",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 1",
+            "instructions": "friendly and welcoming",
+            "text": "Bonjour Modibo.",
+            "en": "Hello Modibo.",
+            "es": "Bonshúr Modibó.",
+            "note": "OUVERTURE: Accueil amical — l'interlocuteur appelle la personne par son prénom"
+        },
+        {
+            "speaker": "Speaker 2",
+            "instructions": "polite and curious",
+            "text": "Bonjour, j'ai entendu dire que tu habites au Canada. Comme je prévois d'y déménager bientôt, j'aimerais obtenir quelques renseignements sur les transports. Puis-je te poser quelques questions ?",
+            "en": "Hello, I heard you live in Canada. Since I'm planning to move there soon, I'd like to get some information about transportation. May I ask you a few questions?",
+            "es": "Bonshúr, shé ántendu dir ke tu abít o Kanadá. Kom shé prevua dí demenazhé bientó, shemré obtenír kélk ransenemán sür lé transpór. Pui-shé te poze kélk kestión ?",
+            "note": "OUVERTURE: \"j'ai entendu dire que\" - contexte et raison de l'appel; DEMANDE: \"Puis-je te poser quelques questions\" - permission polie"
+        },
+        {
+            "speaker": "Speaker 1",
+            "instructions": "warm and encouraging",
+            "text": "Bien sûr, avec plaisir. Je t'écoute.",
+            "en": "Of course, with pleasure. I'm listening.",
+            "es": "Bien sür, avek plezír. Shé tekút.",
+            "note": "RESPONSE: Accord + invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "instructions": "organized",
+            "text": "Tout d'abord, quels sont les principaux moyens de transport disponibles au Canada ?",
+            "en": "First of all, what are the main means of transportation available in Canada?",
+            "es": "Tu dabór, kel son lé pransipó moyén de transpór disponibl o Kanadá ?",
+            "note": "ENCHAINEMENT: \"Tout d'abord\" - première question, thème des moyens de transport"
+        },
+        {
+            "speaker": "Speaker 1",
+            "instructions": "informative",
+            "text": "Il y en a plusieurs. Dans les grandes villes, on trouve surtout des bus, le métro, le tramway et parfois le train. On peut aussi utiliser des taxis, des services de covoiturage ou même des vélos.",
+            "en": "There are several. In big cities, you mostly find buses, the metro, the streetcar and sometimes the train. You can also use taxis, ride-sharing services or even bikes.",
+            "es": "Il i an a plusiér. Dan lé gran vil, on truv sürtu dé bús, le metró, le tramuéi e parfuá le tran. On pe osí ütilizé dé taksí, dé servís de kovaturazh u mem dé velo.",
+            "note": "INFORMATION: Liste des moyens de transport disponibles dans les grandes villes"
+        },
+        {
+            "speaker": "Speaker 2",
+            "instructions": "curious",
+            "text": "Et parmi ces moyens de transport, lequel utilises-tu le plus souvent ?",
+            "en": "And among these means of transportation, which one do you use most often?",
+            "es": "E parmí sé moyén de transpór, lekél ütiliz-tü le plü suvan ?",
+            "note": "ENCHAINEMENT: \"Et parmi ces moyens de transport\" - relance, question sur la préférence personnelle"
+        },
+        {
+            "speaker": "Speaker 1",
+            "instructions": "personal and practical",
+            "text": "Personnellement, j'utilise principalement les transports en commun, surtout le bus et le métro. C'est pratique pour aller au travail et pour se déplacer en ville sans avoir besoin de conduire.",
+            "en": "Personally, I mainly use public transportation, especially the bus and the metro. It's convenient for going to work and getting around town without needing to drive.",
+            "es": "Personelmán, shütiliz pransipalmán lé transpór an komún, sürtu le bús e le metró. Sé pratik pur alé o travaí e pur se deplasé an vil sans avuar bezuán de kondüir.",
+            "note": "INFORMATION: Expérience personnelle — transports en commun, avantage pratique"
+        },
+        {
+            "speaker": "Speaker 2",
+            "instructions": "inquiring",
+            "text": "Les transports en commun sont-ils chers au Canada ?",
+            "en": "Is public transportation expensive in Canada?",
+            "es": "Lé transpór an komún son-til shér o Kanadá ?",
+            "note": "ENCHAINEMENT: Nouveau thème, le prix — question fermée avec inversion"
+        },
+        {
+            "speaker": "Speaker 1",
+            "instructions": "nuanced",
+            "text": "Cela dépend de la ville et du type de transport. Il existe généralement des billets à l'unité, mais aussi des abonnements mensuels, plus économiques pour ceux qui utilisent les transports en commun régulièrement.",
+            "en": "It depends on the city and the type of transportation. There are usually single tickets, but also monthly passes, which are cheaper for people who use public transportation regularly.",
+            "es": "Sela depán de la vil e dü tip de transpór. Il egzist zhenéralmán dé biyé a lünité, mé osí dé abonmán mansüel, plü ekonomík pur seú ki ütilis lé transpór an komún régülierman.",
+            "note": "INFORMATION: Réponse nuancée (\"Cela dépend\") — billets à l'unité vs abonnements"
+        },
+        {
+            "speaker": "Speaker 2",
+            "instructions": "detail-oriented",
+            "text": "Et concernant les horaires, est-il facile de trouver des transports tôt le matin ou tard le soir ?",
+            "en": "And regarding schedules, is it easy to find transportation early in the morning or late at night?",
+            "es": "E konsernán lé orér, é-til fasíl de truvé dé transpór to le matán u tar le suár ?",
+            "note": "ENCHAINEMENT: \"Et concernant\" - nouveau thème, les horaires"
+        },
+        {
+            "speaker": "Speaker 1",
+            "instructions": "measured",
+            "text": "Dans les grandes villes, les services commencent généralement assez tôt et certains fonctionnent jusque tard dans la soirée. Cependant, les horaires peuvent être plus restreints pendant la nuit ou dans des quartiers moins centraux.",
+            "en": "In big cities, services generally start fairly early and some run until late in the evening. However, schedules can be more limited at night or in less central neighborhoods.",
+            "es": "Dan lé gran vil, lé servís komans zhenéralmán asé to e serten fonksion zhüska tar dan la suaré. Sepandán, lé orér pevé étr plü restrán pandán la nüí u dan dé kartié mua sántró.",
+            "note": "INFORMATION: Horaires selon la zone; \"Cependant\" - nuance et restriction"
+        },
+        {
+            "speaker": "Speaker 2",
+            "instructions": "practical",
+            "text": "Les transports sont-ils généralement rapides ?",
+            "en": "Is transportation generally fast?",
+            "es": "Lé transpór son-til zhénéralmán rapid ?",
+            "note": "ENCHAINEMENT: Nouveau thème, la rapidité — question directe"
+        },
+        {
+            "speaker": "Speaker 1",
+            "instructions": "balanced",
+            "text": "Oui, surtout le métro et certains trains, car ils permettent d'éviter les embouteillages. Les bus peuvent être un peu plus lents aux heures de pointe, mais ils restent pratiques pour les trajets quotidiens.",
+            "en": "Yes, especially the metro and some trains, because they avoid traffic jams. Buses can be a bit slower at rush hour, but they remain practical for daily trips.",
+            "es": "Uí, sürtu le metró e serten tran, kar il pérmet déviter lé anbuteyázh. Lé bús pevé étr an pe plü lan o ér de pointe, mé il reste pratik pur lé trazhé kotidián.",
+            "note": "INFORMATION: Comparaison métro/train vs bus; \"surtout\" - précision, \"mais\" - nuance"
+        },
+        {
+            "speaker": "Speaker 2",
+            "instructions": "curious",
+            "text": "Les transports sont-ils bien organisés ?",
+            "en": "Is transportation well organized?",
+            "es": "Lé transpór son-til bien organizé ?",
+            "note": "ENCHAINEMENT: Dernier thème, l'organisation générale"
+        },
+        {
+            "speaker": "Speaker 1",
+            "instructions": "reassuring",
+            "text": "Oui, dans l'ensemble. Les horaires et les itinéraires sont généralement disponibles sur des applications mobiles ou sur les sites internet des sociétés de transport. Cela permet de planifier facilement son itinéraire avant le départ.",
+            "en": "Yes, overall. Schedules and routes are generally available on mobile apps or on the transit companies' websites. This makes it easy to plan your route before leaving.",
+            "es": "Uí, dan lanserbl. Lé orér e lé itinéré son zhenéralmán disponibl sür dé aplikasión mobil u sür lé sit internét dé sosieté de transpór. Sela pérmet de planifié fasilmán son itinéré avan le depár.",
+            "note": "INFORMATION: \"Oui, dans l'ensemble\" - réponse rassurante; applications mobiles et planification"
+        },
+        {
+            "speaker": "Speaker 2",
+            "instructions": "grateful",
+            "text": "Merci beaucoup pour toutes ces informations. Elles me sont très utiles pour préparer mon déménagement et mieux comprendre les différentes options de déplacement.",
+            "en": "Thank you very much for all this information. It's very useful for preparing my move and better understanding the different ways of getting around.",
+            "es": "Mersí bokú pur tut sé ranseñemán. El mé son tré ütil pur prepará mon dezhénazhmán e mié kompréndr lé difrént opsión de deplasmán.",
+            "note": "FERMETURE: Remerciement + utilité de l'information + but (le déménagement)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "instructions": "warm and polite",
+            "text": "Tout le plaisir est pour moi, Modibo. Je suis ravi d'avoir pu te renseigner.",
+            "en": "My pleasure, Modibo. I'm glad I could give you the information.",
+            "es": "Tu le plezír es pur muá, Modibó. Shé rávi davuar pü te ransenié.",
+            "note": "FERMETURE: Réponse polie au remerciement — formule de clôture"
+        }
+    ]
+}
