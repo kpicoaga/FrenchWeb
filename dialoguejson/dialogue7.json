@@ -12,105 +12,33 @@
     "Speaker 2": "E"
   },
   "expressions": [
-    {
-      "fr": "Je viens de m'installer au Canada avec mon conjoint.",
-      "turn": 1,
-      "note": "Contexte — installation récente"
-    },
-    {
-      "fr": "J'aimerais organiser une fête d'anniversaire pour lui.",
-      "turn": 1,
-      "note": "Conditionnel de politesse + pronom « lui »"
-    },
-    {
-      "fr": "J'aimerais d'abord te poser quelques questions.",
-      "turn": 1,
-      "note": "Conditionnel de politesse — demande polie"
-    },
-    {
-      "fr": "quels restaurants recommanderais-tu pour fêter un anniversaire en ville ?",
-      "turn": 3,
-      "note": "Conditionnel + inversion — première question"
-    },
-    {
-      "fr": "connais-tu des endroits romantiques où l'on pourrait passer une belle soirée ?",
-      "turn": 5,
-      "note": "Question + relative « où l'on pourrait »"
-    },
-    {
-      "fr": "quel type de cuisine plaît le plus ici : la cuisine locale ou la cuisine internationale ?",
-      "turn": 7,
-      "note": "Question alternative avec « quel type de »"
-    },
-    {
-      "fr": "Y a-t-il aussi des salles privées que l'on peut louer pour une petite fête ?",
-      "turn": 11,
-      "note": "« Y a-t-il » + relative"
-    },
-    {
-      "fr": "Est-ce que c'est abordable ?",
-      "turn": 13,
-      "note": "Question fermée — budget"
-    },
-    {
-      "fr": "où me conseillerais-tu d'acheter un gâteau d'anniversaire ?",
-      "turn": 15,
-      "note": "Conditionnel + infinitif"
-    },
-    {
-      "fr": "Sais-tu si ces pâtisseries proposent la livraison à domicile ?",
-      "turn": 17,
-      "note": "« Sais-tu si » — question indirecte"
-    },
-    {
-      "fr": "Aurais-tu des idées d'activités à faire en couple pour rendre cette journée spéciale ?",
-      "turn": 19,
-      "note": "Conditionnel de politesse + but"
-    },
-    {
-      "fr": "connais-tu des magasins où je pourrais acheter des décorations pour la fête ?",
-      "turn": 25,
-      "note": "Question + relative + conditionnel"
-    },
-    {
-      "fr": "Pourrais-tu aussi m'envoyer l'adresse ?",
-      "turn": 27,
-      "note": "Conditionnel de politesse — demande de service"
-    },
-    {
-      "fr": "Connais-tu aussi un photographe qui pourrait prendre des photos pendant la soirée ?",
-      "turn": 29,
-      "note": "Question + relative au conditionnel"
-    },
-    {
-      "fr": "quel genre de musique conviendrait le mieux : du jazz, de la pop ou du rock ?",
-      "turn": 33,
-      "note": "Conditionnel + question alternative"
-    },
-    {
-      "fr": "Pourrais-tu aussi m'aider à préparer la liste des invités, notamment en pensant à nos voisins de l'immeuble ?",
-      "turn": 35,
-      "note": "Conditionnel + « notamment »"
-    },
-    {
-      "fr": "vaut-il mieux envoyer une invitation ou appeler les voisins directement ?",
-      "turn": 37,
-      "note": "« Vaut-il mieux + infinitif » — alternative"
-    },
-    {
-      "fr": "quel cadeau me conseillerais-tu pour mon conjoint ?",
-      "turn": 39,
-      "note": "Conditionnel + inversion"
-    },
-    {
-      "fr": "Merci beaucoup pour tous tes conseils !",
-      "turn": 41,
-      "note": "Clôture — remerciement"
-    }
+    "Je viens de m'installer",
+    "j'aimerais organiser",
+    "J'aimerais d'abord te poser quelques questions",
+    "Pour commencer",
+    "quels restaurants recommanderais-tu",
+    "connais-tu des endroits romantiques",
+    "Et en général",
+    "quel type de cuisine plaît le plus",
+    "Y a-t-il aussi",
+    "que l'on peut louer",
+    "Est-ce que c'est abordable",
+    "C'est bon à savoir",
+    "où me conseillerais-tu d'acheter",
+    "Sais-tu si",
+    "Aurais-tu des idées",
+    "Au fait",
+    "Pourrais-tu aussi m'envoyer",
+    "Connais-tu aussi un photographe",
+    "quel genre de musique conviendrait le mieux",
+    "Pourrais-tu aussi m'aider",
+    "vaut-il mieux",
+    "Dernière question",
+    "Merci beaucoup pour tous tes conseils"
   ],
   "templateBank": {
     "title": "Boîte à outils — Organiser un anniversaire au Canada",
-    "sub": "Expressions naturelles et structures utiles pour le TCF Canada Tâche 2 : ouvrir la conversation, poser des questions précises, réagir, demander des détails et conclure. Toutes les entrées sont extraites du dialogue (répliques 1 à 43).",
+    "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire. Toutes les entrées sont des extraits verbatim des répliques.",
     "toggle": "Afficher les structures utiles",
     "categories": [
       {
@@ -121,7 +49,7 @@
           {
             "fr": "Salut ! Je viens de m'installer au Canada avec mon conjoint et j'aimerais organiser une fête d'anniversaire pour lui. J'aimerais d'abord te poser quelques questions pour bien préparer la soirée.",
             "turn": 1,
-            "note": "Ouverture — contexte + raison + demande de poser des questions",
+            "note": "Ouverture réelle du dialogue — contexte + raison + demande de poser des questions",
             "role": "c"
           },
           {
@@ -133,7 +61,7 @@
           {
             "fr": "Merci beaucoup pour tous tes conseils !",
             "turn": 41,
-            "note": "Clôture — remerciement",
+            "note": "Clôture réelle du dialogue — remerciement",
             "role": "c"
           },
           {
@@ -326,12 +254,8 @@
   },
   "model": "google/gemini-3.8-flash-lite-tts",
   "speakers": {
-    "Speaker 1": {
-      "voice": "Puck"
-    },
-    "Speaker 2": {
-      "voice": "Kore"
-    }
+    "Speaker 1": { "voice": "Puck" },
+    "Speaker 2": { "voice": "Kore" }
   },
   "turns": [
     {
@@ -624,4 +548,31 @@
     },
     {
       "speaker": "Speaker 1",
-      "instructions": "p
+      "instructions": "practical",
+      "text": "À ton avis, vaut-il mieux envoyer une invitation ou appeler les voisins directement ?",
+      "en": "In your opinion, is it better to send an invitation or call the neighbours directly?",
+      "es": "A ton naví, vo-til myö anvuyé ün nenvitasyón u aplé lé vuazén direktman ?",
+      "note": "ENCHAINEMENT: Question sur le mode d'invitation — alternative"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "advising",
+      "text": "Pour quelques voisins, un appel ou un message personnel devrait suffire. Pour les autres invités, une invitation serait plus pratique.",
+      "en": "For a few neighbours, a call or personal message should be enough. For the other guests, an invitation would be more practical.",
+      "es": "Pur kelke vuazén, ün napel u ün mesaz personel devré süfír. Pur lé zotr zenvité, ün nenvitasyón seré plü praktik.",
+      "note": "INFORMATION: Conseil — un appel suffit"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "reflecting",
+      "text": "Oui, c'est plus personnel comme ça. Je ferai selon le nombre d'invités.",
+      "en": "Yes, that's more personal. I'll decide based on the number of guests.",
+      "es": "Uí, se plü personel kom sa. She feré selon le nonbr denvité.",
+      "note": "RÉACTION: Accord et réflexion"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "agreeing",
+      "text": "Exactement, et cela permet aussi de confirmer qui sera présent.",
+      "en": "Exactly, and it also helps you confirm who's coming.",
+      "es": "Egzaktman
