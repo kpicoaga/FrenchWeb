@@ -1,0 +1,386 @@
+{
+    "title": "Louer un appartement",
+    "task": "tache2",
+    "topic": "1. Housing",
+    "description": "Appel à une agence immobilière pour se renseigner sur un appartement : loyer, charges, dépôt de garantie, bail et visite.",
+    "labels": {
+        "E": "Agence immobilière",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "au sujet de",
+        "Est-il toujours disponible",
+        "Très bien",
+        "quel est le loyer mensuel",
+        "s'il vous plaît",
+        "charges comprises",
+        "qu'est-ce que ça comprend",
+        "En revanche",
+        "Compris",
+        "dépôt de garantie",
+        "C'est noté",
+        "durée du bail",
+        "tacite reconduction",
+        "pourrais-je emménager",
+        "Justement",
+        "le dossier",
+        "bulletins de salaire",
+        "justificatif de domicile",
+        "conditions de revenus",
+        "au moins",
+        "Je vois",
+        "un garant",
+        "caution locative",
+        "c'est bon à savoir",
+        "je peux visiter",
+        "je vous propose",
+        "Disons à",
+        "Je vous envoie",
+        "une dernière question",
+        "les animaux sont-ils",
+        "sous réserve",
+        "Je vous rappelle",
+        "Bonne journée"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Louer un appartement",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour, je vous appelle au sujet de l'annonce que vous avez publiée pour un appartement de deux pièces.",
+                        "note": "Ouverture réelle du dialogue — contexte + demande",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien. Merci beaucoup pour toutes ces précisions, je vous rappelle après la visite. Bonne journée !",
+                        "note": "Clôture réelle du dialogue — remerciement + suite + salutation",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "À bientôt, merci à vous, et bonne journée !",
+                        "note": "Réponse de clôture de l'agence",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord, et qu'est-ce que ça comprend exactement, comme charges ?",
+                        "note": "Rebondir pour préciser",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Compris. Et pour le dépôt de garantie, quel est le montant ?",
+                        "note": "Enchaînement après accord",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et quelle est la durée du bail proposé ?",
+                        "note": "Acquiescer puis enchaîner",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien. Justement, quels sont les documents à fournir pour constituer le dossier ?",
+                        "note": "Transition vers le thème clé",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et si je n'ai pas encore de garant, est-ce que c'est possible ?",
+                        "note": "Réaction + question de suivi",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien.",
+                        "note": "Accusé de réception positif",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord.",
+                        "note": "Accord neutre",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Compris.",
+                        "note": "Accusé de réception",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté.",
+                        "note": "Je m'en souviens",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir.",
+                        "note": "Information utile reçue",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Et si je n'ai pas encore de garant, est-ce que c'est possible ?",
+                        "note": "Hypothèse conditionnelle (si + présent) — question de secours",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Et à quelle date pourrais-je emménager si je signe le bail ?",
+                        "note": "Hypothèse liée à un engagement — conditionnel poli",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Disons à dix-sept heures, si c'est possible ?",
+                        "note": "Négociation polie avec conditionnel « Disons »",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "e",
+                "items": [
+                    {
+                        "fr": "Il faut que vos revenus mensuels représentent au moins trois fois le montant du loyer.",
+                        "note": "Subjonctif après « il faut que » (représentent)",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Je vous envoie l'adresse par message.",
+                        "note": "Présent à valeur de futur proche (action programmée)",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Une caution locative peut être demandée.",
+                        "note": "Voix passive (peut être demandée)",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour, agence Lachance immobilier ! Comment puis-je vous aider ?",
+            "en": "Hello, Lachance real estate agency! How can I help you?",
+            "es": "Bonzhur, Madam Lashans inmovilier, bonzhur ! Komán puis-zhu vuz e-de?",
+            "note": "OUVERTURE: Formule d'accueil professionnelle - établit le contexte et la permission de questionner"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour, je vous appelle au sujet de l'annonce que vous avez publiée pour un appartement de deux pièces. Est-il toujours disponible ?",
+            "en": "Hello, I am calling about the advertisement you posted for a two-room apartment. Is it still available?",
+            "es": "Bonzhur, zhu vu z-apel o suezh de lansons ke vuz ave publie pur un apartmán de do pyes. E-til tuzhur dispanibl?",
+            "note": "OUVERTURE: \"Je vous appelle au sujet de\" - contexte et demande initiale"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, absolument, il est toujours libre. C'est un deux pièces de cinquante-cinq mètres carrés, au troisième étage, avec ascenseur.",
+            "en": "Yes, absolutely, it is still free. It is a two-room apartment of fifty-five square metres, on the third floor, with a lift.",
+            "es": "Uí, absolumán, il e tuzhur libr. Se un do pyes de senkant-senk metr karre, o trwaziem etazh, avek asansér.",
+            "note": "RESPONSE: Confirmation positive + description sommaire"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Et quel est le loyer mensuel, s'il vous plaît ?",
+            "en": "Very good. And what is the monthly rent, please?",
+            "es": "Tré bien. E kel e l luié mansuel, sil vu plé?",
+            "note": "ENCHAINEMENT: \"Et quel est\" - question sur le loyer"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le loyer est de huit cent cinquante euros par mois, charges comprises.",
+            "en": "The rent is eight hundred and fifty euros per month, service charges included.",
+            "es": "L luié e de wit san senkant euro par mua, sharzh kompriz.",
+            "note": "INFORMATION: Loyer précis, charges incluses"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord, et qu'est-ce que ça comprend exactement, comme charges ?",
+            "en": "Okay, and what exactly does that cover, as far as charges?",
+            "es": "Dakor, e kes-ke sa kompran egzaktemán, kom sharzh?",
+            "note": "ENCHAINEMENT: \"D'accord, et qu'est-ce que\" - précision sur les charges"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'eau, le chauffage collectif et l'entretien des parties communes. En revanche, l'électricité reste à votre charge.",
+            "en": "Water, communal heating and maintenance of the common areas. However, electricity remains at your expense.",
+            "es": "Leau, l chofaz kolektif e lantretien de le parti komin. An revánsh, lelek trisi te rest a votr sharzh.",
+            "note": "INFORMATION: Détail des charges + exception électricité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Compris. Et pour le dépôt de garantie, quel est le montant ?",
+            "en": "Understood. And for the security deposit, what is the amount?",
+            "es": "Kompri. E pur l depo de garanti, kel e l montán?",
+            "note": "ENCHAINEMENT: \"Compris. Et\" - nouveau thème, dépôt de garantie"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le dépôt de garantie équivaut à un mois de loyer, soit huit cent cinquante euros, qui vous seront restitués à la fin du bail.",
+            "en": "The security deposit amounts to one month's rent, that is eight hundred and fifty euros, which will be returned to you at the end of the lease.",
+            "es": "L depo de garanti ekival a un mua de luié, sua wit san senkant euro, ki vu seron restitue a la fin dü bai.",
+            "note": "INFORMATION: Montant du dépôt + restitution"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et quelle est la durée du bail proposé ?",
+            "en": "Noted. And what is the proposed lease length?",
+            "es": "Se note. E kel e la duré dü bai proposé?",
+            "note": "ENCHAINEMENT: \"C'est noté. Et\" - question sur la durée du bail"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le bail est d'une durée d'un an, renouvelable par tacite reconduction.",
+            "en": "The lease is for a duration of one year, renewable by tacit agreement.",
+            "es": "L bai e dune duré dun an, rénuvabl par takit rekondüksión.",
+            "note": "INFORMATION: Durée du bail + renouvellement automatique"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait. Et à quelle date pourrais-je emménager si je signe le bail ?",
+            "en": "Perfect. And on what date could I move in if I sign the lease?",
+            "es": "Parfé. E a kel dat puré-zh eménazhé si zhu sin l bai?",
+            "note": "ENCHAINEMENT: \"Parfait. Et\" - question sur la date d'emménagement"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vous pourrez emménager dès le premier du mois prochain, si le dossier est complet.",
+            "en": "You can move in as early as the first of next month, provided the file is complete.",
+            "es": "Vuz puré eménazhé dé l premié dü mua prochen, si l dosié e komplé.",
+            "note": "INFORMATION: Date d'emménagement conditionnelle"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Justement, quels sont les documents à fournir pour constituer le dossier ?",
+            "en": "Very good. Actually, what documents do I need to provide to put the file together?",
+            "es": "Tré bien. Zhustemán, kel son le dokumán a furnir pur konstitue l dosié?",
+            "note": "ENCHAINEMENT: \"Justement\" - motif clé de la stratégie, le dossier"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il faut fournir une pièce d'identité, vos trois derniers bulletins de salaire et un justificatif de domicile.",
+            "en": "You need to provide an ID document, your three most recent pay slips and a proof of address.",
+            "es": "Il fo furnir un pyes didentite, vo trwa dernié bülten de salér e un zhustifikatif de domisil.",
+            "note": "INFORMATION: Liste des documents requis"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et y a-t-il des conditions de revenus, un salaire minimum à justifier ?",
+            "en": "Okay. And are there income requirements, a minimum salary to justify?",
+            "es": "Dakor. E y a-til de kondisyon de revnu, un salér minimom a zhustifie?",
+            "note": "ENCHAINEMENT: \"D'accord. Et\" - question sur les conditions de revenus"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, il faut que vos revenus mensuels représentent au moins trois fois le montant du loyer.",
+            "en": "Yes, your monthly income must represent at least three times the amount of the rent.",
+            "es": "Uí, il fo ke vo revnu mansiuel reprezant o mwen trwa fua l montán dü luié.",
+            "note": "INFORMATION: Condition de revenus"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et si je n'ai pas encore de garant, est-ce que c'est possible ?",
+            "en": "I see. And if I do not have a guarantor yet, is that possible?",
+            "es": "Zhu vua. E si zhu né pa ankor de garán, esk se posibl?",
+            "note": "ENCHAINEMENT: \"Je vois. Et\" - précision sur la caution"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un garant n'est pas obligatoire si vos revenus suffisent. Sinon, une caution locative peut être demandée.",
+            "en": "A guarantor is not compulsory if your income is sufficient. Otherwise, a rental guarantee may be requested.",
+            "es": "Un garán né pa obligatuár si vo revnu sífiz. Sinon, un kosión lokativ pé etr demandé.",
+            "note": "INFORMATION: Alternative - garant ou caution"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et est-ce que je peux visiter l'appartement avant de signer ?",
+            "en": "Ah, that is good to know. And can I visit the apartment before signing?",
+            "es": "A, se bon a savuar. E esk zhu pé vizité lapatimán avan de siné?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; ENCHAINEMENT: \"Et est-ce que\" - demande de visite"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, je vous propose une visite jeudi après-midi. À quelle heure vous conviendrait-il ?",
+            "en": "Of course, I suggest a visit on Thursday afternoon. What time would suit you?",
+            "es": "Biensur, zhu vu propos un vizit yödi aprémidi. A kel er vu konviendr-t-il?",
+            "note": "CONFIRMATION: Accord + proposition de créneau"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Disons à dix-sept heures, si c'est possible ?",
+            "en": "Let us say at five o'clock, if that is possible?",
+            "es": "Dizón a diset er, si se posibl?",
+            "note": "INFORMATION: Créneau proposé"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Très bien, je note : jeudi à dix-sept heures. Je vous envoie l'adresse par message.",
+            "en": "Very good, I am writing it down: Thursday at five o'clock. I am sending you the address by message.",
+            "es": "Tré bien, zhu not : yödi a diset er. Zhu tanvoé ladres par mesash.",
+            "note": "CONFIRMATION: Confirmation du rendez-vous"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait. Et une dernière question : les animaux sont-ils acceptés dans l'immeuble ?",
+            "en": "Perfect. And one last question: are animals accepted in the building?",
+            "es": "Parfé. E un dernyer kesción : le zanimo son-til aksepté dan limobl?",
+            "note": "ENCHAINEMENT: \"Et une dernière question\" - question supplémentaire, animaux"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, les animaux de petite taille sont acceptés, sous réserve de l'accord du propriétaire.",
+            "en": "Yes, small animals are accepted, subject to the owner's agreement.",
+            "es": "Uí, le zanimo de pétit tai son aksepté, sur rézerv de lakor dü propriétér.",
+            "note": "INFORMATION: Politique sur les animaux"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Merci beaucoup pour toutes ces précisions, je vous rappelle après la visite. Bonne journée !",
+            "en": "Very good. Thank you very much for all these details, I will call you back after the visit. Have a good day!",
+            "es": "Tré bien. Mersí bokuo pur tut se presisión, zhu vu rapel apré la vizit. Bonzhurne !",
+            "note": "FERMETURE: \"Merci\" + formule de clôture"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "À bientôt, merci à vous, et bonne journée !",
+            "en": "See you soon, thank you, and have a good day!",
+            "es": "A byento, mersí a vu, e bonzhurne !",
+            "note": "RESPONSE: Réponse de clôture, formule polie"
+        }
+    ]
+}

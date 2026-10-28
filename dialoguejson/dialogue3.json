@@ -1,0 +1,457 @@
+{
+    "title": "Garder l'appartement d'un ami",
+    "task": "tache2",
+    "topic": "1. Housing",
+    "description": "Un ami part quelques jours et vous demande de vous occuper de son appartement : plantes, courrier, poubelles et urgences.",
+    "labels": {
+        "E": "Votre ami(e)",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "avant que tu partes",
+        "D'abord",
+        "Et pendant",
+        "quelles sont les tâches",
+        "À propos des plantes",
+        "à quelle fréquence",
+        "Deux fois par semaine",
+        "des soins particuliers",
+        "Et concernant",
+        "une fois que",
+        "Justement",
+        "Et si jamais",
+        "au cas où",
+        "Dis-moi",
+        "un système d'alarme",
+        "Si tu pouvais",
+        "Une autre chose",
+        "avant que ça expire",
+        "Ah, j'y pense",
+        "Dernière question",
+        "Je m'occupe de tout",
+        "ne t'inquiète pas"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Garder l'appartement d'un ami",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut, ça va ?",
+                        "note": "Ouverture informelle de l'ami — salutation entre amis",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Alors, avant que tu partes, j'aimerais te poser quelques questions pour être sûr de bien m'occuper de ton appartement. D'abord, quelles sont les dates exactes de ton absence ?",
+                        "note": "Ouverture de la demande — annonce du début des questions",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parfait. Merci pour toutes ces précisions. Je m'occupe de tout.",
+                        "note": "Clôture réelle du dialogue — remerciement + assurance finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien. Et pendant ton absence, quelles sont les tâches les plus importantes que tu veux que je fasse ?",
+                        "note": "« Et pendant » — enchaîner vers les tâches",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Et concernant ton courrier, où dois-je le déposer une fois que je l'ai récupéré ?",
+                        "note": "« Et concernant » — nouveau thème, le courrier",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, y a-t-il quelqu'un qui pourrait passer pendant ton absence ? Un voisin ou un technicien que je devrais recevoir ?",
+                        "note": "« Justement » — question sur les visiteurs potentiels",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Une autre chose, dois-je ouvrir un peu les fenêtres de temps en temps pour aérer l'appartement ?",
+                        "note": "« Une autre chose » — question supplémentaire",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, j'y pense. Dois-je vérifier quelque chose concernant le chauffage ou la climatisation pendant que tu n'es pas là ?",
+                        "note": "« Ah, j'y pense » — pensée ajoutée en cours d'échange",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Oui, ça va bien. Et toi ?",
+                        "note": "Réponse à la salutation + question miroir",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien.",
+                        "note": "Accusé de réception (récurent)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parfait.",
+                        "note": "Accord positif (récurent)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord.",
+                        "note": "Accord neutre",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je m'occupe de tout.",
+                        "note": "Réassurance finale — prise en charge complète",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien. Et si jamais il y a un problème avec l'appartement, à qui dois-je téléphoner ?",
+                        "note": "« Et si jamais » — scénario de secours, contact en cas de problème",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien. Et où se trouve le disjoncteur au cas où il y aurait une coupure d'électricité ?",
+                        "note": "« Au cas où » + conditionnel (il y aurait) — question de secours",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien. Dernière question au cas où tu rentrerais plus tôt ou plus tard : comment puis-je être informé ?",
+                        "note": "« Au cas où » + conditionnel (tu rentrerais) — clôture des questions",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Si tu pouvais les sortir jeudi soir, ce serait parfait.",
+                        "note": "Demande polie avec conditionnel (si + imparfait → conditionnel)",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "avant que tu partes, j'aimerais te poser quelques questions",
+                        "note": "Subjonctif après « avant que » (partes)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "quelles sont les tâches les plus importantes que tu veux que je fasse ?",
+                        "note": "Subjonctif après « veux que » (fasse)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "au cas où il y aurait une coupure d'électricité",
+                        "note": "Conditionnel après « au cas où » (il y aurait)",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut, ça va ?",
+            "en": "Hi, how are you?",
+            "es": "Saliu, sa va?",
+            "note": "OUVERTURE: Formule de salutation informelle entre amis"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! Oui, ça va bien. Et toi ?",
+            "en": "Hi! I am doing well. And you?",
+            "es": "Saliu ! Uí, sa va bién. E tua?",
+            "note": "RESPONSE: Réponse à la salutation + question miroir"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je vais bien, merci.",
+            "en": "I am doing fine, thanks.",
+            "es": "Yu va bién, mersí.",
+            "note": "RESPONSE: Réponse polie à la question"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Alors, avant que tu partes, j'aimerais te poser quelques questions pour être sûr de bien m'occuper de ton appartement. D'abord, quelles sont les dates exactes de ton absence ?",
+            "en": "So, before you leave, I would like to ask you a few questions to make sure I take good care of your apartment. First, what are the exact dates of your absence?",
+            "es": "Alór, avan ke tu part, yomeré te posé kelk kesción pur ètr sir de bién mokupe de ton apartmán. Dabor, kel son le dat egzakt de ton absáns?",
+            "note": "OUVERTURE: \"Avant que tu partes\" - annonce le début des questions; première question sur les dates"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je pars du 12 au 17.",
+            "en": "I am leaving from the 12th to the 17th.",
+            "es": "Yu par du duz o diset.",
+            "note": "INFORMATION: Dates de l'absence"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Et pendant ton absence, quelles sont les tâches les plus importantes que tu veux que je fasse ?",
+            "en": "Very good. And while you are away, what are the most important tasks you want me to do?",
+            "es": "Tré bien. E pandán ton absáns, kel son le tás le plu impotan ke tu vé ke yu fás?",
+            "note": "RÉACTION: \"Très bien\"; ENCHAINEMENT: \"Et pendant\" - nouvelle question sur les tâches"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Principalement arroser les plantes et vérifier le courrier.",
+            "en": "Mainly watering the plants and checking the mail.",
+            "es": "Pransipalman arrosé le plant e verifié le kurier.",
+            "note": "INFORMATION: Tâches principales"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "À propos des plantes, à quelle fréquence veux-tu que je les arrose ?",
+            "en": "About the plants, how often do you want me to water them?",
+            "es": "A própu de plant, a kel frékans vé-tu ke yu le zarros?",
+            "note": "ENCHAINEMENT: \"À propos de\" - précision sur les plantes"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Deux fois par semaine, c'est suffisant.",
+            "en": "Twice a week is enough.",
+            "es": "Dé fua par seman, se sífizán.",
+            "note": "INFORMATION: Fréquence précise"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait. Et où se trouvent les produits pour les plantes ? Je préfère vérifier avant.",
+            "en": "Perfect. And where are the plant products? I would rather check beforehand.",
+            "es": "Parfé. E u se truv le produi pur le plant? Yu préfér verifie avan.",
+            "note": "RÉACTION: \"Parfait\"; ENCHAINEMENT: \"Et où\" - localisation des produits"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Ils sont dans le placard sous l'évier.",
+            "en": "They are in the cupboard under the sink.",
+            "es": "Il son dan le plakár su lévie.",
+            "note": "INFORMATION: Localisation précise"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Est-ce que certaines plantes demandent des soins particuliers ?",
+            "en": "Very good. Do some plants need special care?",
+            "es": "Tré bien. Esk cierten plant demand de suen partikulier?",
+            "note": "ENCHAINEMENT: \"Est-ce que\" - question sur les soins particuliers"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, seulement celle du salon. Elle aime avoir peu d'eau.",
+            "en": "Yes, only the one in the living room. It likes very little water.",
+            "es": "Uí, sulman selui dü salon. El em avuar pu do.",
+            "note": "INFORMATION: Soin particulier"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Et concernant ton courrier, où dois-je le déposer une fois que je l'ai récupéré ?",
+            "en": "And regarding your mail, where should I put it once I have picked it up?",
+            "es": "E konsernán ton kurier, u duazh yu le dépozé un fua ke yu le rékupéré?",
+            "note": "ENCHAINEMENT: \"Et concernant\" - nouveau thème, le courrier"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Tu peux le laisser sur la table de la cuisine.",
+            "en": "You can leave it on the kitchen table.",
+            "es": "Tu pé le lesé sur la tabl de la kuisin.",
+            "note": "INFORMATION: Endroit pour le courrier"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, y a-t-il quelqu'un qui pourrait passer pendant ton absence ? Un voisin ou un technicien que je devrais recevoir ?",
+            "en": "Actually, is there anyone who might come by while you are away? A neighbour or a technician I should receive?",
+            "es": "Justemán, y a-til kelkún ki puré pasé pandán ton absáns? Un vuazin u un teknikien ke yu duéré resuavuar?",
+            "note": "ENCHAINEMENT: \"Justement\" - question sur les visiteurs potentiels"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Non, personne de prévu.",
+            "en": "No, no one is planned.",
+            "es": "Non, person de prévu.",
+            "note": "INFORMATION: Réponse négative"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Et si jamais il y a un problème avec l'appartement, à qui dois-je téléphoner ?",
+            "en": "Very good. And if there is ever a problem with the apartment, who should I call?",
+            "es": "Tré bien. E si yamé il ya un problem avek lapatimán, a ki duazh yu tele foné?",
+            "note": "ENCHAINEMENT: \"Et si jamais\" - question d'urgence, motif clé de la stratégie"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Appelle simplement mon propriétaire. Son numéro est sur le frigo.",
+            "en": "Just call my landlord. His number is on the fridge.",
+            "es": "Apel senciman mon propietér. Son numéro e sur le frigo.",
+            "note": "INFORMATION: Contact en cas de problème"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait. Dis-moi, y a-t-il un système d'alarme ? Si oui, comment puis-je l'activer ou le désactiver ?",
+            "en": "Perfect. Tell me, is there a burglar alarm? If so, how do I turn it on or off?",
+            "es": "Parfé. Di-mua, y a-til un sistém dalarm? Si ua, komán puis-yu laktive o le desaktive?",
+            "note": "RÉACTION: \"Parfait, dis-moi\"; ENCHAINEMENT: question sur le système d'alarme"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Non, je n'ai pas d'alarme, rien à faire de ce côté-là.",
+            "en": "No, I do not have an alarm, nothing to do on that front.",
+            "es": "Non, yu né pa dalarm, rien a fer de s koté la.",
+            "note": "INFORMATION: Pas de système d'alarme"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pour les poubelles, veux-tu que je les sorte à un moment précis ?",
+            "en": "Okay. And about the rubbish, do you want me to take it out at a specific time?",
+            "es": "Dakor. E pur le pubel, vé-tu ke yu le sort a un momán presi?",
+            "note": "ENCHAINEMENT: \"D'accord. Et pour\" - nouvelle question, les poubelles"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Si tu pouvais les sortir jeudi soir, ce serait parfait.",
+            "en": "If you could take it out on Thursday evening, that would be perfect.",
+            "es": "Si tu puvé le sorti yudi suar, se seré parfé.",
+            "note": "INFORMATION: Jour précis pour les poubelles"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Où dois-je trouver les sacs de rechange ?",
+            "en": "Very good. Where should I find the spare bags?",
+            "es": "Tré bien. U duazh yu truvé le sak de rechánzh?",
+            "note": "ENCHAINEMENT: Question de suivi, les sacs de rechange"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Dans le premier tiroir à droite de l'évier.",
+            "en": "In the first drawer to the right of the sink.",
+            "es": "Dan l premié tiruár a drut de lévie.",
+            "note": "INFORMATION: Localisation des sacs"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Une autre chose, dois-je ouvrir un peu les fenêtres de temps en temps pour aérer l'appartement ?",
+            "en": "One more thing, should I open the windows from time to time to air out the apartment?",
+            "es": "Un otr chos, duazh yu uvrir un pu le fanetr de tan an tan pur aeré lapatimán?",
+            "note": "ENCHAINEMENT: \"Une autre chose\" - nouvelle question, l'aération"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, si tu peux aérer dix minutes à chaque visite, c'est super.",
+            "en": "Yes, if you can air it out for ten minutes each visit, that is great.",
+            "es": "Uí, si tu pé aeré dis minut a sak vizit, se super.",
+            "note": "INFORMATION: Recommandation d'aération"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait. Et au niveau de la nourriture dans le frigo, veux-tu que je jette quelque chose avant que ça expire ?",
+            "en": "Perfect. And what about the food in the fridge, do you want me to throw anything away before it expires?",
+            "es": "Parfé. E o nivó de la nouritur dan l frigo, vé-tu ke yu yet kelk chos avan ke sa expir?",
+            "note": "RÉACTION: \"Parfait\"; ENCHAINEMENT: \"Et au niveau de\" - la nourriture"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, il y a quelques fruits que tu peux jeter si tu vois qu'ils ne sont plus bons.",
+            "en": "Yes, there are a few fruits you can throw away if you see they are no longer good.",
+            "es": "Uí, il ya kelk frui ke tu pé yeté si tu vua kil né plu bon.",
+            "note": "INFORMATION: Nourriture à jeter"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, j'y pense. Dois-je vérifier quelque chose concernant le chauffage ou la climatisation pendant que tu n'es pas là ?",
+            "en": "Oh, that reminds me. Should I check anything regarding the heating or the air conditioning while you are away?",
+            "es": "A, yu pense. Duazh yu verifie kelk chos konsernán le chofaj o la klimatisasión pandán ke tu né pa la?",
+            "note": "ENCHAINEMENT: \"Ah, j'y pense\" - question supplémentaire, chauffage"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, laisse le chauffage au niveau deux, ça suffit.",
+            "en": "Yes, leave the heating at level two, that is enough.",
+            "es": "Uí, les le chofaj o nivó do, sa sífiz.",
+            "note": "INFORMATION: Consigne pour le chauffage"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Et où se trouve le disjoncteur au cas où il y aurait une coupure d'électricité ?",
+            "en": "Very good. And where is the circuit breaker in case there is a power cut?",
+            "es": "Tré bien. E u se truv le disyontér o kaz u il yoré un kupur delek trisité?",
+            "note": "ENCHAINEMENT: \"Au cas où\" - question de secours, le disjoncteur"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il est dans le petit placard à côté de la salle de bain.",
+            "en": "It is in the small cupboard next to the bathroom.",
+            "es": "Il e dan l peti plakár a koté de la sal de bén.",
+            "note": "INFORMATION: Localisation du disjoncteur"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Veux-tu que je m'occupe aussi de ton chat, ou n'y a-t-il aucun animal à la maison ?",
+            "en": "Okay. Do you want me to also take care of your cat, or is there no animal at home?",
+            "es": "Dakor. Vé-tu ke yu mokupe osi de ton cha, u néa til okun animó a la mezon?",
+            "note": "ENCHAINEMENT: \"Veux-tu\" - dernière vérification, les animaux"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Aucun animal, donc rien à faire de ce côté-là.",
+            "en": "No animal, so nothing to do on that front.",
+            "es": "Okun animó, donk rien a fer de s koté la.",
+            "note": "INFORMATION: Réponse sur les animaux"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Dernière question au cas où tu rentrerais plus tôt ou plus tard : comment puis-je être informé ?",
+            "en": "Very good. Last question, in case you come back earlier or later: how can I be informed?",
+            "es": "Tré bien. Dernier kesción o kaz u tu rantré plu tor o plu tar : komán puis-zh ètr informé?",
+            "note": "ENCHAINEMENT: \"Dernière question\" - clôture des questions"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je t'enverrai un message, ne t'inquiète pas.",
+            "en": "I will send you a message, do not worry.",
+            "es": "Yu tanveré un mesash, ne tenkiet pa.",
+            "note": "RESPONSE: Réponse rassurante"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait. Merci pour toutes ces précisions. Je m'occupe de tout.",
+            "en": "Perfect. Thank you for all these details. I will take care of everything.",
+            "es": "Parfé. Mersí pur tut se presisión. Yu mokupe de tu.",
+            "note": "FERMETURE: \"Merci\" + formule de clôture de l'échange"
+        }
+    ]
+}

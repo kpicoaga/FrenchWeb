@@ -1,0 +1,266 @@
+{
+    "title": "Ouverture de compte bancaire",
+    "task": "tache2",
+    "topic": "13. Administrative & banking",
+    "description": "Appel téléphonique pour ouvrir un nouveau compte en banque.",
+    "labels": {
+        "E": "Interlocuteur",
+        "C": "Candidat(e)"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "je vous appelle pour",
+        "Je m'appelle",
+        "je pensais à",
+        "je ne suis pas sûr",
+        "c'est bon à savoir",
+        "Et à propos de",
+        "comment ça fonctionne",
+        "Donc je peux",
+        "si vous fournissez",
+        "je passerai demain",
+        "Au revoir",
+        "Bonne journée"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Ouverture de compte bancaire",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour, je vous appelle pour ouvrir un nouveau compte bancaire.",
+                        "note": "Ouverture réelle du dialogue — contexte + demande",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Banque Internationale, bonjour ! Que puis-je faire pour vous ?",
+                        "note": "Formule d'accueil de la banque — invite à formuler la demande",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, je passerai demain avec ma pièce d'identité et le dépôt. Au revoir !",
+                        "note": "Clôture réelle du dialogue — accord + suite concrète + salutation",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Merci ! À demain. Bonne journée.",
+                        "note": "Réponse de clôture de la banque",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Je pensais à un compte courant avec la banque en ligne.",
+                        "note": "« Je pensais à » — proposition, lien thématique",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et à propos de l'application mobile, comment ça fonctionne ?",
+                        "note": "« Et à propos de » — enchaîner vers un nouveau thème",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Donc je peux ouvrir le compte tout de suite ?",
+                        "note": "« Donc je peux » — vérification avant engagement",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Merci, Kevin. Et quel type de compte souhaitez-vous ouvrir ?",
+                        "note": "« Et » — question de suivi du conseiller",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Hmm, je ne suis pas sûr pour le découvert autorisé.",
+                        "note": "Expression du doute — phrase banque",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir.",
+                        "note": "Information utile reçue",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien ! Pour commencer, puis-je avoir votre nom complet, s'il vous plaît ?",
+                        "note": "Prise en charge positive de la demande",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Oui, si vous fournissez une pièce d'identité et faites un dépôt initial de 100 €.",
+                        "note": "Condition réelle (si + présent) — les conditions à remplir",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Vous pouvez avoir un découvert autorisé jusqu'à 500 €, sans intérêts pendant le premier mois.",
+                        "note": "Option de secours proposée quand le client hésite",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "je vous appelle pour ouvrir un nouveau compte bancaire.",
+                        "note": "« pour + infinitif » — exprimer le but",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "je passerai demain avec ma pièce d'identité et le dépôt.",
+                        "note": "Futur simple (je passerai) — action programmée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Et quel type de compte souhaitez-vous ouvrir ?",
+                        "note": "Inversion sujet-verbe (souhaitez-vous) — question soutenue",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 1",
+            "text": "Banque Internationale, bonjour ! Que puis-je faire pour vous ?",
+            "en": "Hello, Banque Internationale! How can I help you?",
+            "es": "Banguk International, bonshur ! Ke puiske fer pur vu?",
+            "note": "OUVERTURE: Formule d'accueil - établit le contexte et la permission de questionner"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour, je vous appelle pour ouvrir un nouveau compte bancaire.",
+            "en": "Hello, I am calling to open a new bank account.",
+            "es": "Bonshur, yu vu apel pur uvrir un nuvo kount bankér.",
+            "note": "OUVERTURE: \"Je vous appelle pour\" - contexte et demande"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Très bien ! Pour commencer, puis-je avoir votre nom complet, s'il vous plaît ?",
+            "en": "Very well! To start, could I have your full name, please?",
+            "es": "Tré bien ! Pur komansé, puizh avuar vor nom konple, sil vu plé?",
+            "note": "RESPONSE: Prise en charge de la demande, demande d'information initiale"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je m'appelle Kevin Picoaga.",
+            "en": "My name is Kevin Picoaga.",
+            "es": "Yu mapel Kevín Pikoága.",
+            "note": "ENCHAINEMENT: \"Je m'appelle\" - fournit l'information, identification"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Merci, Kevin. Et quel type de compte souhaitez-vous ouvrir ?",
+            "en": "Thank you, Kevin. And what type of account would you like to open?",
+            "es": "Merkí, Kevín. E kel tip de kount suetez-vu uvrir?",
+            "note": "INFORMATION: Question de suivi, type de produit"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je pensais à un compte courant avec la banque en ligne.",
+            "en": "I was thinking of a current account with online banking.",
+            "es": "Yu pansa a un kount kuran avek la bank an lolin. Y.",
+            "note": "ENCHAINEMENT: \"Je pensais à\" - proposition, lien thématique"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Notre compte courant est sans frais mensuels et comprend une carte de débit.",
+            "en": "Our current account has no monthly fees and includes a debit card.",
+            "es": "Notr kount kuran e san fré mánsuel e komprán una kart de débí.",
+            "note": "INFORMATION: Caractéristiques du produit, détails tarifaires"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Hmm, je ne suis pas sûr pour le découvert autorisé.",
+            "en": "Hmm, I am not sure about the authorized overdraft.",
+            "es": "Um, yu nu sui pa sir pur le dékúvar othorizé.",
+            "note": "RÉACTION: \"Hmm, je ne suis pas sûr\" - expression du doute"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vous pouvez avoir un découvert autorisé jusqu'à 500 €, sans intérêts pendant le premier mois.",
+            "en": "You can have an authorized overdraft of up to 500€, interest-free for the first month.",
+            "es": "Vu puvé avuar un dékúvar othorizé juská sánk san euró, san éntérés pandán l primer mua.",
+            "note": "INFORMATION: Détails supplémentaires, offre spécifique"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et à propos de l'application mobile, comment ça fonctionne ?",
+            "en": "Ah, good to know. And about the mobile app, how does it work?",
+            "es": "A, se bon a savuar. E a própu de lap likasión móvil, komán sa fonsion?",
+            "note": "ENCHAINEMENT: \"Et à propos de\" - nouveau thème, question de suivi"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Notre application primée permet de faire des virements, des paiements et de suivre votre budget.",
+            "en": "Our award-winning app lets you make transfers, payments, and track your budget.",
+            "es": "Notr aplicasión primé permit de fer dé virman, dé péman e de suivr votr bugué.",
+            "note": "INFORMATION: Description fonctionnelle de l'application"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Donc je peux ouvrir le compte tout de suite ?",
+            "en": "So I can open the account right away?",
+            "es": "Donk yu pó ovrir le kount tu de suit?",
+            "note": "CONFIRMATION: Vérification de confirmation conditionnelle"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, si vous fournissez une pièce d'identité et faites un dépôt initial de 100 €.",
+            "en": "Yes, if you provide an ID and make an initial deposit of 100€.",
+            "es": "Uí, si vu furnisé un piés didentité e fé un dépo inicial de san euró.",
+            "note": "CONFIRMATION: Confirmation positive avec conditions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, je passerai demain avec ma pièce d'identité et le dépôt. Au revoir !",
+            "en": "Perfect, I will come by tomorrow with my ID and the deposit. Goodbye!",
+            "es": "Parfé, yu pasré demán avek ma piés didentité e l dépo. Orvuár!",
+            "note": "FERMETURE: Clôture de l'échange, formule de salutation"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Merci ! À demain. Bonne journée.",
+            "en": "Thank you! See you tomorrow. Have a good day.",
+            "es": "Mersí! A demán. Bon jurne.",
+            "note": "RESPONSE: Réponse de clôture, formule polie"
+        }
+    ]
+}
