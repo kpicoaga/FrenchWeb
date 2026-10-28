@@ -1,0 +1,531 @@
+{
+  "title": "Demander des renseignements à un voisin sur l'immeuble et le quartier",
+  "task": "tache2",
+  "topic": "Le voisinage et l'immeuble",
+  "description": "Conversation avec un voisin pour découvrir les règles de l'immeuble, la vie de quartier, les services, les commerces, les transports et les activités à proximité.",
+  "labels": {
+    "E": "Voisin(e)",
+    "C": "Nouvelle voisine (candidate)"
+  },
+  "roles": {
+    "Speaker 1": "C",
+    "Speaker 2": "E"
+  },
+  "expressions": [
+    "je suis votre nouvelle voisine",
+    "je viens d'emménager",
+    "auriez-vous quelques minutes",
+    "comment décrirez-vous les relations entre les voisins",
+    "est-ce que l'ambiance est plutôt conviviale",
+    "y a-t-il des règles de copropriété spécifiques",
+    "pourriez-vous me préciser",
+    "je vais en tenir compte",
+    "quelle serait la meilleure façon de rencontrer d'autres résidents",
+    "pourriez-vous m'indiquer les horaires",
+    "comment qualifieriez-vous ce quartier",
+    "auriez-vous des conseils pour m'intégrer rapidement",
+    "il vaut mieux éviter de faire du bruit",
+    "pourriez-vous me dire où se situe la mairie",
+    "quels sont les endroits sympas où l'on peut se détendre",
+    "quels restaurants ou cafés me recommanderiez-vous",
+    "connaîtriez-vous des endroits intéressants",
+    "concernant la propreté du quartier",
+    "quels sont les moyens de transport les plus pratiques",
+    "y a-t-il des pistes cyclables dans le quartier"
+  ],
+  "templateBank": {
+    "title": "Boîte à outils — Le voisinage et l'immeuble",
+    "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, demander des précisions et repérer la grammaire.",
+    "toggle": "Afficher les structures utiles",
+    "categories": [
+      {
+        "name": "L'Ouverture & Clôture",
+        "icon": "🚪",
+        "role": "c",
+        "items": [
+          {
+            "fr": "Bonjour ! Je suis votre nouvelle voisine, je viens d'emménager et je ne connais encore rien ici. Auriez-vous quelques minutes pour répondre à quelques questions sur le voisinage ?",
+            "note": "Ouverture réelle — présentation + contexte + demande polie de renseignements",
+            "role": "c"
+          },
+          {
+            "fr": "Bonjour madame, bien sûr, allez-y, je vous écoute.",
+            "note": "Accueil + invitation à poser les questions",
+            "role": "e"
+          },
+          {
+            "fr": "Merci infiniment pour toutes ces informations, vous m'avez beaucoup aidée. J'espère vous revoir bientôt !",
+            "note": "Clôture réelle — remerciement + utilité de l'information + souhait de revoir le voisin",
+            "role": "c"
+          },
+          {
+            "fr": "Pas de souci, enchanté, et bienvenue dans notre immeuble !",
+            "note": "Réponse chaleureuse + souhait de bienvenue",
+            "role": "e"
+          },
+          {
+            "fr": "Merci beaucoup, à bientôt !",
+            "note": "Salutation finale",
+            "role": "c"
+          }
+        ]
+      },
+      {
+        "name": "Les Enchaînements",
+        "icon": "🔗",
+        "role": "c",
+        "items": [
+          {
+            "fr": "Alors, comment décrirez-vous les relations entre les voisins dans cet immeuble ?",
+            "note": "« Alors » — lancer la première question",
+            "role": "c"
+          },
+          {
+            "fr": "Et y a-t-il des règles de copropriété spécifiques dont je devrais être informée ?",
+            "note": "« Et » — nouveau thème : les règles de l'immeuble",
+            "role": "c"
+          },
+          {
+            "fr": "Et d'ailleurs, quelle serait la meilleure façon de rencontrer d'autres résidents ?",
+            "note": "« Et d'ailleurs » — transition vers la vie sociale",
+            "role": "c"
+          },
+          {
+            "fr": "Et plus généralement, comment qualifieriez-vous ce quartier ?",
+            "note": "« Plus généralement » — passer à l'ambiance du quartier",
+            "role": "c"
+          },
+          {
+            "fr": "Et concernant la propreté du quartier, quels sont les jours de collecte des déchets ?",
+            "note": "« Et concernant » — introduire un thème pratique",
+            "role": "c"
+          },
+          {
+            "fr": "Et enfin, quels sont les moyens de transport les plus pratiques pour se déplacer ici ?",
+            "note": "« Et enfin » — annoncer le dernier thème",
+            "role": "c"
+          }
+        ]
+      },
+      {
+        "name": "Les Réactions",
+        "icon": "😌",
+        "role": "c",
+        "items": [
+          {
+            "fr": "Ah, c'est rassurant !",
+            "note": "Réaction positive et soulagement",
+            "role": "c"
+          },
+          {
+            "fr": "Je comprends, c'est tout à fait logique.",
+            "note": "Montrer que l'information est comprise",
+            "role": "c"
+          },
+          {
+            "fr": "D'accord, je vais en tenir compte.",
+            "note": "Indiquer que l'on prendra l'information en considération",
+            "role": "c"
+          },
+          {
+            "fr": "C'est bon à savoir.",
+            "note": "Réaction à une information utile",
+            "role": "c"
+          },
+          {
+            "fr": "Génial, ça me sera très utile !",
+            "note": "Réaction enthousiaste",
+            "role": "c"
+          }
+        ]
+      },
+      {
+        "name": "L'Imprévu",
+        "icon": "⚠️",
+        "role": "c",
+        "items": [
+          {
+            "fr": "Pourriez-vous me préciser s'il y a une cotisation particulière que chaque habitant doit payer pour l'entretien de l'immeuble ?",
+            "note": "Demander une précision sur les frais",
+            "role": "c"
+          },
+          {
+            "fr": "Pourriez-vous m'indiquer les horaires de ces réunions ?",
+            "note": "Demande de renseignement pratique",
+            "role": "c"
+          },
+          {
+            "fr": "Y a-t-il des choses importantes à savoir sur le quartier pour éviter les problèmes ?",
+            "note": "Question de prévention et de sécurité au quotidien",
+            "role": "c"
+          },
+          {
+            "fr": "Par précaution, y a-t-il une pharmacie ou un hôpital à proximité ?",
+            "note": "Question pratique sur les services de santé",
+            "role": "c"
+          }
+        ]
+      },
+      {
+        "name": "La Grammaire Utile",
+        "icon": "📘",
+        "role": "c",
+        "items": [
+          {
+            "fr": "Auriez-vous quelques minutes pour répondre à quelques questions ?",
+            "note": "Conditionnel de politesse (« auriez-vous »)",
+            "role": "c"
+          },
+          {
+            "fr": "Comment décrirez-vous les relations entre les voisins ?",
+            "note": "Question avec inversion sujet-verbe (« décrirez-vous »)",
+            "role": "c"
+          },
+          {
+            "fr": "Pourriez-vous me préciser s'il y a une cotisation particulière ?",
+            "note": "Conditionnel de politesse pour demander une précision",
+            "role": "c"
+          },
+          {
+            "fr": "Quelle serait la meilleure façon de rencontrer d'autres résidents ?",
+            "note": "Conditionnel (« serait ») pour formuler une question avec tact",
+            "role": "c"
+          },
+          {
+            "fr": "Il vaut mieux éviter de faire du bruit le soir pour ne pas déranger les voisins.",
+            "note": "Structure impersonnelle « il vaut mieux » + infinitif",
+            "role": "e"
+          },
+          {
+            "fr": "Comme je fais du vélo, ça m'intéresserait.",
+            "note": "« Comme » exprime la cause; conditionnel « m'intéresserait »",
+            "role": "c"
+          }
+        ]
+      }
+    ]
+  },
+  "model": "google/gemini-3.8-flash-lite-tts",
+  "speakers": {
+    "Speaker 1": {
+      "voice": "Puck"
+    },
+    "Speaker 2": {
+      "voice": "Kore"
+    }
+  },
+  "turns": [
+    {
+      "speaker": "Speaker 1",
+      "instructions": "friendly and polite",
+      "text": "Bonjour ! Je suis votre nouvelle voisine, je viens d'emménager et je ne connais encore rien ici. Auriez-vous quelques minutes pour répondre à quelques questions sur le voisinage ?",
+      "en": "Hello! I'm your new neighbor. I've just moved in and I don't know anything around here yet. Would you have a few minutes to answer some questions about the neighborhood?",
+      "es": "Bonshúr ! zhe suis votre nuvelle vuazín, zhe viens d'emménagé e zhe ne conné encore rian ici. oríe-vu kélk minüt pur répondre a kélk kestión sur le vuazánage ?",
+      "note": "OUVERTURE: Présentation + contexte du déménagement + demande polie de renseignements"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "welcoming",
+      "text": "Bonjour madame, bien sûr, allez-y, je vous écoute.",
+      "en": "Hello, madam. Of course, go ahead. I'm listening.",
+      "es": "Bonshúr madame, bian sûr, allez-y, zhe vu écute.",
+      "note": "OUVERTURE: Accueil chaleureux + invitation à poser les questions"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "curious and polite",
+      "text": "Merci beaucoup. Alors, comment décrirez-vous les relations entre les voisins dans cet immeuble ? Est-ce que l'ambiance est plutôt conviviale ?",
+      "en": "Thank you very much. So, how would you describe the relationships between neighbors in this building? Is the atmosphere rather friendly?",
+      "es": "Mersí bokú. alors, comment décrirez-vu lé relasión entre lé vuazáns dan ce iméubl ? es-ke l'ambiáns est plütó konviv ial ?",
+      "note": "ENCHAINEMENT: Première question sur les relations entre voisins et l'ambiance générale"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "reassuring",
+      "text": "Je dirais que les relations sont plutôt bonnes — les gens sont respectueux.",
+      "en": "I'd say the relationships are pretty good — people are respectful.",
+      "es": "Zhe diré que lé relasión sont plütó bonnes — lé gens sont respectueux.",
+      "note": "INFORMATION: Relations positives et respect entre voisins"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "interested",
+      "text": "Ah, c'est rassurant ! Et y a-t-il des règles de copropriété spécifiques dont je devrais être informée ? Par exemple, concernant le bruit ou l'utilisation des parties communes ?",
+      "en": "Ah, that's reassuring! And are there any specific condominium rules I should know about? For example, regarding noise or the use of shared areas?",
+      "es": "Ah, sé rassurant ! e ia-til dé regl de copropriété spécifiques dont zhe devré étre informée ? par exemple, concernant le brüí u l'utilisation dé partí komün ?",
+      "note": "ENCHAINEMENT: Réaction positive + question sur les règles de copropriété"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "informative",
+      "text": "Oui, bien sûr, il y a des règles sur les bruits et l'utilisation de la cour commune.",
+      "en": "Yes, of course. There are rules about noise and the use of the shared courtyard.",
+      "es": "Ui, bian sûr, il y a dé regl sur lé brüís e l'utilisation de la cur commune.",
+      "note": "INFORMATION: Règles concernant le bruit et les parties communes"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "detail-oriented",
+      "text": "Je comprends, c'est tout à fait logique. Et pourriez-vous me préciser s'il y a une cotisation particulière que chaque habitant doit payer pour l'entretien de l'immeuble ? Et à quoi sert-elle exactement ?",
+      "en": "I understand; that makes perfect sense. And could you tell me whether each resident has to pay a particular fee for building maintenance? And what exactly is it used for?",
+      "es": "Zhe comprends, sé tut a fé logique. e pur ié-vu me précisé s'il y a ün cotisation particuliére que shaque habitant duat payé pur l'entreian de l'iméubl ? e a quua sert-elle exactement ?",
+      "note": "ENCHAINEMENT: Demande de précision sur la cotisation et son utilité"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "matter-of-fact",
+      "text": "Oui, chaque habitant paie une cotisation annuelle pour l'entretien.",
+      "en": "Yes, each resident pays an annual fee for maintenance.",
+      "es": "Ui, shaque habitant paie ün cotisation annuelle pur l'entreien.",
+      "note": "INFORMATION: Cotisation annuelle destinée à l'entretien de l'immeuble"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "curious",
+      "text": "D'accord, je vais en tenir compte. Et d'ailleurs, quelle serait la meilleure façon de rencontrer d'autres résidents ? Y a-t-il des occasions prévues pour cela ?",
+      "en": "All right, I'll keep that in mind. And by the way, what's the best way to meet other residents? Are there any planned opportunities for that?",
+      "es": "Dakór, zhe vé an tenir compte. e d'ailleurs, quelle seré la meilleure façon de rencontré d'autres résidents ? ia-til dé occasions prévues pur cela ?",
+      "note": "ENCHAINEMENT: Transition vers les occasions de rencontrer les résidents"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "friendly",
+      "text": "Les fêtes de l'immeuble ou les réunions de copropriété sont de bonnes occasions — excellentes, même.",
+      "en": "Building parties or condominium meetings are good opportunities — excellent ones, actually.",
+      "es": "Lé fétes de l'iméubl u lé réunions de copropriété sont de bonnes occasions — excellentes, méme.",
+      "note": "INFORMATION: Fêtes et réunions comme occasions de faire connaissance"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "polite and practical",
+      "text": "Très bien, pourriez-vous m'indiquer les horaires de ces réunions ? Comme ça, je pourrais y assister et faire connaissance.",
+      "en": "Very good. Could you tell me the times of these meetings? That way, I could attend and get to know people.",
+      "es": "Tré bien, pur ié-vu m'indiqué lé horaires de ces réunions ? comme sa, zhe purré y assisté e faire connésance.",
+      "note": "ENCHAINEMENT: Demande de détails pratiques sur les réunions"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "helpful",
+      "text": "Bien sûr.",
+      "en": "Of course.",
+      "es": "Bian sûr.",
+      "note": "RESPONSE: Accord pour donner des renseignements supplémentaires"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "curious",
+      "text": "Merci. Et plus généralement, comment qualifieriez-vous ce quartier ? Est-il plutôt calme ou plutôt animé ?",
+      "en": "Thank you. And more generally, how would you describe this neighborhood? Is it rather quiet or lively?",
+      "es": "Mersí. e plus généralement, comment qualifieriez-vu ce kart ié ? est-il plütó calme u plütó animé ?",
+      "note": "ENCHAINEMENT: Question sur l'ambiance générale du quartier"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "calm and reassuring",
+      "text": "C'est un quartier calme, surtout le soir.",
+      "en": "It's a quiet neighborhood, especially in the evening.",
+      "es": "Sé an kart ié calme, surtut le suar.",
+      "note": "INFORMATION: Quartier calme, en particulier le soir"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "interested",
+      "text": "C'est bon à savoir. Auriez-vous des conseils pour m'intégrer rapidement dans le quartier ? Qu'est-ce qui marcherait le mieux, selon vous ?",
+      "en": "That's good to know. Do you have any advice on how I could quickly fit into the neighborhood? What do you think would work best?",
+      "es": "Sé bon a savuar. oríe-vu dé conseils pur m'intégré rapidement dan le kart ié ? qu'es-te qui marsheré le mieux, selon vu ?",
+      "note": "ENCHAINEMENT: Demande de conseils pour s'intégrer"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "encouraging",
+      "text": "Vous pouvez participer aux événements locaux et discuter avec les commerçants — ça aide beaucoup.",
+      "en": "You can take part in local events and talk to shopkeepers — that helps a lot.",
+      "es": "Vu puvez participé o événements loco e discuté avec lé commersants — sa aide bokú.",
+      "note": "INFORMATION: Participer aux événements et parler aux commerçants pour s'intégrer"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "thoughtful",
+      "text": "D'accord, je vais essayer de communiquer avec les gens. Et y a-t-il des choses importantes à savoir sur le quartier pour éviter les problèmes ?",
+      "en": "All right, I'll try to talk to people. And are there any important things to know about the neighborhood to avoid problems?",
+      "es": "Dakór, zhe vé essayé de communiqué avec lé gens. e ia-til dé shoses importantes a savuar sur le kart ié pur évité lé problémes ?",
+      "note": "ENCHAINEMENT: Transition vers les précautions à prendre dans le quartier"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "advising",
+      "text": "Il vaut mieux éviter de faire du bruit le soir pour ne pas déranger les voisins.",
+      "en": "It's best to avoid making noise in the evening so as not to disturb the neighbors.",
+      "es": "Il vaut mieux évité de faire dü brüí le suar pur ne pas dérangé lé vuazáns.",
+      "note": "INFORMATION: Conseil de respecter le calme le soir"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "practical",
+      "text": "Je vois, donc le calme est très important ici. Et pourriez-vous me dire où se situe la mairie ?",
+      "en": "I see, so keeping things quiet is very important here. And could you tell me where the town hall is?",
+      "es": "Zhe vuas, donc le calme est tré important ici. e pur ié-vu me dire u se situe la merí ?",
+      "note": "ENCHAINEMENT: Réaction + demande d'indication pour la mairie"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "informative",
+      "text": "La mairie se trouve à 10 minutes à pied, près du Parc Central.",
+      "en": "The town hall is a 10-minute walk away, near Central Park.",
+      "es": "La merí se truve a 10 minüt a pié, prés dü parc central.",
+      "note": "INFORMATION: Localisation de la mairie et distance à pied"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "curious",
+      "text": "Parfait, je note. Et quels sont les endroits sympas où l'on peut se détendre dans le quartier — un café, un parc, une bibliothèque ?",
+      "en": "Perfect, I'll make a note of that. And what are some nice places to relax in the neighborhood — a café, a park, a library?",
+      "es": "Parfé, zhe note. e quels sont lé endruats sympas u l'on peut se détendre dan le kart ié — an café, an parc, ün bibliothéque ?",
+      "note": "ENCHAINEMENT: Question sur les lieux de détente du quartier"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "friendly",
+      "text": "Il y a un joli parc et une bibliothèque agréable à quelques rues d'ici.",
+      "en": "There's a lovely park and a pleasant library a few streets from here.",
+      "es": "Il y a an zholi parc e ün bibliothéque agréable a kélk rues d'ici.",
+      "note": "INFORMATION: Parc et bibliothèque à proximité"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "interested",
+      "text": "Excellent. Et puisque vous connaissez bien le quartier, quels restaurants ou cafés me recommanderiez-vous ? Y en a-t-il un que vous appréciez particulièrement ?",
+      "en": "Excellent. And since you know the neighborhood well, which restaurants or cafés would you recommend? Is there one you particularly like?",
+      "es": "Excellent. e puisque vu connésez bian le kart ié, quels restaurants u cafés me recommanderiez-vu ? y an a-t-il an que vu appréciez particuliérement ?",
+      "note": "ENCHAINEMENT: Demande de recommandations de restaurants et cafés"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "helpful",
+      "text": "Le Café du Coin et les restaurants italiens sont très appréciés.",
+      "en": "Café du Coin and the Italian restaurants are very popular.",
+      "es": "Le café dü cuan e lé restaurants italiens sont tré appréciés.",
+      "note": "INFORMATION: Café et restaurants italiens recommandés"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "curious",
+      "text": "Merci, je vais les essayer. Et pour faire du sport ou me promener, connaîtriez-vous des endroits intéressants ?",
+      "en": "Thank you, I'll try them. And for exercising or going for walks, do you know any interesting places?",
+      "es": "Mersí, zhe vé lé essayer. e pur faire dü sport u me promener, connaîtriez-vu dé endruats intéressants ?",
+      "note": "ENCHAINEMENT: Transition vers les activités sportives et les promenades"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "informative",
+      "text": "Oui, il y a une salle de sport et plusieurs sentiers pour se promener.",
+      "en": "Yes, there's a gym and several walking trails.",
+      "es": "Ui, il y a ün salle de sport e plusieurs sentiers pur se promener.",
+      "note": "INFORMATION: Salle de sport et sentiers de promenade disponibles"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "careful",
+      "text": "Très bien. Et par précaution, y a-t-il une pharmacie ou un hôpital à proximité ?",
+      "en": "Very good. And just in case, is there a pharmacy or a hospital nearby?",
+      "es": "Tré bien. e par précaution, ia-til ün pharmacie u an opital a proximité ?",
+      "note": "ENCHAINEMENT: Question pratique sur les services de santé à proximité"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "reassuring",
+      "text": "Oui, il y a un hôpital à quelques minutes d'ici.",
+      "en": "Yes, there's a hospital a few minutes from here.",
+      "es": "Ui, il y a an opital a kélk minüt d'ici.",
+      "note": "INFORMATION: Hôpital situé à proximité"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "practical",
+      "text": "C'est très important pour moi, merci. Et concernant la propreté du quartier, quels sont les jours de collecte des déchets ?",
+      "en": "That's very important to me, thank you. And regarding neighborhood cleanliness, what days is the rubbish collected?",
+      "es": "Sé tré important pur mua, mersí. e concernant la propreé dü kart ié, quels sont lé zhurs de collecte dé déshes ?",
+      "note": "ENCHAINEMENT: Remerciement + question sur la collecte des déchets"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "informative",
+      "text": "La collecte a lieu le mardi et le vendredi matin.",
+      "en": "Collection takes place on Tuesday and Friday mornings.",
+      "es": "La collecte a lieu le mardí e le vandr edí matin.",
+      "note": "INFORMATION: Collecte des déchets le mardi et le vendredi matin"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "curious",
+      "text": "D'accord, je vais noter ces dates. Et y a-t-il des événements communautaires auxquels je pourrais participer ? Des marchés, des fêtes de quartier ?",
+      "en": "All right, I'll write those dates down. And are there any community events I could take part in? Markets, neighborhood parties?",
+      "es": "Dakór, zhe vé noté ces dates. e ia-til dé événements communautaires auxquels zhe purré participé ? dé marshés, dé fétes de kart ié ?",
+      "note": "ENCHAINEMENT: Question sur les événements communautaires"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "welcoming",
+      "text": "Oui, il y a souvent des marchés et des fêtes de quartier.",
+      "en": "Yes, there are often markets and neighborhood parties.",
+      "es": "Ui, il y a suvent dé marshés e dé fétes de kart ié.",
+      "note": "INFORMATION: Marchés et fêtes de quartier organisés régulièrement"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "practical",
+      "text": "Superbe. Et enfin, quels sont les moyens de transport les plus pratiques pour se déplacer ici ? Et peut-on se rendre au supermarché à pied ?",
+      "en": "Wonderful. And finally, what are the most convenient ways to get around here? And can you walk to the supermarket?",
+      "es": "Superbe. e enfin, quels sont lé moyens de transport lé plus pratiques pur se déplacé ici ? e peut-on se rendre o supermarshé a pié ?",
+      "note": "ENCHAINEMENT: Dernier thème — transports et accès au supermarché"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "helpful",
+      "text": "Les bus et le métro sont les plus pratiques. Et il y a un supermarché à proximité, accessible à pied en quelques minutes.",
+      "en": "Buses and the metro are the most convenient. There's also a supermarket nearby, just a few minutes away on foot.",
+      "es": "Lé bus e le métro sont lé plus pratiques. e il y a an supermarshé a proximité, accessible a pié an kélk minüt.",
+      "note": "INFORMATION: Bus et métro pratiques; supermarché accessible à pied"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "interested",
+      "text": "C'est parfait, alors. Et dernière question : y a-t-il des pistes cyclables dans le quartier ? Comme je fais du vélo, ça m'intéresserait.",
+      "en": "That's perfect, then. And one last question: are there bike lanes in the neighborhood? I ride a bike, so I'd be interested.",
+      "es": "Sé parfé, alors. e derniére question : ia-til dé pistes cyclablé dan le kart ié ? comme zhe fé dü vélo, sa m'intéresseré.",
+      "note": "ENCHAINEMENT: Dernière question sur les pistes cyclables"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "informative",
+      "text": "Oui, il y a des pistes cyclables sur les grandes avenues.",
+      "en": "Yes, there are bike lanes on the main avenues.",
+      "es": "Ui, il y a dé pistes cyclablé sur lé grandé avenues.",
+      "note": "INFORMATION: Pistes cyclables disponibles sur les grandes avenues"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "grateful and warm",
+      "text": "Génial, ça me sera très utile ! Merci infiniment pour toutes ces informations, vous m'avez beaucoup aidée. J'espère vous revoir bientôt !",
+      "en": "Great, that will be very useful! Thank you so much for all this information; you've helped me a lot. I hope to see you again soon!",
+      "es": "Génial, sa me sera tré utile ! mersí infiniemán pur tutes ces informations, vu m'avez bokú aidée. zhespére vu revuar bientôt !",
+      "note": "FERMETURE: Réaction positive + remerciement détaillé + souhait de revoir le voisin"
+    },
+    {
+      "speaker": "Speaker 2",
+      "instructions": "warm and welcoming",
+      "text": "Pas de souci, enchanté, et bienvenue dans notre immeuble !",
+      "en": "No problem. Nice to meet you, and welcome to our building!",
+      "es": "Pas de suci, enshanté, e bienvenue dan notre iméubl !",
+      "note": "FERMETURE: Réponse amicale + bienvenue dans l'immeuble"
+    },
+    {
+      "speaker": "Speaker 1",
+      "instructions": "friendly closing",
+      "text": "Merci beaucoup, à bientôt !",
+      "en": "Thank you very much. See you soon!",
+      "es": "Mersí bokú, a bientôt !",
+      "note": "FERMETURE: Remerciement et salutation finale"
+    }
+  ]
+}
