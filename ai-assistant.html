@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Assistant — Disaster Resources</title>
+<style>
+:root{
+  --bg:#0b1020;
+  --panel:#151d32;
+  --text:#edf2ff;
+  --muted:#a3b1ce;
+  --border:#2b3854;
+  --blue:#7cafff;
+  --mint:#70e2c1;
+  --gold:#ffd38a;
+  --danger:#f28b82;
+  --rec:#e06c75;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font:15px/1.65 system-ui,-apple-system,Segoe UI,sans-serif
+}
+.shell{max-width:1150px;margin:auto;padding:32px 20px 70px}
+.top{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+.eyebrow{color:var(--mint);text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:800}
+h1{font-size:clamp(28px,5vw,48px);line-height:1.12;letter-spacing:-.04em;margin:10px 0}
+p{margin:0}
+.sub{color:var(--muted);max-width:650px}
+.badge{background:#203c48;color:var(--mint);padding:9px 14px;border:1px solid #315f64;border-radius:100px;font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
+.stat{padding:18px;background:#151e32cc;border:1px solid var(--border);border-radius:16px}
+.stat strong{font-size:24px;display:block}
+.stat span{color:var(--muted);font-size:12px}
+.layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:22px;align-items:start}
+.side,.main{background:#111a2dcc;border:1px solid var(--border);border-radius:22px}
+.side{padding:20px;position:sticky;top:70px}
+.side h2{font-size:14px;margin:0 0 14px}
+.legend{display:flex;align-items:center;gap:10px;margin:13px 0;color:var(--muted)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--blue)}
+.dot.c{background:var(--mint)}
+.divider{height:1px;background:var(--border);margin:22px 0}
+.check{display:flex;align-items:center;gap:9px;margin:13px 0;color:var(--text);cursor:pointer}
+.check input{accent-color:#71dfbe;width:17px;height:17px}
+.side small{color:var(--muted)}
+.progress{height:8px;background:#2b3854;border-radius:99px;overflow:hidden;margin:12px 0}
+.progress>div{height:100%;background:linear-gradient(90deg,var(--blue),var(--mint));width:0;transition:width .2s}
+.main{overflow:hidden}
+.toolbar{padding:19px 22px;border-bottom:1px solid var(--border);display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.toolbar strong{font-size:16px}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+button,input[type=search]{font:inherit}
+button{border:1px solid var(--border);background:#202b44;color:var(--text);border-radius:10px;padding:9px 12px;cursor:pointer}
+button:hover{border-color:var(--blue)}
+input[type=search]{background:#0c1528;border:1px solid var(--border);border-radius:10px;color:var(--text);padding:10px 12px;width:100%;margin-top:13px;outline:none}
+input[type=search]:focus{border-color:var(--blue)}
+.chat{padding:22px;display:flex;flex-direction:column;gap:18px}
+.row{display:flex;gap:11px;align-items:flex-start}
+.row.c{flex-direction:row-reverse}
+.avatar{width:37px;height:37px;flex:none;display:grid;place-items:center;border-radius:12px;background:#284367;color:#b9d7ff;font-weight:800}
+.row.c .avatar{background:#1e524b;color:#adffdf}
+.bubble{max-width:85%;background:#1c2a45;border:1px solid #304767;padding:15px 17px;border-radius:6px 18px 18px 18px}
+.row.c .bubble{background:#173932;border-color:#2b6257;border-radius:18px 6px 18px 18px}
+.meta{font-size:11px;font-weight:800;letter-spacing:.05em;color:var(--blue);margin-bottom:7px;text-transform:uppercase}
+.row.c .meta{color:var(--mint)}
+.spoken{font-size:15px;line-height:1.8}
+.highlight{color:#ffe09b;background:#66532d70;border-bottom:1px dotted #f8d78b;border-radius:3px;padding:0 2px}
+.notes{margin-top:12px;border-top:1px solid #ffffff22;padding-top:11px}
+.notes summary{cursor:pointer;font-size:12px;color:#bed0eb;font-weight:700}
+.notes .note{margin-top:9px;color:#c4d1e6;font-size:12px}
+.tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.04em;background:#35445f;color:#d5e3ff;padding:2px 7px;border-radius:6px;margin:0 5px 5px 0}
+.row.c .tag{background:#27574d;color:#c1ffe8}
+.spoken.hidden-answer{filter:blur(6px);user-select:none}
+.spoken.hidden-answer.revealed{filter:none;user-select:auto}
+.reveal{margin-top:12px;font-size:12px}
+.empty{color:var(--muted);text-align:center;padding:30px}
+.footer{text-align:center;color:var(--muted);font-size:12px;margin-top:20px}
+.audio-notes{margin-top:12px;border-top:1px solid #ffffff22;padding-top:11px}
+.audio-notes summary{cursor:pointer;font-size:12px;color:#c7b9ff;font-weight:700}
+.audio-panel{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
+.audio-btn{background:#2a344f;border:1px solid #3d4f73;border-radius:24px;padding:5px 12px;font-size:12px;font-weight:600;display:inline-flex;align-items:center;gap:5px;cursor:pointer}
+.audio-btn:hover{background:#35456b;border-color:var(--blue)}
+.audio-btn.recording{background:#4a2a2a;border-color:var(--rec);animation:pulse 1s infinite}
+.audio-btn.speaking{background:#234e52;border-color:var(--mint);color:#a9ffdf}
+.audio-btn.playall-playing{background:#234e52;border-color:var(--gold);color:#ffe09b}
+#downloadAudio.download-recording{background:#4a2a2a;border-color:var(--rec);animation:pulse 1s infinite}
+.row.playall-active{animation:playall-glow 1.2s ease-in-out infinite alternate}
+@keyframes playall-glow{from{box-shadow:0 0 4px rgba(112,226,193,.25)}to{box-shadow:0 0 18px 3px rgba(112,226,193,.7)}}
+.audio-btn.paused{background:#3a3a2a;border-color:var(--gold);color:#ffe09b}
+.audio-btn.loading{opacity:.7;cursor:wait}
+
+/* ========== NEW: AI Assistant Section ========== */
+.ai-section{max-width:900px;margin:auto;margin-top:40px}
+.ai-section .section-head{margin-bottom:24px}
+.ai-section .section-head h2{
+  font-size:clamp(20px,4vw,32px);
+  margin:0 0 8px;
+  color:var(--text);
+}
+.ai-section .section-head .sub{
+  color:var(--muted);
+  font-size:14px;
+}
+.ai-section .free-links{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:20px 24px;
+  margin-bottom:24px;
+  line-height:1.6;
+}
+.ai-section .free-links h3{
+  margin:0 0 12px;
+  font-size:14px;
+  color:var(--mint);
+}
+.ai-section .free-links a{
+  color:var(--blue);
+  text-decoration:none;
+  word-break:break-all;
+}
+.ai-section .free-links a:hover{text-decoration:underline;}
+.ai-section .ask-ai{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:20px;
+  margin-top:12px;
+}
+.ai-section .ask-ai .btn{
+  width:100%;
+  padding:14px 24px;
+  background:var(--blue);
+  color:#0b1020;
+  border:none;
+  border-radius:10px;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+  margin-top:16px;
+  transition:background .2s;
+}
+.ai-section .ask-ai .btn:hover{background:#66b2ff;}
+.ai-section .ask-ai .btn:focus-visible{outline:2px solid var(--mint);outline-offset:2px;}
+.ai-section .note{
+  margin-top:12px;
+  padding:12px 16px;
+  background:rgba(255,255,255,.08);
+  border-radius:10px;
+  font-size:13px;
+  line-height:1.5;
+  color:var(--muted);
+}
+
+/* ========== Layout: three columns (Insurance, Hospitals, Agriculture) ========== */
+.ai-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:24px;
+  margin-top:24px;
+}
+@media(min-width:768px){
+  .ai-grid{grid-template-columns:repeat(3,1fr);}
+}
+
+/* Each section card */
+.ai-card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+}
+.ai-card .head{
+  padding:16px 20px;
+  border-bottom:1px solid var(--border);
+}
+.ai-card .head h3{
+  margin:0;
+  font-size:15px;
+  color:var(--text);
+}
+.ai-card .head .badge{
+  font-size:10px;
+  margin-left:12px;
+}
+.ai-card .links{
+  padding:20px;
+  line-height:1.6;
+  color:var(--muted);
+  min-height:180px;
+}
+.ai-card .links h4{
+  margin:0 0 10px;
+  font-size:13px;
+  color:var(--mint);
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.ai-card .links ul{
+  margin:0;
+  padding-left:20px;
+}
+.ai-card .links li{
+  margin-bottom:8px;
+}
+.ai-card .question{
+  padding:20px;
+  background:var(--bg);
+  border-top:1px solid var(--border);
+  border-radius:0 0 16px 16px;
+}
+.ai-card .question p{
+  margin:0;
+  font-size:14px;
+  color:var(--text);
+}
+
+/* ========== Buttons at bottom (optional helpers) ========== */
+.ai-bottom{
+  margin-top:32px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.ai-bottom .btn{
+  flex:1;
+  min-width:200px;
+  padding:14px 24px;
+  background:#202b44;
+  color:var(--text);
+  border:1px solid var(--border);
+  border-radius:10px;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+  transition:background .2s;
+}
+.ai-bottom .btn:hover{background:#303d5e;}
+.ai-bottom .btn:focus-visible{outline:2px solid var(--mint);outline-offset:2px;}
+</style>
+</head>
+<body>
+<div class="shell">
+  <!-- ================= Header ================= -->
+  <section class="top">
+    <div>
+      <div class="eyebrow">AI Assistant Toolkit</div>
+      <h1>Disaster Resources Helper</h1>
+    </div>
+    <span class="badge">🇺🇸 English · B1–B2</span>
+  </section>
+
+  <!-- ================= AI Assistant Section ================= -->
+  <section class="ai-section">
+    <div class="section-head">
+      <h2>Ask AI for Help</h2>
+      <p class="sub">Click any "Ask AI" button to get general information. The assistant is for people 13 and older. It gives general information only and is not medical, legal, financial, or insurance advice. In an emergency, call 911.</p>
+    </div>
+
+    <!-- Free official links + Ask AI for INSURANCE -->
+    <div class="ai-card">
+      <div class="head">
+        <h3>A. INSURANCE</h3>
+        <span class="badge">Task 2</span>
+      </div>
+      <div class="links free-links">
+        <h3>Free official links:</h3>
+        <ul>
+          <li><a href="https://www.healthcare.gov">Health insurance</a></li>
+          <li><a href="https://www.medicare.gov">Medicare</a></li>
+          <li><a href="https://www.floodsmart.gov">Flood insurance</a></li>
+          <li><a href="https://content.naic.org">Find your state's insurance department</a></li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>
+          Give general information only. Not medical or insurance advice. In an emergency, call 911. I need help understanding insurance after a disaster. Explain the difference between health, home, renters, auto, and flood insurance in plain words, and tell me where to find my state's official insurance office.
+        </p>
+      </div>
+      <button class="btn ask-ai-btn">Ask AI</button>
+    </div>
+
+    <!-- Free official links + Ask AI for HOSPITALS -->
+    <div class="ai-card">
+      <div class="head">
+        <h3>B. HOSPITALS</h3>
+        <span class="badge">Task 2</span>
+      </div>
+      <div class="links free-links">
+        <h3>Free official links:</h3>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/hospitals+near+me">Find hospitals near you (Google Maps)</a></li>
+          <li><a href="https://www.medicare.gov/care-compare">Hospital quality and average ER time</a></li>
+          <li><span style="color:var(--danger);">Wait times are posted on each hospital's own website. Use the map link to open it.</span></li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>
+          Give general information only. Not medical advice. In an emergency, call 911. Help me find the nearest hospitals and emergency rooms, and explain what to bring and how to choose between an ER and urgent care.
+        </p>
+      </div>
+      <button class="btn ask-ai-btn">Ask AI</button>
+    </div>
+
+    <!-- Free official links + Ask AI for AGRICULTURE -->
+    <div class="ai-card">
+      <div class="head">
+        <h3>C. AGRICULTURE</h3>
+        <span class="badge">Task 2</span>
+      </div>
+      <div class="links free-links">
+        <h3>Free official links, disaster help:</h3>
+        <ul>
+          <li><a href="https://www.farmers.gov/protection-recovery/disaster-tool">USDA disaster assistance finder</a></li>
+          <li><a href="https://www.farmers.gov">USDA disaster help for farmers</a></li>
+          <li><a href="https://www.fsa.usda.gov">Farm Service Agency</a></li>
+          <li><a href="https://www.rma.usda.gov">Crop insurance (Risk Management Agency)</a></li>
+          <li><a href="https://www.drought.gov">Drought information</a></li>
+          <li><a href="https://droughtmonitor.unl.edu">US Drought Monitor</a></li>
+        </ul>
+        <h3 style="margin:20px 0 8px; font-size:13px; color:var(--mint);">Grants and funding:</h3>
+        <ul style="padding-left:20px; margin:0;">
+          <li><a href="https://www.nrcs.usda.gov/programs-initiatives/eqip-environmental-quality-incentives">Conservation cost-share, EQIP (NRCS)</a></li>
+          <li><a href="https://www.sare.org/grants/">Sustainable Agriculture Research and Education (SARE) grants</a></li>
+          <li><a href="https://www.rd.usda.gov">USDA Rural Development grants and loans</a></li>
+          <li><a href="https://www.grants.gov">All federal grants, official government search</a></li>
+        </ul>
+        <p style="font-size:12px; color:var(--muted); margin:8px 0 0;">
+          Programs, dates, and eligibility change. Always confirm on the official site before you apply. Climate Ground Zero is not affiliated with these programs.
+        </p>
+      </div>
+      <div class="question">
+        <p>
+          Give general information only. Not legal, financial, or insurance advice. Help me understand what USDA disaster help and grants are available for farms and ranches after a drought, flood, or fire, and what records I should keep.
+        </p>
+      </div>
+      <button class="btn ask-ai-btn">Ask AI</button>
+    </div>
+  </section>
+
+  <!-- ================= Note near buttons ================= -->
+  <div class="note">
+    The AI assistant is for people 13 and older. It gives general information only. It is not medical, legal, financial, or insurance advice. In an emergency, call 911.
+  </div>
+</div>
+</body>
+</html>
