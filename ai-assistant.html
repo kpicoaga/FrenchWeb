@@ -3,349 +3,333 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI Assistant — Disaster Resources</title>
+<title>AI Assistant — Disaster Readiness Resources</title>
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap");
+
 :root{
-  --bg:#0b1020;
-  --panel:#151d32;
-  --text:#edf2ff;
-  --muted:#a3b1ce;
-  --border:#2b3854;
-  --blue:#7cafff;
-  --mint:#70e2c1;
-  --gold:#ffd38a;
-  --danger:#f28b82;
-  --rec:#e06c75;
+  --ds-color-midnight: #061630;
+  --ds-color-navy: #0B1E3B;
+  --ds-color-green: #2DE8A0;
+  --ds-color-cyan: #31E1FF;
+  --ds-color-white: #F4FAFF;
+  --ds-color-muted: #A9BCD6;
+  --ds-font-heading: 'Montserrat', system-ui, sans-serif;
+  --ds-font-body: 'Inter', system-ui, sans-serif;
+  --ds-space-xs: 0.5rem;
+  --ds-space-sm: 1rem;
+  --ds-space-md: 1.5rem;
+  --ds-space-lg: 2.5rem;
+  --ds-space-xl: 4rem;
+  --ds-space-section: 5rem;
+  --ds-text-xs: 0.875rem;
+  --ds-text-sm: 0.95rem;
+  --ds-text-base: 1.0625rem;
+  --ds-text-lg: 1.25rem;
+  --ds-text-xl: 1.75rem;
+  --ds-text-2xl: 2.25rem;
+  --ds-text-3xl: clamp(2.4rem, 6vw, 4rem);
+  --ds-weight-regular: 400;
+  --ds-weight-medium: 500;
+  --ds-weight-semibold: 600;
+  --ds-weight-bold: 700;
+  --ds-weight-extrabold: 800;
+  --ds-line-tight: 1.12;
+  --ds-line-body: 1.6;
+  --ds-radius-cut: 14px;
+  --ds-shadow-glow: 0 0 6px rgba(49, 225, 255, 0.35);
+  --ds-width-content: 1100px;
 }
-*{box-sizing:border-box}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
 body{
   margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font:15px/1.65 system-ui,-apple-system,Segoe UI,sans-serif
-}
-.shell{max-width:1150px;margin:auto;padding:32px 20px 70px}
-.top{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
-.eyebrow{color:var(--mint);text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:800}
-h1{font-size:clamp(28px,5vw,48px);line-height:1.12;letter-spacing:-.04em;margin:10px 0}
-p{margin:0}
-.sub{color:var(--muted);max-width:650px}
-.badge{background:#203c48;color:var(--mint);padding:9px 14px;border:1px solid #315f64;border-radius:100px;font-weight:700}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
-.stat{padding:18px;background:#151e32cc;border:1px solid var(--border);border-radius:16px}
-.stat strong{font-size:24px;display:block}
-.stat span{color:var(--muted);font-size:12px}
-.layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:22px;align-items:start}
-.side,.main{background:#111a2dcc;border:1px solid var(--border);border-radius:22px}
-.side{padding:20px;position:sticky;top:70px}
-.side h2{font-size:14px;margin:0 0 14px}
-.legend{display:flex;align-items:center;gap:10px;margin:13px 0;color:var(--muted)}
-.dot{width:10px;height:10px;border-radius:50%;background:var(--blue)}
-.dot.c{background:var(--mint)}
-.divider{height:1px;background:var(--border);margin:22px 0}
-.check{display:flex;align-items:center;gap:9px;margin:13px 0;color:var(--text);cursor:pointer}
-.check input{accent-color:#71dfbe;width:17px;height:17px}
-.side small{color:var(--muted)}
-.progress{height:8px;background:#2b3854;border-radius:99px;overflow:hidden;margin:12px 0}
-.progress>div{height:100%;background:linear-gradient(90deg,var(--blue),var(--mint));width:0;transition:width .2s}
-.main{overflow:hidden}
-.toolbar{padding:19px 22px;border-bottom:1px solid var(--border);display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
-.toolbar strong{font-size:16px}
-.tools{display:flex;gap:8px;flex-wrap:wrap}
-button,input[type=search]{font:inherit}
-button{border:1px solid var(--border);background:#202b44;color:var(--text);border-radius:10px;padding:9px 12px;cursor:pointer}
-button:hover{border-color:var(--blue)}
-input[type=search]{background:#0c1528;border:1px solid var(--border);border-radius:10px;color:var(--text);padding:10px 12px;width:100%;margin-top:13px;outline:none}
-input[type=search]:focus{border-color:var(--blue)}
-.chat{padding:22px;display:flex;flex-direction:column;gap:18px}
-.row{display:flex;gap:11px;align-items:flex-start}
-.row.c{flex-direction:row-reverse}
-.avatar{width:37px;height:37px;flex:none;display:grid;place-items:center;border-radius:12px;background:#284367;color:#b9d7ff;font-weight:800}
-.row.c .avatar{background:#1e524b;color:#adffdf}
-.bubble{max-width:85%;background:#1c2a45;border:1px solid #304767;padding:15px 17px;border-radius:6px 18px 18px 18px}
-.row.c .bubble{background:#173932;border-color:#2b6257;border-radius:18px 6px 18px 18px}
-.meta{font-size:11px;font-weight:800;letter-spacing:.05em;color:var(--blue);margin-bottom:7px;text-transform:uppercase}
-.row.c .meta{color:var(--mint)}
-.spoken{font-size:15px;line-height:1.8}
-.highlight{color:#ffe09b;background:#66532d70;border-bottom:1px dotted #f8d78b;border-radius:3px;padding:0 2px}
-.notes{margin-top:12px;border-top:1px solid #ffffff22;padding-top:11px}
-.notes summary{cursor:pointer;font-size:12px;color:#bed0eb;font-weight:700}
-.notes .note{margin-top:9px;color:#c4d1e6;font-size:12px}
-.tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.04em;background:#35445f;color:#d5e3ff;padding:2px 7px;border-radius:6px;margin:0 5px 5px 0}
-.row.c .tag{background:#27574d;color:#c1ffe8}
-.spoken.hidden-answer{filter:blur(6px);user-select:none}
-.spoken.hidden-answer.revealed{filter:none;user-select:auto}
-.reveal{margin-top:12px;font-size:12px}
-.empty{color:var(--muted);text-align:center;padding:30px}
-.footer{text-align:center;color:var(--muted);font-size:12px;margin-top:20px}
-.audio-notes{margin-top:12px;border-top:1px solid #ffffff22;padding-top:11px}
-.audio-notes summary{cursor:pointer;font-size:12px;color:#c7b9ff;font-weight:700}
-.audio-panel{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
-.audio-btn{background:#2a344f;border:1px solid #3d4f73;border-radius:24px;padding:5px 12px;font-size:12px;font-weight:600;display:inline-flex;align-items:center;gap:5px;cursor:pointer}
-.audio-btn:hover{background:#35456b;border-color:var(--blue)}
-.audio-btn.recording{background:#4a2a2a;border-color:var(--rec);animation:pulse 1s infinite}
-.audio-btn.speaking{background:#234e52;border-color:var(--mint);color:#a9ffdf}
-.audio-btn.playall-playing{background:#234e52;border-color:var(--gold);color:#ffe09b}
-#downloadAudio.download-recording{background:#4a2a2a;border-color:var(--rec);animation:pulse 1s infinite}
-.row.playall-active{animation:playall-glow 1.2s ease-in-out infinite alternate}
-@keyframes playall-glow{from{box-shadow:0 0 4px rgba(112,226,193,.25)}to{box-shadow:0 0 18px 3px rgba(112,226,193,.7)}}
-.audio-btn.paused{background:#3a3a2a;border-color:var(--gold);color:#ffe09b}
-.audio-btn.loading{opacity:.7;cursor:wait}
-
-/* ========== NEW: AI Assistant Section ========== */
-.ai-section{max-width:900px;margin:auto;margin-top:40px}
-.ai-section .section-head{margin-bottom:24px}
-.ai-section .section-head h2{
-  font-size:clamp(20px,4vw,32px);
-  margin:0 0 8px;
-  color:var(--text);
-}
-.ai-section .section-head .sub{
-  color:var(--muted);
-  font-size:14px;
-}
-.ai-section .free-links{
-  background:var(--panel);
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:20px 24px;
-  margin-bottom:24px;
-  line-height:1.6;
-}
-.ai-section .free-links h3{
-  margin:0 0 12px;
-  font-size:14px;
-  color:var(--mint);
-}
-.ai-section .free-links a{
-  color:var(--blue);
-  text-decoration:none;
-  word-break:break-all;
-}
-.ai-section .free-links a:hover{text-decoration:underline;}
-.ai-section .ask-ai{
-  background:var(--panel);
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:20px;
-  margin-top:12px;
-}
-.ai-section .ask-ai .btn{
-  width:100%;
-  padding:14px 24px;
-  background:var(--blue);
-  color:#0b1020;
-  border:none;
-  border-radius:10px;
-  font-size:15px;
-  font-weight:700;
-  cursor:pointer;
-  margin-top:16px;
-  transition:background .2s;
-}
-.ai-section .ask-ai .btn:hover{background:#66b2ff;}
-.ai-section .ask-ai .btn:focus-visible{outline:2px solid var(--mint);outline-offset:2px;}
-.ai-section .note{
-  margin-top:12px;
-  padding:12px 16px;
-  background:rgba(255,255,255,.08);
-  border-radius:10px;
-  font-size:13px;
-  line-height:1.5;
-  color:var(--muted);
+  background: var(--ds-color-midnight);
+  color: var(--ds-color-white);
+  font-family: var(--ds-font-body);
+  font-size: var(--ds-text-base);
+  font-weight: var(--ds-weight-regular);
+  line-height: var(--ds-line-body);
 }
 
-/* ========== Layout: three columns (Insurance, Hospitals, Agriculture) ========== */
-.ai-grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:24px;
-  margin-top:24px;
+.cgz, .cgz *, .cgz *::before, .cgz *::after { box-sizing: border-box; }
+.cgz h1, .cgz h2, .cgz h3, .cgz p { margin: 0; }
+.cgz a { text-decoration: none; color: inherit; }
+
+.cgz {
+  background: var(--ds-color-midnight);
+  color: var(--ds-color-white);
+  font-family: var(--ds-font-body);
+  font-size: var(--ds-text-base);
+  font-weight: var(--ds-weight-regular);
+  line-height: var(--ds-line-body);
 }
-@media(min-width:768px){
-  .ai-grid{grid-template-columns:repeat(3,1fr);}
+.cgz h1, .cgz h2, .cgz h3 {
+  font-family: var(--ds-font-heading);
+  line-height: var(--ds-line-tight);
+  letter-spacing: -0.01em;
+}
+.cgz h1 { font-size: var(--ds-text-3xl); font-weight: var(--ds-weight-extrabold); margin-bottom: var(--ds-space-md); }
+.cgz h2 { font-size: var(--ds-text-2xl); font-weight: var(--ds-weight-bold); margin-bottom: var(--ds-space-md); }
+.cgz h3 { font-size: var(--ds-text-lg); font-weight: var(--ds-weight-bold); margin-bottom: var(--ds-space-xs); }
+.cgz p { margin-bottom: var(--ds-space-sm); max-width: var(--ds-width-text); }
+.cgz section { padding: var(--ds-space-section) 0; }
+.cgz :focus-visible { outline: 3px solid var(--ds-color-green); outline-offset: 3px; }
+.cgz .bb-container { max-width: var(--ds-width-content); margin: 0 auto; padding: 0 var(--ds-space-md); }
+.cgz .bb-lead { color: var(--ds-color-muted); font-size: var(--ds-text-lg); }
+.cgz .bb-tag { display: block; color: var(--ds-color-green); font-family: var(--ds-font-heading); font-weight: var(--ds-weight-semibold); margin-bottom: var(--ds-space-sm); }
+
+.cgz .bb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: var(--ds-space-md);
+  margin-top: var(--ds-space-lg);
 }
 
-/* Each section card */
-.ai-card{
-  background:var(--panel);
-  border:1px solid var(--border);
-  border-radius:16px;
-  overflow:hidden;
-}
-.ai-card .head{
-  padding:16px 20px;
-  border-bottom:1px solid var(--border);
-}
-.ai-card .head h3{
-  margin:0;
-  font-size:15px;
-  color:var(--text);
-}
-.ai-card .head .badge{
-  font-size:10px;
-  margin-left:12px;
-}
-.ai-card .links{
-  padding:20px;
-  line-height:1.6;
-  color:var(--muted);
-  min-height:180px;
-}
-.ai-card .links h4{
-  margin:0 0 10px;
-  font-size:13px;
-  color:var(--mint);
-  text-transform:uppercase;
-  letter-spacing:.04em;
-}
-.ai-card .links ul{
-  margin:0;
-  padding-left:20px;
-}
-.ai-card .links li{
-  margin-bottom:8px;
-}
-.ai-card .question{
-  padding:20px;
-  background:var(--bg);
-  border-top:1px solid var(--border);
-  border-radius:0 0 16px 16px;
-}
-.ai-card .question p{
-  margin:0;
-  font-size:14px;
-  color:var(--text);
+.cgz .bb-card {
+  position: relative;
+  isolation: isolate;
+  padding: var(--ds-space-md);
+  filter: drop-shadow(var(--ds-shadow-glow));
+  clip-path: polygon(var(--ds-radius-cut) 0, 100% 0, 100% calc(100% - var(--ds-radius-cut)), calc(100% - var(--ds-radius-cut)) 100%, 0 100%, 0 var(--ds-radius-cut));
+  background: var(--ds-color-navy);
+  border: 1px solid rgba(49, 225, 255, 0.25);
 }
 
-/* ========== Buttons at bottom (optional helpers) ========== */
-.ai-bottom{
-  margin-top:32px;
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  justify-content:center;
+.cgz .bb-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: var(--ds-color-cyan);
+  clip-path: polygon(var(--ds-radius-cut) 0, 100% 0, 100% calc(100% - var(--ds-radius-cut)), calc(100% - var(--ds-radius-cut)) 100%, 0 100%, 0 var(--ds-radius-cut));
 }
-.ai-bottom .btn{
-  flex:1;
-  min-width:200px;
-  padding:14px 24px;
-  background:#202b44;
-  color:var(--text);
-  border:1px solid var(--border);
-  border-radius:10px;
-  font-size:15px;
-  font-weight:700;
-  cursor:pointer;
-  transition:background .2s;
+
+.cgz .bb-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 1px;
+  background: var(--ds-color-midnight);
+  clip-path: polygon(var(--ds-radius-cut) 0, 100% 0, 100% calc(100% - var(--ds-radius-cut)), calc(100% - var(--ds-radius-cut)) 100%, 0 100%, 0 var(--ds-radius-cut));
 }
-.ai-bottom .btn:hover{background:#303d5e;}
-.ai-bottom .btn:focus-visible{outline:2px solid var(--mint);outline-offset:2px;}
+
+.cgz .bb-card h3, .cgz .bb-card h3 .fl-heading-text,
+.cgz .bb-card .fl-heading-text {
+  font-family: var(--ds-font-heading) !important;
+  font-size: var(--ds-text-lg) !important;
+  font-weight: var(--ds-weight-bold) !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
+  color: var(--ds-color-white);
+}
+
+.cgz .bb-card h3 { margin: var(--ds-space-sm) 0 var(--ds-space-xs); }
+.cgz .bb-card h3::before {
+  content: ""; display: block; width: 2rem; height: 3px;
+  margin-bottom: var(--ds-space-xs); background: var(--ds-color-green);
+}
+
+.cgz .bb-card p, .cgz .bb-card li { color: var(--ds-color-muted); }
+.cgz .bb-card p { font-size: var(--ds-text-sm); line-height: var(--ds-line-body); }
+
+.cgz .bb-row {
+  display: flex; flex-wrap: wrap; gap: var(--ds-space-sm);
+  margin-top: var(--ds-space-md);
+}
+
+.cgz .bb-btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  padding: 0.85rem 1.6rem;
+  background: var(--ds-color-green);
+  color: var(--ds-color-midnight);
+  font-family: var(--ds-font-heading);
+  font-weight: var(--ds-weight-bold);
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.cgz .bb-btn:hover { background: var(--ds-color-cyan); }
+.cgz .bb-btn:focus-visible { outline: 3px solid var(--ds-color-green); outline-offset: 3px; }
+
+.cgz .bb-btn.bb-btn-ghost {
+  background: none;
+  color: var(--ds-color-white);
+  clip-path: none;
+}
+
+/* Links box styling */
+.cgz .links-box {
+  background: rgba(49, 225, 255, 0.08);
+  border-radius: var(--ds-radius-cut);
+  padding: var(--ds-space-md);
+  margin-bottom: var(--ds-space-md);
+}
+.cgz .links-box h4 {
+  color: var(--ds-color-green);
+  font-family: var(--ds-font-heading);
+  font-weight: var(--ds-weight-semibold);
+  font-size: var(--ds-text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--ds-space-xs);
+}
+.cgz .links-box ul { margin: 0; padding-left: 1.2em; }
+.cgz .links-box li {
+  color: var(--ds-color-muted);
+  font-size: var(--ds-text-sm);
+  margin-bottom: var(--ds-space-xs);
+}
+.cgz .links-box li a {
+  color: var(--ds-color-cyan);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.cgz .links-box li a:hover { color: var(--ds-color-green); }
+
+.cgz .question-box {
+  background: var(--ds-color-navy);
+  border-radius: var(--ds-radius-cut);
+  padding: var(--ds-space-md);
+  border: 1px solid rgba(49, 225, 255, 0.15);
+}
+.cgz .question-box p {
+  color: var(--ds-color-white);
+  font-size: var(--ds-text-sm);
+  line-height: var(--ds-line-body);
+}
+
+.cgz .disclaimer {
+  margin-top: var(--ds-space-xl);
+  padding: var(--ds-space-md);
+  background: rgba(49, 225, 255, 0.08);
+  border-radius: var(--ds-radius-cut);
+  color: var(--ds-color-muted);
+  font-size: var(--ds-text-sm);
+  line-height: var(--ds-line-body);
+  border: 1px solid rgba(49, 225, 255, 0.15);
+}
+
+.cgz .section-intro {
+  margin-bottom: var(--ds-space-xl);
+  max-width: 64ch;
+}
+.cgz .section-intro .eyebrow {
+  color: var(--ds-color-green);
+  font-family: var(--ds-font-heading);
+  font-weight: var(--ds-weight-semibold);
+  font-size: var(--ds-text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: var(--ds-space-sm);
+}
+.cgz .section-intro h1 {
+  font-size: var(--ds-text-3xl);
+  font-weight: var(--ds-weight-extrabold);
+  line-height: var(--ds-line-tight);
+  margin-bottom: var(--ds-space-md);
+}
+.cgz .section-intro .lead {
+  color: var(--ds-color-muted);
+  font-size: var(--ds-text-lg);
+}
+
+@media (max-width: 767px){
+  .cgz h1 { font-size: var(--ds-text-2xl); }
+  .cgz h2 { font-size: var(--ds-text-xl); }
+  .cgz .bb-grid { gap: var(--ds-space-sm); }
+  .cgz .bb-card { padding: var(--ds-space-sm); }
+}
 </style>
 </head>
-<body>
-<div class="shell">
-  <!-- ================= Header ================= -->
-  <section class="top">
-    <div>
-      <div class="eyebrow">AI Assistant Toolkit</div>
-      <h1>Disaster Resources Helper</h1>
-    </div>
-    <span class="badge">🇺🇸 English · B1–B2</span>
-  </section>
+<body class="cgz">
 
-  <!-- ================= AI Assistant Section ================= -->
-  <section class="ai-section">
-    <div class="section-head">
-      <h2>Ask AI for Help</h2>
-      <p class="sub">Click any "Ask AI" button to get general information. The assistant is for people 13 and older. It gives general information only and is not medical, legal, financial, or insurance advice. In an emergency, call 911.</p>
+<div class="bb-container">
+  <section>
+    <div class="section-intro">
+      <span class="eyebrow">AI Assistant</span>
+      <h1>Ask AI for Disaster Help</h1>
+      <p class="lead">Climate Ground Zero helps you prepare for any climate disaster. Get general information from official sources, then use the AI assistant as an optional helper for personalized guidance.</p>
     </div>
 
-    <!-- Free official links + Ask AI for INSURANCE -->
-    <div class="ai-card">
-      <div class="head">
-        <h3>A. INSURANCE</h3>
-        <span class="badge">Task 2</span>
+    <div class="bb-grid">
+      <!-- A. INSURANCE -->
+      <div class="bb-card">
+        <h3>A. Insurance</h3>
+        <div class="links-box">
+          <h4>Free official links:</h4>
+          <ul>
+            <li><a href="https://www.healthcare.gov" target="_blank" rel="noopener">Health insurance</a></li>
+            <li><a href="https://www.medicare.gov" target="_blank" rel="noopener">Medicare</a></li>
+            <li><a href="https://www.floodsmart.gov" target="_blank" rel="noopener">Flood insurance</a></li>
+            <li><a href="https://content.naic.org" target="_blank" rel="noopener">Find your state's insurance department</a></li>
+          </ul>
+        </div>
+        <div class="question-box">
+          <p>Give general information only. Not medical or insurance advice. In an emergency, call 911. I need help understanding insurance after a disaster. Explain the difference between health, home, renters, auto, and flood insurance in plain words, and tell me where to find my state's official insurance office.</p>
+        </div>
+        <button class="bb-btn" type="button">Ask AI</button>
       </div>
-      <div class="links free-links">
-        <h3>Free official links:</h3>
-        <ul>
-          <li><a href="https://www.healthcare.gov">Health insurance</a></li>
-          <li><a href="https://www.medicare.gov">Medicare</a></li>
-          <li><a href="https://www.floodsmart.gov">Flood insurance</a></li>
-          <li><a href="https://content.naic.org">Find your state's insurance department</a></li>
-        </ul>
+
+      <!-- B. HOSPITALS -->
+      <div class="bb-card">
+        <h3>B. Hospitals</h3>
+        <div class="links-box">
+          <h4>Free official links:</h4>
+          <ul>
+            <li><a href="https://www.google.com/maps/search/hospitals+near+me" target="_blank" rel="noopener">Find hospitals near you</a></li>
+            <li><a href="https://www.medicare.gov/care-compare" target="_blank" rel="noopener">Hospital quality and average ER time</a></li>
+            <li>Wait times are posted on each hospital's own website. Use the map link to open it.</li>
+          </ul>
+        </div>
+        <div class="question-box">
+          <p>Give general information only. Not medical advice. In an emergency, call 911. Help me find the nearest hospitals and emergency rooms, and explain what to bring and how to choose between an ER and urgent care.</p>
+        </div>
+        <button class="bb-btn" type="button">Ask AI</button>
       </div>
-      <div class="question">
-        <p>
-          Give general information only. Not medical or insurance advice. In an emergency, call 911. I need help understanding insurance after a disaster. Explain the difference between health, home, renters, auto, and flood insurance in plain words, and tell me where to find my state's official insurance office.
-        </p>
+
+      <!-- C. AGRICULTURE -->
+      <div class="bb-card">
+        <h3>C. Agriculture</h3>
+        <div class="links-box">
+          <h4>Free official links, disaster help:</h4>
+          <ul>
+            <li><a href="https://www.farmers.gov/protection-recovery/disaster-tool" target="_blank" rel="noopener">USDA disaster assistance finder</a></li>
+            <li><a href="https://www.farmers.gov" target="_blank" rel="noopener">USDA disaster help for farmers</a></li>
+            <li><a href="https://www.fsa.usda.gov" target="_blank" rel="noopener">Farm Service Agency</a></li>
+            <li><a href="https://www.rma.usda.gov" target="_blank" rel="noopener">Crop insurance (Risk Management Agency)</a></li>
+            <li><a href="https://www.drought.gov" target="_blank" rel="noopener">Drought information</a></li>
+            <li><a href="https://droughtmonitor.unl.edu" target="_blank" rel="noopener">US Drought Monitor</a></li>
+          </ul>
+          <h4 style="margin-top: var(--ds-space-md);">Grants and funding:</h4>
+          <ul style="margin-top: var(--ds-space-xs);">
+            <li><a href="https://www.nrcs.usda.gov/programs-initiatives/eqip-environmental-quality-incentives" target="_blank" rel="noopener">Conservation cost-share, EQIP (NRCS)</a></li>
+            <li><a href="https://www.sare.org/grants/" target="_blank" rel="noopener">Sustainable Agriculture Research and Education (SARE) grants</a></li>
+            <li><a href="https://www.rd.usda.gov" target="_blank" rel="noopener">USDA Rural Development grants and loans</a></li>
+            <li><a href="https://www.grants.gov" target="_blank" rel="noopener">All federal grants, official government search</a></li>
+          </ul>
+          <p style="font-size: var(--ds-text-xs); color: var(--ds-color-muted); margin-top: var(--ds-space-xs);">
+            Programs, dates, and eligibility change. Always confirm on the official site before you apply. Climate Ground Zero is not affiliated with these programs.
+          </p>
+        </div>
+        <div class="question-box">
+          <p>Give general information only. Not legal, financial, or insurance advice. Help me understand what USDA disaster help and grants are available for farms and ranches after a drought, flood, or fire, and what records I should keep.</p>
+        </div>
+        <button class="bb-btn" type="button">Ask AI</button>
       </div>
-      <button class="btn ask-ai-btn">Ask AI</button>
     </div>
 
-    <!-- Free official links + Ask AI for HOSPITALS -->
-    <div class="ai-card">
-      <div class="head">
-        <h3>B. HOSPITALS</h3>
-        <span class="badge">Task 2</span>
-      </div>
-      <div class="links free-links">
-        <h3>Free official links:</h3>
-        <ul>
-          <li><a href="https://www.google.com/maps/search/hospitals+near+me">Find hospitals near you (Google Maps)</a></li>
-          <li><a href="https://www.medicare.gov/care-compare">Hospital quality and average ER time</a></li>
-          <li><span style="color:var(--danger);">Wait times are posted on each hospital's own website. Use the map link to open it.</span></li>
-        </ul>
-      </div>
-      <div class="question">
-        <p>
-          Give general information only. Not medical advice. In an emergency, call 911. Help me find the nearest hospitals and emergency rooms, and explain what to bring and how to choose between an ER and urgent care.
-        </p>
-      </div>
-      <button class="btn ask-ai-btn">Ask AI</button>
-    </div>
-
-    <!-- Free official links + Ask AI for AGRICULTURE -->
-    <div class="ai-card">
-      <div class="head">
-        <h3>C. AGRICULTURE</h3>
-        <span class="badge">Task 2</span>
-      </div>
-      <div class="links free-links">
-        <h3>Free official links, disaster help:</h3>
-        <ul>
-          <li><a href="https://www.farmers.gov/protection-recovery/disaster-tool">USDA disaster assistance finder</a></li>
-          <li><a href="https://www.farmers.gov">USDA disaster help for farmers</a></li>
-          <li><a href="https://www.fsa.usda.gov">Farm Service Agency</a></li>
-          <li><a href="https://www.rma.usda.gov">Crop insurance (Risk Management Agency)</a></li>
-          <li><a href="https://www.drought.gov">Drought information</a></li>
-          <li><a href="https://droughtmonitor.unl.edu">US Drought Monitor</a></li>
-        </ul>
-        <h3 style="margin:20px 0 8px; font-size:13px; color:var(--mint);">Grants and funding:</h3>
-        <ul style="padding-left:20px; margin:0;">
-          <li><a href="https://www.nrcs.usda.gov/programs-initiatives/eqip-environmental-quality-incentives">Conservation cost-share, EQIP (NRCS)</a></li>
-          <li><a href="https://www.sare.org/grants/">Sustainable Agriculture Research and Education (SARE) grants</a></li>
-          <li><a href="https://www.rd.usda.gov">USDA Rural Development grants and loans</a></li>
-          <li><a href="https://www.grants.gov">All federal grants, official government search</a></li>
-        </ul>
-        <p style="font-size:12px; color:var(--muted); margin:8px 0 0;">
-          Programs, dates, and eligibility change. Always confirm on the official site before you apply. Climate Ground Zero is not affiliated with these programs.
-        </p>
-      </div>
-      <div class="question">
-        <p>
-          Give general information only. Not legal, financial, or insurance advice. Help me understand what USDA disaster help and grants are available for farms and ranches after a drought, flood, or fire, and what records I should keep.
-        </p>
-      </div>
-      <button class="btn ask-ai-btn">Ask AI</button>
+    <div class="disclaimer">
+      The AI assistant is for people 13 and older. It gives general information only. It is not medical, legal, financial, or insurance advice. In an emergency, call 911.
     </div>
   </section>
-
-  <!-- ================= Note near buttons ================= -->
-  <div class="note">
-    The AI assistant is for people 13 and older. It gives general information only. It is not medical, legal, financial, or insurance advice. In an emergency, call 911.
-  </div>
 </div>
+
 </body>
 </html>
