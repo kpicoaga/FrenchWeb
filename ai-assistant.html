@@ -84,6 +84,7 @@ body{
 .cgz .bb-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  align-items: start;
   gap: var(--ds-space-md);
   margin-top: var(--ds-space-lg);
 }
@@ -91,6 +92,8 @@ body{
 .cgz .bb-card {
   position: relative;
   isolation: isolate;
+  display: flex;
+  flex-direction: column;
   padding: var(--ds-space-md);
   filter: drop-shadow(var(--ds-shadow-glow));
   clip-path: polygon(var(--ds-radius-cut) 0, 100% 0, 100% calc(100% - var(--ds-radius-cut)), calc(100% - var(--ds-radius-cut)) 100%, 0 100%, 0 var(--ds-radius-cut));
@@ -192,18 +195,6 @@ body{
 }
 .cgz .links-box li a:hover { color: var(--ds-color-green); }
 
-.cgz .question-box {
-  background: var(--ds-color-navy);
-  border-radius: var(--ds-radius-cut);
-  padding: var(--ds-space-md);
-  border: 1px solid rgba(49, 225, 255, 0.15);
-}
-.cgz .question-box p {
-  color: var(--ds-color-white);
-  font-size: var(--ds-text-sm);
-  line-height: var(--ds-line-body);
-}
-
 .cgz .disclaimer {
   margin-top: var(--ds-space-xl);
   padding: var(--ds-space-md);
@@ -259,9 +250,9 @@ body{
     </div>
 
     <div class="bb-grid">
-      <!-- A. INSURANCE -->
+      <!-- INSURANCE -->
       <div class="bb-card">
-        <h3>A. Insurance</h3>
+        <h3>Insurance</h3>
         <div class="links-box">
           <h4>Free official links:</h4>
           <ul>
@@ -271,15 +262,12 @@ body{
             <li><a href="https://content.naic.org" target="_blank" rel="noopener">Find your state's insurance department</a></li>
           </ul>
         </div>
-        <div class="question-box">
-          <p>Give general information only. Not medical or insurance advice. In an emergency, call 911. I need help understanding insurance after a disaster. Explain the difference between health, home, renters, auto, and flood insurance in plain words, and tell me where to find my state's official insurance office.</p>
-        </div>
         <button class="bb-btn" type="button">Ask AI</button>
       </div>
 
-      <!-- B. HOSPITALS -->
+      <!-- HOSPITALS -->
       <div class="bb-card">
-        <h3>B. Hospitals</h3>
+        <h3>Hospitals</h3>
         <div class="links-box">
           <h4>Free official links:</h4>
           <ul>
@@ -288,15 +276,12 @@ body{
             <li>Wait times are posted on each hospital's own website. Use the map link to open it.</li>
           </ul>
         </div>
-        <div class="question-box">
-          <p>Give general information only. Not medical advice. In an emergency, call 911. Help me find the nearest hospitals and emergency rooms, and explain what to bring and how to choose between an ER and urgent care.</p>
-        </div>
         <button class="bb-btn" type="button">Ask AI</button>
       </div>
 
-      <!-- C. AGRICULTURE -->
+      <!-- AGRICULTURE -->
       <div class="bb-card">
-        <h3>C. Agriculture</h3>
+        <h3>Agriculture</h3>
         <div class="links-box">
           <h4>Free official links, disaster help:</h4>
           <ul>
@@ -317,9 +302,6 @@ body{
           <p style="font-size: var(--ds-text-xs); color: var(--ds-color-muted); margin-top: var(--ds-space-xs);">
             Programs, dates, and eligibility change. Always confirm on the official site before you apply. Climate Ground Zero is not affiliated with these programs.
           </p>
-        </div>
-        <div class="question-box">
-          <p>Give general information only. Not legal, financial, or insurance advice. Help me understand what USDA disaster help and grants are available for farms and ranches after a drought, flood, or fire, and what records I should keep.</p>
         </div>
         <button class="bb-btn" type="button">Ask AI</button>
       </div>
