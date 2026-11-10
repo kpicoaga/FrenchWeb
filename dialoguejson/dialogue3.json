@@ -46,13 +46,8 @@
                 "role": "c",
                 "items": [
                     {
-                        "fr": "Salut, ça va ?",
-                        "note": "Ouverture informelle de l'ami — salutation entre amis",
-                        "role": "e"
-                    },
-                    {
-                        "fr": "Alors, avant que tu partes, j'aimerais te poser quelques questions pour être sûr de bien m'occuper de ton appartement. D'abord, quelles sont les dates exactes de ton absence ?",
-                        "note": "Ouverture de la demande — annonce du début des questions",
+                        "fr": "Salut, je voulais te parler parce que tu m'as dit que tu partais quelques jours. Alors, avant que tu partes, j'aimerais te poser quelques questions pour être sûr de bien m'occuper de ton appartement. D'abord, quelles sont les dates exactes de ton absence ?",
+                        "note": "Ouverture de la demande — rappel du contexte + annonce du début des questions",
                         "role": "c"
                     },
                     {
@@ -99,11 +94,6 @@
                 "icon": "😌",
                 "role": "c",
                 "items": [
-                    {
-                        "fr": "Salut ! Oui, ça va bien. Et toi ?",
-                        "note": "Réponse à la salutation + question miroir",
-                        "role": "c"
-                    },
                     {
                         "fr": "Très bien.",
                         "note": "Accusé de réception (récurent)",
@@ -188,32 +178,11 @@
     },
     "turns": [
         {
-            "speaker": "Speaker 1",
-            "text": "Salut, ça va ?",
-            "en": "Hi, how are you?",
-            "es": "Saliu, sa va?",
-            "note": "OUVERTURE: Formule de salutation informelle entre amis"
-        },
-        {
             "speaker": "Speaker 2",
-            "text": "Salut ! Oui, ça va bien. Et toi ?",
-            "en": "Hi! I am doing well. And you?",
-            "es": "Saliu ! Uí, sa va bién. E tua?",
-            "note": "RESPONSE: Réponse à la salutation + question miroir"
-        },
-        {
-            "speaker": "Speaker 1",
-            "text": "Je vais bien, merci.",
-            "en": "I am doing fine, thanks.",
-            "es": "Yu va bién, mersí.",
-            "note": "RESPONSE: Réponse polie à la question"
-        },
-        {
-            "speaker": "Speaker 2",
-            "text": "Alors, avant que tu partes, j'aimerais te poser quelques questions pour être sûr de bien m'occuper de ton appartement. D'abord, quelles sont les dates exactes de ton absence ?",
-            "en": "So, before you leave, I would like to ask you a few questions to make sure I take good care of your apartment. First, what are the exact dates of your absence?",
-            "es": "Alór, avan ke tu part, yomeré te posé kelk kesción pur ètr sir de bién mokupe de ton apartmán. Dabor, kel son le dat egzakt de ton absáns?",
-            "note": "OUVERTURE: \"Avant que tu partes\" - annonce le début des questions; première question sur les dates"
+            "text": "Salut, je voulais te parler parce que tu m'as dit que tu partais quelques jours. Alors, avant que tu partes, j'aimerais te poser quelques questions pour être sûr de bien m'occuper de ton appartement. D'abord, quelles sont les dates exactes de ton absence ?",
+            "en": "Hi, I wanted to talk to you because you told me you were going away for a few days. So, before you leave, I would like to ask you a few questions to make sure I take good care of your apartment. First, what are the exact dates of your absence?",
+            "es": "Saliu, yu vulé te parlé parsk tu ma di ke tu partè kelk yur. Alór, avan ke tu part, yomeré te posé kelk kesción pur ètr sir de bién mokupe de ton apartmán. Dabor, kel son le dat egzakt de ton absáns?",
+            "note": "OUVERTURE: Rappel du contexte + \"Avant que tu partes\" - annonce le début des questions; première question sur les dates"
         },
         {
             "speaker": "Speaker 1",
