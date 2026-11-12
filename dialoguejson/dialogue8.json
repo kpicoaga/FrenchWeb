@@ -212,7 +212,7 @@
     "turns": [
         {
             "speaker": "Speaker 2",
-            "text": "Salut ! Tu viens de passer un week-end à Montréal, une ville que tu connais très bien, et j'aimerais y aller. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "text": "Salut ! Tu viens de passer un week-end à Montréal,f une ville que tu connais très bien, et j'aimerais y aller. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
             "en": "Hi! You have just spent a weekend in Montreal, a city you know very well, and I would like to go there. Could I ask you a few questions about it?",
             "es": "Salu ! Tu vien de pasé un uikén a Monreál, ün vil ke tu konés trè bién, e yomeré i alé. Esk yu puré te posé kelk kesción a se süyé ?",
             "note": "OUVERTURE: Salutation + contexte (week-end à Montréal, ville bien connue) + demande polie \"Est-ce que je pourrais\""
