@@ -1,0 +1,388 @@
+{
+    "title": "Découvrir les commerces du quartier auprès d'un voisin",
+    "task": "tache2",
+    "topic": "1. Housing",
+    "description": "Vous venez d'emménager dans un nouveau quartier et vous interrogez un voisin sur les endroits pour faire vos courses : boulangerie, horaires, prix, transports, marché, boucherie et épicerie.",
+    "labels": {
+        "E": "Voisin(e)",
+        "C": "Nouvel(le) habitant(e)"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "Je viens d'emménager",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "Ça me semble pratique",
+        "J'aimerais également savoir",
+        "Ah, c'est intéressant",
+        "Puisque",
+        "Je comprends mieux",
+        "Je vois",
+        "C'est parfait",
+        "Dans ce cas",
+        "ça répond à toutes mes questions",
+        "Je vais commencer par",
+        "Bonne journée",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Découvrir les commerces du quartier",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je viens d'emménager dans le quartier et je cherche où faire mes courses. Comme tu habites ici depuis longtemps, est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Ouverture réelle du dialogue — salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bien sûr, avec plaisir ! Bienvenue dans le quartier. Demande-moi ce que tu veux.",
+                        "note": "Formule d'accueil du voisin — invite à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais commencer par la boulangerie demain matin !",
+                        "note": "Clôture — remerciement + « ça répond à mes questions » + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Merci encore, c'est très gentil. Bonne journée et à bientôt !",
+                        "note": "Formule de politesse finale — remerciement + salutation",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci. Pour commencer, où se trouve la meilleure boulangerie du quartier ?",
+                        "note": "« Pour commencer » — première question, ancrée dans le scénario",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. J'aimerais également savoir combien coûte une baguette dans cette boulangerie.",
+                        "note": "« J'aimerais également savoir » — enchaîner vers le prix",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et pour les grosses courses, comment est-ce que je peux me rendre au supermarché sans voiture ?",
+                        "note": "« Et pour » — nouveau thème, le transport",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et qui tient cette boucherie ?",
+                        "note": "« Je vois. Et » — accuser réception puis enchaîner",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, est-ce qu'il y a des réductions pour les habitants ?",
+                        "note": "« Dans ce cas » — question liée à la dernière réponse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ça me semble pratique !",
+                        "note": "Réaction positive à une information utile",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant.",
+                        "note": "Réaction engagée — gagner du temps",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux.",
+                        "note": "Accusé de réception — information clarifiée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est parfait !",
+                        "note": "Satisfaction — information qui correspond au besoin",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord.",
+                        "note": "Accord neutre",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois.",
+                        "note": "Accusé de réception",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ah, c'est intéressant. Puisque les croissants partent vite, est-ce qu'il vaut mieux y aller tôt ou est-ce qu'on peut réserver ?",
+                        "note": "Suivi sur un détail — « Puisque » + alternative (tôt / réserver)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je voudrais acheter des fruits frais. Quand a lieu le marché, s'il y en a un ?",
+                        "note": "« s'il y en a un » — poser une question sans présupposer la réponse",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Les prix sont plus élevés ? Dans ce cas, est-ce qu'il y a des réductions pour les habitants ?",
+                        "note": "Reformuler un détail pour relancer la conversation",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Viens avant huit heures, c'est le mieux. Tu peux aussi réserver ta commande la veille.",
+                        "note": "Conseil du voisin — impératif + « tu peux »",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Conditionnel de politesse (pourrais + infinitif)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je viens d'emménager dans le quartier",
+                        "note": "« venir de + infinitif » — passé récent",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Puisque les croissants partent vite, est-ce qu'il vaut mieux y aller tôt ou est-ce qu'on peut réserver ?",
+                        "note": "« Puisque » (cause connue) + « il vaut mieux + infinitif »",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je voudrais acheter des fruits frais.",
+                        "note": "Conditionnel de politesse (voudrais + infinitif)",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je viens d'emménager dans le quartier et je cherche où faire mes courses. Comme tu habites ici depuis longtemps, est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hello! I have just moved into the neighbourhood and I am looking for where to do my shopping. Since you have lived here for a long time, could I ask you a few questions about it?",
+            "es": "Bonzhur! Zhe vyan demenazhé dan l kartié e zhe sherch u fer me kurs. Kom tu abit isi depuí lontán, esk zhe puré te pozé kelk kesción a s süzhé?",
+            "note": "OUVERTURE: Salutation + contexte (\"Je viens d'emménager\") + demande polie (\"est-ce que je pourrais\")"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, avec plaisir ! Bienvenue dans le quartier. Demande-moi ce que tu veux.",
+            "en": "Of course, with pleasure! Welcome to the neighbourhood. Ask me whatever you want.",
+            "es": "Bien sür, avek plezir! Bienvenü dan l kartié. Demand-mua s ke tu vé.",
+            "note": "RESPONSE: Formule d'accueil — invite à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci. Pour commencer, où se trouve la meilleure boulangerie du quartier ? Je préfère acheter du pain frais le matin.",
+            "en": "Thank you. To start with, where is the best bakery in the neighbourhood? I prefer to buy fresh bread in the morning.",
+            "es": "Mersí. Pur komansé, u s truv la meyer bulanzhri dü kartié? Zhe préfér ashté dü pan fre l maten.",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — première question ancrée dans le scénario (où + boulangerie)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a une très bonne boulangerie rue des Lilas. Elle est à cinq minutes à pied.",
+            "en": "There is a very good bakery on Rue des Lilas. It is five minutes away on foot.",
+            "es": "Il y a ün tre bon bulanzhri rü de Lilá. El e a sank minüt a pyé.",
+            "note": "INFORMATION: Localisation de la boulangerie"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ça me semble pratique ! Quels sont ses horaires d'ouverture ? Est-ce qu'elle ouvre tôt, même le dimanche ?",
+            "en": "That seems convenient! What are its opening hours? Does it open early, even on Sunday?",
+            "es": "Sa m sanbl pratik! Kel son se zorér duvertür? Esk el uvr to, mem l dimansh?",
+            "note": "RÉACTION: \"Ça me semble pratique\"; ENCHAINEMENT: question sur les horaires (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Elle ouvre à sept heures en semaine et à huit heures le dimanche, mais elle ferme à midi ce jour-là.",
+            "en": "It opens at seven o'clock on weekdays and at eight on Sunday, but it closes at noon that day.",
+            "es": "El uvr a set er an semén e a ui ter l dimansh, me el ferm a mid s zhur-la.",
+            "note": "INFORMATION: Horaires d'ouverture semaine / dimanche"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. J'aimerais également savoir combien coûte une baguette dans cette boulangerie. Est-ce que les prix sont raisonnables ?",
+            "en": "Okay. I would also like to know how much a baguette costs in this bakery. Are the prices reasonable?",
+            "es": "Dakor. Zhemeré egalmán savuar kombien kut ün bagét dan set bulanzhri. Esk le prí son rezonabl?",
+            "note": "RÉACTION: \"D'accord\"; ENCHAINEMENT: \"J'aimerais également savoir\" — question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Une baguette coûte environ un euro. Leurs croissants au beurre sont délicieux, ils partent très vite le week-end.",
+            "en": "A baguette costs about one euro. Their butter croissants are delicious, they sell out very quickly at the weekend.",
+            "es": "Ün bagét kut anviron un ero. Lör kruasán o bër son délisieu, il part tre vit l ueken.",
+            "note": "INFORMATION: Prix de la baguette + détail sur les croissants (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Puisque les croissants partent vite, est-ce qu'il vaut mieux y aller tôt ou est-ce qu'on peut réserver ?",
+            "en": "Oh, that is interesting. Since the croissants sell out quickly, is it better to go early or can you book?",
+            "es": "A, se anterèsán. Püiske le kruasán part vit, esk il vo mieu i alé to u esk on pe rézervé?",
+            "note": "SUIVI 1: reprend le détail \"les croissants partent vite\" — demande de précision (aller tôt ou réserver)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Viens avant huit heures, c'est le mieux. Tu peux aussi réserver ta commande la veille.",
+            "en": "Come before eight o'clock, that is best. You can also reserve your order the day before.",
+            "es": "Vien avan ui ter, se l mieu. Tu pe osi rézervé ta komand la veyi.",
+            "note": "INFORMATION: Conseil horaire + possibilité de réserver"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et pour les grosses courses, comment est-ce que je peux me rendre au supermarché sans voiture ?",
+            "en": "Very good, thank you. And for the big shopping trips, how can I get to the supermarket without a car?",
+            "es": "Tre bien, mersí. E pur le gros kurs, komán esk zhe pe m randr o süpermarshé san vuatür?",
+            "note": "RÉACTION: \"Très bien, merci\"; ENCHAINEMENT: \"Et pour\" — question sur le transport (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le supermarché est à dix minutes à pied, ou tu peux prendre le bus numéro douze.",
+            "en": "The supermarket is ten minutes away on foot, or you can take bus number twelve.",
+            "es": "L süpermarshé e a di minüt a pyé, u tu pe prandr l büs numéro duz.",
+            "note": "INFORMATION: Accès au supermarché à pied ou en bus"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Je voudrais acheter des fruits frais. Quand a lieu le marché, s'il y en a un ?",
+            "en": "I understand better. I would like to buy fresh fruit. When is the market held, if there is one?",
+            "es": "Zhe komprán mieu. Zhe vudré ashté de frui fre. Kan a lieu l marshé, sil y an a ún?",
+            "note": "RÉACTION: \"Je comprends mieux\"; ENCHAINEMENT: question sur le marché (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, le samedi matin sur la place de l'église. Beaucoup de producteurs de la région y vendent leurs légumes.",
+            "en": "Yes, on Saturday morning in the church square. Many local producers sell their vegetables there.",
+            "es": "Ui, l samdi maten sür la plas de légliz. Boku de prodüktër de la régión i vand lör légüm.",
+            "note": "INFORMATION: Jour et lieu du marché + producteurs locaux (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est parfait ! Est-ce que ces producteurs vendent aussi du fromage et de la viande, ou seulement des légumes ?",
+            "en": "That is perfect! Do these producers also sell cheese and meat, or only vegetables?",
+            "es": "Se parfé! Esk se prodüktër vand osi dü fromazh e de la viand, u sülmán de légüm?",
+            "note": "SUIVI 2: reprend le détail \"producteurs de la région\" — demande de précision (fromage, viande)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a un fromager et un éleveur, mais pour la viande, je préfère la boucherie de la rue Victor-Hugo.",
+            "en": "There is a cheesemonger and a livestock farmer, but for meat, I prefer the butcher's on Rue Victor-Hugo.",
+            "es": "Il y a un fromazhé e un élvër, me pur la viand, zhe préfér la bushri de la rü Viktor-Ügo.",
+            "note": "INFORMATION: Produits disponibles + préférence pour une boucherie"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et qui tient cette boucherie ? C'est un commerce familial ou une grande chaîne ?",
+            "en": "I see. And who runs this butcher's shop? Is it a family business or a big chain?",
+            "es": "Zhe vua. E ki tien set bushri? Se un komers famílial u ün grand shen?",
+            "note": "RÉACTION: \"Je vois\"; ENCHAINEMENT: \"Et\" — question sur la personne (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "C'est un commerce familial. Monsieur Dubois le tient depuis vingt ans et il connaît tous les habitants du quartier.",
+            "en": "It is a family business. Mr Dubois has run it for twenty years and he knows all the residents of the neighbourhood.",
+            "es": "Se un komers famílial. Mesiö Dübó l tien depuí ven an e il konê tu le zabitán dü kartié.",
+            "note": "INFORMATION: Commerce familial, commerçant connu"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est sympa. Pourquoi est-ce que tu préfères le marché au supermarché pour faire tes courses ?",
+            "en": "Oh, that is nice. Why do you prefer the market to the supermarket for your shopping?",
+            "es": "A, se sampa. Purkua esk tu préfér l marshé o süpermarshé pur fer te kurs?",
+            "note": "RÉACTION: \"Ah, c'est sympa\"; ENCHAINEMENT: question sur le choix (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les produits sont plus frais et j'aime discuter avec les vendeurs. Le supermarché, c'est pour le ménage.",
+            "en": "The products are fresher and I like chatting with the sellers. The supermarket is for household shopping.",
+            "es": "Le produí son plü fre e zhem diskuté avek le vandër. L süpermarshé, se pur l menázh.",
+            "note": "INFORMATION: Raisons de la préférence + rôle du supermarché"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est parfait ! Et quelle épicerie reste ouverte tard le soir ? Je rentre parfois après le travail.",
+            "en": "That is perfect! And which grocery shop stays open late in the evening? I sometimes get home after work.",
+            "es": "Se parfé! E kel episeri rest uvért tar l suar? Zhe rantr parfua apré l travay.",
+            "note": "RÉACTION: \"C'est parfait\"; ENCHAINEMENT: \"Et\" — question sur l'épicerie tardive (quelle)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'épicerie de Karim, au coin de la rue. Elle ferme à vingt-deux heures, mais les prix sont plus élevés.",
+            "en": "Karim's grocery shop, on the corner of the street. It closes at ten p.m., but the prices are higher.",
+            "es": "Lepiseri de Karim, o koin de la rü. El ferm a vent-do er, me le prí son plü zélevé.",
+            "note": "INFORMATION: Épicerie ouverte tard + prix plus élevés (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Les prix sont plus élevés ? Dans ce cas, est-ce qu'il y a des réductions pour les habitants ?",
+            "en": "The prices are higher? In that case, are there any discounts for residents?",
+            "es": "Le prí son plü zélevé? Dan se ka, esk il y a de rédüksión pur le zabitán?",
+            "note": "SUIVI 3: reprend le détail \"prix plus élevés\" — \"Dans ce cas, est-ce que\" (réductions)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, il a une carte de fidélité avec cinq pour cent de réduction.",
+            "en": "Yes, he has a loyalty card with five percent off.",
+            "es": "Ui, il a ün kart de fidélité avek sank pur san de rédüksión.",
+            "note": "INFORMATION: Carte de fidélité et réduction"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais commencer par la boulangerie demain matin !",
+            "en": "Perfect, that answers all my questions. Thank you very much for this information, I am going to start with the bakery tomorrow morning!",
+            "es": "Parfé, sa répon a tut me kesción. Mersí boku pur se zenformasión, zhe vé komansé par la bulanzhri demen maten!",
+            "note": "FERMETURE: remerciement + \"ça répond à toutes mes questions\" + prochaine étape (\"je vais\")"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! N'hésite pas si tu as d'autres questions. Bonne installation !",
+            "en": "With pleasure! Don't hesitate if you have any other questions. Enjoy settling in!",
+            "es": "Avek plezir! Nézit pa si tu a dotr kesción. Bon énstalasión!",
+            "note": "RESPONSE: Formule de clôture du voisin — disponibilité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore, c'est très gentil. Bonne journée et à bientôt !",
+            "en": "Thanks again, that is very kind. Have a good day and see you soon!",
+            "es": "Mersí ankor, se tre zhentí. Bonzhurné e a byento!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}
