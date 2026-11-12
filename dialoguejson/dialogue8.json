@@ -1,0 +1,389 @@
+{
+    "title": "Un week-end à Montréal : les lieux à découvrir",
+    "task": "tache2",
+    "topic": "2. Travel & Transportation",
+    "description": "Un ami revient d'un week-end à Montréal, une ville qu'il connaît très bien. Vous aimeriez y aller et vous lui posez des questions sur les quartiers, restaurants, activités et visites.",
+    "labels": {
+        "E": "Votre ami(e)",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "Tu viens de passer",
+        "j'aimerais y aller",
+        "Est-ce que je pourrais te poser",
+        "à ce sujet",
+        "D'abord",
+        "quel quartier",
+        "Et pourquoi",
+        "plutôt que",
+        "Et où",
+        "Est-ce qu'on peut",
+        "Combien coûte",
+        "Est-ce qu'il faut s'inscrire",
+        "Et quand",
+        "à ton avis",
+        "J'aimerais également savoir",
+        "Et comment",
+        "Dans ce cas",
+        "Pourrais-tu me décrire",
+        "Ça répond à toutes mes questions",
+        "J'ai hâte de"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Un week-end à Montréal",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, rebondir et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Tu viens de passer un week-end à Montréal, une ville que tu connais très bien, et j'aimerais y aller. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Ouverture — salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bien sûr, avec plaisir ! Montréal est une ville que j'adore, alors pose-moi toutes tes questions.",
+                        "note": "Réponse de l'ami — accepte et invite à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci beaucoup pour toutes ces informations. Ça répond à toutes mes questions, et je vais organiser mon week-end à Montréal.",
+                        "note": "Clôture — remerciement + « Ça répond à toutes mes questions » + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Merci encore, j'ai hâte d'y être ! Bonne journée et à bientôt.",
+                        "note": "Fermeture — « J'ai hâte de » + formule de politesse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci, c'est très gentil. D'abord, quel quartier est-ce que tu as préféré pendant ton week-end là-bas ?",
+                        "note": "« D'abord » — ouvrir la série de questions avec une question ciblée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et pourquoi est-ce que tu as préféré ce quartier plutôt que le Vieux-Montréal ?",
+                        "note": "« Et pourquoi » — demander une justification",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et où est-ce que tu as mangé samedi soir ?",
+                        "note": "« Et où » — nouveau thème, le restaurant",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parfait, ça me semble pratique. Et quand est-ce que c'est le meilleur moment pour y aller, à ton avis ?",
+                        "note": "« Et quand » — la meilleure période",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. J'aimerais également savoir qui organise des visites guidées.",
+                        "note": "« J'aimerais également savoir » — ajouter un thème",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et comment est-ce que je peux aller de l'aéroport jusqu'au Plateau ?",
+                        "note": "« Et comment » — le transport",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ah, c'est intéressant.",
+                        "note": "Réaction engagée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois.",
+                        "note": "Accusé de réception neutre",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien.",
+                        "note": "Accord positif",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parfait, ça me semble pratique.",
+                        "note": "Accord enthousiaste + commentaire",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord.",
+                        "note": "Accord neutre",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ça me plaît beaucoup.",
+                        "note": "Réaction engagée — opinion personnelle",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Rebondir & Gagner du temps",
+                "icon": "⏱️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ah, le parc La Fontaine ! Est-ce qu'on peut y faire des activités, comme du vélo ou du patin ?",
+                        "note": "Reprendre un détail de la réponse de l'ami",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, BIXI m'intéresse. Est-ce qu'il faut s'inscrire avant, ou je peux payer directement à la borne ?",
+                        "note": "Reprendre un détail + question pratique",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, pourrais-tu me décrire un peu plus la visite des murales ? Combien de temps est-ce qu'elle dure ?",
+                        "note": "« Dans ce cas » + demander de développer",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Oui, on peut louer des vélos juste à côté. En hiver, la patinoire du parc est ouverte à tout le monde.",
+                        "note": "Exemple de réponse de l'ami sur laquelle rebondir",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Conditionnel de politesse (pourrais + infinitif)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Tu viens de passer un week-end à Montréal, et j'aimerais y aller bientôt",
+                        "note": "« Venir de » + infinitif (passé récent) ; pronom « y » = à Montréal",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'abord, quel quartier est-ce que tu as préféré ?",
+                        "note": "« D'abord » + question avec « est-ce que » au passé composé",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "pourrais-tu me décrire un peu plus la visite ?",
+                        "note": "Conditionnel de politesse (pourrais-tu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "je vais organiser mon week-end",
+                        "note": "Futur proche (aller + infinitif)",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! Tu viens de passer un week-end à Montréal, une ville que tu connais très bien, et j'aimerais y aller. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hi! You have just spent a weekend in Montreal, a city you know very well, and I would like to go there. Could I ask you a few questions about it?",
+            "es": "Salu ! Tu vien de pasé un uikén a Monreál, ün vil ke tu konés trè bién, e yomeré i alé. Esk yu puré te posé kelk kesción a se süyé ?",
+            "note": "OUVERTURE: Salutation + contexte (week-end à Montréal, ville bien connue) + demande polie \"Est-ce que je pourrais\""
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, avec plaisir ! Montréal est une ville que j'adore, alors pose-moi toutes tes questions.",
+            "en": "Of course, with pleasure! Montreal is a city I love, so ask me all your questions.",
+            "es": "Bien sür, avek plezir ! Monreál e ün vil ke yadór, alór poz-mua tut te kesción.",
+            "note": "RÉPONSE: Accepte la demande — invite à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci, c'est très gentil. D'abord, quel quartier est-ce que tu as préféré pendant ton week-end là-bas ?",
+            "en": "Thank you, that is very kind. First, which neighbourhood did you like best during your weekend there?",
+            "es": "Mersí, se trè yenti. Dabor, kel kartié esk tu a préféré pandán ton uikén la-ba ?",
+            "note": "ENCHAINEMENT: \"D'abord\" - première question ciblée avec \"Quel\""
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "J'ai adoré le Plateau-Mont-Royal. Il y a plein de cafés, de petites boutiques et des murales colorées dans toutes les rues.",
+            "en": "I loved the Plateau-Mont-Royal. There are lots of cafés, small shops and colourful murals on every street.",
+            "es": "Yé adoré le Plató-Mon-Royal. Il y a plé de kafé, de petit butik e de müral kolorée dan tut le rü.",
+            "note": "INFORMATION: Quartier préféré"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Et pourquoi est-ce que tu as préféré ce quartier plutôt que le Vieux-Montréal ?",
+            "en": "Oh, that is interesting. And why did you prefer this neighbourhood rather than Old Montreal?",
+            "es": "A, se intéresán. E purkuá esk tu a préféré se kartié plutó ke le Vié-Monreál ?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\"; ENCHAINEMENT: \"Et pourquoi\" - justification"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce que l'ambiance est plus authentique. Les habitants s'y promènent tranquillement, alors que le Vieux-Montréal est souvent rempli de touristes.",
+            "en": "Because the atmosphere is more authentic. The locals stroll around calmly, whereas Old Montreal is often full of tourists.",
+            "es": "Parske lambiáns e plu otantik. Le zabitán sy promén tranquilmán, alór ke le Vié-Monreál e suvén rempli de turist.",
+            "note": "INFORMATION: Raisons de la préférence"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et où est-ce que tu as mangé samedi soir ? J'aimerais goûter la cuisine locale.",
+            "en": "I see. And where did you eat on Saturday night? I would like to try the local cuisine.",
+            "es": "Yu vua. E u esk tu a mánzhé samdi suar ? Yomeré gutê la kuizin lokal.",
+            "note": "RÉACTION: \"Je vois\"; ENCHAINEMENT: \"Et où\" - restaurant"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Dans un petit bistro près du parc La Fontaine. On y sert de la poutine gourmet et des bagels fameux.",
+            "en": "In a small bistro near La Fontaine Park. They serve gourmet poutine and famous bagels.",
+            "es": "Dan un peti bistró prè du park La Fontén. On i sér de la putín gurmé e de bagel fameú.",
+            "note": "INFORMATION: Restaurant et plats"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, le parc La Fontaine ! Est-ce qu'on peut y faire des activités, comme du vélo ou du patin ?",
+            "en": "Oh, La Fontaine Park! Can you do activities there, like cycling or skating?",
+            "es": "A, le park La Fontén ! Esk on pé i fer de z'activité, komé du vélo u du paten ?",
+            "note": "SUIVI 1: Reprend un détail de la réponse (\"le parc La Fontaine\") + \"Est-ce qu'on peut\""
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, on peut louer des vélos juste à côté. En hiver, la patinoire du parc est ouverte à tout le monde.",
+            "en": "Yes, you can rent bikes right next to it. In winter, the park's skating rink is open to everyone.",
+            "es": "Uí, on pé luwé de vélo yust a koté. An iver, la patinuár du park e uvért a tu le mond.",
+            "note": "INFORMATION: Activités dans le parc"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Combien coûte la location d'un vélo pour toute la journée ?",
+            "en": "Very good. How much does it cost to rent a bike for the whole day?",
+            "es": "Tré bién. Kombién kut la lokasión dun vélo pur tut la yurné ?",
+            "note": "RÉACTION: \"Très bien\"; QUESTION: \"Combien\" - prix de la location"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Environ vingt-cinq dollars pour la journée. Mais avec le système BIXI, tu peux payer beaucoup moins pour de courts trajets.",
+            "en": "About twenty-five dollars for the day. But with the BIXI system, you can pay much less for short trips.",
+            "es": "Anviron vén-sénk dolar pur la yurné. Mé avek le sistém BIXI, tu pé payé boku mua pur de kur trayé.",
+            "note": "INFORMATION: Prix et alternative BIXI"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, BIXI m'intéresse. Est-ce qu'il faut s'inscrire avant, ou je peux payer directement à la borne ?",
+            "en": "Oh, BIXI interests me. Do I need to sign up beforehand, or can I pay directly at the station?",
+            "es": "A, BIXI mintérés. Esk il fo sinscrir avan, u yu pé payé diréktmán a la born ?",
+            "note": "SUIVI 2: Reprend un détail (\"BIXI\") + question sur l'inscription"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Pas besoin de s'inscrire. Tu paies avec ta carte à la borne et tu rends le vélo dans n'importe quelle station.",
+            "en": "No need to sign up. You pay with your card at the station and return the bike at any station.",
+            "es": "Pa de bezuán de sinscrir. Tu pé avek ta kart a la born e tu rand le vélo dan nimport kel stasión.",
+            "note": "INFORMATION: Fonctionnement de BIXI"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça me semble pratique. Et quand est-ce que c'est le meilleur moment pour y aller, à ton avis ?",
+            "en": "Perfect, that seems practical. And when is the best time to go, in your opinion?",
+            "es": "Parfé, sa me sembl pratik. E kan esk se le miö momán pur i aler, a ton avi ?",
+            "note": "RÉACTION: \"Ça me semble pratique\"; ENCHAINEMENT: \"Et quand\" - meilleure période"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Au printemps ou au début de l'automne. Il fait beau, et il y a moins de monde qu'en plein été.",
+            "en": "In spring or early autumn. The weather is nice, and there are fewer people than in the middle of summer.",
+            "es": "O printán u o débü de lotón. Il fé bo, e il y a mua de mond kan plén été.",
+            "note": "INFORMATION: Meilleure période"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. J'aimerais également savoir qui organise des visites guidées. Est-ce que tu connais une bonne agence ?",
+            "en": "Okay. I would also like to know who organises guided tours. Do you know a good agency?",
+            "es": "Dakor. Yomeré egalmán savuar ki organiz de vizit guidé. Esk tu konés ün bon ayans ?",
+            "note": "RÉACTION: \"D'accord\"; ENCHAINEMENT: \"J'aimerais également savoir\" + \"qui\""
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, un organisme local propose une visite à pied des murales le samedi matin. Elle part de la station Mont-Royal.",
+            "en": "Yes, a local organisation offers a walking tour of the murals on Saturday mornings. It starts from Mont-Royal station.",
+            "es": "Uí, un organism lokal propoz ün vizit a pié de müral le samdi matán. El par de la stasión Mon-Royal.",
+            "note": "INFORMATION: Visite guidée des murales"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et comment est-ce que je peux aller de l'aéroport jusqu'au Plateau ? Est-ce que c'est facile sans voiture ?",
+            "en": "I see. And how can I get from the airport to the Plateau? Is it easy without a car?",
+            "es": "Yu vua. E komán esk yu pé aler de laeropór yüsk o Plató ? Esk se fasil sán vuatür ?",
+            "note": "RÉACTION: \"Je vois\"; ENCHAINEMENT: \"Et comment\" - transport depuis l'aéroport"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Très facile. Tu prends le bus 747 jusqu'au centre-ville, puis le métro. Le trajet dure environ une heure.",
+            "en": "Very easy. You take the 747 bus to downtown, then the metro. The trip takes about an hour.",
+            "es": "Trè fasil. Tu prán le büs sét-san-karánt-sét yüsk o santr-vil, püi le métro. Le trayé dür anviron ün our.",
+            "note": "INFORMATION: Transport et durée du trajet"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Dans ce cas, pourrais-tu me décrire un peu plus la visite des murales ? Combien de temps est-ce qu'elle dure ?",
+            "en": "In that case, could you describe the mural tour a bit more? How long does it last?",
+            "es": "Dan se ka, puré-tu me dékrir un pu plu la vizit de müral ? Kombién de tan esk el dür ?",
+            "note": "SUIVI 3: \"Dans ce cas\" + reprend \"visite des murales\" + demande de précisions"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Elle dure deux heures. Le guide explique l'histoire de chaque œuvre, et tu peux prendre beaucoup de photos.",
+            "en": "It lasts two hours. The guide explains the story of each work, and you can take lots of photos.",
+            "es": "El dür dé our. Le gid explik listuar de shak éuvr, e tu pé prandr boku de foto.",
+            "note": "INFORMATION: Durée et contenu de la visite"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci beaucoup pour toutes ces informations. Ça répond à toutes mes questions, et je vais organiser mon week-end à Montréal.",
+            "en": "Thank you very much for all this information. That answers all my questions, and I am going to plan my weekend in Montreal.",
+            "es": "Mersí boku pur tut se informasión. Sa répón a tut mé kesción, e yu va organisé mon uikén a Monreál.",
+            "note": "CLÔTURE: Remerciement + \"Ça répond à toutes mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Je suis sûr que tu vas adorer. Profite bien de ton séjour !",
+            "en": "My pleasure! I am sure you will love it. Enjoy your stay!",
+            "es": "Avek plezir ! Yu sui sür ke tu va adoré. Profit bién de ton seyur !",
+            "note": "RÉPONSE: Formule de politesse de l'ami"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore, j'ai hâte d'y être ! Bonne journée et à bientôt.",
+            "en": "Thanks again, I can't wait to be there! Have a nice day and see you soon.",
+            "es": "Mersí ankor, yé ât dy étr ! Bón yurné e a byentó.",
+            "note": "FERMETURE: \"Merci encore\" + \"J'ai hâte de\" + formule de politesse finale"
+        }
+    ]
+}
