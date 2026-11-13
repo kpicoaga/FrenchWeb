@@ -1,0 +1,406 @@
+{
+    "title": "Garder l'enfant d'un voisin",
+    "task": "tache2",
+    "topic": "7. Practical Everyday Situations",
+    "description": "Un voisin part une journée pour un mariage et vous demande de garder son enfant. Vous l'interrogez sur la date, le lieu, les repas, les allergies, les contacts d'urgence et les activités.",
+    "labels": {
+        "E": "Voisin(e)",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "Pour commencer",
+        "j'aimerais bien m'organiser",
+        "est-ce que je pourrais",
+        "Je comprends, c'est logique",
+        "Où préférez-vous que",
+        "Combien de repas",
+        "Quelles sont ses allergies",
+        "Donc, si je comprends bien",
+        "Comment est-ce que je peux vous joindre",
+        "Dans ce cas",
+        "Qui d'autre",
+        "Quelle activité",
+        "Ah, c'est intéressant",
+        "C'est très pratique",
+        "ça répond à toutes mes questions",
+        "Merci pour votre confiance",
+        "Bonne journée",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Garder l'enfant d'un voisin",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour, comment allez-vous ? Vous m'avez demandé de garder votre enfant pendant votre absence, et j'aimerais bien m'organiser à l'avance. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "Ouverture réelle du dialogue — salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bien sûr, avec plaisir ! Posez-moi toutes vos questions, je vous écoute.",
+                        "note": "Formule d'accueil du voisin — invite à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci pour votre confiance, je serai chez vous samedi à neuf heures.",
+                        "note": "Clôture — « ça répond à toutes mes questions » + remerciement + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Merci à vous, c'est un grand soulagement ! N'hésitez pas à m'appeler si vous avez une dernière question.",
+                        "note": "Clôture du voisin — remerciement + disponibilité",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore, c'est très gentil. Bonne journée et à bientôt !",
+                        "note": "Formule de politesse finale — remerciement + salutation",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci. Pour commencer, quand avez-vous besoin de moi exactement ? J'aimerais bien noter la date et l'heure de votre départ.",
+                        "note": "« Pour commencer » — première question, ancrée dans le scénario",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends, c'est logique. Où préférez-vous que je le garde : à votre appartement ou plutôt chez moi ?",
+                        "note": "« Je comprends, c'est logique. Où » — accuser réception puis enchaîner sur le lieu",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien. Combien de repas est-ce que je dois lui préparer pendant la journée ?",
+                        "note": "« Très bien. Combien » — enchaîner vers les repas",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Compris. Comment est-ce que je peux vous joindre pendant le mariage ? J'aimerais avoir un numéro fiable.",
+                        "note": "« Compris. Comment » — enchaîner vers le contact en cas d'urgence",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est très pratique. Qui d'autre peut venir chercher votre fils ou passer le voir pendant la journée ?",
+                        "note": "« C'est très pratique. Qui d'autre » — enchaîner vers les personnes autorisées",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parfait. Quelle activité préfère-t-il l'après-midi ? J'aimerais lui proposer quelque chose qui lui plaît vraiment.",
+                        "note": "« Parfait. Quelle » — enchaîner vers les activités",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien.",
+                        "note": "Accusé de réception",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parfait.",
+                        "note": "Accord positif",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends, c'est logique.",
+                        "note": "Réaction engagée — montrer qu'on suit le raisonnement",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est très pratique.",
+                        "note": "Réaction positive à une information utile",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant.",
+                        "note": "Réaction engagée — gagner du temps",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Compris.",
+                        "note": "Accusé de réception rapide",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Je vois. Donc, si je comprends bien, je dois lui donner ce médicament dès les premiers signes de réaction ?",
+                        "note": "Suivi 1 — reformuler un détail pour confirmer (« Donc, si je comprends bien »)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, est-ce que vous pouvez me noter son numéro ? Je préfère l'avoir avant votre départ.",
+                        "note": "Suivi 2 — « Dans ce cas, est-ce que » : question liée à la dernière réponse",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Dans ce cas, est-ce que je peux lui proposer un puzzle ou un livre pour se calmer ?",
+                        "note": "Suivi 3 — « Dans ce cas » + proposition d'une solution (puzzle ou livre)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Exactement. Si son visage gonfle ou s'il tousse beaucoup, donnez-lui le médicament et appelez-moi tout de suite.",
+                        "note": "Consigne du voisin en cas d'urgence — « si » + présent + impératif",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "Conditionnel de politesse (pourrais + infinitif)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Où préférez-vous que je le garde",
+                        "note": "Subjonctif après « préférer que » (garde)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Pourquoi est-ce que vous ne l'emmenez pas avec vous à ce mariage ?",
+                        "note": "Pronom COD « l' » + négation (ne … pas)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "J'aimerais lui proposer quelque chose qui lui plaît vraiment.",
+                        "note": "Conditionnel de politesse + pronom COI « lui »",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Si son visage gonfle ou s'il tousse beaucoup, donnez-lui le médicament",
+                        "note": "« Si » + présent + impératif — consigne",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour, comment allez-vous ? Vous m'avez demandé de garder votre enfant pendant votre absence, et j'aimerais bien m'organiser à l'avance. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+            "en": "Hello, how are you? You asked me to look after your child while you are away, and I would like to get organised in advance. Could I ask you a few questions about it?",
+            "es": "Bonzhur, komán ale-vu? Vu mavé demandé de gardé vótr anfán pandán vótr absáns, e zhemeré bien morganizé a lavans. Esk zhe puré vu pozé kelk kesción a s süzhé?",
+            "note": "OUVERTURE: Salutation + contexte (\"Vous m'avez demandé de garder\") + demande polie (\"est-ce que je pourrais\")"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, avec plaisir ! Posez-moi toutes vos questions, je vous écoute.",
+            "en": "Of course, with pleasure! Ask me all your questions, I am listening.",
+            "es": "Bien sür, avek plezir! Poze-mua tut vo kesción, zhe vuz ekut.",
+            "note": "RESPONSE: Formule d'accueil — invite à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci. Pour commencer, quand avez-vous besoin de moi exactement ? J'aimerais bien noter la date et l'heure de votre départ.",
+            "en": "Thank you. To start with, when do you need me exactly? I would like to note the date and the time of your departure.",
+            "es": "Mersí. Pur komansé, kan avé-vu bezuán de mua egzaktemán? Zhemeré bien notté la dat e lér de vótr depár.",
+            "note": "RÉACTION: \"Merci\"; ENCHAINEMENT: \"Pour commencer\" — première question ancrée dans le scénario (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Samedi prochain, de neuf heures à dix-huit heures. Je dois assister à un mariage, à deux heures d'ici.",
+            "en": "Next Saturday, from nine o'clock to six p.m. I have to attend a wedding, two hours from here.",
+            "es": "Samdi proshén, de növ er a dis-uit er. Zhe duá asistté a un mariázh, a dö zer disi.",
+            "note": "INFORMATION: Date et horaires + raison de l'absence (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord, ça fait une longue journée. Pourquoi est-ce que vous ne l'emmenez pas avec vous à ce mariage ?",
+            "en": "Okay, that makes a long day. Why don't you take him with you to this wedding?",
+            "es": "Dakor, sa fe ün lonng zhurné. Purkua esk vu ne lamené pa avek vu a s mariázh?",
+            "note": "RÉACTION: \"D'accord\"; ENCHAINEMENT: reprend le mariage — question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le trajet est long et la fête finit très tard. Il a six ans, il doit dormir.",
+            "en": "The journey is long and the party finishes very late. He is six years old, he needs to sleep.",
+            "es": "L trazhé e long e la fet finí tre tar. Il a si zan, il duá dormir.",
+            "note": "INFORMATION: Raison de ne pas l'emmener — trajet long, fête tardive, âge de l'enfant"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends, c'est logique. Où préférez-vous que je le garde : à votre appartement ou plutôt chez moi ?",
+            "en": "I understand, that makes sense. Where would you prefer me to look after him: at your apartment or rather at mine?",
+            "es": "Zhe komprán, se lozhik. U préferé-vu ke zhe l gard: a vótr apartemán u plütó shez mua?",
+            "note": "RÉACTION: \"Je comprends\"; ENCHAINEMENT: question sur le lieu de garde (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Chez moi, si ça ne vous dérange pas. Il est plus tranquille avec ses jouets et ses habitudes.",
+            "en": "At my place, if you do not mind. He is calmer with his toys and his habits.",
+            "es": "Shez mua, si sa ne vu deranzh pa. Il e plü trankil avek se zhuet e se zabitüd.",
+            "note": "INFORMATION: Lieu de garde — chez le parent"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Combien de repas est-ce que je dois lui préparer pendant la journée ?",
+            "en": "Very good. How many meals should I prepare for him during the day?",
+            "es": "Tre bien. Kombien de repa esk zhe duá lü prepare pandán la zhurné?",
+            "note": "RÉACTION: \"Très bien\"; ENCHAINEMENT: question sur les repas (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un déjeuner vers midi et un goûter à seize heures. Tout est au frigo, il suffit de réchauffer.",
+            "en": "A lunch around noon and a snack at four o'clock. Everything is in the fridge, you just need to reheat it.",
+            "es": "Un dezhené vers mid e un gutté a sez er. Tu e o frigo, il süfi de reshofé.",
+            "note": "INFORMATION: Repas et horaires — déjeuner + goûter"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pratique ! Quelles sont ses allergies, ou les aliments que je dois absolument éviter ?",
+            "en": "Handy! What are his allergies, or the foods I absolutely must avoid?",
+            "es": "Pratik! Kel son se zalerzhí, u le zalimán ke zhe duá absolümán evité?",
+            "note": "RÉACTION: \"Pratique\"; ENCHAINEMENT: question sur les allergies (quelles)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il est allergique aux arachides, donc attention aux gâteaux. En cas de réaction, son médicament est dans la trousse rouge.",
+            "en": "He is allergic to peanuts, so be careful with cakes. In case of a reaction, his medicine is in the red kit.",
+            "es": "Il e alerzhík o zarashíd, donk atansión o gató. An ka de reaksión, son medikamán e dan la trus ruzh.",
+            "note": "INFORMATION: Allergie aux arachides + localisation du médicament (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Donc, si je comprends bien, je dois lui donner ce médicament dès les premiers signes de réaction ?",
+            "en": "I see. So, if I understand correctly, I should give him this medicine at the first signs of a reaction?",
+            "es": "Zhe vua. Donk, si zhe komprán byen, zhe duá lü doné s medikamán de le premié sin de reaksión?",
+            "note": "SUIVI 1: reprend le détail \"son médicament\" — \"Donc, si je comprends bien\" (reformulation pour confirmer)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Exactement. Si son visage gonfle ou s'il tousse beaucoup, donnez-lui le médicament et appelez-moi tout de suite.",
+            "en": "Exactly. If his face swells or he coughs a lot, give him the medicine and call me right away.",
+            "es": "Egzaktemán. Si son vizázh gonfl u sil tus boku, doné-lü l medikamán e apele-mua tu de suit.",
+            "note": "INFORMATION: Signes de réaction + consigne d'appeler immédiatement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Compris. Comment est-ce que je peux vous joindre pendant le mariage ? J'aimerais avoir un numéro fiable.",
+            "en": "Understood. How can I reach you during the wedding? I would like to have a reliable number.",
+            "es": "Kompri. Komán esk zhe pe vu zhuandr pandán l mariázh? Zhemeré avuar un numéro fiabl.",
+            "note": "RÉACTION: \"Compris\"; ENCHAINEMENT: question sur le contact en cas d'urgence (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Sur mon portable, mais le réseau est faible. Si je ne réponds pas, appelez ma sœur, elle habite à côté.",
+            "en": "On my mobile, but the signal is weak. If I do not answer, call my sister, she lives next door.",
+            "es": "Sür mon portabl, me l rézo e fébl. Si zhe ne répon pa, apelé ma sör, el abit a koté.",
+            "note": "INFORMATION: Moyen de contact + personne de secours (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Dans ce cas, est-ce que vous pouvez me noter son numéro ? Je préfère l'avoir avant votre départ.",
+            "en": "In that case, can you write down her number for me? I would rather have it before you leave.",
+            "es": "Dan se ka, esk vu pué me notté son numéro? Zhe préfér lavuar avan vótr depár.",
+            "note": "SUIVI 2: reprend le détail \"ma sœur\" — \"Dans ce cas, est-ce que\" (demande du numéro)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, je l'écris sur une feuille avec les autres numéros importants, sur la table de l'entrée.",
+            "en": "Of course, I will write it on a sheet with the other important numbers, on the hall table.",
+            "es": "Bien sür, zhe lekri sür ün fei avek le zotr numéro eportan, sür la tabl de lantré.",
+            "note": "INFORMATION: Liste des numéros + endroit où elle sera laissée"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est très pratique. Qui d'autre peut venir chercher votre fils ou passer le voir pendant la journée ?",
+            "en": "That is very handy. Who else can come to pick up your son or drop by during the day?",
+            "es": "Se tre pratik. Ki dotr pe venir sheshé vótr fis u pasé l vuar pandán la zhurné?",
+            "note": "RÉACTION: \"C'est très pratique\"; ENCHAINEMENT: question sur les personnes autorisées (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Personne, sauf ma sœur. Et il ne doit ouvrir la porte à aucun inconnu, bien sûr.",
+            "en": "No one, except my sister. And he must not open the door to any stranger, of course.",
+            "es": "Persón, so ma sör. E il ne duá pa uvrir la port a okun enkonü, bien sür.",
+            "note": "INFORMATION: Personne autorisée + consigne de sécurité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait. Quelle activité préfère-t-il l'après-midi ? J'aimerais lui proposer quelque chose qui lui plaît vraiment.",
+            "en": "Perfect. What activity does he prefer in the afternoon? I would like to suggest something he really enjoys.",
+            "es": "Parfé. Kel aktivité préfér-t-il lapré-midi? Zhemeré lü proposé kelk shoz ki lü plé vreman.",
+            "note": "RÉACTION: \"Parfait\"; ENCHAINEMENT: question sur les activités (quelle)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il adore dessiner et jouer au ballon. Par contre, pas de tablette, ça le rend nerveux avant la sieste.",
+            "en": "He loves drawing and playing with a ball. However, no tablet, it makes him nervous before his nap.",
+            "es": "Il ador desiné e zhué o balón. Par kontr, pa de tablét, sa lü rand nervö avan la siést.",
+            "note": "INFORMATION: Activités préférées + restriction sur la tablette (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Dans ce cas, est-ce que je peux lui proposer un puzzle ou un livre pour se calmer ?",
+            "en": "Oh, that is interesting. In that case, can I suggest a puzzle or a book to calm him down?",
+            "es": "A, se anteresán. Dan se ka, esk zhe pe lü proposé un pazl u un livr pur se kalmé?",
+            "note": "SUIVI 3: reprend le détail \"nerveux avant la sieste\" — \"Dans ce cas, est-ce que\" (puzzle ou livre)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, excellente idée ! Il aime les livres sur les animaux, il y en a dans sa chambre.",
+            "en": "Yes, excellent idea! He likes animal books, there are some in his room.",
+            "es": "Ui, eksselán idé! Il em le livr sür le zanimó, il y an a dan sa shambr.",
+            "note": "INFORMATION: Validation + livres d'animaux dans sa chambre"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci pour votre confiance, je serai chez vous samedi à neuf heures.",
+            "en": "Perfect, that answers all my questions. Thank you for your trust, I will be at your place on Saturday at nine.",
+            "es": "Parfé, sa répon a tut me kesción. Mersí pur vótr konfiáns, zhe seré shez vu samdi a növ er.",
+            "note": "FERMETURE: \"ça répond à toutes mes questions\" + remerciement + prochaine étape (samedi, neuf heures)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Merci à vous, c'est un grand soulagement ! N'hésitez pas à m'appeler si vous avez une dernière question.",
+            "en": "Thank you, that is a great relief! Do not hesitate to call me if you have one last question.",
+            "es": "Mersí a vu, se un gran sulazhmán! Nezité pa a mapelé si vu zavé ün dernièr kesción.",
+            "note": "RESPONSE: Remerciement + disponibilité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore, c'est très gentil. Bonne journée et à bientôt !",
+            "en": "Thanks again, that is very kind. Have a good day and see you soon!",
+            "es": "Mersí ankor, se tre zhentí. Bonzhurné e a byento!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}
