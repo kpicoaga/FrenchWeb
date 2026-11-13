@@ -940,32 +940,41 @@ async function loadJsonDialogues(){
   const names = (await listJsonFiles()).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
   let added = 0;
   for (const name of names) {
-    // "1793144653525_dialogue6.json" -> "dialogue6"
+    // e.g. "t2d1.json" -> "t2d1"
     const id = name.replace(/\.json$/i, '').replace(/^\d+_/, '').replace(/[^\w-]/g, '_');
     if (conversations.some(c => c.id === id)) continue;
+
     try {
       const r = await fetch(JSON_DIR + '/' + encodeURIComponent(name), { cache: 'no-store' });
       if (!r.ok) continue;
-      conversations.push(jsonToConversation(id, await r.json()));
-      added++;
-    } catch (e) { console.warn('Dialogue JSON ignoré :', name, e); }
-  }
 
-  // 1. Assign displayNumber per-task FIRST
-  const taskGroups = {};
-  for (const c of conversations) {
-    const task = c.task || 'tache2';
-    taskGroups[task] = taskGroups[task] || [];
-    taskGroups[task].push(c);
-  }
-  for (const task in taskGroups) {
-    let counter = 1;
-    for (const c of taskGroups[task]) {
-      c.displayNumber = counter++;
+      const conv = jsonToConversation(id, await r.json());
+
+      // Extract task and display number from filename (e.g. t2d1 -> task: 'tache2', displayNumber: 1)
+      const match = id.match(/^t([1-9])d([1-9]\d*)$/i);
+      if (match) {
+        conv.task = 'tache' + match[1];
+        conv.displayNumber = parseInt(match[2], 10);
+      } else {
+        // Fallback if the file doesn't follow the tXdY format
+        conv.task = conv.task || 'tache2';
+        conv.displayNumber = conversations.length + 1;
+      }
+
+      conversations.push(conv);
+      added++;
+    } catch (e) {
+      console.warn('Dialogue JSON ignoré :', name, e);
     }
   }
 
-  // 2. THEN render the menu
+  // Sort the conversations by task, then by displayNumber
+  conversations.sort((a, b) => {
+    if (a.task !== b.task) return a.task.localeCompare(b.task);
+    return a.displayNumber - b.displayNumber;
+  });
+
+  // Render the menu once all data is loaded and sorted
   if (added) renderMenu();
 }
 
