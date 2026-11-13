@@ -950,9 +950,8 @@ async function loadJsonDialogues(){
       added++;
     } catch (e) { console.warn('Dialogue JSON ignoré :', name, e); }
   }
-  if (added) renderMenu();
 
-  // Assign displayNumber per-task based on sorted load order
+  // 1. Assign displayNumber per-task FIRST
   const taskGroups = {};
   for (const c of conversations) {
     const task = c.task || 'tache2';
@@ -965,6 +964,9 @@ async function loadJsonDialogues(){
       c.displayNumber = counter++;
     }
   }
+
+  // 2. THEN render the menu
+  if (added) renderMenu();
 }
 
 // Initial render
