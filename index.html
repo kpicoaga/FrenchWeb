@@ -831,6 +831,15 @@ function loadDialogue(id){
     audioEl.load();
     dlBtn.dataset.url = audioUrl;
     dlBtn.style.display = 'inline-block';
+    // Hide the player if the MP3 is missing (e.g. t3d1/t2d10 not yet generated).
+    audioEl.onerror = () => {
+      audioEl.pause();
+      audioEl.removeAttribute('src');
+      audioEl.style.display = 'none';
+      dlBtn.style.display = 'none';
+      delete dlBtn.dataset.url;
+      audioEl.onerror = null;
+    };
   } else {
     audioEl.pause();
     audioEl.removeAttribute('src');
