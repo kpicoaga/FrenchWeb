@@ -1,0 +1,394 @@
+{
+    "title": "S'intéresser au parc d'attractions dont un ami vient de parler",
+    "task": "tache2",
+    "topic": "6. Leisure, Culture & Social Life",
+    "description": "Un ami est allé dans un parc d'attractions et vous êtes intéressé(e) par cet endroit. Vous lui posez des questions sur les activités, les astuces, la restauration, le prix, les horaires, l'accès et l'organisation de la journée.",
+    "labels": {
+        "E": "Ami(e)",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'ai entendu dire que",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "Ça me semble pratique",
+        "J'aimerais également savoir",
+        "Ah, c'est intéressant",
+        "Puisque",
+        "Je comprends mieux",
+        "Je vois",
+        "C'est parfait",
+        "Dans ce cas",
+        "Justement",
+        "ça répond à toutes mes questions",
+        "Je vais y réfléchir",
+        "Bonne journée",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur un parc d'attractions",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! J'ai entendu dire que tu es allé dans un parc d'attractions le week-end dernier, et ça m'intéresse beaucoup. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Ouverture réelle du dialogue — salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bien sûr, avec plaisir ! Demande-moi ce que tu veux, j'ai adoré cet endroit.",
+                        "note": "Formule d'accueil de l'ami — invite à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais y réfléchir et en parler à ma famille.",
+                        "note": "Clôture — remerciement + « ça répond à mes questions » + décision différée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Si tu y vas, tu me raconteras. Bonne journée !",
+                        "note": "Formule de clôture de l'ami — disponibilité + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore, c'est très gentil. À bientôt !",
+                        "note": "Formule de politesse finale — remerciement + salutation",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci. Pour commencer, où se trouve exactement ce parc d'attractions ?",
+                        "note": "« Pour commencer » — première question, ancrée dans le scénario (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. J'aimerais également savoir combien coûte l'entrée pour une journée.",
+                        "note": "« J'aimerais également savoir » — enchaîner vers le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et comment est-ce qu'on peut s'y rendre sans voiture ?",
+                        "note": "« Et comment » — nouveau thème, le transport",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quelles activités est-ce que tu as préférées ?",
+                        "note": "« Je vois. Quelles » — accuser réception puis enchaîner vers les activités",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, est-ce qu'il faut réserver les billets à l'avance ?",
+                        "note": "« Dans ce cas » — question liée à la dernière réponse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ça me semble pratique !",
+                        "note": "Réaction positive à une information utile",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant.",
+                        "note": "Réaction engagée — gagner du temps",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux.",
+                        "note": "Accusé de réception — information clarifiée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est parfait !",
+                        "note": "Satisfaction — information qui correspond au besoin",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord.",
+                        "note": "Accord neutre",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois.",
+                        "note": "Accusé de réception",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ah, c'est intéressant. Puisque les files d'attente sont longues, est-ce qu'il vaut mieux arriver tôt ou prendre un pass rapide ?",
+                        "note": "Suivi sur un détail — « Puisque » + alternative (tôt / pass rapide)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, est-ce qu'il y a des casiers pour laisser un sac pendant les attractions ?",
+                        "note": "« Justement » — question pratique liée à l'organisation",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, est-ce que tu me conseilles de venir en semaine ou le week-end ?",
+                        "note": "Reformuler un détail pour relancer la conversation — « Dans ce cas »",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Viens en semaine si tu peux, il y a beaucoup moins de monde. Et prends tes billets en ligne la veille.",
+                        "note": "Conseil de l'ami — impératif + « si tu peux »",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Conditionnel de politesse (pourrais + infinitif)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "j'ai entendu dire que tu es allé dans un parc d'attractions",
+                        "note": "« entendre dire que » + passé composé",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Puisque les files d'attente sont longues, est-ce qu'il vaut mieux arriver tôt",
+                        "note": "« Puisque » (cause connue) + « il vaut mieux + infinitif »",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "J'aimerais également savoir combien coûte l'entrée",
+                        "note": "Conditionnel de politesse + « combien »",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! J'ai entendu dire que tu es allé dans un parc d'attractions le week-end dernier, et ça m'intéresse beaucoup. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hi! I heard that you went to a theme park last weekend, and that really interests me. Could I ask you a few questions about it?",
+            "es": "Saliu! Zhe antandü dir ke tu e zalé dan un park d'atraksion l uik-end dernié, e sa mintrés boku. Esk zhe puré te pozé kelk kesción a s süzhé?",
+            "note": "OUVERTURE: Salutation + contexte (\"j'ai entendu dire que\") + demande polie (\"est-ce que je pourrais\")"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, avec plaisir ! Demande-moi ce que tu veux, j'ai adoré cet endroit.",
+            "en": "Of course, with pleasure! Ask me whatever you want, I loved that place.",
+            "es": "Bien sür, avek plezir! Demand-mua s ke tu vé, zhe adoré set andrua.",
+            "note": "RESPONSE: Formule d'accueil — invite à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci. Pour commencer, où se trouve exactement ce parc d'attractions ?",
+            "en": "Thank you. To start with, where exactly is this theme park located?",
+            "es": "Mersí. Pur komansé, u s truv egzaktemán s park d'atraksion?",
+            "note": "RÉACTION: \"Merci\"; ENCHAINEMENT: \"Pour commencer\" — première question ancrée dans le scénario (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il est à une heure de route d'ici, près d'un grand lac, au nord de la ville.",
+            "en": "It is an hour's drive from here, near a big lake, north of the city.",
+            "es": "Il e a ün ér de rut disi, pré d'un gran lak, o nor de la vil.",
+            "note": "INFORMATION: Localisation du parc (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. J'aimerais également savoir combien coûte l'entrée pour une journée.",
+            "en": "Okay. I would also like to know how much a one-day ticket costs.",
+            "es": "Dakor. Zhemeré egalmán savuar kombien kut lantré pur ün zhurné.",
+            "note": "RÉACTION: \"D'accord\"; ENCHAINEMENT: \"J'aimerais également savoir\" — question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Compte environ quarante euros par adulte. Il y a un tarif réduit pour les enfants et les étudiants.",
+            "en": "Count about forty euros per adult. There is a reduced rate for children and students.",
+            "es": "Kont anviron karant ero par adült. Il y a un tarif rédui pur le zanfán e le zetüdian.",
+            "note": "INFORMATION: Prix adulte + tarif réduit (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Puisque les prix sont élevés, est-ce qu'il y a des offres pour les familles ?",
+            "en": "Oh, that is interesting. Since the prices are high, are there any family deals?",
+            "es": "A, se anterèsán. Püiske le prí son zélevé, esk il y a de zofr pur le famí?",
+            "note": "SUIVI 1: reprend le détail \"quarante euros\" — \"Puisque\" + offre familiale"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, un forfait famille pour deux adultes et deux enfants, ça revient moins cher.",
+            "en": "Yes, a family package for two adults and two children works out cheaper.",
+            "es": "Ui, un forfè famí pur dö zadült e dö zanfán, sa revien muen sher.",
+            "note": "INFORMATION: Forfait famille et intérêt économique"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ça me semble pratique ! Et comment est-ce qu'on peut s'y rendre sans voiture ?",
+            "en": "That seems convenient! And how can one get there without a car?",
+            "es": "Sa m sanbl pratik! E komán esk on pe s i randr san vuatür?",
+            "note": "RÉACTION: \"Ça me semble pratique\"; ENCHAINEMENT: question sur le transport (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a une navette depuis la gare, elle part toutes les heures et dure trente minutes.",
+            "en": "There is a shuttle from the station, it leaves every hour and takes thirty minutes.",
+            "es": "Il y a ün navet depüí la gar, el par tut le zér e dür trant minüt.",
+            "note": "INFORMATION: Navette depuis la gare + fréquence (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait. Quand est-ce que le parc ouvre et ferme en été ?",
+            "en": "Perfect. When does the park open and close in summer?",
+            "es": "Parfé. Kan esk l park uvr e ferm an été?",
+            "note": "RÉACTION: \"Parfait\"; ENCHAINEMENT: question sur les horaires (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "De dix heures à vingt-deux heures en juillet et août. En juin, ça ferme deux heures plus tôt.",
+            "en": "From ten a.m. to ten p.m. in July and August. In June, it closes two hours earlier.",
+            "es": "De di zer a vent-dö zér an zhüié e ut. An zhün, sa ferm dö zér plü to.",
+            "note": "INFORMATION: Horaires selon les mois (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Puisque la journée est longue, où est-ce qu'on peut manger sur place ?",
+            "en": "I understand better. Since the day is long, where can one eat on site?",
+            "es": "Zhe komprán mieu. Püiske la zhurné e long, u esk on pe manzhé sür plas?",
+            "note": "SUIVI 2: reprend le détail \"ferme à vingt-deux heures\" — \"Puisque\" + question sur la restauration (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a plusieurs restaurants et des stands de nourriture rapide, mais les prix sont un peu élevés.",
+            "en": "There are several restaurants and fast-food stands, but the prices are a bit high.",
+            "es": "Il y a plüzïer restorán e de stand de nouritür rapid, me le prí son un pu zélevé.",
+            "note": "INFORMATION: Restauration sur place + niveau des prix (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Dans ce cas, est-ce qu'on a le droit d'apporter son propre pique-nique ?",
+            "en": "I see. In that case, are we allowed to bring our own picnic?",
+            "es": "Zhe vua. Dan se ka, esk on a l drua daporté son propr piknik?",
+            "note": "SUIVI 3: reprend le détail \"prix élevés\" — \"Dans ce cas\" + pique-nique"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, c'est autorisé, et il y a des tables dans un jardin près du lac.",
+            "en": "Yes, it is allowed, and there are tables in a garden near the lake.",
+            "es": "Ui, se zotorizé, e il y a de tabl dan un zharden pré dü lak.",
+            "note": "INFORMATION: Pique-nique autorisé + espace prévu"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Quelles activités est-ce que tu as préférées pendant cette journée ?",
+            "en": "I see. Which activities did you enjoy most during that day?",
+            "es": "Zhe vua. Kel aktivité esk tu a préféré pandán set zhurné?",
+            "note": "RÉACTION: \"Je vois\"; ENCHAINEMENT: question sur les activités (quelles)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les grands huit, bien sûr, et surtout le spectacle aquatique en fin de soirée.",
+            "en": "The roller coasters, of course, and especially the water show at the end of the evening.",
+            "es": "Le gran uit, bien sür, e sürtu l spektakl akvatik an fin de suaré.",
+            "note": "INFORMATION: Attractions préférées + spectacle (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Justement, à quelle heure commence ce spectacle et combien de temps dure-t-il ?",
+            "en": "Oh, that is interesting. Actually, what time does that show start and how long does it last?",
+            "es": "A, se anterèsán. Züstemán, a kel ér komans s spektakl e kombien de tan dür-t-il?",
+            "note": "SUIVI 4: reprend le détail \"spectacle aquatique\" — \"Justement\" (heure + durée)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il commence vers vingt heures et dure une trentaine de minutes. Il faut arriver en avance.",
+            "en": "It starts around eight p.m. and lasts about thirty minutes. You need to arrive early.",
+            "es": "Il komans ver vent ér e dür ün trantén de minüt. Il fo arivé an avans.",
+            "note": "INFORMATION: Heure et durée du spectacle + conseil"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Dans ce cas, est-ce qu'il faut réserver les billets à l'avance ?",
+            "en": "Very good, thank you. In that case, should tickets be booked in advance?",
+            "es": "Tre bien, mersí. Dan se ka, esk il fo rézervé le bilet a lavans?",
+            "note": "RÉACTION: \"Très bien, merci\"; ENCHAINEMENT: \"Dans ce cas\" — réservation (organisation)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, c'est mieux en ligne, mais on peut aussi acheter sur place s'il reste des places.",
+            "en": "Yes, it is better online, but you can also buy on site if there are tickets left.",
+            "es": "Ui, se mieu an lin, me on pe osi ashté sür plas sil rest de plas.",
+            "note": "INFORMATION: Réservation en ligne + achat sur place"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est parfait ! Et qui est-ce que je dois contacter si je veux organiser une sortie de groupe ?",
+            "en": "That is perfect! And who should I contact if I want to organise a group outing?",
+            "es": "Se parfé! E ki esk zhe duá kontakté si zhe vé organizé ün sorti de grup?",
+            "note": "RÉACTION: \"C'est parfait\"; ENCHAINEMENT: question sur le contact (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le service des groupes, il y a une adresse sur leur site internet.",
+            "en": "The group service, there is an address on their website.",
+            "es": "L servis de grup, il y a ün adres sür lör sit internet.",
+            "note": "INFORMATION: Service des groupes + site internet"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais y réfléchir et en parler à ma famille.",
+            "en": "Perfect, that answers all my questions. Thank you very much for this information, I will think about it and talk about it with my family.",
+            "es": "Parfé, sa répon a tut me kesción. Mersí boku pur se zenformasión, zhe vé i refleshir e an parlé a ma famí.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + décision différée (\"je vais y réfléchir\")"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Si tu y vas, tu me raconteras. Bonne journée !",
+            "en": "With pleasure! If you go, you will tell me about it. Have a good day!",
+            "es": "Avek plezir! Si tu i va, tu me rakontra. Bonzhurné!",
+            "note": "RESPONSE: Formule de clôture de l'ami — disponibilité + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore, c'est très gentil. À bientôt !",
+            "en": "Thanks again, that is very kind. See you soon!",
+            "es": "Mersí ankor, se tre zhentí. A byento!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}
