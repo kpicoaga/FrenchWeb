@@ -100,6 +100,27 @@ input[type=search]:focus{border-color:var(--blue)}
 .card .roles{font-size:11px;color:var(--muted);margin-top:auto}
 .card .roles b{color:var(--blue)}
 .card .lines{font-size:11px;color:var(--muted)}
+.card-head{display:flex;gap:8px;align-items:flex-start}
+.dialogue-num{
+  display:inline-grid;
+  place-items:center;
+  min-width:26px;
+  height:26px;
+  padding:0 6px;
+  border-radius:8px;
+  background:#203c48;
+  color:var(--mint);
+  border:1px solid #315f64;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.03em;
+  flex:none;
+}
+.card.tache3 .dialogue-num{
+  background:#4a2e1d;
+  color:#ffd9a8;
+  border-color:#7a4d2a;
+}
 .back-btn{background:transparent;border:none;color:var(--blue);font-weight:700;cursor:pointer;padding:6px 10px;border-radius:8px;font-size:14px}
 .back-btn:hover{color:var(--mint);background:#203c48}
 .sticky-back-btn{position:fixed;top:20px;left:20px;z-index:999;background:#1e293b;padding:9px 14px;border:1px solid var(--border)}
@@ -772,12 +793,13 @@ function renderMenu(){
       }).join(' · ');
       return `
       <article class="card ${sec.key}" onclick="loadDialogue('${c.id}')" role="button" tabindex="0" onkeydown="event.key==='Enter'&&loadDialogue('${c.id}')">
-        <div>
+        <div class="card-head">
+          <span class="dialogue-num">${String(c.displayNumber).padStart(2,'0')}</span>
           <h3>${c.title} <span class="task-chip">${sec.key === 'tache2' ? 'Tâche 2' : 'Tâche 3'}</span></h3>
-          <p>${c.description}</p>
-          <div class="card-meta">
-            <span class="topic-tag">${c.topic}</span>
-          </div>
+        </div>
+        <p>${c.description}</p>
+        <div class="card-meta">
+          <span class="topic-tag">${c.topic}</span>
         </div>
         <div class="roles" style="line-height:1.6"><b>Rôles :</b> ${speakerLabels}</div>
         <div class="lines">${c.lines} répliques</div>
@@ -820,7 +842,7 @@ function loadDialogue(id){
   $('menuView').style.display = 'none';
   $('dialogueView').style.display = 'block';
   $('dialogueTitle').textContent = conv.title;
-  $('dialogueSub').textContent = conv.description;
+  $('dialogueSub').textContent = 'N°' + String(conv.displayNumber).padStart(2,'0') + ' · ' + conv.description;
   $('toolbarTitle').textContent = conv.title;
   // Per-conversation role labels (e.g. friends instead of centre de langues)
   $('legendE').textContent = labelFor('E');
@@ -929,6 +951,20 @@ async function loadJsonDialogues(){
     } catch (e) { console.warn('Dialogue JSON ignoré :', name, e); }
   }
   if (added) renderMenu();
+
+  // Assign displayNumber per-task based on sorted load order
+  const taskGroups = {};
+  for (const c of conversations) {
+    const task = c.task || 'tache2';
+    taskGroups[task] = taskGroups[task] || [];
+    taskGroups[task].push(c);
+  }
+  for (const task in taskGroups) {
+    let counter = 1;
+    for (const c of taskGroups[task]) {
+      c.displayNumber = counter++;
+    }
+  }
 }
 
 // Initial render
