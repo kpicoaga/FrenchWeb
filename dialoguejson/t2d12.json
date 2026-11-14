@@ -1,0 +1,394 @@
+{
+    "title": "S'intéresser à la pratique d'un instrument de musique d'un ami",
+    "task": "tache2",
+    "topic": "6. Leisure, Culture & Social Life",
+    "description": "Un ami joue régulièrement d'un instrument de musique et vous êtes intéressé(e). Vous lui posez des questions sur le type d'instrument, les concerts, les genres musicaux, l'apprentissage, le prix et les horaires.",
+    "labels": {
+        "E": "Ami(e)",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'ai entendu dire que",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "Ça me semble pratique",
+        "J'aimerais également savoir",
+        "Ah, c'est intéressant",
+        "Puisque",
+        "Je comprends mieux",
+        "Je vois",
+        "C'est parfait",
+        "Dans ce cas",
+        "Justement",
+        "ça répond à toutes mes questions",
+        "Je vais y réfléchir",
+        "Bonne journée",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur la pratique d'un instrument",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! J'ai entendu dire que tu joues régulièrement d'un instrument de musique, et ça m'intéresse beaucoup. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Ouverture réelle du dialogue — salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bien sûr, avec plaisir ! Demande-moi ce que tu veux, la musique est ma passion.",
+                        "note": "Formule d'accueil de l'ami — invite à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais y réfléchir et peut-être m'y mettre aussi.",
+                        "note": "Clôture — remerciement + « ça répond à mes questions » + décision différée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Si tu te lances, tu me raconteras. Bonne journée !",
+                        "note": "Formule de clôture de l'ami — disponibilité + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore, c'est très gentil. À bientôt !",
+                        "note": "Formule de politesse finale — remerciement + salutation",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci. Pour commencer, de quel instrument est-ce que tu joues exactement ?",
+                        "note": "« Pour commencer » — première question, ancrée dans le scénario (quel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. J'aimerais également savoir depuis combien de temps tu en joues.",
+                        "note": "« J'aimerais également savoir » — enchaîner vers la durée (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et comment est-ce que tu as appris : tout seul ou avec un professeur ?",
+                        "note": "« Et comment » — nouveau thème, l'apprentissage",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quels genres de musique est-ce que tu préfères jouer ?",
+                        "note": "« Je vois. Quels » — accuser réception puis enchaîner vers les genres",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, est-ce qu'il faut beaucoup de temps pour progresser ?",
+                        "note": "« Dans ce cas » — question liée à la dernière réponse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ça me semble pratique !",
+                        "note": "Réaction positive à une information utile",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant.",
+                        "note": "Réaction engagée — gagner du temps",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux.",
+                        "note": "Accusé de réception — information clarifiée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est parfait !",
+                        "note": "Satisfaction — information qui correspond au besoin",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord.",
+                        "note": "Accord neutre",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois.",
+                        "note": "Accusé de réception",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ah, c'est intéressant. Puisque tu joues en public, est-ce que tu as déjà fait des concerts ?",
+                        "note": "Suivi sur un détail — « Puisque » + question sur les concerts",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, où est-ce que tu te produis et qui vient t'écouter ?",
+                        "note": "« Justement » — questions liées aux concerts (où + qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, combien coûte l'entrée et faut-il réserver ?",
+                        "note": "« Dans ce cas » — questions pratiques (combien + réservation)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Viens au petit café du centre-ville, l'entrée est libre. Et arrive tôt, la salle est petite.",
+                        "note": "Conseil de l'ami — impératif + « et »",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Conditionnel de politesse (pourrais + infinitif)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "j'ai entendu dire que tu joues régulièrement d'un instrument de musique",
+                        "note": "« entendre dire que » + présent",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Puisque tu joues en public, est-ce que tu as déjà fait des concerts ?",
+                        "note": "« Puisque » (cause connue) + passé composé",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "J'aimerais également savoir depuis combien de temps tu en joues.",
+                        "note": "Conditionnel de politesse + « depuis combien de temps » + pronom « en »",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! J'ai entendu dire que tu joues régulièrement d'un instrument de musique, et ça m'intéresse beaucoup. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hi! I heard that you play a musical instrument regularly, and that really interests me. Could I ask you a few questions about it?",
+            "es": "Saliu! Zhe antandü dir ke tu zhu régülierreman d'un énstrüman de müzik, e sa mintrés boku. Esk zhe puré te pozé kelk kesción a s süzhé?",
+            "note": "OUVERTURE: Salutation + contexte (\"j'ai entendu dire que\") + demande polie (\"est-ce que je pourrais\")"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, avec plaisir ! Demande-moi ce que tu veux, la musique est ma passion.",
+            "en": "Of course, with pleasure! Ask me whatever you want, music is my passion.",
+            "es": "Bien sür, avek plezir! Demand-mua s ke tu vé, la müzik e ma pasión.",
+            "note": "RESPONSE: Formule d'accueil — invite à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci. Pour commencer, de quel instrument est-ce que tu joues exactement ?",
+            "en": "Thank you. To start with, which instrument exactly do you play?",
+            "es": "Mersí. Pur komansé, de kel énstrüman esk tu zhu egzaktemán?",
+            "note": "RÉACTION: \"Merci\"; ENCHAINEMENT: \"Pour commencer\" — première question ancrée dans le scénario (quel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je joue de la guitare acoustique et un peu de piano. La guitare, c'est mon instrument principal.",
+            "en": "I play the acoustic guitar and a little piano. The guitar is my main instrument.",
+            "es": "Zhe zhu de la gitar akustik e un pu de piano. La gitar, se mon énstrüman prinsipal.",
+            "note": "INFORMATION: Type d'instrument (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. J'aimerais également savoir depuis combien de temps tu en joues.",
+            "en": "Okay. I would also like to know how long you have been playing.",
+            "es": "Dakor. Zhemeré egalmán savuar depüí kombien de tan tu an zhu.",
+            "note": "RÉACTION: \"D'accord\"; ENCHAINEMENT: \"J'aimerais également savoir\" — question sur la durée (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Depuis cinq ans environ. J'ai commencé à l'université, avec un ami qui jouait déjà.",
+            "en": "For about five years. I started at university, with a friend who already played.",
+            "es": "Depüí sank an anviron. Zhe komansé a lüniversité, avek un ami ki zhué dézhá.",
+            "note": "INFORMATION: Durée d'apprentissage + contexte (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et comment est-ce que tu as appris : tout seul ou avec un professeur ?",
+            "en": "Very good, thank you. And how did you learn: on your own or with a teacher?",
+            "es": "Tre bien, mersí. E komán esk tu a apri: tu söl u avek un profésër?",
+            "note": "RÉACTION: \"Très bien, merci\"; ENCHAINEMENT: question sur l'apprentissage (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Surtout seul, avec des vidéos et des applications. J'ai pris quelques cours pour les bases.",
+            "en": "Mostly on my own, with videos and apps. I took a few lessons for the basics.",
+            "es": "Sürtu söl, avek de vidéo e de zaplikasión. Zhe pri kelk kur pur le baz.",
+            "note": "INFORMATION: Méthode d'apprentissage — autodidacte + cours de base"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Quels genres de musique est-ce que tu préfères jouer ?",
+            "en": "I see. What kinds of music do you prefer to play?",
+            "es": "Zhe vua. Kel zhanr de müzik esk tu préfér zhué?",
+            "note": "RÉACTION: \"Je vois\"; ENCHAINEMENT: question sur les genres musicaux (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le folk et la pop acoustique. Parfois du jazz, mais c'est plus difficile techniquement.",
+            "en": "Folk and acoustic pop. Sometimes jazz, but that is technically more difficult.",
+            "es": "L folk e la pop akustik. Parfua dü zhaz, me se plü difisil teknikman.",
+            "note": "INFORMATION: Genres préférés + difficulté du jazz (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Puisque tu joues en public, est-ce que tu as déjà fait des concerts ?",
+            "en": "Oh, that is interesting. Since you play in public, have you already done concerts?",
+            "es": "A, se anterèsán. Püiske tu zhu an püblik, esk tu a dézhá fe de konsér?",
+            "note": "SUIVI 1: reprend le détail \"jazz / folk\" — \"Puisque\" + question sur les concerts"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, quelques petits concerts dans des cafés et des fêtes de quartier. C'est stressant mais génial.",
+            "en": "Yes, a few small concerts in cafés and neighbourhood parties. It is stressful but great.",
+            "es": "Ui, kelk pti konsér dan de kafé e de fet de kartié. Se stresán me zhenial.",
+            "note": "INFORMATION: Expérience de concerts (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ça me semble pratique ! Justement, où est-ce que tu te produis et qui vient t'écouter ?",
+            "en": "That seems convenient! Actually, where do you perform and who comes to listen to you?",
+            "es": "Sa m sanbl pratik! Züstemán, u esk tu te prodüi e ki vien tekuté?",
+            "note": "RÉACTION: \"Ça me semble pratique\"; SUIVI 2: \"Justement\" — lieu et public (où + qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Au petit café du centre-ville, surtout. Mes amis et les habitués du quartier viennent m'écouter.",
+            "en": "At the little café downtown, mostly. My friends and the regulars from the neighbourhood come to listen.",
+            "es": "O pti kafé dü santr-vil, sürtu. Me zami e le zabitüé dü kartié vien mekuté.",
+            "note": "INFORMATION: Lieu de concert + public (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Dans ce cas, combien coûte l'entrée et faut-il réserver ?",
+            "en": "Very good, thank you. In that case, how much is the entrance and do you need to book?",
+            "es": "Tre bien, mersí. Dan se ka, kombien kut lantré e fot-il rézervé?",
+            "note": "RÉACTION: \"Très bien, merci\"; ENCHAINEMENT: \"Dans ce cas\" — prix et réservation (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'entrée est libre, mais il faut consommer une boisson. La salle est petite, donc arrive tôt.",
+            "en": "Entrance is free, but you have to buy a drink. The room is small, so arrive early.",
+            "es": "Lantré e libr, me il fo konsomé ün buasón. La sal est pti, donk ariv to.",
+            "note": "INFORMATION: Entrée libre + condition + conseil"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et comment est-ce qu'on peut s'inscrire à un cours pour débutants ?",
+            "en": "I understand better. And how can one sign up for a beginner's course?",
+            "es": "Zhe komprán mieu. E komán esk on pe sinskrir a un kur pur debütán?",
+            "note": "RÉACTION: \"Je comprends mieux\"; ENCHAINEMENT: question sur l'inscription (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il faut contacter l'école de musique municipale. L'inscription se fait en ligne ou à l'accueil.",
+            "en": "You have to contact the municipal music school. Registration is done online or at the reception.",
+            "es": "Il fo kontakté lekol de müzik münisipal. Linskripsión se fe an lin u a laköi.",
+            "note": "INFORMATION: Procédure d'inscription (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est parfait ! Et quand est-ce que les cours commencent et combien de temps durent-ils ?",
+            "en": "That is perfect! And when do the courses start and how long do they last?",
+            "es": "Se parfé! E kan esk le kur komans e kombien de tan dür-t-il?",
+            "note": "RÉACTION: \"C'est parfait\"; ENCHAINEMENT: question sur les dates et la durée (quand + combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les cours reprennent en septembre, une heure par semaine pendant tout le semestre.",
+            "en": "Courses start again in September, one hour per week for the whole semester.",
+            "es": "Le kur repren an septambr, ün ér par semén pandán tut l semestr.",
+            "note": "INFORMATION: Dates + durée des cours"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Et pourquoi est-ce que tu conseilles la guitare plutôt qu'un autre instrument ?",
+            "en": "Very good. And why do you recommend the guitar rather than another instrument?",
+            "es": "Tre bien. E purkua esk tu konséi la gitar plüto k'un zotr énstrüman?",
+            "note": "ENCHAINEMENT: question sur le choix de l'instrument (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce qu'on peut jouer partout et qu'on progresse vite. Et elle coûte moins cher qu'un piano.",
+            "en": "Because you can play anywhere and you progress quickly. And it costs less than a piano.",
+            "es": "Pars kon pe zhué partu e kon progres vit. E el kut muen sher k'un piano.",
+            "note": "INFORMATION: Avantages de la guitare (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Dans ce cas, combien faut-il prévoir pour acheter une guitare débutant ?",
+            "en": "Oh, that is interesting. In that case, how much should one budget for a beginner guitar?",
+            "es": "A, se anterèsán. Dan se ka, kombien fo-t-il prévuar pur ashté ün gitar debütán?",
+            "note": "SUIVI 3: reprend le détail \"elle coûte moins cher\" — \"Dans ce cas\" (budget)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Entre cent et deux cents euros pour une guitare correcte. Les occasions sont très bien aussi.",
+            "en": "Between one hundred and two hundred euros for a decent guitar. Second-hand ones are very good too.",
+            "es": "Antr san e dö san zero pur ün gitar korekt. Le zokasión son tre bien osi.",
+            "note": "INFORMATION: Budget + option de l'occasion"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais y réfléchir et peut-être m'y mettre aussi.",
+            "en": "Perfect, that answers all my questions. Thank you very much for this information, I will think about it and maybe start too.",
+            "es": "Parfé, sa répon a tut me kesción. Mersí boku pur se zenformasión, zhe vé i refleshir e püter m i metr osi.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + décision différée (\"je vais y réfléchir\")"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Si tu te lances, tu me raconteras. Bonne journée !",
+            "en": "With pleasure! If you get started, you will tell me about it. Have a good day!",
+            "es": "Avek plezir! Si tu te lans, tu me rakontra. Bonzhurné!",
+            "note": "RESPONSE: Formule de clôture de l'ami — disponibilité + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore, c'est très gentil. À bientôt !",
+            "en": "Thanks again, that is very kind. See you soon!",
+            "es": "Mersí ankor, se tre zhentí. A byento!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

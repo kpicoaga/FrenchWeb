@@ -1,0 +1,394 @@
+{
+    "title": "Se renseigner sur le système de santé canadien auprès d'un collègue",
+    "task": "tache2",
+    "topic": "8. Health & Public / Administrative Services",
+    "description": "Vous vous êtes récemment installé(e) au Canada et vous interrogez un(e) collègue sur le système de santé : docteurs, établissements de soins, congés maladie, médicaments, urgences et démarches administratives.",
+    "labels": {
+        "E": "Collègue",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "je viens de m'installer",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "Ça me semble pratique",
+        "J'aimerais également savoir",
+        "Ah, c'est intéressant",
+        "Puisque",
+        "Je comprends mieux",
+        "Je vois",
+        "C'est parfait",
+        "Dans ce cas",
+        "Justement",
+        "ça répond à toutes mes questions",
+        "Je vais me renseigner",
+        "Bonne journée",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur le système de santé canadien",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je viens de m'installer au Canada et je cherche à comprendre le système de santé. Comme tu vis ici depuis longtemps, est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Ouverture réelle du dialogue — salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bien sûr, avec plaisir ! Bienvenue au Canada. Demande-moi ce que tu veux.",
+                        "note": "Formule d'accueil du collègue — invite à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais me renseigner sur la carte d'assurance maladie dès cette semaine.",
+                        "note": "Clôture — remerciement + « ça répond à mes questions » + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Si tu as d'autres questions, n'hésite pas. Bonne journée !",
+                        "note": "Formule de clôture du collègue — disponibilité + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore, c'est très gentil. À bientôt !",
+                        "note": "Formule de politesse finale — remerciement + salutation",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci. Pour commencer, comment est-ce que je dois faire pour trouver un médecin de famille ?",
+                        "note": "« Pour commencer » — première question, ancrée dans le scénario (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. J'aimerais également savoir combien de temps est-ce que ça prend pour obtenir un rendez-vous.",
+                        "note": "« J'aimerais également savoir » — enchaîner vers la durée d'attente (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et où est-ce que je dois aller si j'ai besoin de soins urgents ?",
+                        "note": "« Et où » — nouveau thème, les urgences",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quels documents est-ce que je dois fournir pour être remboursé ?",
+                        "note": "« Je vois. Quels » — accuser réception puis enchaîner vers les démarches",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, est-ce que les médicaments sont compris dans l'assurance ?",
+                        "note": "« Dans ce cas » — question liée à la dernière réponse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ça me semble pratique !",
+                        "note": "Réaction positive à une information utile",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant.",
+                        "note": "Réaction engagée — gagner du temps",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux.",
+                        "note": "Accusé de réception — information clarifiée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est parfait !",
+                        "note": "Satisfaction — information qui correspond au besoin",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord.",
+                        "note": "Accord neutre",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois.",
+                        "note": "Accusé de réception",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ah, c'est intéressant. Puisque les délais sont longs, est-ce qu'il vaut mieux passer par une clinique sans rendez-vous ?",
+                        "note": "Suivi sur un détail — « Puisque » + alternative (clinique sans rendez-vous)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, est-ce que les consultations sont gratuites ou est-ce qu'il faut payer à chaque visite ?",
+                        "note": "« Justement » — question pratique liée au coût",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, est-ce que mon employeur me couvre pendant mes congés maladie ?",
+                        "note": "Reformuler un détail pour relancer la conversation — « Dans ce cas »",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Oui, tu es couvert dès le début, mais il faut un certificat médical après trois jours. Et préviens ton responsable le plus tôt possible.",
+                        "note": "Conseil du collègue — « il faut » + impératif",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Conditionnel de politesse (pourrais + infinitif)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je viens de m'installer au Canada",
+                        "note": "« venir de + infinitif » — passé récent",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Puisque les délais sont longs, est-ce qu'il vaut mieux passer par une clinique",
+                        "note": "« Puisque » (cause connue) + « il vaut mieux + infinitif »",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "J'aimerais également savoir combien de temps est-ce que ça prend",
+                        "note": "Conditionnel de politesse + « combien de temps »",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je viens de m'installer au Canada et je cherche à comprendre le système de santé. Comme tu vis ici depuis longtemps, est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hello! I have just settled in Canada and I am trying to understand the healthcare system. Since you have lived here for a long time, could I ask you a few questions about it?",
+            "es": "Bonzhur! Zhe vyan de m instalé o Kanada e zhe shersh a komprandr l sistem de santé. Kom tu vi isi depüí lontán, esk zhe puré te pozé kelk kesción a s süzhé?",
+            "note": "OUVERTURE: Salutation + contexte (\"Je viens de m'installer\") + demande polie (\"est-ce que je pourrais\") — 32 mots"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, avec plaisir ! Bienvenue au Canada. Demande-moi ce que tu veux.",
+            "en": "Of course, with pleasure! Welcome to Canada. Ask me whatever you want.",
+            "es": "Bien sür, avek plezir! Bienvenü o Kanada. Demand-mua s ke tu vé.",
+            "note": "RESPONSE: Formule d'accueil — invite à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci. Pour commencer, comment est-ce que je dois faire pour trouver un médecin de famille ?",
+            "en": "Thank you. To start with, how should I go about finding a family doctor?",
+            "es": "Mersí. Pur komansé, komán esk zhe duá fer pur truvé un medsén de famí?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — première question ancrée dans le scénario (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il faut t'inscrire sur une liste provinciale, mais l'attente peut durer plusieurs mois.",
+            "en": "You have to register on a provincial list, but the wait can last several months.",
+            "es": "Il fo tinskrir sür ün list provinsial, me latant pe düré plüzïer mua.",
+            "note": "INFORMATION: Procédure + délai d'attente (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. J'aimerais également savoir combien de temps est-ce que ça prend pour obtenir un rendez-vous.",
+            "en": "Okay. I would also like to know how long it takes to get an appointment.",
+            "es": "Dakor. Zhemeré egalmán savuar kombien de tan esk sa pran pur obténir un randé-vu.",
+            "note": "RÉACTION: \"D'accord\"; ENCHAINEMENT: \"J'aimerais également savoir\" — question sur la durée (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Chez un médecin de famille, une ou deux semaines. Dans une clinique sans rendez-vous, souvent le jour même.",
+            "en": "With a family doctor, one or two weeks. In a walk-in clinic, often the same day.",
+            "es": "Shez un medsén de famí, ün u dö semén. Dan ün klinik san randé-vu, suván l zhur mem.",
+            "note": "INFORMATION: Délais selon le type de médecin (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Puisque les délais sont longs, est-ce qu'il vaut mieux passer par une clinique sans rendez-vous ?",
+            "en": "Oh, that is interesting. Since the waits are long, is it better to go through a walk-in clinic?",
+            "es": "A, se anterèsán. Püiske le délè son lon, esk il vo mieu pasé par ün klinik san randé-vu?",
+            "note": "SUIVI 1: reprend le détail \"plusieurs mois\" — \"Puisque\" + alternative (clinique sans rendez-vous)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, pour les petits problèmes, c'est plus rapide. Mais pour un suivi régulier, il faut un médecin de famille.",
+            "en": "Yes, for minor problems, it is faster. But for regular follow-up, you need a family doctor.",
+            "es": "Ui, pur le pti problem, se plü rapid. Me pur un süivi régülier, il fo un medsén de famí.",
+            "note": "INFORMATION: Avantages et limites de la clinique sans rendez-vous (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Justement, est-ce que les consultations sont gratuites ou est-ce qu'il faut payer à chaque visite ?",
+            "en": "I understand better. Actually, are consultations free or do you have to pay for each visit?",
+            "es": "Zhe komprán mieu. Züstemán, esk le konsültasión son gratüit u esk il fo peyé a shak vizit?",
+            "note": "RÉACTION: \"Je comprends mieux\"; SUIVI 2: \"Justement\" — question sur le coût (gratuit / payer)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec la carte d'assurance maladie, la plupart des soins sont gratuits. Mais tout n'est pas couvert, attention.",
+            "en": "With the health insurance card, most care is free. But not everything is covered, be careful.",
+            "es": "Avek la kart dasürans maladí, la plüpar de suan son gratüit. Me tu ne pa kuvér, atansión.",
+            "note": "INFORMATION: Couverture de l'assurance maladie + limite (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et où est-ce que je dois aller si j'ai besoin de soins urgents ?",
+            "en": "Very good, thank you. And where should I go if I need urgent care?",
+            "es": "Tre bien, mersí. E u esk zhe duá alé si zhe bezuan de suan ürzhan?",
+            "note": "RÉACTION: \"Très bien, merci\"; ENCHAINEMENT: question sur les urgences (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "À l'hôpital le plus proche, aux urgences. Mais pour une fracture légère, une clinique peut suffire.",
+            "en": "To the nearest hospital, to the emergency department. But for a minor fracture, a clinic may be enough.",
+            "es": "A lopital l plü prosh, o zürzhans. Me pur ün fraktür lézhér, ün klinik pe süfir.",
+            "note": "INFORMATION: Lieu des urgences + alternative (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Quels documents est-ce que je dois fournir pour être remboursé ?",
+            "en": "I see. Which documents do I need to provide to be reimbursed?",
+            "es": "Zhe vua. Kel dokümán esk zhe duá furnir pur étre ranbursé?",
+            "note": "RÉACTION: \"Je vois\"; ENCHAINEMENT: question sur les documents (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Ta carte d'assurance maladie et une pièce d'identité. Garde toujours les reçus pour les remboursements.",
+            "en": "Your health insurance card and an ID document. Always keep the receipts for reimbursements.",
+            "es": "Ta kart dasürans maladí e ün pies didantité. Gard tuzhur le reza pur le ranbursmán.",
+            "note": "INFORMATION: Documents nécessaires + conseil (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est parfait ! Et comment est-ce que je peux obtenir cette carte d'assurance maladie ?",
+            "en": "That is perfect! And how can I get this health insurance card?",
+            "es": "Se parfé! E komán esk zhe pe obténir set kart dasürans maladí?",
+            "note": "RÉACTION: \"C'est parfait\"; ENCHAINEMENT: question sur l'obtention de la carte (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Tu fais la demande en ligne, avec ton permis de travail et une preuve d'adresse. Ça prend quelques semaines.",
+            "en": "You apply online, with your work permit and proof of address. It takes a few weeks.",
+            "es": "Tu fe la demand an lin, avek ton permí de travay e ün pröv dadres. Sa pran kelk semén.",
+            "note": "INFORMATION: Procédure d'obtention + délai (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Dans ce cas, est-ce que les médicaments sont compris dans l'assurance ?",
+            "en": "Oh, that is interesting. In that case, are medicines included in the insurance?",
+            "es": "A, se anterèsán. Dan se ka, esk le medikamán son kompri dan lasürans?",
+            "note": "SUIVI 3: reprend le détail \"demande en ligne\" — \"Dans ce cas\" (médicaments)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Non, pas tous. Les médicaments en pharmacie sont souvent payants, sauf si tu as une assurance privée.",
+            "en": "No, not all of them. Medicines at the pharmacy are often paid for, unless you have private insurance.",
+            "es": "Non, pa tus. Le medikamán an farmasí son suván peyán, sof si tu a ün asürans privé.",
+            "note": "INFORMATION: Médicaments payants + assurance privée (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et qui est-ce que je dois contacter si mon employeur me demande un certificat médical ?",
+            "en": "I understand better. And who should I contact if my employer asks me for a medical certificate?",
+            "es": "Zhe komprán mieu. E ki esk zhe duá kontakté si mon anpluayér me demand un sertifika medial?",
+            "note": "RÉACTION: \"Je comprends mieux\"; ENCHAINEMENT: question sur le certificat (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Ton médecin de famille ou la clinique. Le certificat coûte parfois une vingtaine de dollars, non remboursés.",
+            "en": "Your family doctor or the clinic. The certificate sometimes costs around twenty dollars, not reimbursed.",
+            "es": "Ton medsén de famí u la klinik. L sertifika kut parfua ün vintén de dolar, non ranbursé.",
+            "note": "INFORMATION: Qui délivre le certificat + coût (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Et pourquoi est-ce que les congés maladie sont si différents d'une province à l'autre ?",
+            "en": "Very good. And why are sick leaves so different from one province to another?",
+            "es": "Tre bien. E purkua esk le konzhé maladí son si diferán dün provins a lotr?",
+            "note": "ENCHAINEMENT: question sur les congés maladie (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce que la santé est gérée par chaque province. Les règles et les durées changent donc selon l'endroit.",
+            "en": "Because healthcare is managed by each province. The rules and durations therefore change depending on the place.",
+            "es": "Pars ke la santé e zheré par shak provins. Le regl e le düré shanzh donk selón landrua.",
+            "note": "INFORMATION: Raison des différences provinciales (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et combien de jours de congé maladie est-ce que j'ai droit chez nous ?",
+            "en": "Noted. And how many sick days am I entitled to at our company?",
+            "es": "Se noté. E kombien de zhur de konzhé maladí esk zhe duá shez nu?",
+            "note": "ENCHAINEMENT: question sur le nombre de jours (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Tu as droit à cinq jours par an, dont trois payés. C'est la loi dans notre province.",
+            "en": "You are entitled to five days per year, three of which are paid. That is the law in our province.",
+            "es": "Tu a drua a sank zhur par an, don trua peyé. Se la lua dan notr provins.",
+            "note": "INFORMATION: Nombre de jours de congé maladie + loi provinciale"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais me renseigner sur la carte d'assurance maladie dès cette semaine.",
+            "en": "Perfect, that answers all my questions. Thank you very much for this information, I will look into the health insurance card as early as this week.",
+            "es": "Parfé, sa répon a tut me kesción. Mersí boku pur se zenformasión, zhe vé me ransenyé sür la kart dasürans maladí de set semén.",
+            "note": "FERMETURE: remerciement + \"ça répond à toutes mes questions\" + prochaine étape (\"je vais me renseigner\")"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Si tu as d'autres questions, n'hésite pas. Bonne journée !",
+            "en": "With pleasure! If you have any other questions, don't hesitate. Have a good day!",
+            "es": "Avek plezir! Si tu a dotr kesción, nezit pa. Bonzhurné!",
+            "note": "RESPONSE: Formule de clôture du collègue — disponibilité + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore, c'est très gentil. À bientôt !",
+            "en": "Thanks again, that is very kind. See you soon!",
+            "es": "Mersí ankor, se tre zhentí. A byento!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

@@ -1,0 +1,394 @@
+{
+    "title": "Se renseigner sur un court séjour dans une région canadienne auprès d'un collègue",
+    "task": "tache2",
+    "topic": "5. Travel & Transportation",
+    "description": "Un(e) collègue a effectué un court séjour dans une région canadienne et vous êtes intéressé(e) par son expérience. Vous lui posez des questions sur les sites visités, le type de logement, les activités réalisées, le transport, le budget, la durée et l'organisation du séjour.",
+    "labels": {
+        "E": "Collègue",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'ai entendu dire que",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "Ça me semble pratique",
+        "J'aimerais également savoir",
+        "Ah, c'est intéressant",
+        "Puisque",
+        "Je comprends mieux",
+        "Je vois",
+        "C'est parfait",
+        "Dans ce cas",
+        "Justement",
+        "ça répond à toutes mes questions",
+        "Je vais y réfléchir",
+        "Bonne journée",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur un court séjour au Canada",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! J'ai entendu dire que tu as fait un court séjour dans une région canadienne, et ça m'intéresse beaucoup. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Ouverture réelle du dialogue — salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bien sûr, avec plaisir ! Demande-moi ce que tu veux, j'ai adoré ce voyage.",
+                        "note": "Formule d'accueil du collègue — invite à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais y réfléchir et en parler à ma famille.",
+                        "note": "Clôture — remerciement + « ça répond à mes questions » + décision différée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Si tu y vas, tu me raconteras. Bonne journée !",
+                        "note": "Formule de clôture du collègue — disponibilité + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore, c'est très gentil. À bientôt !",
+                        "note": "Formule de politesse finale — remerciement + salutation",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci. Pour commencer, où est-ce que tu as séjourné exactement pendant ce voyage ?",
+                        "note": "« Pour commencer » — première question ancrée dans le scénario (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. J'aimerais également savoir quand tu es parti et combien de temps a duré le séjour.",
+                        "note": "« J'aimerais également savoir » — enchaîner vers les dates et la durée (quand + combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et comment est-ce que tu as voyagé : en avion, en train ou en voiture ?",
+                        "note": "« Et comment » — nouveau thème, le transport",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quels sites est-ce que tu as visités pendant ce séjour ?",
+                        "note": "« Je vois. Quels » — accuser réception puis enchaîner vers les sites visités",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, est-ce qu'il faut réserver le logement à l'avance ?",
+                        "note": "« Dans ce cas » — question liée à la dernière réponse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ça me semble pratique !",
+                        "note": "Réaction positive à une information utile",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant.",
+                        "note": "Réaction engagée — gagner du temps",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux.",
+                        "note": "Accusé de réception — information clarifiée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est parfait !",
+                        "note": "Satisfaction — information qui correspond au besoin",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord.",
+                        "note": "Accord neutre",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois.",
+                        "note": "Accusé de réception",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ah, c'est intéressant. Puisque la région est très naturelle, est-ce qu'il vaut mieux y aller au printemps ou en automne ?",
+                        "note": "Suivi sur un détail — « Puisque » + alternative (printemps / automne)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, est-ce qu'il y a des activités gratuites ou est-ce qu'il faut tout payer ?",
+                        "note": "« Justement » — question pratique liée au budget",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Dans ce cas, est-ce que tu me conseilles de louer une voiture sur place ?",
+                        "note": "Reformuler un détail pour relancer la conversation — « Dans ce cas »",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Loue une voiture si tu veux être libre, mais fais attention aux routes de montagne. Et réserve tôt en été.",
+                        "note": "Conseil du collègue — impératif + « si tu veux »",
+                        "role": "e"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Conditionnel de politesse (pourrais + infinitif)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "j'ai entendu dire que tu as fait un court séjour dans une région canadienne",
+                        "note": "« entendre dire que » + passé composé",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Puisque la région est très naturelle, est-ce qu'il vaut mieux y aller au printemps",
+                        "note": "« Puisque » (cause connue) + « il vaut mieux + infinitif »",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "J'aimerais également savoir combien de temps a duré le séjour.",
+                        "note": "Conditionnel de politesse + « combien de temps » + passé composé",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! J'ai entendu dire que tu as fait un court séjour dans une région canadienne, et ça m'intéresse beaucoup. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hi! I heard that you took a short trip to a Canadian region, and that really interests me. Could I ask you a few questions about it?",
+            "es": "Saliu! Zhe antandü dir ke tu a fe un kur sezhur dan ün rézhión kanadién, e sa mintrés boku. Esk zhe puré te pozé kelk kesción a s süzhé?",
+            "note": "OUVERTURE: Salutation + contexte (\"j'ai entendu dire que\") + demande polie (\"est-ce que je pourrais\")"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, avec plaisir ! Demande-moi ce que tu veux, j'ai adoré ce voyage.",
+            "en": "Of course, with pleasure! Ask me whatever you want, I loved that trip.",
+            "es": "Bien sür, avek plezir! Demand-mua s ke tu vé, zhe adoré s vwayazh.",
+            "note": "RESPONSE: Formule d'accueil — invite à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci. Pour commencer, où est-ce que tu as séjourné exactement pendant ce voyage ?",
+            "en": "Thank you. To start with, where exactly did you stay during this trip?",
+            "es": "Mersí. Pur komansé, u esk tu a sezhurné egzaktemán pandán s vwayazh?",
+            "note": "RÉACTION: \"Merci\"; ENCHAINEMENT: \"Pour commencer\" — première question ancrée dans le scénario (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Dans les Rocheuses, près de Banff. J'ai passé cinq jours dans un petit village de montagne.",
+            "en": "In the Rockies, near Banff. I spent five days in a small mountain village.",
+            "es": "Dan le Roshöz, pré de Banf. Zhe pasé sank zhur dan un pti vilazh de montany.",
+            "note": "INFORMATION: Région et lieu du séjour + durée (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. J'aimerais également savoir quand tu es parti et combien de temps a duré le séjour.",
+            "en": "Okay. I would also like to know when you left and how long the stay lasted.",
+            "es": "Dakor. Zhemeré egalmán savuar kan tu e parti e kombien de tan a düré l sezhur.",
+            "note": "RÉACTION: \"D'accord\"; ENCHAINEMENT: \"J'aimerais également savoir\" — dates et durée (quand + combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je suis parti fin septembre, pendant une semaine. C'était la saison des couleurs d'automne.",
+            "en": "I left at the end of September, for a week. It was the autumn colours season.",
+            "es": "Zhe süi parti fin septambr, pandán ün semén. Seté la sezón de kulör dotón.",
+            "note": "INFORMATION: Dates et durée + saison (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Puisque la région est très naturelle, est-ce qu'il vaut mieux y aller au printemps ou en automne ?",
+            "en": "Oh, that is interesting. Since the region is very natural, is it better to go in spring or in autumn?",
+            "es": "A, se anterèsán. Püiske la rézhión e tre natürel, esk il vo mieu i alé o printan u an notón?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\"; SUIVI 1: reprend le détail \"couleurs d'automne\" — \"Puisque\" + alternative"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'automne est magnifique, mais il y a beaucoup de touristes. Le printemps est plus calme et moins cher.",
+            "en": "Autumn is magnificent, but there are a lot of tourists. Spring is calmer and cheaper.",
+            "es": "Lotón e manyifik, me il y a boku de turist. L printan e plü kalm e muen sher.",
+            "note": "INFORMATION: Avantages des deux saisons (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et comment est-ce que tu as voyagé : en avion, en train ou en voiture ?",
+            "en": "Very good, thank you. And how did you travel: by plane, by train or by car?",
+            "es": "Tre bien, mersí. E komán esk tu a vwayazhé: an navión, an trin u an vuatür?",
+            "note": "RÉACTION: \"Très bien, merci\"; ENCHAINEMENT: question sur le transport (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "En avion jusqu'à Calgary, puis j'ai loué une voiture. C'était plus pratique pour visiter la région.",
+            "en": "By plane to Calgary, then I rented a car. It was more convenient for visiting the region.",
+            "es": "An navión zhüsko Kalgari, püi zhe lué ün vuatür. Seté plü pratik pur vizité la rézhión.",
+            "note": "INFORMATION: Moyens de transport + location de voiture (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ça me semble pratique ! Justement, est-ce qu'il y a des activités gratuites ou est-ce qu'il faut tout payer ?",
+            "en": "That seems convenient! Actually, are there free activities or do you have to pay for everything?",
+            "es": "Sa m sanbl pratik! Züstemán, esk il y a de zaktivité gratüit u esk il fo tu peyé?",
+            "note": "RÉACTION: \"Ça me semble pratique\"; SUIVI 2: \"Justement\" — activités et budget"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les randonnées sont gratuites, mais l'entrée du parc national et les activités coûtent cher.",
+            "en": "Hikes are free, but the national park entrance and the activities are expensive.",
+            "es": "Le randóné son gratüit, me lantré dü park nasional e le zaktivité kut sher.",
+            "note": "INFORMATION: Activités gratuites et payantes (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Quels sites est-ce que tu as visités pendant ce séjour ?",
+            "en": "I understand better. Which sites did you visit during this stay?",
+            "es": "Zhe komprán mieu. Kel sit esk tu a vizité pandán s sezhur?",
+            "note": "RÉACTION: \"Je comprends mieux\"; ENCHAINEMENT: question sur les sites visités (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le lac Louise, les sources chaudes et un glacier. J'ai aussi fait une croisière sur un lac.",
+            "en": "Lake Louise, the hot springs and a glacier. I also took a cruise on a lake.",
+            "es": "L lak Luiz, le sors shod e un glasié. Zhe osi fe ün kruazier sür un lak.",
+            "note": "INFORMATION: Sites visités (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est parfait ! Et quel type de logement est-ce que tu as choisi : hôtel, auberge ou location ?",
+            "en": "That is perfect! And what type of accommodation did you choose: hotel, hostel or rental?",
+            "es": "Se parfé! E kel tip de lozhmán esk tu a shuazi: otel, obérzh u lokasión?",
+            "note": "RÉACTION: \"C'est parfait\"; ENCHAINEMENT: question sur le logement (quel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "J'ai loué un petit chalet avec deux amis. C'était moins cher qu'un hôtel et très confortable.",
+            "en": "I rented a small chalet with two friends. It was cheaper than a hotel and very comfortable.",
+            "es": "Zhe lué un pti shalé avek dö zami. Seté muen sher k'un otel e tre konfortabl.",
+            "note": "INFORMATION: Type de logement + prix (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Dans ce cas, est-ce qu'il faut réserver le logement à l'avance ?",
+            "en": "I see. In that case, should accommodation be booked in advance?",
+            "es": "Zhe vua. Dan se ka, esk il fo rézervé l lozhmán a lavans?",
+            "note": "RÉACTION: \"Je vois\"; ENCHAINEMENT: \"Dans ce cas\" — réservation (organisation)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, surtout en été. Les chalets sont souvent complets deux mois avant.",
+            "en": "Yes, especially in summer. Chalets are often fully booked two months ahead.",
+            "es": "Ui, sürtu an été. Le shalé son suván konplé dö mua zavan.",
+            "note": "INFORMATION: Nécessité de réserver tôt"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Et pourquoi est-ce que tu conseilles cette région plutôt qu'une autre ?",
+            "en": "Very good. And why do you recommend this region rather than another one?",
+            "es": "Tre bien. E purkua esk tu konséi set rézhión plüto k'ün zotr?",
+            "note": "ENCHAINEMENT: question sur le choix de la destination (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce que les paysages sont spectaculaires et qu'on peut voir des animaux sauvages. C'est vraiment dépaysant.",
+            "en": "Because the landscapes are spectacular and you can see wild animals. It is a real change of scenery.",
+            "es": "Pars ke le peizazh son spektakülér e kon pe vuar de zanimó sovazh. Se vreman depaizán.",
+            "note": "INFORMATION: Raisons de la recommandation (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Dans ce cas, est-ce que tu me conseilles de louer une voiture sur place ?",
+            "en": "Oh, that is interesting. In that case, do you recommend that I rent a car on site?",
+            "es": "A, se anterèsán. Dan se ka, esk tu me konséi de lué ün vuatür sür plas?",
+            "note": "SUIVI 3: reprend le détail \"animaux sauvages\" — \"Dans ce cas\" (location de voiture)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Loue une voiture si tu veux être libre, mais fais attention aux routes de montagne. Et réserve tôt en été.",
+            "en": "Rent a car if you want to be free, but be careful on mountain roads. And book early in summer.",
+            "es": "Lu ün vuatür si tu vé étre libr, me fe atansión o rut de montany. E rézerv to an été.",
+            "note": "INFORMATION: Conseil + mise en garde (routes de montagne)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et combien est-ce qu'il faut prévoir comme budget pour une semaine ?",
+            "en": "Noted. And how much should one budget for a week?",
+            "es": "Se noté. E kombien esk il fo prévuar kom büzhé pur ün semén?",
+            "note": "ENCHAINEMENT: question sur le budget (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Compte environ mille euros par personne, transport compris. On peut dépenser moins en camping.",
+            "en": "Count about a thousand euros per person, transport included. You can spend less by camping.",
+            "es": "Kont anviron mil ero par persón, transpór kompri. On pe depansé muen an kanping.",
+            "note": "INFORMATION: Budget estimé + option économique"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais y réfléchir et en parler à ma famille.",
+            "en": "Perfect, that answers all my questions. Thank you very much for this information, I will think about it and talk about it with my family.",
+            "es": "Parfé, sa répon a tut me kesción. Mersí boku pur se zenformasión, zhe vé i refleshir e an parlé a ma famí.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + décision différée (\"je vais y réfléchir\")"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Si tu y vas, tu me raconteras. Bonne journée !",
+            "en": "With pleasure! If you go, you will tell me about it. Have a good day!",
+            "es": "Avek plezir! Si tu i va, tu me rakontra. Bonzhurné!",
+            "note": "RESPONSE: Formule de clôture du collègue — disponibilité + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore, c'est très gentil. À bientôt !",
+            "en": "Thanks again, that is very kind. See you soon!",
+            "es": "Mersí ankor, se tre zhentí. A byento!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}
