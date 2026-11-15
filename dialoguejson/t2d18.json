@@ -1,0 +1,419 @@
+{
+    "title": "Se renseigner sur les solutions de garde d'enfants auprès d'un ami",
+    "task": "tache2",
+    "topic": "2. Family & Childcare",
+    "description": "Vous venez de vous installer au Canada avec votre famille et vous demandez à un ami comment trouver une garde d'enfants : types de garde, prix, horaires et démarches.",
+    "labels": {
+        "E": "Ami",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'aurais besoin de tes conseils",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est important",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est pratique",
+        "C'est noté",
+        "Justement",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "À bientôt",
+        "Merci encore",
+        "bon courage"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur les solutions de garde d'enfants auprès d'un ami",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Ça fait plaisir de te voir. Comme tu vis ici avec ta famille, j'aurais besoin de tes conseils. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Salut ! Bien sûr, avec plaisir. Tu cherches une solution de garde pour tes enfants, c'est ça ?",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais commencer les démarches cette semaine.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Tiens-moi au courant, et bon courage pour les inscriptions. À bientôt !",
+                        "note": "RESPONSE: Formule de clôture — disponibilité + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore, c'est très gentil. À bientôt, et merci pour ton aide !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci. Pour commencer, quels sont les types de garde disponibles ici ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — première question (quels)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et quand est-ce que les inscriptions se font, faut-il s'y prendre longtemps à l'avance ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur les inscriptions (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est important. Combien coûte une place en crèche par mois ?",
+                        "note": "RÉACTION: \"Ah, c'est important\"; question sur le coût (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et où est-ce que je peux trouver une assistante maternelle agréée ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quelles sont les horaires de la crèche, jusqu'à quelle heure ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur les horaires (quelles)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est pratique. Pourquoi est-ce qu'il faut choisir une assistante maternelle plutôt qu'une crèche ?",
+                        "note": "RÉACTION: \"Ah, c'est pratique\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et qui peut me conseiller sur les démarches administratives ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur les démarches (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et est-ce que les horaires sont flexibles si je travaille tard le soir ?",
+                        "note": "ENCHAINEMENT: question sur la flexibilité des horaires",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et quand est-ce que les inscriptions se font, faut-il s'y prendre longtemps à l'avance ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur les inscriptions (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est important. Combien coûte une place en crèche par mois ?",
+                        "note": "RÉACTION: \"Ah, c'est important\"; question sur le coût (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et où est-ce que je peux trouver une assistante maternelle agréée ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quelles sont les horaires de la crèche, jusqu'à quelle heure ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur les horaires (quelles)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est pratique. Pourquoi est-ce qu'il faut choisir une assistante maternelle plutôt qu'une crèche ?",
+                        "note": "RÉACTION: \"Ah, c'est pratique\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et qui peut me conseiller sur les démarches administratives ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur les démarches (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, est-ce que je peux obtenir une aide financière de l'État ?",
+                        "note": "SUIVI 1: \"Justement\" — aide financière de l'État",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que les enfants mangent sur place, à la crèche ?",
+                        "note": "SUIVI 2: \"C'est noté\" — repas à la crèche",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et combien de temps faut-il pour obtenir une place, en général ?",
+                        "note": "SUIVI 3: \"Je vois\" — délai pour obtenir une place",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et est-ce que les horaires sont flexibles si je travaille tard le soir ?",
+                        "note": "ENCHAINEMENT: question sur la flexibilité des horaires",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, est-ce que je peux obtenir une aide financière de l'État ?",
+                        "note": "SUIVI 1: \"Justement\" — aide financière de l'État",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que les enfants mangent sur place, à la crèche ?",
+                        "note": "SUIVI 2: \"C'est noté\" — repas à la crèche",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et combien de temps faut-il pour obtenir une place, en général ?",
+                        "note": "SUIVI 3: \"Je vois\" — délai pour obtenir une place",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Ça fait plaisir de te voir. Comme tu vis ici avec ta famille, j'aurais besoin de tes conseils. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Merci. Pour commencer, quels sont les types de garde disponibles ici ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — première question (quels)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est important. Combien coûte une place en crèche par mois ?",
+                        "note": "RÉACTION: \"Ah, c'est important\"; question sur le coût (combien)",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! Ça fait plaisir de te voir. Comme tu vis ici avec ta famille, j'aurais besoin de tes conseils. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hi! It's nice to see you. Since you live here with your family, I need your advice. Could I ask you a few questions about it?",
+            "es": "Salu! Sa fe plezir de te vuar. Koman tu vi isi avek ta fami, zhezré bezuan de te konsei. Esk zhe puré te pozé kelk kesión a s süzhé?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Bien sûr, avec plaisir. Tu cherches une solution de garde pour tes enfants, c'est ça ?",
+            "en": "Hi! Of course, with pleasure. You're looking for childcare for your children, right?",
+            "es": "Salu! Bień sür, avek plezir. Tu shersh ün solució de gard pur te zanfán, se sa?",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci. Pour commencer, quels sont les types de garde disponibles ici ?",
+            "en": "Thank you. To start with, what types of childcare are available here?",
+            "es": "Mersí. Pur komansé, kel son le tip de gard disponibl isi?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — première question (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a la crèche, l'assistante maternelle et la garderie. Le choix dépend surtout de l'âge de l'enfant.",
+            "en": "There is the daycare, the childminder and the nursery. The choice depends mainly on the child's age.",
+            "es": "Il i a la krésh, l asistán maternel e la gardri. L shua dépend sürtu de lazhe de l anfán.",
+            "note": "INFORMATION: Types de garde disponibles (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et quand est-ce que les inscriptions se font, faut-il s'y prendre longtemps à l'avance ?",
+            "en": "Okay. And when do the registrations take place, do you have to apply long in advance?",
+            "es": "Dakor. E kan esk le inskripsión s fel, fot-il s i pran lontán a lavans?",
+            "note": "RÉACTION: \"D'accord\"; question sur les inscriptions (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les inscriptions se font toute l'année, mais il faut s'y prendre six mois à l'avance pour la crèche.",
+            "en": "Registrations take place all year round, but you have to apply six months in advance for the daycare.",
+            "es": "Le inskripsión s fel tut lané, me il fo s i pran sis mua a lavans pur la krésh.",
+            "note": "INFORMATION: Calendrier des inscriptions + délai"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est important. Combien coûte une place en crèche par mois ?",
+            "en": "Oh, that's important. How much does a daycare place cost per month?",
+            "es": "A, se anportán. Kombien kut ün plas an krésh par mua?",
+            "note": "RÉACTION: \"Ah, c'est important\"; question sur le coût (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Ça dépend des revenus, mais en moyenne quatre cents euros par mois. La garderie est un peu moins chère.",
+            "en": "It depends on your income, but on average four hundred euros per month. The nursery is a little cheaper.",
+            "es": "Sa dépend de vo revnu, me an moyèn kat san ero par mua. La gardri e un pö muen sher.",
+            "note": "INFORMATION: Coût de la crèche + garderie moins chère"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et où est-ce que je peux trouver une assistante maternelle agréée ?",
+            "en": "Very good, thank you. And where can I find an approved childminder?",
+            "es": "Tre bien, mersí. E u esk zhe pe truvé ün asistán maternel agreé?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur le lieu (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Sur le site de la mairie, ou auprès du relais petite enfance. Ils donnent une liste des places disponibles.",
+            "en": "On the town hall website, or at the early childhood centre. They give a list of available places.",
+            "es": "Sür l sit de la meri, u oupré dü rela pti anfans. Il don ün list de plas disponibl.",
+            "note": "INFORMATION: Où trouver une assistante maternelle"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Quelles sont les horaires de la crèche, jusqu'à quelle heure ?",
+            "en": "I see. What are the daycare hours, until what time?",
+            "es": "Zhe vua. Kel son le orér de la krésh, zhüsko kel er?",
+            "note": "RÉACTION: \"Je vois\"; question sur les horaires (quelles)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La crèche ouvre de sept heures à dix-neuf heures. Ça laisse vraiment le temps pour le travail.",
+            "en": "The daycare is open from seven a.m. to seven p.m. It really leaves time for work.",
+            "es": "La krésh uvr de se er a diz-nöf er. Sa lesh vremán l tan pur l travay.",
+            "note": "INFORMATION: Horaires de la crèche"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est pratique. Pourquoi est-ce qu'il faut choisir une assistante maternelle plutôt qu'une crèche ?",
+            "en": "Oh, that's convenient. Why should you choose a childminder rather than a daycare?",
+            "es": "A, se praktik. Purkua esk il fo chwazi ün asistán maternel plüto k'ün krésh?",
+            "note": "RÉACTION: \"Ah, c'est pratique\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'assistante maternelle garde l'enfant à domicile et s'adapte aux horaires. C'est plus flexible, mais il faut vérifier l'agrément.",
+            "en": "The childminder cares for the child at home and adapts to the hours. It's more flexible, but you have to check the approval.",
+            "es": "L asistán maternel gard l anfán a domisil e sadat o orér. Se plü fleksibl, me il fo verifié l agremán.",
+            "note": "INFORMATION: Assistante maternelle vs crèche + agrément"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et qui peut me conseiller sur les démarches administratives ?",
+            "en": "I understand better. And who can advise me on the administrative procedures?",
+            "es": "Zhe komprán mieu. E ki pe me konséi sür le demarsh administratif?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur les démarches (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le relais petite enfance t'aide gratuitement. Ils expliquent les documents à fournir et les aides possibles.",
+            "en": "The early childhood centre helps you for free. They explain the documents to provide and the possible aids.",
+            "es": "L rela pti anfans ted è gratüitmán. Il eksplik le dokümán a furnir e le zid posibl.",
+            "note": "INFORMATION: Relais petite enfance + aides"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, est-ce que je peux obtenir une aide financière de l'État ?",
+            "en": "Actually, can I get financial aid from the State?",
+            "es": "Züstemán, esk zhe pe obténir ün zid finansié de léta?",
+            "note": "SUIVI 1: \"Justement\" — aide financière de l'État"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, il y a une aide de la CAF selon tes revenus. Le relais t'expliquera comment la demander.",
+            "en": "Yes, there is a CAF allowance depending on your income. The centre will explain how to apply for it.",
+            "es": "Ui, il i a ün zid de la CAF selon te revnu. L rela texplikera koman la demané.",
+            "note": "INFORMATION: Aide de la CAF"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que les enfants mangent sur place, à la crèche ?",
+            "en": "Noted. And do the children eat on site, at the daycare?",
+            "es": "Se noté. E esk le zanfán manj sür plas, a la krésh?",
+            "note": "SUIVI 2: \"C'est noté\" — repas à la crèche"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, les repas sont préparés sur place, avec des menus équilibrés. Il faut signaler les allergies au personnel.",
+            "en": "Yes, meals are prepared on site, with balanced menus. You have to report allergies to the staff.",
+            "es": "Ui, le repa son preparé sür plas, avek de menu ekuilibré. Il fo sinalé le alérzhi o personel.",
+            "note": "INFORMATION: Repas préparés sur place + allergies"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et combien de temps faut-il pour obtenir une place, en général ?",
+            "en": "I see. And how long does it take to get a place, in general?",
+            "es": "Zhe vua. E kombien de tan fot-il pur obténir ün plas, an jeneral?",
+            "note": "SUIVI 3: \"Je vois\" — délai pour obtenir une place"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Compte entre trois et six mois. Les listes d'attente sont longues, surtout dans les grandes villes.",
+            "en": "Count between three and six months. The waiting lists are long, especially in big cities.",
+            "es": "Komp antr trua e sis mua. Le list datant son lon, sürtu dan le grán vil.",
+            "note": "INFORMATION: Délai d'attente + listes longues"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et est-ce que les horaires sont flexibles si je travaille tard le soir ?",
+            "en": "Okay. And are the hours flexible if I work late in the evening?",
+            "es": "Dakor. E esk le orér son fleksibl si zhe travay tar l suar?",
+            "note": "ENCHAINEMENT: question sur la flexibilité des horaires"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La crèche ferme à dix-neuf heures, mais certaines garderies proposent des horaires étendus jusqu'à vingt heures.",
+            "en": "The daycare closes at seven p.m., but some nurseries offer extended hours until eight p.m.",
+            "es": "La krésh ferm a diz-nöf er, me sertén gardri propoz de zorér etandü zhüsko vin er.",
+            "note": "INFORMATION: Horaires étendus dans certaines garderies"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais commencer les démarches cette semaine.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I will start the procedures this week.",
+            "es": "Parfé, sa répon a tut me kesión. Mersí boku, zhe vé komanse le demarsh set semén.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Tiens-moi au courant, et bon courage pour les inscriptions. À bientôt !",
+            "en": "With pleasure! Keep me posted, and good luck with the registrations. See you soon!",
+            "es": "Avek plezir! Tien-mua o kourán, e bon kuraž pur le inskripsión. A byento!",
+            "note": "RESPONSE: Formule de clôture — disponibilité + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore, c'est très gentil. À bientôt, et merci pour ton aide !",
+            "en": "Thank you again, that's very kind. See you soon, and thanks for your help!",
+            "es": "Mersí ankor, se tre zhentí. A byento, e mersi pur ton zid!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

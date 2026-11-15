@@ -1,0 +1,419 @@
+{
+    "title": "Se renseigner sur un appartement à louer auprès de l'ancien locataire",
+    "task": "tache2",
+    "topic": "1. Housing",
+    "description": "Vous visitez un appartement à louer et vous interrogez l'ancien locataire sur l'immeuble, le quartier, la présence d'un gardien et l'environnement.",
+    "labels": {
+        "E": "Ancien locataire",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "je visite cet appartement",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est intéressant",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est super",
+        "C'est noté",
+        "Justement",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur un appartement à louer auprès de l'ancien locataire",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je visite cet appartement aujourd'hui et j'aimerais bien en savoir plus sur l'immeuble et le quartier. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Bien sûr, avec plaisir. Je connais l'immeuble depuis trois ans. Posez-moi toutes vos questions.",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réfléchir et vous donner une réponse rapidement.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + décision différée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! J'espère que l'appartement vous plaira et que tout se passera bien. Bonne journée !",
+                        "note": "RESPONSE: Formule de clôture — disponibilité + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour votre temps, c'est très gentil. À bientôt, et bonne continuation !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci. Pour commencer, comment sont les voisins et quelle est l'ambiance générale de l'immeuble ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — première question (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et quand est-ce que l'appartement est disponible, et pour combien de temps ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la disponibilité (quand + combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Combien coûte le loyer mensuel et quelles sont les charges ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur le loyer (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et où est-ce que se trouvent les commerces et les transports ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur le quartier (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quels sont les équipements dans l'immeuble, y a-t-il un ascenseur ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur les équipements (quels)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quelle est la surface de l'appartement et combien de pièces y a-t-il ?",
+                        "note": "ENCHAINEMENT: question sur la surface et les pièces (quelle + combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est super. Pourquoi est-ce que vous quittez cet appartement ?",
+                        "note": "RÉACTION: \"Ah, c'est super\"; question sur la raison du départ (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et qui s'occupe de l'entretien de l'immeuble, y a-t-il un gardien ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur l'entretien (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et quand est-ce que l'appartement est disponible, et pour combien de temps ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la disponibilité (quand + combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Combien coûte le loyer mensuel et quelles sont les charges ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur le loyer (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et où est-ce que se trouvent les commerces et les transports ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur le quartier (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quels sont les équipements dans l'immeuble, y a-t-il un ascenseur ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur les équipements (quels)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quelle est la surface de l'appartement et combien de pièces y a-t-il ?",
+                        "note": "ENCHAINEMENT: question sur la surface et les pièces (quelle + combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est super. Pourquoi est-ce que vous quittez cet appartement ?",
+                        "note": "RÉACTION: \"Ah, c'est super\"; question sur la raison du départ (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et qui s'occupe de l'entretien de l'immeuble, y a-t-il un gardien ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur l'entretien (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, est-ce que les animaux de compagnie sont acceptés dans l'immeuble ?",
+                        "note": "SUIVI 1: \"Justement\" — animaux acceptés",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que le quartier est calme le soir ?",
+                        "note": "SUIVI 2: \"C'est noté\" — calme du quartier le soir",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et quand est-ce que je peux visiter l'appartement à nouveau, si je veux réfléchir ?",
+                        "note": "SUIVI 3: \"Je vois\" — nouvelle visite",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, est-ce que les animaux de compagnie sont acceptés dans l'immeuble ?",
+                        "note": "SUIVI 1: \"Justement\" — animaux acceptés",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que le quartier est calme le soir ?",
+                        "note": "SUIVI 2: \"C'est noté\" — calme du quartier le soir",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et quand est-ce que je peux visiter l'appartement à nouveau, si je veux réfléchir ?",
+                        "note": "SUIVI 3: \"Je vois\" — nouvelle visite",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je visite cet appartement aujourd'hui et j'aimerais bien en savoir plus sur l'immeuble et le quartier. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Merci. Pour commencer, comment sont les voisins et quelle est l'ambiance générale de l'immeuble ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — première question (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Combien coûte le loyer mensuel et quelles sont les charges ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur le loyer (combien)",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je visite cet appartement aujourd'hui et j'aimerais bien en savoir plus sur l'immeuble et le quartier. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+            "en": "Hello! I'm visiting this apartment today and I'd like to know more about the building and the neighborhood. Could I ask you a few questions about it?",
+            "es": "Bonzhur! Zhe vizit set apartmán ozordi e zhezemré an savuar plü sür limel e l katrié. Esk zhe puré vuz pozé kelk kesión a s süzhé?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Bien sûr, avec plaisir. Je connais l'immeuble depuis trois ans. Posez-moi toutes vos questions.",
+            "en": "Hello! Of course, with pleasure. I've known the building for three years. Ask me all your questions.",
+            "es": "Bonzhur! Bień sür, avek plezir. Zhe koné limel depüi trua an. Pozé-mua tut vo kesión.",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci. Pour commencer, comment sont les voisins et quelle est l'ambiance générale de l'immeuble ?",
+            "en": "Thank you. To start with, what are the neighbors like and what is the general atmosphere of the building?",
+            "es": "Mersí. Pur komansé, komán son le vuazen e kel e l'ambians jeneral de limel?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — première question (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les voisins sont calmes et discrets. L'immeuble est familial, avec des gens de tous âges et pas mal d'enfants.",
+            "en": "The neighbors are quiet and discreet. The building is family-friendly, with people of all ages and quite a few children.",
+            "es": "Le vuazen son kalm e diskret. Limel e familjal, avek de zhean de tut lazhe e pa mal danfán.",
+            "note": "INFORMATION: Ambiance et voisinage (point de départ du suivi)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et quand est-ce que l'appartement est disponible, et pour combien de temps ?",
+            "en": "Okay. And when is the apartment available, and for how long?",
+            "es": "Dakor. E kan esk l apartmán e disponibl, e pur kombien de tan?",
+            "note": "RÉACTION: \"D'accord\"; question sur la disponibilité (quand + combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il est libre dès le mois prochain. Le bail est de douze mois, renouvelable, avec un préavis de deux mois.",
+            "en": "It's free from next month. The lease is twelve months, renewable, with two months' notice.",
+            "es": "Il e libr dé l mua proshén. L bel e de duz mua, ranuvabl, avek un preví de dö mua.",
+            "note": "INFORMATION: Disponibilité + durée du bail"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Combien coûte le loyer mensuel et quelles sont les charges ?",
+            "en": "Oh, that's interesting. How much is the monthly rent and what are the charges?",
+            "es": "A, se anterèsán. Kombien kut l luazhié mansiiel e kel son le sharzhe?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur le loyer (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le loyer est de neuf cents euros, charges comprises. L'eau et le chauffage sont inclus, mais pas l'électricité.",
+            "en": "The rent is nine hundred euros, charges included. Water and heating are included, but not electricity.",
+            "es": "L luazhié e de nö san ero, sharzhe kompriz. Lo e l shofazh son zinküi, me pa lelektrisité.",
+            "note": "INFORMATION: Loyer + charges incluses"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et où est-ce que se trouvent les commerces et les transports ?",
+            "en": "Very good, thank you. And where are the shops and public transport located?",
+            "es": "Tre bien, mersí. E u esk s truv le komsers e le transpór?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur le quartier (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le métro est à cinq minutes à pied. Il y a un supermarché, une boulangerie et une pharmacie au coin de la rue.",
+            "en": "The metro is five minutes away on foot. There is a supermarket, a bakery and a pharmacy on the corner.",
+            "es": "L metro e a sink minüt a pié. Il i a un sipermarshé, ün bulanjri e ün farmasí o kwen de la ru.",
+            "note": "INFORMATION: Transports et commerces à proximité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Quels sont les équipements dans l'immeuble, y a-t-il un ascenseur ?",
+            "en": "I see. What equipment does the building have, is there an elevator?",
+            "es": "Zhe vua. Kel son le zekipman dan limel, i a-t-il ün asansör?",
+            "note": "RÉACTION: \"Je vois\"; question sur les équipements (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a un ascenseur et une cave. Chaque appartement a un balcon et un interphone.",
+            "en": "There is an elevator and a cellar. Each apartment has a balcony and an intercom.",
+            "es": "Il i a ün asansör e ün selé. Shak apartmán a un balkon e ün într-fon.",
+            "note": "INFORMATION: Équipements de l'immeuble"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Quelle est la surface de l'appartement et combien de pièces y a-t-il ?",
+            "en": "I see. What is the size of the apartment and how many rooms are there?",
+            "es": "Zhe vua. Kel e la sürfas de l apartmán e kombien de pies i a-t-il?",
+            "note": "ENCHAINEMENT: question sur la surface et les pièces (quelle + combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'appartement fait cinquante mètres carrés. Il y a une chambre, un salon et une cuisine équipée.",
+            "en": "The apartment is fifty square meters. There is one bedroom, a living room and an equipped kitchen.",
+            "es": "L apartmán fe sinkant metr karé. Il i a ün shambr, un salón e ün küizin ekipé.",
+            "note": "INFORMATION: Surface + nombre de pièces"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est super. Pourquoi est-ce que vous quittez cet appartement ?",
+            "en": "Oh, that's great. Why are you leaving this apartment?",
+            "es": "A, se süper. Purkua esk vuz kité set apartmán?",
+            "note": "RÉACTION: \"Ah, c'est super\"; question sur la raison du départ (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "J'ai trouvé un poste dans une autre ville, donc je dois déménager. L'appartement est vraiment agréable, je le regrette.",
+            "en": "I found a job in another city, so I have to move. The apartment is really nice, I'll miss it.",
+            "es": "Zhe truvé ün post dan ün zotr vil, donk zhe duá démenazhé. L apartmán e vremán agreabl, zhe l regrét.",
+            "note": "INFORMATION: Raison du départ de l'ancien locataire"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et qui s'occupe de l'entretien de l'immeuble, y a-t-il un gardien ?",
+            "en": "I understand better. And who takes care of the building's maintenance, is there a caretaker?",
+            "es": "Zhe komprán mieu. E ki esk s oküp de l antara de limel, i a-t-il ün gardien?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur l'entretien (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, un gardien habite au rez-de-chaussée. Il gère l'entretien, les poubelles et les petites réparations.",
+            "en": "Yes, a caretaker lives on the ground floor. They handle maintenance, the bins and minor repairs.",
+            "es": "Ui, ün gardien ab-it o red-shosé. Il zher l antara, le pubel e le pti reparasión.",
+            "note": "INFORMATION: Gardien + entretien de l'immeuble"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, est-ce que les animaux de compagnie sont acceptés dans l'immeuble ?",
+            "en": "Actually, are pets allowed in the building?",
+            "es": "Züstemán, esk le zanimó de kompagni son aksepté dan limel?",
+            "note": "SUIVI 1: \"Justement\" — animaux acceptés"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les petits animaux sont acceptés, mais il faut demander l'autorisation écrite au propriétaire.",
+            "en": "Small pets are allowed, but you have to get written permission from the owner.",
+            "es": "Le pti zanimó son aksepté, me il fo demané l otorizasión ekrit o propretér.",
+            "note": "INFORMATION: Animaux de compagnie acceptés"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que le quartier est calme le soir ?",
+            "en": "Noted. And is the neighborhood quiet in the evening?",
+            "es": "Se noté. E esk l katrié e kalm l suar?",
+            "note": "SUIVI 2: \"C'est noté\" — calme du quartier le soir"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, le quartier est très calme le soir. Il y a un parc à proximité, et très peu de bars ou de discothèques.",
+            "en": "Yes, the neighborhood is very quiet in the evening. There is a park nearby, and very few bars or nightclubs.",
+            "es": "Ui, l katrié e tre kalm l suar. Il i a un park a proksimité, e tre pe de bar u de diskotek.",
+            "note": "INFORMATION: Quartier calme + parc à proximité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et quand est-ce que je peux visiter l'appartement à nouveau, si je veux réfléchir ?",
+            "en": "I see. And when can I visit the apartment again, if I want to think about it?",
+            "es": "Zhe vua. E kan esk zhe pe vizité l apartmán ün nuvo fo, si zhe ve refleshir?",
+            "note": "SUIVI 3: \"Je vois\" — nouvelle visite"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vous pouvez revenir cette semaine. Le propriétaire est disponible, contactez-le pour fixer un autre rendez-vous.",
+            "en": "You can come back this week. The owner is available, contact them to set another appointment.",
+            "es": "Vuz puvé revnir set semén. L propretér e disponibl, kontakité-l pur fikse ün zotr randé-vu.",
+            "note": "INFORMATION: Possibilité de revenir + contact propriétaire"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réfléchir et vous donner une réponse rapidement.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I will think about it and give you an answer quickly.",
+            "es": "Parfé, sa répon a tut me kesión. Mersí boku, zhe vé refleshir e vuz doné ün repons rapidmán.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + décision différée"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! J'espère que l'appartement vous plaira et que tout se passera bien. Bonne journée !",
+            "en": "With pleasure! I hope the apartment will suit you and that everything goes well. Have a good day!",
+            "es": "Avek plezir! Zhe zesper ke l apartmán vuz pléra e k tu s pasra bien. Bonzhurné!",
+            "note": "RESPONSE: Formule de clôture — disponibilité + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour votre temps, c'est très gentil. À bientôt, et bonne continuation !",
+            "en": "Thank you again for your time, that's very kind. See you soon, and good luck!",
+            "es": "Mersí ankor pur votr tan, se tre zhentí. A byento, e bon kontinyasión!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}
