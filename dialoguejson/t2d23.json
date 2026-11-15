@@ -1,0 +1,390 @@
+{
+    "title": "Se renseigner sur un groupe d'échange de savoirs entre amis",
+    "task": "tache2",
+    "topic": "4. Education",
+    "description": "Votre amie Léa participe à un groupe où les membres s'enseignent des compétences gratuitement. Vous aimeriez le rejoindre et lui posez des questions sur son organisation.",
+    "labels": {
+        "E": "Ami",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "Tu m'avais parlé",
+        "Ça m'intéresse vraiment",
+        "poser quelques questions",
+        "Pour commencer",
+        "D'accord",
+        "Je vois",
+        "Très bien, merci",
+        "Ah, c'est bon à savoir",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée",
+        "Merci encore"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur un groupe d'échange de savoirs entre amis",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut Léa ! Tu m'avais parlé d'un groupe où les participants partagent leurs connaissances et s'enseignent des compétences gratuitement. Ça m'intéresse vraiment. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation amicale + rappel du contexte (groupe d'échange de savoirs) + demande polie au conditionnel",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Salut ! Bien sûr, avec plaisir. C'est le réseau Savoir Partagé, on se retrouve chaque semaine pour apprendre ensemble. Que veux-tu savoir ?",
+                        "note": "RESPONSE: Accueil enthousiaste — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais venir essayer l'atelier photo samedi et je te dirai ce que j'en pense.",
+                        "note": "FERMETURE: remerciement + \"ça répond à toutes mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Viens un peu avant dix heures, je te présenterai les autres membres. À samedi alors !",
+                        "note": "RESPONSE: Formule de clôture — consigne pratique + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore, c'est vraiment sympa de m'avoir expliqué tout ça. À samedi et bonne journée !",
+                        "note": "FERMETURE: remerciement final + formule de politesse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien. Pour commencer, où est-ce que le groupe se retrouve, et c'est accessible en métro ?",
+                        "note": "RÉACTION: \"Très bien\" + \"Pour commencer\" — question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et quand est-ce que les ateliers ont lieu, le soir ou le week-end ?",
+                        "note": "RÉACTION: \"D'accord\" — question sur les horaires (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et comment est-ce que ça se passe ? Chacun enseigne à son tour ?",
+                        "note": "RÉACTION: \"Je vois\" — question sur le déroulement (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Combien de participants y a-t-il en moyenne, et faut-il payer quelque chose ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — question sur le nombre et le tarif (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et qui organise les ateliers ? Des professeurs ou des bénévoles ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — question sur les organisateurs (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Pourquoi est-ce que les gens viennent ? Surtout pour apprendre ou pour rencontrer du monde ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — question sur la motivation (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Quelle activité est-ce que tu me conseillerais de commencer, si je suis débutant ?",
+                        "note": "RÉACTION: \"C'est noté\" — question sur le choix d'activité (quelle) + conditionnel de conseil",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien. Pour commencer, où est-ce que le groupe se retrouve, et c'est accessible en métro ?",
+                        "note": "RÉACTION: \"Très bien\" + \"Pour commencer\" — question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et quand est-ce que les ateliers ont lieu, le soir ou le week-end ?",
+                        "note": "RÉACTION: \"D'accord\" — question sur les horaires (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et comment est-ce que ça se passe ? Chacun enseigne à son tour ?",
+                        "note": "RÉACTION: \"Je vois\" — question sur le déroulement (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Combien de participants y a-t-il en moyenne, et faut-il payer quelque chose ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — question sur le nombre et le tarif (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et qui organise les ateliers ? Des professeurs ou des bénévoles ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — question sur les organisateurs (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Pourquoi est-ce que les gens viennent ? Surtout pour apprendre ou pour rencontrer du monde ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — question sur la motivation (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Quelle activité est-ce que tu me conseillerais de commencer, si je suis débutant ?",
+                        "note": "RÉACTION: \"C'est noté\" — question sur le choix d'activité (quelle) + conditionnel de conseil",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, si jamais je ne peux pas venir un samedi, est-ce que je peux rattraper l'atelier ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — atelier manqué (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je ne peux pas venir un samedi, est-ce que je peux rattraper l'atelier ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — atelier manqué (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et pour l'inscription, justement, il faut remplir un formulaire ou je peux venir essayer ?",
+                        "note": "SUIVI 2: \"C'est noté\" + \"justement\" — modalités d'inscription",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et si jamais le groupe est complet, je peux m'inscrire sur une liste d'attente ?",
+                        "note": "SUIVI 3: \"si jamais\" — groupe complet et liste d'attente (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut Léa ! Tu m'avais parlé d'un groupe où les participants partagent leurs connaissances et s'enseignent des compétences gratuitement. Ça m'intéresse vraiment. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "CONDITIONNEL POLI: \"je pourrais te poser\" pour adoucir une demande",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Aucun professeur, seulement des membres bénévoles. L'organisation est assurée par un petit comité, et j'en fais partie.",
+                        "note": "VOIX PASSIVE: \"L'organisation est assurée par un petit comité\" — on présente l'agent avec \"par\"",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Oui, la liste avance vite, en général deux ou trois semaines. Je te préviendrai dès qu'une place se libère.",
+                        "note": "FUTUR SIMPLE + \"dès que\" + présent: \"Je te préviendrai dès qu'une place se libère\"",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut Léa ! Tu m'avais parlé d'un groupe où les participants partagent leurs connaissances et s'enseignent des compétences gratuitement. Ça m'intéresse vraiment. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hi Léa! You told me about a group where participants share their knowledge and teach each other skills for free. I'm really interested. Could I ask you a few questions about it?",
+            "es": "Salu léa! Tü mavè parlé dun grup u le partisipan partazh lör konèsans e sansèñ de konpétans gratüimán. Sa mintéres vremán. Esk zhe puré te pozé kelk kesión a s süzhe?",
+            "note": "OUVERTURE: Salutation amicale + rappel du contexte (groupe d'échange de savoirs) + demande polie au conditionnel"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Bien sûr, avec plaisir. C'est le réseau Savoir Partagé, on se retrouve chaque semaine pour apprendre ensemble. Que veux-tu savoir ?",
+            "en": "Hi! Of course, with pleasure. It's the Savoir Partagé network, we meet every week to learn together. What do you want to know?",
+            "es": "Salu! Bien sür, avek plèzir. Se l rézo savuar partazhé, on s retruv shak semén pur aprandr ansanbl. K vö-tü savuar?",
+            "note": "RESPONSE: Accueil enthousiaste — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Pour commencer, où est-ce que le groupe se retrouve, et c'est accessible en métro ?",
+            "en": "Great. To start with, where does the group meet, and is it easy to reach by metro?",
+            "es": "Tre bien. Pur konmansé, u esk l grup s retruv, e se akesibl an métro?",
+            "note": "RÉACTION: \"Très bien\" + \"Pour commencer\" — question sur le lieu (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "À la maison de quartier, rue des Lilas, juste à côté du métro Bellecour. C'est ouvert à tous et l'entrée est gratuite.",
+            "en": "At the community centre, rue des Lilas, right next to Bellecour metro station. It's open to everyone and entry is free.",
+            "es": "A la mèzon de kartié, rü de Lila, zhüst a koté dü métro Belekur. Se uvé a tus e lantré e gratüi.",
+            "note": "INFORMATION: Adresse précise + accès en métro + gratuité de l'entrée"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et quand est-ce que les ateliers ont lieu, le soir ou le week-end ?",
+            "en": "Okay. And when do the workshops take place, in the evening or at the weekend?",
+            "es": "Dakor. E kan esk lez atelié on liö, l suar u l veek-an?",
+            "note": "RÉACTION: \"D'accord\" — question sur les horaires (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le mardi de dix-huit à vingt heures et le samedi matin. Chaque atelier dure environ une heure et demie.",
+            "en": "On Tuesdays from six to eight p.m. and on Saturday mornings. Each workshop lasts about an hour and a half.",
+            "es": "L mardi de diks-üi a vinzh ör e l samedi matin. Shak atelié dür anviron ün ör e demi.",
+            "note": "INFORMATION: Jours et horaires précis + durée des ateliers"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et comment est-ce que ça se passe ? Chacun enseigne à son tour ?",
+            "en": "I see. And how does it work? Does everyone teach in turn?",
+            "es": "Zhe vua. E komán esk sa s pas? Shakun ansèñ a son tur?",
+            "note": "RÉACTION: \"Je vois\" — question sur le déroulement (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Exactement, c'est un échange de savoirs. Chacun propose une compétence, par exemple la couture ou la guitare, et les autres apprennent.",
+            "en": "Exactly, it's an exchange of knowledge. Each person offers a skill, for example sewing or guitar, and the others learn.",
+            "es": "Eksasmán, se un éshanzh de savuar. Shakun propos ün konpétans, par eksanpl la kutür u la gitar, e lez otr apran.",
+            "note": "INFORMATION: Principe de l'échange de compétences + exemples concrets"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Combien de participants y a-t-il en moyenne, et faut-il payer quelque chose ?",
+            "en": "Very good, thanks. How many participants are there on average, and do you have to pay anything?",
+            "es": "Tre bien, mersí. Kombien de partisipan i a-t-il an muayan, e fot-il péyé kelk shos?",
+            "note": "RÉACTION: \"Très bien, merci\" — question sur le nombre et le tarif (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "On est une quinzaine, et c'est gratuit : chacun donne un peu de son temps. Juste une cotisation de vingt euros par an.",
+            "en": "There are about fifteen of us, and it's free: everyone gives a little of their time. Just a twenty-euro membership fee per year.",
+            "es": "On e ün kinzin, e se gratüi: shakun don un pö de son tanp. Zhüst ün kotizasión de vinzh eró par an.",
+            "note": "INFORMATION: Taille du groupe + principe gratuit + cotisation annuelle"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et qui organise les ateliers ? Des professeurs ou des bénévoles ?",
+            "en": "Oh, good to know. And who organises the workshops? Teachers or volunteers?",
+            "es": "A, se bon a savuar. E ki organis lez atelié? De profesör u de bénévol?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\" — question sur les organisateurs (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Aucun professeur, seulement des membres bénévoles. L'organisation est assurée par un petit comité, et j'en fais partie.",
+            "en": "No teachers at all, only volunteer members. The organisation is handled by a small committee, and I'm part of it.",
+            "es": "Okun profesör, sölmán de manbr bénévol. Lorganizasión e asüré par un peti komité, e zhan fè parti.",
+            "note": "INFORMATION: Bénévolat + comité d'organisation (voix passive)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Pourquoi est-ce que les gens viennent ? Surtout pour apprendre ou pour rencontrer du monde ?",
+            "en": "I understand better. Why do people come? Mainly to learn or to meet people?",
+            "es": "Zhe konpran miö. Purkua esk le zhan vien? Sürtu pur aprandr u pur rankontré dü mon?",
+            "note": "RÉACTION: \"Je comprends mieux\" — question sur la motivation (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les deux, honnêtement. Beaucoup viennent pour l'ambiance : on discute autour d'un café après, et ça crée de vrais liens.",
+            "en": "Both, honestly. Many come for the atmosphere: we chat over a coffee afterwards, and that creates real connections.",
+            "es": "Le dö, onèmán. Boku vien pur lanbians: on diskü otur dun kafé apre, e sa kré de vrè lien.",
+            "note": "INFORMATION: Double motivation — apprentissage et convivialité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Quelle activité est-ce que tu me conseillerais de commencer, si je suis débutant ?",
+            "en": "Noted. Which activity would you recommend I start with, if I'm a beginner?",
+            "es": "Se noté. Kel aktivité esk tü me konsèlerè de konmansé, si zhe süi débütan?",
+            "note": "RÉACTION: \"C'est noté\" — question sur le choix d'activité (quelle) + conditionnel de conseil"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je te conseillerais la cuisine ou la photo, les ateliers les plus simples pour débuter. Il reste deux places en photo le samedi.",
+            "en": "I'd recommend cooking or photography, the simplest workshops to start with. There are two places left in photography on Saturdays.",
+            "es": "Zhe te konsèlerè la küizin u la foto, lez atelié le plüs sinpl pur débüté. Il rest dö plas an foto l samedi.",
+            "note": "INFORMATION: Recommandation + disponibilité concrète des ateliers"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je ne peux pas venir un samedi, est-ce que je peux rattraper l'atelier ?",
+            "en": "Actually, if ever I can't come on a Saturday, can I make up the workshop?",
+            "es": "Zhüstemán, si zhamé zhe n pö pa venir un samedi, esk zhe pö ratrapé latelié?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — atelier manqué (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr : il y a un groupe en ligne où l'on partage les fiches. Tu peux aussi venir le mardi soir.",
+            "en": "Of course: there's an online group where the handouts are shared. You can also come on Tuesday evening.",
+            "es": "Bien sür: il i a un grup an liñ u lon partazh le fish. Tü pö osi venir l mardi suar.",
+            "note": "INFORMATION: Solution de rattrapage en ligne ou le mardi soir"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et pour l'inscription, justement, il faut remplir un formulaire ou je peux venir essayer ?",
+            "en": "Noted. And for registration, actually, do I have to fill in a form or can I just come and try?",
+            "es": "Se noté. E pur linskripsión, zhüstemán, il fo ranplir un formülèr u zhe pö venir eséyé?",
+            "note": "SUIVI 2: \"C'est noté\" + \"justement\" — modalités d'inscription"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Tu peux venir essayer une fois gratuitement, ensuite on t'inscrit sur place en dix minutes. Il suffit d'une pièce d'identité.",
+            "en": "You can come and try once for free, then you're registered on site in ten minutes. All you need is an ID document.",
+            "es": "Tü pö venir eséyé ün fua gratüimán, ansüit on tinskri sür plas an dis minü. Il süfi dün piès didantité.",
+            "note": "INFORMATION: Essai gratuit + inscription sur place + pièce d'identité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et si jamais le groupe est complet, je peux m'inscrire sur une liste d'attente ?",
+            "en": "Okay. And if ever the group is full, can I put my name on a waiting list?",
+            "es": "Dakor. E si zhamé l grup e konple, zhe pö minskrir sür ün list datan?",
+            "note": "SUIVI 3: \"si jamais\" — groupe complet et liste d'attente (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, la liste avance vite, en général deux ou trois semaines. Je te préviendrai dès qu'une place se libère.",
+            "en": "Yes, the list moves quickly, usually within two or three weeks. I'll let you know as soon as a place frees up.",
+            "es": "Ui, la list avans vit, an zhénéral döz u trua semén. Zhe te préviendrè dè k ün plas s libèr.",
+            "note": "INFORMATION: Délai de la liste d'attente + engagement à prévenir (futur simple)"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais venir essayer l'atelier photo samedi et je te dirai ce que j'en pense.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll come and try the photography workshop on Saturday and tell you what I think.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé venir eséyé latelié foto samedi e zhe te dirè s k zhan pans.",
+            "note": "FERMETURE: remerciement + \"ça répond à toutes mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Viens un peu avant dix heures, je te présenterai les autres membres. À samedi alors !",
+            "en": "With pleasure! Come a bit before ten, I'll introduce you to the other members. See you Saturday then!",
+            "es": "Avek plèzir! Vien un pö aván dis ör, zhe te prézanterè lez otr manbr. A samedi alor!",
+            "note": "RESPONSE: Formule de clôture — consigne pratique + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore, c'est vraiment sympa de m'avoir expliqué tout ça. À samedi et bonne journée !",
+            "en": "Thanks again, it's really kind of you to have explained all this. See you Saturday and have a good day!",
+            "es": "Mersí ankor, se vremán simpa de mavuar ekspliké tu sa. A samedi e bon zhurné!",
+            "note": "FERMETURE: remerciement final + formule de politesse"
+        }
+    ]
+}

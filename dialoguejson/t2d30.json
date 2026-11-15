@@ -1,0 +1,380 @@
+{
+    "title": "Se renseigner sur une activité artistique au centre culturel",
+    "task": "tache2",
+    "topic": "8. Entertainment & culture",
+    "description": "Vous aimeriez participer à une activité artistique au centre culturel de la ville. Vous demandez à un employé quels cours sont proposés, à quels horaires et à quels prix.",
+    "labels": {
+        "E": "Employé du centre culturel",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "je souhaiterais m'inscrire",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur une activité artistique au centre culturel",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je viens d'emménager dans le quartier et je souhaiterais m'inscrire à une activité artistique. Est-ce que je pourrais vous poser quelques questions sur les cours proposés cette année ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Bien sûr, avec plaisir. Nous proposons de la musique, du dessin, du théâtre et de la danse. Que souhaitez-vous savoir ?",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais m'inscrire cet après-midi au cours de dessin.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Nous serons ravis de vous accueillir. N'oubliez pas la photo et le justificatif de domicile. Bonne journée !",
+                        "note": "RESPONSE: Formule de clôture — accueil chaleureux + rappel pratique",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour toutes ces informations, c'était très clair. À bientôt et bonne journée !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quels cours sont disponibles pour les débutants, et lequel me conseilleriez-vous pour commencer ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — cours pour débutants (quels)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que le dessin est plus adapté que la musique pour une première inscription ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien coûte un cours à l'année, et est-ce qu'il existe un tarif pour les habitants du quartier ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que les ateliers ont lieu, dans le bâtiment principal ou dans une annexe ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce qu'on s'inscrit, il faut remplir un dossier ou réserver directement en ligne ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur l'inscription (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que les cours commencent, et combien de séances y a-t-il par semaine ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur les horaires (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est pratique. Et qui est-ce qui anime l'atelier de dessin, un professeur des beaux-arts ou une artiste locale ?",
+                        "note": "RÉACTION: \"Ah, c'est pratique\"; question sur l'animateur (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que le dessin est plus adapté que la musique pour une première inscription ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien coûte un cours à l'année, et est-ce qu'il existe un tarif pour les habitants du quartier ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le prix",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que les ateliers ont lieu, dans le bâtiment principal ou dans une annexe ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce qu'on s'inscrit, il faut remplir un dossier ou réserver directement en ligne ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur l'inscription",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que les cours commencent, et combien de séances y a-t-il par semaine ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur les horaires",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est pratique. Et qui est-ce qui anime l'atelier de dessin, un professeur des beaux-arts ou une artiste locale ?",
+                        "note": "RÉACTION: \"Ah, c'est pratique\"; question sur l'animateur",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais le mercredi ne m'arrange pas, est-ce qu'il y a une autre séance possible ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — changer de séance (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que le matériel est fourni, ou faut-il apporter ses propres pinceaux et ses feuilles ?",
+                        "note": "SUIVI 2: \"C'est noté\" — matériel fourni ou non",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais je dois arrêter en cours d'année, est-ce que je récupère une partie du prix ?",
+                        "note": "SUIVI 3: \"Si jamais\" — remboursement en cas d'arrêt (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je viens d'emménager dans le quartier et je souhaiterais m'inscrire à une activité artistique. Est-ce que je pourrais vous poser quelques questions sur les cours proposés cette année ?",
+                        "note": "CONDITIONNEL POLI: \"je souhaiterais\" + \"est-ce que je pourrais\"",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parce qu'on peut commencer sans acheter d'instrument. En musique, il faut louer un piano dès le premier mois.",
+                        "note": "CAUSE \"parce que\" + INFINITIF: \"parce qu'on peut commencer sans acheter\"",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Un remboursement est possible avant novembre, sur présentation d'un justificatif. Après, le prix reste dû pour l'année entière.",
+                        "note": "CONDITION ET CONSÉQUENCE: \"un remboursement est possible avant novembre, sur présentation...\"",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je viens d'emménager dans le quartier et je souhaiterais m'inscrire à une activité artistique. Est-ce que je pourrais vous poser quelques questions sur les cours proposés cette année ?",
+            "en": "Hello! I've just moved into the neighbourhood and I'd like to sign up for an artistic activity. Could I ask you a few questions about the courses offered this year?",
+            "es": "Bonzhur! Zhe vien danménazhé dan l kartié e zhe suèterè minskrir a ün aktivité artistik. Esk zhe puré vu pozé kelk kesión sür le kur propozé set ané?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Bien sûr, avec plaisir. Nous proposons de la musique, du dessin, du théâtre et de la danse. Que souhaitez-vous savoir ?",
+            "en": "Hello! Of course, with pleasure. We offer music, drawing, theatre and dance. What would you like to know?",
+            "es": "Bonzhur! Bien sür, avek plèzir. Nu propozon de la müzik, dü desin, dü téatr e de la dans. K suètez-vu savuar?",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quels cours sont disponibles pour les débutants, et lequel me conseilleriez-vous pour commencer ?",
+            "en": "To start with, which courses are available for beginners, and which one would you recommend to start with?",
+            "es": "Pur konmansé, kel kur son disponibl pur le débütan, e lekel me konsèlerié-vu pur konmansé?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — cours pour débutants (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Nous avons un atelier de dessin et un cours de théâtre pour débutants. Je conseille le dessin, plus facile pour commencer.",
+            "en": "We have a drawing workshop and a theatre course for beginners. I'd recommend drawing, easier to start with and no equipment needed.",
+            "es": "Nuz avon un atelié de desin e un kur de téatr pur débütan. Zhe konsel l desin, plüs fasil pur konmansé.",
+            "note": "INFORMATION: Cours pour débutants + recommandation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pourquoi est-ce que le dessin est plus adapté que la musique pour une première inscription ?",
+            "en": "Okay. And why is drawing more suitable than music for a first registration?",
+            "es": "Dakor. E purkua esk l desin e plüs adapté k la müzik pur ün premièr inskripsión?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce qu'on peut commencer sans acheter d'instrument. En musique, il faut louer un piano dès le premier mois.",
+            "en": "Because you can start straight away without buying an instrument. In music, you have to rent a piano or a guitar from the very first month.",
+            "es": "Pars k on pö konmansé san asheté dinstrun. An müzik, il fo lué un piano dè l premié mua.",
+            "note": "INFORMATION: Raisons du choix du dessin"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien coûte un cours à l'année, et est-ce qu'il existe un tarif pour les habitants du quartier ?",
+            "en": "I see. How much does a course cost for the year, and is there a rate for neighbourhood residents?",
+            "es": "Zhe vua. Kombien kut un kur a lané, e esk il eksist un tarif pur lez abitan dü kartié?",
+            "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Deux cent vingt euros pour l'année, matériel compris. Les habitants du quartier paient cent quatre-vingts euros et les étudiants cent cinquante.",
+            "en": "Two hundred and twenty euros for the year, materials included. Neighbourhood residents pay a hundred and eighty, students a hundred and fifty.",
+            "es": "Dö san vinzh eró pur lané, matériel konpri. Lez abitan dü kartié pè san katre-vingt eró e lez étüdian san sinkan.",
+            "note": "INFORMATION: Tarifs annuels et réductions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que les ateliers ont lieu, dans le bâtiment principal ou dans une annexe ?",
+            "en": "Oh, that's good to know. And where do the workshops take place, in the main building or in an annex?",
+            "es": "A, se bon a savuar. E u esk lez atelié on liö, dan l batin prinsipal u dan ün aneks?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Au premier étage du bâtiment principal, dans la salle des arts, celle aux grandes fenêtres.",
+            "en": "On the first floor of the main building, in the arts room. It's the room with the large windows, just above reception.",
+            "es": "O premié étazh dü batin prinsipal, dan la sal dez art, sel o gran fenètr.",
+            "note": "INFORMATION: Lieu des ateliers"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Comment est-ce qu'on s'inscrit, il faut remplir un dossier ou réserver directement en ligne ?",
+            "en": "Very good, thank you. How do we register, do we have to fill in a form or book directly online?",
+            "es": "Tre bien, mersí. Komán esk on sinskri, il fo ranplir un dosié u rézervé diresmán an liñ?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur l'inscription (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un formulaire à l'accueil, ou directement sur notre site. Il faut une photo et un justificatif pour le tarif réduit.",
+            "en": "A form at reception, or directly on our website. You need a photo and proof of address for the reduced rate.",
+            "es": "Un formülèr a laküil, u diresmán sür notr sit. Il fo ün foto e un zhüstifikatif pur l tarif rédüi.",
+            "note": "INFORMATION: Modalités d'inscription + justificatifs"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Quand est-ce que les cours commencent, et combien de séances y a-t-il par semaine ?",
+            "en": "I understand better. When do the classes start, and how many sessions are there per week?",
+            "es": "Zhe konpran miö. Kan esk le kur konmans, e kombien de séans i a-t-il par semén?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur les horaires (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La rentrée a lieu le quinze septembre, avec une séance de deux heures par semaine, le mercredi soir.",
+            "en": "The new term starts on the fifteenth of September, with one two-hour session per week, on Wednesdays from six to eight p.m.",
+            "es": "La rantré a liö l kinz septanbr, avek ün séans de döz ör par semén, l merkredi suar.",
+            "note": "INFORMATION: Rentrée et horaire des séances"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est pratique. Et qui est-ce qui anime l'atelier de dessin, un professeur des beaux-arts ou une artiste locale ?",
+            "en": "Oh, that's handy. And who runs the drawing workshop, a fine arts teacher or a local artist?",
+            "es": "A, se pratik. E ki esk ki anin latelié de desin, un profesör de boks-art u ün artist lokal?",
+            "note": "RÉACTION: \"Ah, c'est pratique\"; question sur l'animateur (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "C'est une artiste locale qui expose dans la région. Elle enseigne ici depuis six ans, par groupes de douze.",
+            "en": "It's a local artist who exhibits in the region. She has taught here for six years and supervises groups of twelve people.",
+            "es": "Se ün artist lokal ki ekspos dan la rézhión. El ansèñ isi dopüi sis an, par grup de duz.",
+            "note": "INFORMATION: Profil de l'animatrice + taille des groupes"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais le mercredi ne m'arrange pas, est-ce qu'il y a une autre séance possible ?",
+            "en": "Actually, if ever Wednesday doesn't suit me, is there another possible session?",
+            "es": "Zhüstemán, si zhamé l merkredi n maranzh pa, esk il i a ün otr séans posibl?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — changer de séance (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, une séance le samedi matin si le groupe n'est pas complet. Demandez-le à l'inscription, les places partent vite.",
+            "en": "Yes, a Saturday morning session if the group isn't full. You have to ask at registration, places go quickly.",
+            "es": "Ui, ün séans l samedi matin si l grup ne pa konple. Demandez-l a linskripsión, le plas part vit.",
+            "note": "INFORMATION: Autre séance possible"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que le matériel est fourni, ou faut-il apporter ses propres pinceaux et ses feuilles ?",
+            "en": "Noted. And is the equipment provided, or do you have to bring your own brushes and paper?",
+            "es": "Se noté. E esk l matériel e furni, u fot-il aporté se propr pinso e se föil?",
+            "note": "SUIVI 2: \"C'est noté\" — matériel fourni ou non"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Tout est fourni pour le dessin : papier, crayons et peinture. Pour la musique et la danse, il faut prévoir des chaussures adaptées.",
+            "en": "Everything is provided for drawing: paper, pencils and paint. For music and dance, you need suitable shoes.",
+            "es": "Tu e furni pur l desin: papié, kréyon e pintür. Pur la müzik e la dans, il fo prévuar de shosür adaptée.",
+            "note": "INFORMATION: Matériel fourni"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais je dois arrêter en cours d'année, est-ce que je récupère une partie du prix ?",
+            "en": "Okay. If ever I have to stop during the year, do I get part of the fee back?",
+            "es": "Dakor. Si zhamé zhe dua arèté an kur dané, esk zhe réküpèr ün parti dü pri?",
+            "note": "SUIVI 3: \"Si jamais\" — remboursement en cas d'arrêt (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un remboursement est possible avant novembre, sur présentation d'un justificatif. Après, le prix reste dû pour l'année entière.",
+            "en": "A refund is possible before November, on presentation of supporting documents. After that, the fee is due for the whole year.",
+            "es": "Un ranburmán e posibl aván novanbr, sür prézantasión dun zhüstifikatif. Apre, l pri rest dü pur lané antièr.",
+            "note": "INFORMATION: Conditions de remboursement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais m'inscrire cet après-midi au cours de dessin.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll register this afternoon for the drawing class.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé minskrir set après-midi o kur de desin.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Nous serons ravis de vous accueillir. N'oubliez pas la photo et le justificatif de domicile. Bonne journée !",
+            "en": "With pleasure! We'll be delighted to welcome you. Don't forget the photo and proof of address. Have a good day!",
+            "es": "Avek plèzir! Nu seron ravi de vuz aküilir. Nublié pa la foto e l zhüstifikatif de domisil. Bon zhurné!",
+            "note": "RESPONSE: Formule de clôture — accueil chaleureux + rappel pratique"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour toutes ces informations, c'était très clair. À bientôt et bonne journée !",
+            "en": "Thanks again for all this information, it was very clear. See you soon and have a good day!",
+            "es": "Mersí ankor pur tut sez informasión, sétè tre klèr. A biento e bon zhurné!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

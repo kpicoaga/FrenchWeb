@@ -1,0 +1,380 @@
+{
+    "title": "Se renseigner sur une activité extrascolaire auprès d'un parent d'élève",
+    "task": "tache2",
+    "topic": "12. Family & childcare",
+    "description": "Vous cherchez une activité pour vos enfants après les cours. Vous demandez à un autre parent de l'école des précisions sur les options disponibles près de l'établissement.",
+    "labels": {
+        "E": "Parent d'élève",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "je cherche une activité pour mes enfants",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur une activité extrascolaire auprès d'un parent d'élève",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je cherche une activité pour mes enfants après les cours et j'ai vu que les vôtres en font une. Est-ce que je pourrais vous poser quelques questions ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Bien sûr, avec plaisir. Mes deux enfants participent depuis deux ans et ils adorent. Que voulez-vous savoir ?",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais remplir le formulaire et prendre rendez-vous chez le médecin.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Faites vite pour l'inscription, le football est presque complet. Bonne journée et à bientôt !",
+                        "note": "RESPONSE: Formule de clôture — conseil pratique + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour tous ces renseignements, c'était très utile. À bientôt et bonne journée !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quelles activités sont proposées juste après l'école, et lesquelles sont les plus demandées ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — activités proposées (quelles)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que vous avez choisi ces activités-là plutôt que d'autres pour vos enfants ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien coûte l'inscription à l'année, et est-ce qu'il y a une réduction pour le deuxième enfant ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que les enfants attendent entre la fin des cours et le début de l'activité ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu d'attente (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Quand est-ce que les activités ont lieu, et combien de temps est-ce qu'elles durent ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur les horaires (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Comment est-ce qu'on inscrit un enfant, et est-ce qu'il faut fournir des documents particuliers ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur l'inscription (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est important. Et qui est-ce qui encadre les enfants pendant les activités, des enseignants ou des animateurs sportifs ?",
+                        "note": "RÉACTION: \"Ah, c'est important\"; question sur l'encadrement (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que vous avez choisi ces activités-là plutôt que d'autres pour vos enfants ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien coûte l'inscription à l'année, et est-ce qu'il y a une réduction pour le deuxième enfant ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le prix",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que les enfants attendent entre la fin des cours et le début de l'activité ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu d'attente",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Quand est-ce que les activités ont lieu, et combien de temps est-ce qu'elles durent ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur les horaires",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Comment est-ce qu'on inscrit un enfant, et est-ce qu'il faut fournir des documents particuliers ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur l'inscription",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est important. Et qui est-ce qui encadre les enfants pendant les activités, des enseignants ou des animateurs sportifs ?",
+                        "note": "RÉACTION: \"Ah, c'est important\"; question sur l'encadrement",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais mon enfant n'aime pas l'activité, est-ce qu'il peut en changer en cours d'année ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — changer d'activité (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce qu'il y a un goûter prévu, ou faut-il le mettre dans le cartable de l'enfant ?",
+                        "note": "SUIVI 2: \"C'est noté\" — goûter fourni ou non",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais nous déménageons l'année prochaine, est-ce que l'inscription est perdue ?",
+                        "note": "SUIVI 3: \"Si jamais\" — déménagement en cours d'année (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je cherche une activité pour mes enfants après les cours et j'ai vu que les vôtres en font une. Est-ce que je pourrais vous poser quelques questions ?",
+                        "note": "CONDITIONNEL POLI: \"est-ce que je pourrais vous poser\" pour demander poliment",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parce que tout se passe dans l'école, sans transport. Les enfants finissent les cours et vont directement à l'activité.",
+                        "note": "CAUSE \"parce que\" + \"ce qui\": \"ce qui me rassure\"",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Un remboursement au prorata est possible sur présentation d'un justificatif. Si vous restez dans la ville, l'inscription suit dans la nouvelle école.",
+                        "note": "HYPOTHÈSE \"si\" + PRÉSENT: \"Si vous restez dans la ville, l'inscription suit\"",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je cherche une activité pour mes enfants après les cours et j'ai vu que les vôtres en font une. Est-ce que je pourrais vous poser quelques questions ?",
+            "en": "Hello! I'm looking for an activity for my children after school and I saw that yours do one. Could I ask you a few questions about the options near the school?",
+            "es": "Bonzhur! Zhe shersh ün aktivité pur mez anfán apre le kur e zhé vü k le votr an fon ün. Esk zhe puré vu pozé kelk kesión?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Bien sûr, avec plaisir. Mes deux enfants participent depuis deux ans et ils adorent. Que voulez-vous savoir ?",
+            "en": "Hello! Of course, with pleasure. My two children have been taking part for two years and they love it. What would you like to know?",
+            "es": "Bonzhur! Bien sür, avek plèzir. Me döz anfán partisip dopüi döz an e ilz ador. K vulez-vu savuar?",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quelles activités sont proposées juste après l'école, et lesquelles sont les plus demandées ?",
+            "en": "To start with, which activities are offered right after school, and which are the most popular?",
+            "es": "Pur konmansé, kel aktivité son propozée zhüst apre lékol, e leskel son le plüs demandée?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — activités proposées (quelles)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a du football, de la danse et un atelier de théâtre dans le gymnase. Le football et la danse sont les plus demandés.",
+            "en": "There's football, dance and a theatre workshop in the gym. Football and dance are the most popular.",
+            "es": "Il i a dü footbal, de la dans e un atelié de téatr dan l zhimnas. L footbal e la dans son le plüs demandé.",
+            "note": "INFORMATION: Activités proposées + les plus demandées"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pourquoi est-ce que vous avez choisi ces activités-là plutôt que d'autres pour vos enfants ?",
+            "en": "Okay. And why did you choose those activities rather than others for your children?",
+            "es": "Dakor. E purkua esk vuz avé shuai sez aktivités-la plüto k dotr pur voz anfán?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce que tout se passe dans l'école, sans transport. Les enfants finissent les cours et vont directement à l'activité.",
+            "en": "Because everything happens at the school, with no transport. The children finish class and go straight to the activity, which reassures me.",
+            "es": "Pars k tu s pas dan lékol, san transpor. Lez anfán finis le kur e von diresmán a laktivité.",
+            "note": "INFORMATION: Raisons du choix + sécurité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien coûte l'inscription à l'année, et est-ce qu'il y a une réduction pour le deuxième enfant ?",
+            "en": "I see. How much does the yearly registration cost, and is there a discount for the second child?",
+            "es": "Zhe vua. Kombien kut linskripsión a lané, e esk il i a ün rédüssión pur l döièm anfán?",
+            "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Cent vingt euros par an et par enfant, avec une réduction de vingt pour cent pour le second. L'assurance est comprise dans le prix.",
+            "en": "A hundred and twenty euros a year per child, with a twenty per cent discount for the second. Insurance is included in the price.",
+            "es": "San vinzh eró par an e par anfán, avek ün rédüssión de vinzh pur san pur l sekon. Lasürans e konpris dan l pri.",
+            "note": "INFORMATION: Tarifs et réduction"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que les enfants attendent entre la fin des cours et le début de l'activité ?",
+            "en": "Oh, that's good to know. And where do the children wait between the end of classes and the start of the activity?",
+            "es": "A, se bon a savuar. E u esk lez anfán atan antr la fin de kur e l débü de laktivité?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu d'attente (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Dans la salle de restauration, sous la surveillance d'un animateur. Ils goûtent d'abord, puis ils montent au gymnase pour seize heures trente.",
+            "en": "In the dining hall, supervised by an activity leader. They have a snack first, then go up to the gym for half past four.",
+            "es": "Dan la sal de restorasión, su la sürvèlans dun animatör. Il goü dabord, püi il mon o zhimnas pur sèz ör tran.",
+            "note": "INFORMATION: Accueil entre les cours et l'activité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Quand est-ce que les activités ont lieu, et combien de temps est-ce qu'elles durent ?",
+            "en": "Very good, thank you. When do the activities take place, and how long do they last?",
+            "es": "Tre bien, mersí. Kan esk lez aktivité on liö, e kombien de tanp esk el dür?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur les horaires (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le mardi et le jeudi, de seize heures trente à dix-huit heures. Le mercredi après-midi, il y a aussi un atelier de deux heures.",
+            "en": "On Tuesdays and Thursdays, from half past four to six p.m. On Wednesday afternoons there's also a two-hour workshop.",
+            "es": "L mardi e l zhödi, de sèz ör tran a diks-üi ör. L merkredi après-midi, il i a osi un atelié de döz ör.",
+            "note": "INFORMATION: Jours et durée des activités"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Comment est-ce qu'on inscrit un enfant, et est-ce qu'il faut fournir des documents particuliers ?",
+            "en": "I understand better. How do you register a child, and do you need to provide any particular documents?",
+            "es": "Zhe konpran miö. Komán esk on inskri un anfán, e esk il fo furnir de doküman partikülié?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur l'inscription (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un formulaire à l'accueil et un certificat médical suffisent. Les places sont attribuées par ordre d'arrivée, il faut s'inscrire vite.",
+            "en": "A form at reception and a medical certificate are enough. Places are allocated in order of arrival, so you need to register quickly.",
+            "es": "Un formülèr a laküil e un sertifika médikal süfis. Le plas son atribüee par ordr darivé, il fo sinskrir vit.",
+            "note": "INFORMATION: Inscription et documents"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est important. Et qui est-ce qui encadre les enfants pendant les activités, des enseignants ou des animateurs sportifs ?",
+            "en": "Oh, that's important. And who supervises the children during the activities, teachers or sports leaders?",
+            "es": "A, se inportan. E ki esk ki ankadr lez anfán pandán lez aktivité, dez ansèñan u dez animatör sportif?",
+            "note": "RÉACTION: \"Ah, c'est important\"; question sur l'encadrement (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Des animateurs diplômés, deux par groupe de quinze enfants. Une enseignante de l'école reste toujours présente dans le bâtiment.",
+            "en": "Qualified activity leaders, two per group of fifteen children. A school teacher is always present in the building.",
+            "es": "Dez animatör diplomé, dö par grup de kinz anfán. Ün ansèñan de lékol rest tuzhur prézan dan l batin.",
+            "note": "INFORMATION: Encadrement et sécurité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais mon enfant n'aime pas l'activité, est-ce qu'il peut en changer en cours d'année ?",
+            "en": "Actually, if ever my child doesn't like the activity, can they change during the year?",
+            "es": "Zhüstemán, si zhamé mon anfán nèm pa laktivité, esk il pö an shanzhé an kur dané?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — changer d'activité (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, un changement est possible avant les vacances de février, s'il reste des places.",
+            "en": "Yes, a change is possible before the February holidays. You simply have to choose an activity where there are still places.",
+            "es": "Ui, un shanzhmán e posibl aván le vakans de févrié, sil rest de plas.",
+            "note": "INFORMATION: Changement d'activité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce qu'il y a un goûter prévu, ou faut-il le mettre dans le cartable de l'enfant ?",
+            "en": "Noted. And is a snack provided, or do you have to put it in the child's school bag?",
+            "es": "Se noté. E esk il i a un goüté prévü, u fot-il l metr dan l kartabl de lanfán?",
+            "note": "SUIVI 2: \"C'est noté\" — goûter fourni ou non"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le goûter est fourni par l'école : un fruit, un produit laitier et une boisson. Prévenez si votre enfant a une allergie.",
+            "en": "The snack is provided by the school: a fruit, a dairy product and a drink. Tell them if your child has an allergy.",
+            "es": "L goüté e furni par lékol: un früi, un prodüi lètié e ün buason. Prévené si votr anfán a ün alerzhi.",
+            "note": "INFORMATION: Goûter et allergies"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais nous déménageons l'année prochaine, est-ce que l'inscription est perdue ?",
+            "en": "Okay. If ever we move house next year, is the registration lost?",
+            "es": "Dakor. Si zhamé nu déménazheon lané proshin, esk linskripsión e perdü?",
+            "note": "SUIVI 3: \"Si jamais\" — déménagement en cours d'année (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un remboursement au prorata est possible sur présentation d'un justificatif. Si vous restez dans la ville, l'inscription suit dans la nouvelle école.",
+            "en": "A pro-rata refund is possible on presentation of documentary proof. If you stay in the city, the registration follows to the new school.",
+            "es": "Un ranburmán o prorata e posibl sür prézantasión dun zhüstifikatif. Si vu resté dan la vil, linskripsión süi dan la nuvel ékol.",
+            "note": "INFORMATION: Déménagement et remboursement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais remplir le formulaire et prendre rendez-vous chez le médecin.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll fill in the form and make an appointment with the doctor.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé ranplir l formülèr e prandr randez-vu she l médesin.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Faites vite pour l'inscription, le football est presque complet. Bonne journée et à bientôt !",
+            "en": "With pleasure! Be quick with the registration, football is almost full. Have a good day and see you soon!",
+            "es": "Avek plèzir! Fè vit pur linskripsión, l footbal e presk konple. Bon zhurné e a biento!",
+            "note": "RESPONSE: Formule de clôture — conseil pratique + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour tous ces renseignements, c'était très utile. À bientôt et bonne journée !",
+            "en": "Thanks again for all this information, it was very useful. See you soon and have a good day!",
+            "es": "Mersí ankor pur tus se ransèñeman, sétè tre ütil. A biento e bon zhurné!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

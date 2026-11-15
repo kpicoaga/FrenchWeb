@@ -1,0 +1,380 @@
+{
+    "title": "Se renseigner sur un jeu organisé par l'école de langues",
+    "task": "tache2",
+    "topic": "4. Education",
+    "description": "Votre école de langues met en place un jeu pour les étudiants. Vous demandez à votre enseignant de français des informations sur son organisation : règles, prix et modalités.",
+    "labels": {
+        "E": "Enseignant de français",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'aimerais en savoir davantage",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bon courage",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur un jeu organisé par l'école de langues",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! J'ai entendu parler du jeu que l'école organise pour les étudiants et j'aimerais en savoir davantage avant de m'inscrire. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Bien sûr, avec plaisir. Ce jeu a beaucoup de succès chaque année. Qu'est-ce que vous voulez savoir ?",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais former mon équipe ce soir et m'inscrire demain.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! N'hésitez pas à passer si vous avez une question. Bon courage pour le jeu, et amusez-vous bien !",
+                        "note": "RESPONSE: Formule de clôture — disponibilité + encouragement",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour vos explications, c'était très clair. À bientôt et bonne semaine !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quel est le principe du jeu, et quelles sont les règles principales à respecter ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — principe et règles (quel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que l'école a décidé de créer ce jeu cette année ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien coûte la participation, et est-ce que le prix comprend quelque chose en plus ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que les épreuves ont lieu, dans les salles de cours ou ailleurs ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je peux inscrire mon équipe, en ligne ou auprès du secrétariat ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur l'inscription (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que la première épreuve commence, et combien de temps est-ce qu'elle dure ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur les horaires (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et qui est-ce qui corrige les réponses, les enseignants ou des étudiants plus avancés ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur les correcteurs (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que l'école a décidé de créer ce jeu cette année ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien coûte la participation, et est-ce que le prix comprend quelque chose en plus ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le prix",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que les épreuves ont lieu, dans les salles de cours ou ailleurs ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je peux inscrire mon équipe, en ligne ou auprès du secrétariat ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur l'inscription",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que la première épreuve commence, et combien de temps est-ce qu'elle dure ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur les horaires",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et qui est-ce qui corrige les réponses, les enseignants ou des étudiants plus avancés ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur les correcteurs",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais un membre de mon équipe tombe malade, est-ce qu'on peut être remplacé ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — remplacement d'un joueur (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que les niveaux sont mélangés dans les équipes, ou faut-il des étudiants du même niveau ?",
+                        "note": "SUIVI 2: \"C'est noté\" — composition des équipes",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais je ne peux pas participer à une épreuve, est-ce que mon équipe perd tous les points ?",
+                        "note": "SUIVI 3: \"Si jamais\" — absence à une épreuve (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! J'ai entendu parler du jeu que l'école organise pour les étudiants et j'aimerais en savoir davantage avant de m'inscrire. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "CONDITIONNEL POLI: \"j'aimerais en savoir davantage\" + \"est-ce que je pourrais\"",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Oui, un remplaçant est autorisé une seule fois, à condition de prévenir le secrétariat vingt-quatre heures avant. Sinon, l'équipe joue à deux.",
+                        "note": "CONDITION \"à condition de\" + INFINITIF: \"à condition de prévenir le secrétariat\"",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Non, rassurez-vous, l'équipe garde ses points et peut continuer. Seule l'épreuve manquée ne rapporte rien, les autres comptent normalement.",
+                        "note": "NÉGATION ET RESTRICTION: \"Non... Seule l'épreuve manquée ne rapporte rien\"",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! J'ai entendu parler du jeu que l'école organise pour les étudiants et j'aimerais en savoir davantage avant de m'inscrire. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+            "en": "Hello! I heard about the game the school is organizing for students and I'd like to know more before signing up. Could I ask you a few questions about it?",
+            "es": "Bonzhur! Zhé antandü parlé dü zhö k lékol organis pur lez étüdian e zhémeré an savuar davantazh aván de minskrir. Esk zhe puré vu pozé kelk kesión a s süzhe?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Bien sûr, avec plaisir. Ce jeu a beaucoup de succès chaque année. Qu'est-ce que vous voulez savoir ?",
+            "en": "Hello! Of course, with pleasure. This game is very popular every year. What would you like to know?",
+            "es": "Bonzhur! Bien sür, avek plèzir. S zhö a boku de sükè shak ané. K'esk vu vulé savuar?",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quel est le principe du jeu, et quelles sont les règles principales à respecter ?",
+            "en": "To start with, what's the principle of the game, and what are the main rules to follow?",
+            "es": "Pur konmansé, kel e l prinsip dü zhö, e kel son le règl prinsipal a respekté?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — principe et règles (quel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les étudiants sont répartis en équipes de trois et résolvent des énigmes en français. Chaque bonne réponse rapporte des points.",
+            "en": "Students are divided into teams of three and must solve riddles in French. Each right answer earns points over four weeks.",
+            "es": "Lez étüdian son réparti an ékip de truaz e rézolv dez énigm an fransè. Shak bon répons raport de puán.",
+            "note": "INFORMATION: Principe et règles du jeu"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pourquoi est-ce que l'école a décidé de créer ce jeu cette année ?",
+            "en": "Okay. And why did the school decide to create this game this year?",
+            "es": "Dakor. E purkua esk lékol a désidé de kréé s zhö set ané?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Pour motiver les étudiants et les faire parler en dehors des cours. Beaucoup hésitent à s'exprimer, et le jeu les encourage à pratiquer sans stress.",
+            "en": "To motivate students and get them talking outside class. Many hesitate to speak, and the game encourages them to practise without stress.",
+            "es": "Pur motivé lez étüdian e le fer parlé an deor de kur. Boku ézi a seksprimé, e l zhö lez ankurazh a pratiké san stres.",
+            "note": "INFORMATION: Objectif pédagogique du jeu"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien coûte la participation, et est-ce que le prix comprend quelque chose en plus ?",
+            "en": "I see. How much does taking part cost, and does the price include anything extra?",
+            "es": "Zhe vua. Kombien kut la partisipasión, e esk l pri konpran kelk shos an plüs?",
+            "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'inscription coûte dix euros par équipe et comprend un livret d'énigmes. L'équipe gagnante reçoit un bon d'achat de cent euros.",
+            "en": "Registration costs ten euros per team and includes a riddle booklet. The winning team receives a hundred-euro gift voucher.",
+            "es": "Linskripsión kut dis eró par ékip e konpran un livre dénigm. Lékip gañan resua un bon dasha de san eró.",
+            "note": "INFORMATION: Tarif et récompense"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que les épreuves ont lieu, dans les salles de cours ou ailleurs ?",
+            "en": "Oh, that's good to know. And where do the rounds take place, in the classrooms or elsewhere?",
+            "es": "A, se bon a savuar. E u esk lez épröv on liö, dan le sal de kur u ayör?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Dans les salles de cours le mardi, parfois au parc voisin. Les instructions sont toujours en français.",
+            "en": "In the classrooms on Tuesdays, and sometimes in the nearby park for outdoor challenges. The instructions are always in French.",
+            "es": "Dan le sal de kur l mardi, parfua o pars vuain. Lez instrüssión son tuzhur an fransè.",
+            "note": "INFORMATION: Lieux des épreuves"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Comment est-ce que je peux inscrire mon équipe, en ligne ou auprès du secrétariat ?",
+            "en": "Very good, thank you. How can I register my team, online or with the reception desk?",
+            "es": "Tre bien, mersí. Komán esk zhe pö inskrir mon ékip, an liñ u oprè dü sekrétaria?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur l'inscription (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il suffit de remplir un formulaire au secrétariat avant vendredi. Il faut aussi indiquer le nom de vos deux coéquipiers et leur niveau.",
+            "en": "You just fill in a form at the reception desk before Friday. You also need to give the names of your two teammates and their level.",
+            "es": "Il süfi de ranplir un formülèr o sekrétaria aván vandredi. Il fo osi indiké l non de vo dö koékipié e lör nivo.",
+            "note": "INFORMATION: Modalités d'inscription"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Quand est-ce que la première épreuve commence, et combien de temps est-ce qu'elle dure ?",
+            "en": "I understand better. When does the first round start, and how long does it last?",
+            "es": "Zhe konpran miö. Kan esk la premièr épröv konmans, e kombien de tanp esk el dür?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur les horaires (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La première épreuve commence mardi prochain à dix-huit heures et dure une heure. Les suivantes ont lieu chaque mardi, à la même heure.",
+            "en": "The first round starts next Tuesday at six p.m. and lasts an hour. The following ones take place every Tuesday at the same time.",
+            "es": "La premièr épröv konmans mardi proshin a diks-üi ör e dür ün ör. Le süivan on liö shak mardi, a la mem ör.",
+            "note": "INFORMATION: Dates et durée des épreuves"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Et qui est-ce qui corrige les réponses, les enseignants ou des étudiants plus avancés ?",
+            "en": "Oh, that's interesting. And who marks the answers, the teachers or more advanced students?",
+            "es": "A, se intérèsan. E ki esk ki korizh le répons, lez ansèñan u dez étüdian plüs avansé?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur les correcteurs (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les enseignants corrigent, avec l'aide de deux étudiants du niveau avancé. Ils vérifient aussi la prononciation pendant les épreuves orales.",
+            "en": "The teachers mark them, with the help of two advanced-level students. They also check pronunciation during the oral rounds.",
+            "es": "Lez ansèñan korizh, avek lèd de döz étüdian dü nivo avansé. Il vérifi osi la prononsiasión pandán lez épröv oral.",
+            "note": "INFORMATION: Correcteurs et critères"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais un membre de mon équipe tombe malade, est-ce qu'on peut être remplacé ?",
+            "en": "Actually, if ever a member of my team gets sick, can they be replaced?",
+            "es": "Zhüstemán, si zhamé un manbr de mon ékip tonb mala, esk on pö etr ranplasé?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — remplacement d'un joueur (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, un remplaçant est autorisé une seule fois, à condition de prévenir le secrétariat vingt-quatre heures avant. Sinon, l'équipe joue à deux.",
+            "en": "Yes, a substitute is allowed once, provided you notify the reception desk twenty-four hours in advance. Otherwise the team plays with two.",
+            "es": "Ui, un ranplasan e otorizé ün söl fua, a kondisión de prévenir l sekrétaria vingt-katr ör aván. Sinon, lékip zhu a dö.",
+            "note": "INFORMATION: Règle de remplacement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que les niveaux sont mélangés dans les équipes, ou faut-il des étudiants du même niveau ?",
+            "en": "Noted. And are levels mixed within teams, or do students need to be at the same level?",
+            "es": "Se noté. E esk le nivo son mélanzhé dan lez ékip, u fot-il dez étüdian dü mem nivo?",
+            "note": "SUIVI 2: \"C'est noté\" — composition des équipes"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les équipes mixtes sont même préférées, c'est plus intéressant. Un débutant avec deux étudiants avancés gagne souvent grâce à l'entraide.",
+            "en": "Mixed teams are actually preferred, it's more interesting. A beginner with two advanced students often wins thanks to mutual help.",
+            "es": "Lez ékip mikst son mem préférée, se plüs intérèsan. Un débütan avek döz étüdian avansé gañ suván gras a lantrè.",
+            "note": "INFORMATION: Équipes mixtes encouragées"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais je ne peux pas participer à une épreuve, est-ce que mon équipe perd tous les points ?",
+            "en": "Okay. If ever I can't take part in one round, does my team lose all the points?",
+            "es": "Dakor. Si zhamé zhe n pö pa partisipé a ün épröv, esk mon ékip perd tus le puán?",
+            "note": "SUIVI 3: \"Si jamais\" — absence à une épreuve (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Non, rassurez-vous, l'équipe garde ses points et peut continuer. Seule l'épreuve manquée ne rapporte rien, les autres comptent normalement.",
+            "en": "No, don't worry, the team keeps its points and can carry on. Only the missed round earns nothing, the others count normally.",
+            "es": "Non, rasürez-vu, lékip gard se puán e pö kontinür. Söl lépröv manké n raport rien, lez otr konpt normalmán.",
+            "note": "INFORMATION: Conséquence d'une absence"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais former mon équipe ce soir et m'inscrire demain.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll form my team tonight and register tomorrow.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé formé mon ékip s suar e minskrir demin.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! N'hésitez pas à passer si vous avez une question. Bon courage pour le jeu, et amusez-vous bien !",
+            "en": "With pleasure! Feel free to drop by if you have a question. Good luck with the game, and have fun!",
+            "es": "Avek plèzir! Nézité pa a pasé si vuz avé ün kesión. Bon kurazh pur l zhö, e amüzez-vu bien!",
+            "note": "RESPONSE: Formule de clôture — disponibilité + encouragement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour vos explications, c'était très clair. À bientôt et bonne semaine !",
+            "en": "Thanks again for your explanations, it was very clear. See you soon and have a good week!",
+            "es": "Mersí ankor pur voz eksplikasión, sétè tre klèr. A biento e bon semén!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

@@ -1,0 +1,380 @@
+{
+    "title": "Demander conseil à son professeur pour progresser rapidement en français",
+    "task": "tache2",
+    "topic": "4. Education",
+    "description": "Vous suivez des cours de français et vous aimeriez progresser rapidement. Vous demandez à votre professeur les meilleures méthodes d'apprentissage et les exercices à pratiquer.",
+    "labels": {
+        "E": "Professeur de français",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'aimerais progresser plus vite",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bon courage",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Demander conseil à son professeur pour progresser rapidement en français",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je suis vos cours depuis trois mois et j'aimerais progresser plus vite, surtout à l'oral. Est-ce que je pourrais vous poser quelques questions sur les méthodes qui marchent vraiment ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Bien sûr, c'est une très bonne question. Progresser vite dépend surtout de la régularité. Qu'est-ce que vous voulez savoir ?",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais suivre vos conseils dès cette semaine.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! L'important, c'est de rester régulier et de ne pas avoir peur de faire des erreurs. Bon courage !",
+                        "note": "RESPONSE: Formule de clôture — encouragement",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour vos conseils, c'était très encourageant. À bientôt et bonne semaine !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quels exercices est-ce que vous conseillez pour améliorer la prononciation et la fluidité à l'oral ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — exercices conseillés (quels)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que l'écoute est si importante, même quand je ne comprends pas tout ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien de temps est-ce que je devrais travailler chaque jour, et est-ce que le week-end compte aussi ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le temps de travail (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que je peux pratiquer l'oral en dehors des cours, sans payer trop cher ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur les lieux de pratique (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je dois organiser mes révisions pour ne pas tout oublier ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur l'organisation (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que je saurai que je progresse vraiment, et à quels signes ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur les signes de progrès (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et qui est-ce que je pourrais rencontrer pour parler régulièrement ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur les partenaires (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que l'écoute est si importante, même quand je ne comprends pas tout ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien de temps est-ce que je devrais travailler chaque jour, et est-ce que le week-end compte aussi ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le temps de travail",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que je peux pratiquer l'oral en dehors des cours, sans payer trop cher ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur les lieux de pratique",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je dois organiser mes révisions pour ne pas tout oublier ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur l'organisation",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que je saurai que je progresse vraiment, et à quels signes ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur les signes de progrès",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et qui est-ce que je pourrais rencontrer pour parler régulièrement ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur les partenaires",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je n'ai pas le temps de faire tous les exercices, lesquels est-ce que je dois garder en priorité ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — choisir les exercices prioritaires (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que je peux passer l'examen sans avoir suivi tous les cours, avec seulement du travail personnel ?",
+                        "note": "SUIVI 2: \"C'est noté\" — passer l'examen en autodidacte",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais je bloque sur la grammaire, est-ce que je peux vous poser une question entre deux cours ?",
+                        "note": "SUIVI 3: \"Si jamais\" — aide entre les cours (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je suis vos cours depuis trois mois et j'aimerais progresser plus vite, surtout à l'oral. Est-ce que je pourrais vous poser quelques questions sur les méthodes qui marchent vraiment ?",
+                        "note": "CONDITIONNEL POLI: \"j'aimerais progresser\" + \"est-ce que je pourrais\"",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Trente minutes par jour suffisent, à condition d'être régulier. Le week-end, privilégiez une activité plaisante : un film ou une série.",
+                        "note": "CONDITION \"à condition de\" + INFINITIF: \"à condition d'être régulier\"",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Quand vous comprendrez une série sans sous-titres ou hésiterez moins. Les étudiants sentent un vrai changement après trois mois.",
+                        "note": "FUTUR SIMPLE + HYPOTHÈSE: \"quand vous comprendrez... vous hésiterez moins\"",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je suis vos cours depuis trois mois et j'aimerais progresser plus vite, surtout à l'oral. Est-ce que je pourrais vous poser quelques questions sur les méthodes qui marchent vraiment ?",
+            "en": "Hello! I've been in your classes for three months and I'd like to progress faster, especially in speaking. Could I ask you a few questions about the methods that really work?",
+            "es": "Bonzhur! Zhe süi vo kur dopüi trua mua e zhémeré progresé plüs vit, sürtu a loral. Esk zhe puré vu pozé kelk kesión sür le méto ki marsh vremán?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Bien sûr, c'est une très bonne question. Progresser vite dépend surtout de la régularité. Qu'est-ce que vous voulez savoir ?",
+            "en": "Hello! Of course, that's a very good question. Progressing quickly depends mainly on regularity. What would you like to know?",
+            "es": "Bonzhur! Bien sür, se ün tre bon kesión. Progresé vit dépan sürtu de la régülarité. K'esk vu vulé savuar?",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quels exercices est-ce que vous conseillez pour améliorer la prononciation et la fluidité à l'oral ?",
+            "en": "To start with, which exercises do you recommend to improve pronunciation and fluency in speaking?",
+            "es": "Pur konmansé, kel eksersis esk vu konsèlé pur amélioré la prononsiasión e la flüidité a loral?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — exercices conseillés (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La répétition à voix haute et les enregistrements de vous-même. Lisez un texte court chaque jour et écoutez-vous.",
+            "en": "Reading aloud and recording yourself. Read a short text every day, then listen to yourself to correct the difficult sounds.",
+            "es": "La répétisión a vua o e lez anrezhistreman de vus-mèm. Lizé un tekst kur shak zhur e ékutez-vu.",
+            "note": "INFORMATION: Exercices pour la prononciation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pourquoi est-ce que l'écoute est si importante, même quand je ne comprends pas tout ?",
+            "en": "Okay. And why is listening so important, even when I don't understand everything?",
+            "es": "Dakor. E purkua esk léku e si inportan, mem kan zhe n konpran pa tu?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce que l'oreille apprend les rythmes avant la grammaire. Vingt minutes de podcast par jour changent la compréhension en quelques semaines.",
+            "en": "Because the ear learns rhythms and sounds before grammar. Twenty minutes of podcast a day really changes comprehension within a few weeks.",
+            "es": "Pars k lorèl apran le ritm aván la granmèr. Vinzh minü de podkas par zhur shanzh la konpréansión an kelk semén.",
+            "note": "INFORMATION: Rôle de l'écoute active"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien de temps est-ce que je devrais travailler chaque jour, et est-ce que le week-end compte aussi ?",
+            "en": "I see. How much time should I work each day, and does the weekend count too?",
+            "es": "Zhe vua. Kombien de tanp esk zhe devrè travèlé shak zhur, e esk l veek-an konpt osi?",
+            "note": "RÉACTION: \"Je vois\"; question sur le temps de travail (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Trente minutes par jour suffisent, à condition d'être régulier. Le week-end, privilégiez une activité plaisante : un film ou une série.",
+            "en": "Thirty minutes a day is enough, provided you're regular. At the weekend, favour an enjoyable activity: a film, a series or a conversation.",
+            "es": "Tran minü par zhur süfis, a kondisión detr régülié. L veek-an, privilézhié ün aktivité plèzan: un film u ün séri.",
+            "note": "INFORMATION: Temps de travail quotidien"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que je peux pratiquer l'oral en dehors des cours, sans payer trop cher ?",
+            "en": "Oh, that's good to know. And where can I practise speaking outside class, without paying too much?",
+            "es": "A, se bon a savuar. E u esk zhe pö pratiké loral an deor de kur, san péyé tro shé?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur les lieux de pratique (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "À la médiathèque, il y a un café des langues gratuit le jeudi soir. Des associations proposent aussi des échanges.",
+            "en": "At the media library, there's a free language café on Thursday evenings. Some associations also offer exchanges with French speakers.",
+            "es": "A la médiatèk, il i a un kafé de lange gratüi l zhödi suar. Dez asosiasión propos osi dez éshanzh.",
+            "note": "INFORMATION: Lieux pour pratiquer l'oral"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Comment est-ce que je dois organiser mes révisions pour ne pas tout oublier ?",
+            "en": "Very good, thank you. How should I organise my revision so I don't forget everything from one week to the next?",
+            "es": "Tre bien, mersí. Komán esk zhe dua organizé me révizión pur n pa tu ublié?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur l'organisation (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Relisez vos notes le soir même, puis trois jours après. Notez cinq mots nouveaux par jour et réutilisez-les à l'oral.",
+            "en": "Re-read your notes the same evening, then three days later. Write down five new words a day in a notebook and reuse them in speaking.",
+            "es": "Relizé vo not l suar mem, püi trua zhur apre. Noté sink mot nuvo par zhur e réütilizez-l a loral.",
+            "note": "INFORMATION: Organisation des révisions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Quand est-ce que je saurai que je progresse vraiment, et à quels signes ?",
+            "en": "I understand better. When will I know I'm really progressing, and what signs should I look for?",
+            "es": "Zhe konpran miö. Kan esk zhe sorè k zhe progres vremán, e a kel siñ?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur les signes de progrès (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Quand vous comprendrez une série sans sous-titres ou hésiterez moins. Les étudiants sentent un vrai changement après trois mois.",
+            "en": "When you understand a series without subtitles or hesitate less. Generally, students feel a real change after three months.",
+            "es": "Kan vu konprandré ün séri san sus-titr u éziteré muan. Lez étüdian san un vrè shanzhmán apre trua mua.",
+            "note": "INFORMATION: Indicateurs de progrès"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Et qui est-ce que je pourrais rencontrer pour parler régulièrement ?",
+            "en": "Oh, that's interesting. And who could I meet to speak regularly, a tutor or another student?",
+            "es": "A, se intérèsan. E ki esk zhe puré rankontré pur parlé régülièrmán?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur les partenaires de conversation (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un autre étudiant du même niveau est idéal, vous progresserez ensemble sans pression. Je peux vous mettre en contact avec quelqu'un.",
+            "en": "Another student at the same level is ideal, you'll progress together without pressure. I can put you in touch with someone from your group.",
+            "es": "Un otr étüdian dü mem nivo e idéal, vu progreseré ansanbl san prsión. Zhe pö vu metr an kontas avek kelk un.",
+            "note": "INFORMATION: Partenaires de conversation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je n'ai pas le temps de faire tous les exercices, lesquels est-ce que je dois garder en priorité ?",
+            "en": "Actually, if ever I don't have time to do all the exercises, which ones should I keep as a priority?",
+            "es": "Zhüstemán, si zhamé zhe né pa l tanp de fer tus lez eksersis, leskel esk zhe dua gardé an priorité?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — choisir les exercices prioritaires (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Gardez l'écoute et la production orale, ce sont les plus utiles. L'écrit peut attendre le week-end sans problème.",
+            "en": "Keep listening and speaking, they're the most useful. Writing is important, but it can wait for the weekend without a problem.",
+            "es": "Gardé léku e la prodüssión oral, s son le plüs ütil. Lékri pö atandr l veek-an san problèm.",
+            "note": "INFORMATION: Priorités en cas de manque de temps"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que je peux passer l'examen sans avoir suivi tous les cours, avec seulement du travail personnel ?",
+            "en": "Noted. And can I take the exam without having attended all the classes, with only personal work?",
+            "es": "Se noté. E esk zhe pö pasé leksaman san avuar süivi tus le kur, avek sölmán dü travai personel?",
+            "note": "SUIVI 2: \"C'est noté\" — passer l'examen en autodidacte"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, l'examen est ouvert à tous, quel que soit le nombre de cours. Mais je conseille un cours par semaine pour l'oral.",
+            "en": "Yes, the exam is open to everyone, whatever the number of classes attended. But I'd advise at least one class a week for speaking.",
+            "es": "Ui, leksaman e uvé a tus, kel k sua l nonbr de kur. Me zhe konsel un kur par semén pur loral.",
+            "note": "INFORMATION: Conditions d'accès à l'examen"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais je bloque sur la grammaire, est-ce que je peux vous poser une question entre deux cours ?",
+            "en": "Okay. If ever I get stuck on grammar, can I ask you a question between two classes?",
+            "es": "Dakor. Si zhamé zhe blok sür la granmèr, esk zhe pö vu pozé ün kesión antr dö kur?",
+            "note": "SUIVI 3: \"Si jamais\" — aide entre les cours (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, par mail ou à la fin du cours. J'ai aussi une permanence le mardi, de dix-sept à dix-huit heures.",
+            "en": "Of course, by email or at the end of class. I also have an office hour on Tuesdays from five to six p.m., without an appointment.",
+            "es": "Bien sür, par mèl u a la fin dü kur. Zhé osi ün permanans l mardi, de diks-sep a diks-üi ör.",
+            "note": "INFORMATION: Disponibilité du professeur"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais suivre vos conseils dès cette semaine.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll follow your advice from this week.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé süivr vo konsèl dè set semén.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! L'important, c'est de rester régulier et de ne pas avoir peur de faire des erreurs. Bon courage !",
+            "en": "With pleasure! The important thing is to stay regular and not be afraid of making mistakes. Good luck!",
+            "es": "Avek plèzir! Linportan, se de resté régülié e de n pa avuar pör de fer dez erör. Bon kurazh!",
+            "note": "RESPONSE: Formule de clôture — encouragement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour vos conseils, c'était très encourageant. À bientôt et bonne semaine !",
+            "en": "Thanks again for your advice, it was very encouraging. See you soon and have a good week!",
+            "es": "Mersí ankor pur vo konsèl, sétè tre ankurazhean. A biento e bon semén!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

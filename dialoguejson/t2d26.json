@@ -1,0 +1,395 @@
+{
+    "title": "Se renseigner sur un repas organisé entre inconnus",
+    "task": "tache2",
+    "topic": "10. Restaurants & food",
+    "description": "Votre ami a participé à un repas organisé entre des personnes qui ne se connaissaient pas. L'expérience vous intéresse et vous vous renseignez sur son organisation : réservation, lieu, invités, ambiance et tarif.",
+    "labels": {
+        "E": "Un ami",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "Tu m'as dit que",
+        "Ça m'intéresse",
+        "à ce sujet",
+        "D'accord",
+        "Je vois",
+        "Très bien, merci",
+        "Ah, c'est bon à savoir",
+        "Je comprends mieux",
+        "C'est noté",
+        "Ah, c'est intéressant",
+        "Justement",
+        "Si jamais",
+        "au dernier moment",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur un repas organisé entre inconnus",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Tu m'as dit que tu avais participé à un repas entre des personnes qui ne se connaissaient pas. Ça m'intéresse. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + rappel du contexte + demande polie de poser des questions",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Salut ! Oui, c'était il y a deux semaines, chez une amie qui voulait mélanger ses groupes d'amis. Avec plaisir, vas-y.",
+                        "note": "RESPONSE: Accueil chaleureux — précise la date et l'origine du repas, invite à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais en parler à mes amis et peut-être organiser un dîner.",
+                        "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Tiens-moi au courant si tu organises quelque chose, je viendrai volontiers. Bonne journée et à bientôt !",
+                        "note": "FERMETURE: \"Avec plaisir\" + disponibilité + formule de clôture",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour tous tes conseils, c'était très sympa. À bientôt et bonne journée !",
+                        "note": "FERMETURE: Remerciement final + formule de politesse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et où est-ce que ce repas a eu lieu, dans un restaurant ou chez quelqu'un ?",
+                        "note": "ENCHAINEMENT: \"D'accord\" + question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et quand est-ce que tu as réservé, longtemps à l'avance ou au dernier moment ?",
+                        "note": "RÉACTION: \"Je vois\" + question sur le moment de la réservation (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Mais pourquoi est-ce que tu as choisi ce restaurant plutôt qu'un autre ?",
+                        "note": "RÉACTION: \"Très bien, merci\" + question sur la raison du choix (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et comment tu as fait pour que tout le monde se parle, avec des inconnus ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" + question sur la méthode (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et combien est-ce que tu as payé, est-ce que le prix comprenait tout ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" + question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce qui t'avait invité, est-ce que tu connaissais d'autres personnes ?",
+                        "note": "RÉACTION: \"C'est noté\" + question sur l'organisateur (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et quelle a été l'ambiance, est-ce que les gens ont gardé contact ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\" + question sur l'ambiance (quelle)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et où est-ce que ce repas a eu lieu, dans un restaurant ou chez quelqu'un ?",
+                        "note": "ENCHAINEMENT: \"D'accord\" + question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et quand est-ce que tu as réservé, longtemps à l'avance ou au dernier moment ?",
+                        "note": "RÉACTION: \"Je vois\" + question sur le moment de la réservation (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Mais pourquoi est-ce que tu as choisi ce restaurant plutôt qu'un autre ?",
+                        "note": "RÉACTION: \"Très bien, merci\" + question sur la raison du choix (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et comment tu as fait pour que tout le monde se parle, avec des inconnus ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" + question sur la méthode (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et combien est-ce que tu as payé, est-ce que le prix comprenait tout ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" + question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce qui t'avait invité, est-ce que tu connaissais d'autres personnes ?",
+                        "note": "RÉACTION: \"C'est noté\" + question sur l'organisateur (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et quelle a été l'ambiance, est-ce que les gens ont gardé contact ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\" + question sur l'ambiance (quelle)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, si jamais je voulais organiser le même genre de dîner, quels conseils tu aurais pour choisir les invités ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — conseils pour choisir les invités",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que ça marche aussi pour huit personnes qui ne se connaissent pas du tout ?",
+                        "note": "SUIVI 2: \"C'est noté\" — vérification de la condition pour un groupe totalement inconnu",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je voulais organiser le même genre de dîner, quels conseils tu aurais pour choisir les invités ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — conseils pour choisir les invités",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que ça marche aussi pour huit personnes qui ne se connaissent pas du tout ?",
+                        "note": "SUIVI 2: \"C'est noté\" — vérification de la condition pour un groupe totalement inconnu",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais quelqu'un se désiste au dernier moment, comment tu gères le paiement de sa part ?",
+                        "note": "SUIVI 3: \"Si jamais\" — cas du désistement de dernière minute",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Tu m'as dit que tu avais participé à un repas entre des personnes qui ne se connaissaient pas. Ça m'intéresse. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "CONDITIONNEL POLI: \"Est-ce que je pourrais te poser...\" pour demander la permission avec tact",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parce qu'il propose des plats à partager au centre de la table, ce qui oblige les gens à discuter. On réserve une grande table.",
+                        "note": "PRONOM RELATIF « ce qui »: reprend toute la proposition précédente et en explique l'effet",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Oui, à condition que l'hôte présente chacun en une phrase. Notre amie l'a fait au début, ça a tout débloqué.",
+                        "note": "SUBJONCTIF après \"à condition que\": \"à condition que l'hôte présente chacun en une phrase\"",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! Tu m'as dit que tu avais participé à un repas entre des personnes qui ne se connaissaient pas. Ça m'intéresse. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hi! You told me you took part in a meal between people who didn't know each other. I'm interested. Could I ask you a few questions about it?",
+            "es": "Salu! Tü ma dit k tü avè partisipé a un repa antr de person ki n s konèsè pa. Sa mintéres. Esk zhe puré te pozé kelk kesión a s süzhe?",
+            "note": "OUVERTURE: Salutation + rappel du contexte + demande polie de poser des questions"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Oui, c'était il y a deux semaines, chez une amie qui voulait mélanger ses groupes d'amis. Avec plaisir, vas-y.",
+            "en": "Hi! Yes, it was two weeks ago, at a friend's place who wanted to mix her groups of friends. With pleasure, go ahead.",
+            "es": "Salu! Ui, sétè il i a dö semén, she ün ami ki vulè mélanzhé se grup dami. Avek plèzir, vas-i.",
+            "note": "RESPONSE: Accueil chaleureux — précise la date et l'origine du repas, invite à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et où est-ce que ce repas a eu lieu, dans un restaurant ou chez quelqu'un ?",
+            "en": "Okay. And where did this meal take place, in a restaurant or at someone's place?",
+            "es": "Dakor. E u esk s repa a ö liö, dan un restoran u she kelk un?",
+            "note": "ENCHAINEMENT: \"D'accord\" + question sur le lieu (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Dans un petit restaurant du centre-ville, une table ronde pour huit personnes. Le gérant avait mis des bougies, c'était convivial.",
+            "en": "In a small restaurant downtown, a round table for eight people. The manager had put out candles, it was friendly.",
+            "es": "Dan un peti restoran dü santre-vil, ün tabl ron pur üit person. L zhéran avè mi de buzhie, sétè konvivial.",
+            "note": "INFORMATION: Lieu précis, taille du groupe et ambiance de la salle"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et quand est-ce que tu as réservé, longtemps à l'avance ou au dernier moment ?",
+            "en": "I see. And when did you book, long in advance or at the last minute?",
+            "es": "Zhe vua. E kan esk tü a rézervé, longtanp a lavans u o dernié momán?",
+            "note": "RÉACTION: \"Je vois\" + question sur le moment de la réservation (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "J'ai réservé trois semaines avant en appelant le restaurant. Le samedi soir, il n'y a plus de table pour huit.",
+            "en": "I booked three weeks in advance by calling the restaurant. On Saturday evenings, there are no more tables for eight.",
+            "es": "Zhé rézervé trua semén aván an apelan l restoran. L samedi suar, il ni a plüs de tabl pur üit.",
+            "note": "INFORMATION: Délai concret, moyen de réservation et contrainte du samedi soir"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Mais pourquoi est-ce que tu as choisi ce restaurant plutôt qu'un autre ?",
+            "en": "Very good, thank you. But why did you choose this restaurant rather than another one?",
+            "es": "Tre bien, mersí. Me purkua esk tü a shuai s restoran plüto k un otr?",
+            "note": "RÉACTION: \"Très bien, merci\" + question sur la raison du choix (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce qu'il propose des plats à partager au centre de la table, ce qui oblige les gens à discuter. On réserve une grande table.",
+            "en": "Because it offers sharing dishes in the middle of the table, which forces people to talk. You book one large table.",
+            "es": "Pars k il propos de pla a partazhé o santr de la tabl, s ki oblizh le zhan a disküté. On rézerv ün gran tabl.",
+            "note": "INFORMATION: Justification du choix + effet recherché sur les convives"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et comment tu as fait pour que tout le monde se parle, avec des inconnus ?",
+            "en": "Oh, that's good to know. And how did you get everyone to talk to each other, with strangers?",
+            "es": "A, se bon a savuar. E komán tü a fe pur k tu l mon s parl, avek dez inkonü?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\" + question sur la méthode (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La plupart avaient ton âge et des centres d'intérêt proches. L'organisatrice avait préparé un petit jeu pour briser la glace.",
+            "en": "Most of them were around your age with similar interests. The organiser had prepared a little game to break the ice.",
+            "es": "La plüpar avè ton azh e de santr dintérè prosh. Lorganizatris avè préparé un peti zhö pur brizé la glas.",
+            "note": "INFORMATION: Composition du groupe + animation pour lancer la conversation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et combien est-ce que tu as payé, est-ce que le prix comprenait tout ?",
+            "en": "I understand better. And how much did you pay, did the price include everything?",
+            "es": "Zhe konpran miö. E kombien esk tü a péyé, esk l pri konprenè tu?",
+            "note": "RÉACTION: \"Je comprends mieux\" + question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Trente-cinq euros par personne, entrée, plat et dessert compris. Les boissons étaient en supplément, environ dix euros.",
+            "en": "Thirty-five euros per person, starter, main course and dessert included. Drinks were extra, about ten euros.",
+            "es": "Trante-sinq eró par person, antré, pla e desé konpri. Le buason étè an süplemán, anviron dis eró.",
+            "note": "INFORMATION: Tarif détaillé + supplément boissons"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et qui est-ce qui t'avait invité, est-ce que tu connaissais d'autres personnes ?",
+            "en": "Noted. And who had invited you, did you know any other people?",
+            "es": "Se noté. E ki esk ki tavè invité, esk tü konèsè dotr person?",
+            "note": "RÉACTION: \"C'est noté\" + question sur l'organisateur (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Une amie qui fêtait son départ pour Montréal. Sur huit, je ne connaissais que deux personnes, c'était parfait pour rencontrer du monde.",
+            "en": "A friend who was celebrating her departure for Montreal. Out of eight, I only knew two people, it was perfect to meet people.",
+            "es": "Ün ami ki fètè son dépar pur Montréal. Sür üit, zhe n konèsè k dö person, sétè parfè pur rankontré dü mon.",
+            "note": "INFORMATION: Identité de l'hôtesse, raison du repas et proportion d'inconnus"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Et quelle a été l'ambiance, est-ce que les gens ont gardé contact ?",
+            "en": "Oh, that's interesting. And what was the atmosphere like, did people stay in touch?",
+            "es": "A, se intérèsan. E kel a été lanbians, esk le zhan on gardé kontas?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\" + question sur l'ambiance (quelle)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Très détendue : à minuit, tout le monde s'échangeait encore ses numéros. On s'est même revus le mois suivant.",
+            "en": "Very relaxed: at midnight, everyone was still swapping numbers. We even met again the following month.",
+            "es": "Tre détandü: a minüi, tu l mon séshanzheè ankor se nüméro. On se mem revü l mua süivan.",
+            "note": "INFORMATION: Description de l'ambiance + preuve que les contacts perdurent"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je voulais organiser le même genre de dîner, quels conseils tu aurais pour choisir les invités ?",
+            "en": "Actually, if ever I wanted to organise the same kind of dinner, what advice would you have for choosing the guests?",
+            "es": "Zhüstemán, si zhamé zhe vulè organizé l mem zhanr de diné, kel konsèl tü orè pur shuair lez invité?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — conseils pour choisir les invités"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Choisis des personnes d'horizons différents mais qui aiment discuter. Évite de mettre plusieurs amis proches ensemble.",
+            "en": "Choose people from different backgrounds who like talking. Avoid putting several close friends together.",
+            "es": "Shuai de person dorizon diféran me ki èm disküté. Évi de metr plüziör ami prosh ansanbl.",
+            "note": "INFORMATION: Critère de sélection des invités + erreur à éviter"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que ça marche aussi pour huit personnes qui ne se connaissent pas du tout ?",
+            "en": "Noted. And does it also work for eight people who don't know each other at all?",
+            "es": "Se noté. E esk sa marsh osi pur üit person ki n s konès pa dü tu?",
+            "note": "SUIVI 2: \"C'est noté\" — vérification de la condition pour un groupe totalement inconnu"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, à condition que l'hôte présente chacun en une phrase. Notre amie l'a fait au début, ça a tout débloqué.",
+            "en": "Yes, provided the host introduces each person in one sentence. Our friend did that at the beginning, it got everything going.",
+            "es": "Ui, a kondisión k lot prézan shakun an ün fras. Notr ami la fe o débü, sa a tu débloké.",
+            "note": "INFORMATION: Condition de réussite + exemple concret vécu"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais quelqu'un se désiste au dernier moment, comment tu gères le paiement de sa part ?",
+            "en": "Okay. If ever someone drops out at the last minute, how do you handle their share of the payment?",
+            "es": "Dakor. Si zhamé kelk un s dézist o dernié momán, komán tü zhèr l pèmán de sa par?",
+            "note": "SUIVI 3: \"Si jamais\" — cas du désistement de dernière minute"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "On partage la somme entre les autres, ça reste raisonnable. Sinon, l'organisateur avance et se fait rembourser ensuite.",
+            "en": "We split the amount among the others, it stays reasonable. Otherwise, the organiser pays upfront and gets reimbursed afterwards.",
+            "es": "On partazh la sonm antr lez otr, sa rest rèzonabl. Sinon, lorganizatör avans e s fe ranbursé ansüit.",
+            "note": "INFORMATION: Deux solutions concrètes de gestion du paiement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais en parler à mes amis et peut-être organiser un dîner.",
+            "en": "Perfect, that answers all my questions. Thanks a lot, I'll talk about it with my friends and maybe organise a dinner.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé an parlé a mez ami e pöt-ètr organizé un diné.",
+            "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Tiens-moi au courant si tu organises quelque chose, je viendrai volontiers. Bonne journée et à bientôt !",
+            "en": "With pleasure! Keep me posted if you organise something, I'd be happy to come. Have a good day and see you soon!",
+            "es": "Avek plèzir! Tiens-mua o kuran si tü organis kelk shos, zhe viendrè volontié. Bon zhurné e a biento!",
+            "note": "FERMETURE: \"Avec plaisir\" + disponibilité + formule de clôture"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour tous tes conseils, c'était très sympa. À bientôt et bonne journée !",
+            "en": "Thanks again for all your advice, it was really nice. See you soon and have a good day!",
+            "es": "Mersí ankor pur tus te konsèl, sétè tre simpa. A biento e bon zhurné!",
+            "note": "FERMETURE: Remerciement final + formule de politesse"
+        }
+    ]
+}

@@ -1,0 +1,385 @@
+{
+    "title": "Préparer une sortie surprise en s'inspirant d'un collègue",
+    "task": "tache2",
+    "topic": "11. Events & celebrations",
+    "description": "Votre collègue Marc a organisé une sortie surprise sans révéler la destination. Vous voudriez faire la même chose pour un proche et vous lui demandez comment il s'y est pris.",
+    "labels": {
+        "E": "Collègue",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "Tu m'avais raconté",
+        "Ça m'a donné une idée",
+        "poser quelques questions",
+        "Pour commencer",
+        "Très bien",
+        "D'accord",
+        "Je vois",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Merci encore"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Préparer une sortie surprise en s'inspirant d'un collègue",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut Marc ! Tu as organisé une sortie surprise pour ta sœur sans révéler la destination. Ça m'a donné une idée. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + rappel du contexte (sortie surprise) + demande polie",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Salut ! Avec plaisir, c'était une super expérience. Je l'avais réservée un mois à l'avance, dans le plus grand secret. Qu'est-ce que tu veux savoir ?",
+                        "note": "RESPONSE: Accueil enthousiaste + aperçu du projet",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réserver le week-end prochain et garder la destination secrète.",
+                        "note": "FERMETURE: remerciement + \"ça répond à toutes mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Pense à garder une photo du moment où elle comprend. Bonne chance et raconte-moi ça lundi !",
+                        "note": "RESPONSE: Conseil final + encouragement",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour tous tes conseils, ça m'aide beaucoup. À lundi et bonne journée !",
+                        "note": "FERMETURE: remerciement final + formule de politesse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien. Pour commencer, où est-ce que tu l'as emmenée exactement, et pourquoi cet endroit-là ?",
+                        "note": "RÉACTION: \"Très bien\" + \"Pour commencer\" — destination (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et comment est-ce que tu as préparé la sortie sans qu'elle se doute de rien ?",
+                        "note": "RÉACTION: \"D'accord\" — préparatifs secrets (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et combien est-ce que tout ça t'a coûté, gîte et repas compris ?",
+                        "note": "RÉACTION: \"Je vois\" — budget global (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et qui était au courant du projet ? Tes amis ou seulement ta famille ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — cercle des initiés (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et quand est-ce que tu lui as annoncé le départ, le jour même ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — moment de l'annonce (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et pourquoi est-ce que tu as tenu à garder le secret jusqu'au dernier moment ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — critère de choix (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Quelle réaction est-ce qu'elle a eue en arrivant, et ça valait le coup ?",
+                        "note": "RÉACTION: \"C'est noté\" — réaction de la personne (quelle)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien. Pour commencer, où est-ce que tu l'as emmenée exactement, et pourquoi cet endroit-là ?",
+                        "note": "RÉACTION: \"Très bien\" + \"Pour commencer\" — destination (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et comment est-ce que tu as préparé la sortie sans qu'elle se doute de rien ?",
+                        "note": "RÉACTION: \"D'accord\" — préparatifs secrets (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et combien est-ce que tout ça t'a coûté, gîte et repas compris ?",
+                        "note": "RÉACTION: \"Je vois\" — budget global (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et qui était au courant du projet ? Tes amis ou seulement ta famille ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — cercle des initiés (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et quand est-ce que tu lui as annoncé le départ, le jour même ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — moment de l'annonce (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et pourquoi est-ce que tu as tenu à garder le secret jusqu'au dernier moment ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — critère de choix (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Quelle réaction est-ce qu'elle a eue en arrivant, et ça valait le coup ?",
+                        "note": "RÉACTION: \"C'est noté\" — réaction de la personne (quelle)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, si jamais la météo est mauvaise le jour prévu, tu avais prévu une solution de secours ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — météo et imprévu",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais la météo est mauvaise le jour prévu, tu avais prévu une solution de secours ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — météo et imprévu",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et pour le déplacement, justement, tu as choisi la voiture ou le train ?",
+                        "note": "SUIVI 2: \"C'est noté\" + \"justement\" — moyen de transport",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et si jamais elle n'avait pas aimé, comment est-ce que tu aurais réagi ?",
+                        "note": "SUIVI 3: \"si jamais\" — hypothèse impossible (plus-que-parfait + conditionnel passé)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Oui, j'avais vérifié une exposition et un restaurant couverts. En regardant les prévisions trois jours avant, j'ai confirmé la réservation.",
+                        "note": "GÉRONDIF: \"En regardant les prévisions trois jours avant\" — exprime le moyen et la simultanéité",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "D'accord. Et si jamais elle n'avait pas aimé, comment est-ce que tu aurais réagi ?",
+                        "note": "HYPOTHÈSE PASSÉE: \"si jamais elle n'avait pas aimé\" + \"j'aurais réagi\" (plus-que-parfait + conditionnel passé)",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut Marc ! Tu as organisé une sortie surprise pour ta sœur sans révéler la destination. Ça m'a donné une idée. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hi Marc! You organised a surprise outing for your sister without revealing the destination. That gave me an idea. Could I ask you a few questions about it?",
+            "es": "Salu mars! Tü a organizé ün sorti sürpris pur ta sör san révélé la destinasión. Sa ma doné ün idé. Esk zhe puré te pozé kelk kesión a s süzhe?",
+            "note": "OUVERTURE: Salutation + rappel du contexte (sortie surprise) + demande polie"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Avec plaisir, c'était une super expérience. Je l'avais réservée un mois à l'avance, dans le plus grand secret. Qu'est-ce que tu veux savoir ?",
+            "en": "Hi! With pleasure, it was a great experience. I'd booked it a month in advance, in total secrecy. What do you want to know?",
+            "es": "Salu! Avek plèzir, sétè ün süpé ekspériens. Zhe lavè rézervé un mua a lavans, dan l plüs gran sekre. K'esk tü vö savuar?",
+            "note": "RESPONSE: Accueil enthousiaste + aperçu du projet"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Pour commencer, où est-ce que tu l'as emmenée exactement, et pourquoi cet endroit-là ?",
+            "en": "Great. To start with, where exactly did you take her, and why that place?",
+            "es": "Tre bien. Pur konmansé, u esk tü la anmené eksasmán, e purkua set andrua-la?",
+            "note": "RÉACTION: \"Très bien\" + \"Pour commencer\" — destination (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Dans un petit village au bord de la mer, en Bretagne, à trois heures de route. Elle adore les falaises et n'y était jamais allée.",
+            "en": "In a small seaside village in Brittany, a three-hour drive away. She loves cliffs and had never been there.",
+            "es": "Dan un peti vilazh o bord de la mé, an Bretañ, a truaz ör de ru. El ador le falès e ni étè zhamé alé.",
+            "note": "INFORMATION: Destination précise + distance + justification personnelle"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et comment est-ce que tu as préparé la sortie sans qu'elle se doute de rien ?",
+            "en": "Okay. And how did you prepare the outing without her suspecting anything?",
+            "es": "Dakor. E komán esk tü a préparé la sorti san k el s du de rien?",
+            "note": "RÉACTION: \"D'accord\" — préparatifs secrets (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "J'ai tout réservé en ligne et caché les confirmations dans mon bureau. Le matin, je lui ai juste dit de prévoir des chaussures.",
+            "en": "I booked everything online and hid the confirmations in my office. In the morning, I just told her to bring walking shoes.",
+            "es": "Zhé tu rézervé an liñ e kashé le konfirmasión dan mon büro. L matin, zhe lüi é zhüst dit de prévuar de shosür.",
+            "note": "INFORMATION: Réservation discrète + préparation logistique minimale"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et combien est-ce que tout ça t'a coûté, gîte et repas compris ?",
+            "en": "I see. And how much did all that cost you, including the cottage and meals?",
+            "es": "Zhe vua. E kombien esk tu sa ta koüté, git e repa konpri?",
+            "note": "RÉACTION: \"Je vois\" — budget global (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Environ quatre cent cinquante euros pour trois jours, transport inclus. J'ai profité d'une offre d'hiver, ça a fait baisser la note.",
+            "en": "About four hundred and fifty euros for three days, transport included. I took advantage of a winter offer, which brought the bill down.",
+            "es": "Anviron katr san sinkan eró pur trua zhur, transpor inklü. Zhé profité dün ofr divé, sa a fe bèsé la not.",
+            "note": "INFORMATION: Budget détaillé + astuce des offres hors saison"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et qui était au courant du projet ? Tes amis ou seulement ta famille ?",
+            "en": "Oh, good to know. And who knew about the plan? Your friends or only your family?",
+            "es": "A, se bon a savuar. E ki étè o kuran dü prozhe? Tez ami u sölmán ta famiy?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\" — cercle des initiés (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Seulement sa meilleure amie, qui devait garder le chien. Plus personne, sinon le secret serait vite sorti.",
+            "en": "Only her best friend, who had to look after the dog. Nobody else, otherwise the secret would have leaked fast.",
+            "es": "Sölmán sa meyör ami, ki devè gardé l shien. Plüs person, sinon l sekre serè vit sorti.",
+            "note": "INFORMATION: Secret limité à une personne + conditionnel présent dans \"serait vite sorti\""
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et quand est-ce que tu lui as annoncé le départ, le jour même ?",
+            "en": "Very good, thanks. And when did you tell her about leaving, the very same day?",
+            "es": "Tre bien, mersí. E kan esk tü lüi a anonsé l dépar, l zhur mem?",
+            "note": "RÉACTION: \"Très bien, merci\" — moment de l'annonce (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le samedi matin, au petit-déjeuner, avec une carte et un plan plié. Elle a compris au moment où nous avons pris l'autoroute.",
+            "en": "On Saturday morning, at breakfast, with a map and a folded road plan. She understood when we took the motorway.",
+            "es": "L samedi matin, o petit-dézhöné, avek ün kart e un plan plié. El a konpri o momán u nuz avon pri lotoru.",
+            "note": "INFORMATION: Moment et mise en scène de la révélation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et pourquoi est-ce que tu as tenu à garder le secret jusqu'au dernier moment ?",
+            "en": "I understand better. And why were you determined to keep the secret until the last moment?",
+            "es": "Zhe konpran miö. E purkua esk tü a tenü a gardé l sekre zhüsk o dernié momán?",
+            "note": "RÉACTION: \"Je comprends mieux\" — critère de choix (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce que le mystère crée le suspense. Plus on attend, plus la surprise est forte, et les enfants adorent ça.",
+            "en": "Because mystery creates suspense. The longer you wait, the stronger the surprise, and the children love it.",
+            "es": "Pars k l mistèr kré l süspans. Plüs on atan, plüs la sürpris e fort, e lez anfán ador sa.",
+            "note": "INFORMATION: Motivation affective + justification du choix"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Quelle réaction est-ce qu'elle a eue en arrivant, et ça valait le coup ?",
+            "en": "Noted. What reaction did she have on arriving, and was it worth it?",
+            "es": "Se noté. Kel réassión esk el a ö an arivan, e sa valè l kup?",
+            "note": "RÉACTION: \"C'est noté\" — réaction de la personne (quelle)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Elle était bouleversée, elle a même pleuré devant les falaises. Franchement, c'était le plus beau week-end de notre année.",
+            "en": "She was overwhelmed, she even cried in front of the cliffs. Honestly, it was the best weekend of our year.",
+            "es": "El étè buleversé, el a mem plöré devan le falès. Franshmán, sétè l plüs bo veek-an de notr ané.",
+            "note": "INFORMATION: Réaction émotionnelle + bilan personnel"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais la météo est mauvaise le jour prévu, tu avais prévu une solution de secours ?",
+            "en": "Actually, if ever the weather is bad on the planned day, did you have a backup plan?",
+            "es": "Zhüstemán, si zhamé la météo e movès l zhur prévü, tü avè prévü ün solüsión de sekur?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — météo et imprévu"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, j'avais vérifié une exposition et un restaurant couverts. En regardant les prévisions trois jours avant, j'ai confirmé la réservation.",
+            "en": "Yes, I had checked out an indoor exhibition and a restaurant. By looking at the forecast three days before, I confirmed the booking.",
+            "es": "Ui, zhavè vérifié ün ekspozisión e un restoran kuvert. An regardan le prévizión trua zhur aván, zhé konfirmé la rézervasión.",
+            "note": "INFORMATION: Solution de secours + vérification des prévisions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et pour le déplacement, justement, tu as choisi la voiture ou le train ?",
+            "en": "Noted. And for the trip, actually, did you choose the car or the train?",
+            "es": "Se noté. E pur l déplasmán, zhüstemán, tü a shuai la vuaür u l trin?",
+            "note": "SUIVI 2: \"C'est noté\" + \"justement\" — moyen de transport"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "En voiture, c'était plus simple avec les bagages. J'avais loué une petite citadine pour trois jours, environ soixante euros.",
+            "en": "By car, it was easier with the luggage. I had rented a small city car for three days, about sixty euros.",
+            "es": "An vuaür, sétè plüs sinpl avek le bagazh. Zhavè lué ün peti sitadin pur trua zhur, anviron suaan eró.",
+            "note": "INFORMATION: Choix de la voiture + coût de la location"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et si jamais elle n'avait pas aimé, comment est-ce que tu aurais réagi ?",
+            "en": "Okay. And if ever she hadn't liked it, how would you have reacted?",
+            "es": "Dakor. E si zhamé el navè pa èmé, komán esk tü orè réazhi?",
+            "note": "SUIVI 3: \"si jamais\" — hypothèse impossible (plus-que-parfait + conditionnel passé)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "J'aurais gardé le sourire et proposé un programme plus tranquille le lendemain. L'important, c'était de passer du temps ensemble.",
+            "en": "I would have kept smiling and suggested a quieter programme the next day. The important thing was to spend time together.",
+            "es": "Zhorè gardé l surir e propozé un progranm plüs trankil l landemin. Linportan, sétè de pasé dü tanp ansanbl.",
+            "note": "INFORMATION: Réaction prévue + philosophie du cadeau"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réserver le week-end prochain et garder la destination secrète.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll book next weekend and keep the destination secret.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé rézervé l veek-an proshin e gardé la destinasión sekrè.",
+            "note": "FERMETURE: remerciement + \"ça répond à toutes mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Pense à garder une photo du moment où elle comprend. Bonne chance et raconte-moi ça lundi !",
+            "en": "With pleasure! Remember to keep a photo of the moment she realises. Good luck and tell me all about it on Monday!",
+            "es": "Avek plèzir! Pans a gardé ün foto dü momán u el konpran. Bon shans e rakonte-mua sa lundi!",
+            "note": "RESPONSE: Conseil final + encouragement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour tous tes conseils, ça m'aide beaucoup. À lundi et bonne journée !",
+            "en": "Thanks again for all your advice, it helps a lot. See you Monday and have a good day!",
+            "es": "Mersí ankor pur tus te konsèl, sa mèd boku. A lundi e bon zhurné!",
+            "note": "FERMETURE: remerciement final + formule de politesse"
+        }
+    ]
+}

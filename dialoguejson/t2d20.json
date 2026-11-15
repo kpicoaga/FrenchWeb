@@ -1,0 +1,378 @@
+{
+    "title": "Demander conseil à un voisin pour découvrir la ville en famille",
+    "task": "tache2",
+    "topic": "3. Travel & tourism",
+    "description": "Vous venez d'emménager dans un nouveau quartier et vous voulez passer un week-end à explorer la ville avec votre famille. Vous demandez conseil à votre voisin sur les lieux à visiter, les transports et le budget.",
+    "labels": {
+        "E": "Voisin",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "Je suis ton nouveau voisin",
+        "visiter le quartier ce week-end",
+        "Pour commencer",
+        "D'accord",
+        "Je vois",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Merci encore"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Demander conseil à un voisin pour découvrir la ville en famille",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je suis ton nouveau voisin. Nous venons d'arriver avec nos deux enfants et nous voulons visiter le quartier ce week-end. Est-ce que je pourrais te poser quelques questions ?",
+                        "note": "OUVERTURE: Salutation + contexte de voisinage + demande polie au conditionnel — entrée en matière",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour, bienvenue ! Avec plaisir, c'est agréable d'avoir enfin de nouveaux voisins. Qu'est-ce que tu veux savoir exactement ?",
+                        "note": "RESPONSE: Accueil chaleureux + invitation à poser les questions, registre tutoiement",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais préparer notre week-end et je te raconterai comment ça s'est passé.",
+                        "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! N'hésite pas à passer me voir si tu as des questions. Bon week-end en famille !",
+                        "note": "FERMETURE: Formule de clôture + disponibilité pour la suite",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour tous ces conseils, c'était vraiment gentil. À bientôt et bonne journée !",
+                        "note": "FERMETURE: Remerciement final + formule de politesse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci beaucoup ! Pour commencer, quels endroits est-ce que tu nous conseillerais de visiter en famille ce week-end ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — lieux à visiter en famille (quels)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Pourquoi est-ce que tu me conseilles le samedi matin plutôt que l'après-midi pour le parc ?",
+                        "note": "RÉACTION: \"D'accord\" — question sur la raison du choix horaire (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien est-ce que ça coûterait pour quatre personnes, avec les entrées et les transports ?",
+                        "note": "RÉACTION: \"Je vois\" — question sur le budget global (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce qu'on peut acheter les tickets, avec les enfants ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — lieu d'achat des tickets (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce qu'on rejoint le Vieux Lyon depuis chez nous, sans prendre la voiture ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — itinéraire sans voiture (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que le musée est ouvert, surtout le dimanche ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — horaires d'ouverture, cas du dimanche (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce qui pourrait nous guider dans le Vieux Lyon, un guide ou une application ?",
+                        "note": "RÉACTION: \"C'est noté\" — personne ressource pour la visite (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Pourquoi est-ce que tu me conseilles le samedi matin plutôt que l'après-midi pour le parc ?",
+                        "note": "RÉACTION: \"D'accord\" — question sur la raison du choix horaire (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien est-ce que ça coûterait pour quatre personnes, avec les entrées et les transports ?",
+                        "note": "RÉACTION: \"Je vois\" — question sur le budget global (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce qu'on peut acheter les tickets, avec les enfants ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — lieu d'achat des tickets (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce qu'on rejoint le Vieux Lyon depuis chez nous, sans prendre la voiture ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — itinéraire sans voiture (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que le musée est ouvert, surtout le dimanche ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — horaires d'ouverture, cas du dimanche (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce qui pourrait nous guider dans le Vieux Lyon, un guide ou une application ?",
+                        "note": "RÉACTION: \"C'est noté\" — personne ressource pour la visite (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais il pleut samedi, qu'est-ce qu'on pourrait faire avec les enfants à l'intérieur ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — solution de repli en cas de pluie (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté, merci. Et si on veut manger le midi, est-ce qu'il y a des restaurants pas trop chers ?",
+                        "note": "SUIVI 2: \"C'est noté\" — où manger le midi à budget raisonnable (relance pratique)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais on reste tout le week-end, est-ce qu'il y a des hébergements pas chers ici ?",
+                        "note": "SUIVI 3: \"Si jamais\" — hébergement si le séjour se prolonge (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je suis ton nouveau voisin. Nous venons d'arriver avec nos deux enfants et nous voulons visiter le quartier ce week-end. Est-ce que je pourrais te poser quelques questions ?",
+                        "note": "CONDITIONNEL POLI: \"Est-ce que je pourrais te poser\" pour ouvrir une demande",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parce qu'il y a beaucoup moins de monde et que les enfants profitent mieux des jeux. L'après-midi, le parking est complet.",
+                        "note": "COMPARATIFS: \"beaucoup moins de monde\" et \"les enfants profitent mieux\" pour justifier un choix",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Justement, si jamais il pleut samedi, qu'est-ce qu'on pourrait faire avec les enfants à l'intérieur ?",
+                        "note": "HYPOTHÈSE: \"si jamais il pleut\" (si + présent) pour envisager un imprévu",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je suis ton nouveau voisin. Nous venons d'arriver avec nos deux enfants et nous voulons visiter le quartier ce week-end. Est-ce que je pourrais te poser quelques questions ?",
+            "en": "Hello! I'm your new neighbour. We've just arrived with our two children and we want to explore the area this weekend. Could I ask you a few questions?",
+            "es": "Bonzhur! Zhe süi ton nuvo vuain. Nu venon darivé avek no döz anfán e nu vulon vizité l kartié s veek-an. Esk zhe puré te pozé kelk kesión?",
+            "note": "OUVERTURE: Salutation + contexte de voisinage + demande polie au conditionnel — entrée en matière"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour, bienvenue ! Avec plaisir, c'est agréable d'avoir enfin de nouveaux voisins. Qu'est-ce que tu veux savoir exactement ?",
+            "en": "Hello, welcome! With pleasure, it's nice to finally have new neighbours. What exactly would you like to know?",
+            "es": "Bonzhur, bienvenü! Avek plèzir, se agréabl davuar anfin de nuvo vuain. K'esk tü vö savuar eksasmán?",
+            "note": "RESPONSE: Accueil chaleureux + invitation à poser les questions, registre tutoiement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci beaucoup ! Pour commencer, quels endroits est-ce que tu nous conseillerais de visiter en famille ce week-end ?",
+            "en": "Thank you very much! To start with, which places would you recommend we visit as a family this weekend?",
+            "es": "Mersí boku! Pur konmansé, kel andrua esk tü nu konsèlerè de vizité an famiy s veek-an?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — lieux à visiter en famille (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je te conseille le parc de la Tête d'Or le samedi matin, puis le Vieux Lyon l'après-midi, avec ses traboules.",
+            "en": "I'd recommend the Parc de la Tête d'Or on Saturday morning, then Old Lyon in the afternoon, with the traboules and the cathedral.",
+            "es": "Zhe te konsel l pars de la Tèt dor l samedi matin, püi l Viö Lion laprès-midi, avek se trabul.",
+            "note": "INFORMATION: Deux lieux concrets + organisation matin/après-midi"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Pourquoi est-ce que tu me conseilles le samedi matin plutôt que l'après-midi pour le parc ?",
+            "en": "Okay. Why do you recommend Saturday morning rather than the afternoon for the park?",
+            "es": "Dakor. Purkua esk tü me konsèl l samedi matin plüto k laprès-midi pur l pars?",
+            "note": "RÉACTION: \"D'accord\" — question sur la raison du choix horaire (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce qu'il y a beaucoup moins de monde et que les enfants profitent mieux des jeux. L'après-midi, le parking est complet.",
+            "en": "Because there are far fewer people and the children make the most of the playground. In the afternoon, the car park is full.",
+            "es": "Pars k il i a boku muan de mon e k lez anfán profi miö de zhö. Laprès-midi, l parkinzh e konple.",
+            "note": "INFORMATION: Justification par la fréquentation + comparaison des deux moments"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien est-ce que ça coûterait pour quatre personnes, avec les entrées et les transports ?",
+            "en": "I see. How much would it cost for four people, including tickets and transport?",
+            "es": "Zhe vua. Kombien esk sa koüterè pur katr person, avek lez antrée e le transport?",
+            "note": "RÉACTION: \"Je vois\" — question sur le budget global (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le parc est gratuit, mais compte neuf euros par adulte pour le musée des Confluences. Le métro coûte deux euros dix.",
+            "en": "The park is free, but count nine euros per adult for the Musée des Confluences. A metro ticket costs two euros ten.",
+            "es": "L pars e gratüi, me konpt nöf eró par adült pur l müzé de Konflüns. L métro kut döz eró dis.",
+            "note": "INFORMATION: Tarifs précis des entrées et du transport"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce qu'on peut acheter les tickets, avec les enfants ?",
+            "en": "Oh, that's good to know. And where can we buy the tickets, with the children?",
+            "es": "A, se bon a savuar. E u esk on pö asheté le tikke, avek lez anfán?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\" — lieu d'achat des tickets (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Aux bornes automatiques de chaque station, ou dans le bus. Les enfants de moins de dix ans ne paient rien.",
+            "en": "At the automatic machines in each station, or directly on the bus. Children under ten pay nothing.",
+            "es": "O born otomatike de shak stasión, u dan l bü. Lez anfán de muan de dis an n pè rien.",
+            "note": "INFORMATION: Points de vente + gratuité pour les jeunes enfants"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Comment est-ce qu'on rejoint le Vieux Lyon depuis chez nous, sans prendre la voiture ?",
+            "en": "Very good, thank you. How do we get to Old Lyon from our place without taking the car?",
+            "es": "Tre bien, mersí. Komán esk on rezhuán l viö lion dopüi she nu, san prandr la vuaür?",
+            "note": "RÉACTION: \"Très bien, merci\" — itinéraire sans voiture (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Prends la ligne D jusqu'à Vieux Lyon, puis le funiculaire pour Fourvière. Ça prend vingt minutes et c'est simple.",
+            "en": "Take line D to Vieux Lyon, then the funicular to Fourvière. It takes twenty minutes and it's very simple.",
+            "es": "Pran la liñ d zhüsk a viö lion, püi l fünikülèr pur furvièr. Sa pran vinzh minü e se sinpl.",
+            "note": "INFORMATION: Itinéraire précis + durée du trajet"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Quand est-ce que le musée est ouvert, surtout le dimanche ?",
+            "en": "I understand better now. When is the museum open, especially on Sundays?",
+            "es": "Zhe konpran miö. Kan esk l müzé e uvé, sürtu l dimansh?",
+            "note": "RÉACTION: \"Je comprends mieux\" — horaires d'ouverture, cas du dimanche (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il ouvre de dix heures à dix-huit heures, sauf le lundi. Le dimanche, l'entrée est gratuite pour les moins de dix-huit ans.",
+            "en": "It's open from ten in the morning to six in the evening, every day except Monday. On Sundays, entry is free for under-eighteens.",
+            "es": "Il uvr de dis ör a diks-üi ör, sof l lundi. L dimansh, lantré e gratüi pur le muan de diks-üi an.",
+            "note": "INFORMATION: Horaires + réduction pour les jeunes le dimanche"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et qui est-ce qui pourrait nous guider dans le Vieux Lyon, un guide ou une application ?",
+            "en": "Noted. And who could guide us around Old Lyon, a guide or an app?",
+            "es": "Se noté. E ki esk ki puré nu gidé dan l viö lion, un gi u ün aplikasión?",
+            "note": "RÉACTION: \"C'est noté\" — personne ressource pour la visite (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a des visites guidées gratuites à quatorze heures, devant l'office du tourisme. Sinon, l'application de la ville propose un parcours enfants.",
+            "en": "There are free guided tours at two in the afternoon, in front of the tourist office. Otherwise, the city app offers a trail for children.",
+            "es": "Il i a de vizi gidée gratüi a katorz ör, devan lofis dü turism. Sinon, laplikasión de la vil propos un parkur anfán.",
+            "note": "INFORMATION: Visites guidées + solution numérique gratuite"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais il pleut samedi, qu'est-ce qu'on pourrait faire avec les enfants à l'intérieur ?",
+            "en": "Actually, if it happens to rain on Saturday, what could we do with the children indoors?",
+            "es": "Zhüstemán, si zhamé il plö samedi, k'esk on puré fer avek lez anfán a lintériör?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — solution de repli en cas de pluie (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le musée des Confluences est parfait pour ça, avec des expositions très visuelles. Il y a aussi la piscine municipale à côté.",
+            "en": "The Musée des Confluences is perfect for that, with very visual exhibitions. There's also the municipal swimming pool just next door.",
+            "es": "L müzé de Konflüns e parfè pur sa, avek dez ekspozisión tre vizül. Il i a osi la pissin münisipal a koté.",
+            "note": "INFORMATION: Deux alternatives couvertes en cas de mauvais temps"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté, merci. Et si on veut manger le midi, est-ce qu'il y a des restaurants pas trop chers ?",
+            "en": "Noted, thanks. And if we want to eat on site at lunchtime, are there any not-too-expensive restaurants?",
+            "es": "Se noté, mersí. E si on vö manzhé l midi, esk il i a de restoran pa tro shé?",
+            "note": "SUIVI 2: \"C'est noté\" — où manger le midi à budget raisonnable (relance pratique)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, un marché couvert près du parc sert des plats à dix euros. On peut aussi pique-niquer au bord du lac.",
+            "en": "Yes, a covered market near the park serves dishes for around ten euros. You can also picnic by the lake.",
+            "es": "Ui, un marshé kuvé prè dü pars sé de pla a dis eró. On pö osi pike-niké o bord dü las.",
+            "note": "INFORMATION: Marché couvert + option pique-nique économique"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais on reste tout le week-end, est-ce qu'il y a des hébergements pas chers ici ?",
+            "en": "Okay. If we happen to decide to stay the whole weekend, are there any inexpensive places to stay in the area?",
+            "es": "Dakor. Si zhamé on rest tu l veek-an, esk il i a dez éberzheman pa shé isi?",
+            "note": "SUIVI 3: \"Si jamais\" — hébergement si le séjour se prolonge (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a une auberge près de la gare, trente euros la nuit. Un appartement pour la famille coûte deux cents euros.",
+            "en": "There's a hostel near the station, at thirty euros a night. For a family, a flat costs two hundred euros.",
+            "es": "Il i a ün oberzh prè de la gar, tran eró la nüi. Un aparmán pur la famiy kut dö san eró.",
+            "note": "INFORMATION: Deux options d'hébergement avec prix"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais préparer notre week-end et je te raconterai comment ça s'est passé.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll plan our weekend and tell you how it went.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé préparé notr veek-an e zhe te rakonterè komán sa se pasé.",
+            "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! N'hésite pas à passer me voir si tu as des questions. Bon week-end en famille !",
+            "en": "With pleasure! Feel free to come by if you have other questions. Have a great family weekend!",
+            "es": "Avek plèzir! Nézi pa a pasé me vuar si tü a de kesión. Bon veek-an an famiy!",
+            "note": "FERMETURE: Formule de clôture + disponibilité pour la suite"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour tous ces conseils, c'était vraiment gentil. À bientôt et bonne journée !",
+            "en": "Thanks again for all this advice, that was really kind. See you soon and have a good day!",
+            "es": "Mersí ankor pur tus se konsèl, sétè vremán zhantil. A biento e bon zhurné!",
+            "note": "FERMETURE: Remerciement final + formule de politesse"
+        }
+    ]
+}

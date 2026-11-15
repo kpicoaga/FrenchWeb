@@ -1,0 +1,380 @@
+{
+    "title": "Se renseigner sur l'adoption d'un animal auprès d'un employé d'animalerie",
+    "task": "tache2",
+    "topic": "9. Shopping & services",
+    "description": "Vous vivez seul et souhaitez adopter un animal pour vous tenir compagnie. Vous interrogez un employé d'animalerie sur les animaux disponibles, les besoins, les soins et les coûts.",
+    "labels": {
+        "E": "Employé de l'animalerie",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'aimerais adopter",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur l'adoption d'un animal auprès d'un employé d'animalerie",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je vis seul depuis quelques mois et j'aimerais adopter un petit animal pour me tenir compagnie. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Bien sûr, avec plaisir. Adopter un animal pour rompre la solitude est une excellente idée. Que souhaitez-vous savoir ?",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réfléchir ce week-end et revenir avec ma décision.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! N'hésitez pas à revenir, nous vous montrerons les chats disponibles. Bonne journée !",
+                        "note": "RESPONSE: Formule de clôture — disponibilité + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour vos conseils, c'était très gentil. À bientôt et bonne journée !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quels animaux proposez-vous en ce moment, et lesquels sont les plus faciles à garder ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — animaux disponibles (quels)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Pourquoi est-ce qu'un chat conviendrait mieux qu'un chien à quelqu'un qui travaille toute la journée ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien coûte l'adoption d'un chaton, et quels sont les frais chaque mois ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que je pourrais installer son panier et sa litière dans un petit appartement ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur l'emplacement (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je dois préparer mon appartement avant son arrivée ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur la préparation (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que je devrais l'adopter, et quel âge faut-il choisir de préférence ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur le moment et l'âge (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et qui est-ce qui s'occuperait de mon animal si je m'absente quelques jours ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur la garde (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Pourquoi est-ce qu'un chat conviendrait mieux qu'un chien à quelqu'un qui travaille toute la journée ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien coûte l'adoption d'un chaton, et quels sont les frais chaque mois ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que je pourrais installer son panier et sa litière dans un petit appartement ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur l'emplacement (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je dois préparer mon appartement avant son arrivée ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur la préparation (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que je devrais l'adopter, et quel âge faut-il choisir de préférence ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur le moment et l'âge (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et qui est-ce qui s'occuperait de mon animal si je m'absente quelques jours ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur la garde (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais mon chat tombe malade la nuit, qui dois-je contacter en urgence ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — urgence vétérinaire (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que l'adoption reste possible si je pars en vacances deux semaines par an ?",
+                        "note": "SUIVI 2: \"C'est noté\" — contrainte des vacances",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais je change d'avis après quelques semaines, est-ce que je peux vous ramener l'animal ?",
+                        "note": "SUIVI 3: \"Si jamais\" — retour de l'animal (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je vis seul depuis quelques mois et j'aimerais adopter un petit animal pour me tenir compagnie. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "CONDITIONNEL POLI: \"j'aimerais\" + \"est-ce que je pourrais\" pour formuler une demande",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Un chat est plus indépendant et supporte bien la solitude. Un chien doit sortir plusieurs fois par jour, ce qui est difficile à temps plein.",
+                        "note": "COMPARATIF + \"ce qui\": comparez deux options et commentez la conséquence",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Oui, dans les trente jours et sans frais, mais il faut respecter le contrat. Nous préférons en parler avant, pour éviter un abandon.",
+                        "note": "INFORMATION: Conditions de retour + engagement",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je vis seul depuis quelques mois et j'aimerais adopter un petit animal pour me tenir compagnie. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+            "en": "Hello! I've been living alone for a few months and I'd like to adopt a small animal to keep me company. Could I ask you a few questions about it?",
+            "es": "Bonzhur! Zhe vi söl dopüi kelk mua e zhémeré adopté un peti animal pur me tenir konpañi. Esk zhe puré vu pozé kelk kesión a s süzhe?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Bien sûr, avec plaisir. Adopter un animal pour rompre la solitude est une excellente idée. Que souhaitez-vous savoir ?",
+            "en": "Hello! Of course, with pleasure. Adopting an animal to break the loneliness is an excellent idea. What would you like to know?",
+            "es": "Bonzhur! Bien sür, avek plèzir. Adopté un animal pur ronpr la solitü e ün eksselan idé. K suètez-vu savuar?",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quels animaux proposez-vous en ce moment, et lesquels sont les plus faciles à garder ?",
+            "en": "To start with, which animals do you offer at the moment, and which are the easiest to keep?",
+            "es": "Pur konmansé, kel animo propozez-vu an s momán, e leskel son le plüs fasil a gardé?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — animaux disponibles (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Nous avons des chats, des chiens, des hamsters, des poissons et des lapins. Pour un débutant qui vit seul, je conseille plutôt un chat.",
+            "en": "We have cats, dogs, hamsters, fish and rabbits. For a beginner living alone, I'd rather recommend a cat.",
+            "es": "Nuz avon de sha, de shien, dez ansté, de puason e de lapin. Pur un débütan ki vit söl, zhe konsel plüto un sha.",
+            "note": "INFORMATION: Animaux disponibles + premier conseil"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Pourquoi est-ce qu'un chat conviendrait mieux qu'un chien à quelqu'un qui travaille toute la journée ?",
+            "en": "Okay. Why would a cat be more suitable than a dog for someone who works all day?",
+            "es": "Dakor. Purkua esk un sha konviendrè miö k un shien a kelk un ki travèl tut la zhurné?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un chat est plus indépendant et supporte bien la solitude. Un chien doit sortir plusieurs fois par jour, ce qui est difficile à temps plein.",
+            "en": "A cat is more independent and handles loneliness well. A dog needs to go out several times a day, which is difficult with a full-time job.",
+            "es": "Un sha e plüs indépandan e süport bien la solitü. Un shien dua sortir plüziör fua par zhur, s ki e difisil a tanp plin.",
+            "note": "INFORMATION: Comparaison chat/chien et autonomie"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien coûte l'adoption d'un chaton, et quels sont les frais chaque mois ?",
+            "en": "I see. How much does adopting a kitten cost, and what are the monthly expenses?",
+            "es": "Zhe vua. Kombien kut ladopsión dun shaton, e kel son le frè shak mua?",
+            "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le chaton coûte environ cent cinquante euros, vacciné et identifié. Comptez ensuite trente euros par mois pour la nourriture et la litière.",
+            "en": "A kitten costs about one hundred and fifty euros, vaccinated and microchipped. Then count thirty euros a month for food and litter.",
+            "es": "L shaton kut anviron san sinkan eró, vakiné e idantifié. Konpté ansüit tran eró par mua pur la nuritür e la litièr.",
+            "note": "INFORMATION: Coût de l'adoption + budget mensuel"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que je pourrais installer son panier et sa litière dans un petit appartement ?",
+            "en": "Oh, that's good to know. And where could I set up its bed and litter box in a small flat?",
+            "es": "A, se bon a savuar. E u esk zhe puré instalé son panié e sa litièr dan un peti aparmán?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur l'emplacement (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Placez la litière dans un endroit calme et le panier près d'une fenêtre. Prenez aussi un arbre à chat pour qu'il grimpe.",
+            "en": "Put the litter box in a quiet spot, away from the kitchen, and the bed near a window. Also get a cat tree so it can climb.",
+            "es": "Plasé la litièr dan un andrua kalm e l panié prè dün fenètr. Prené osi un arbr a sha pur k il grinp.",
+            "note": "INFORMATION: Aménagement de l'espace"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Comment est-ce que je dois préparer mon appartement avant son arrivée ?",
+            "en": "Very good, thank you. How should I prepare my flat before it arrives?",
+            "es": "Tre bien, mersí. Komán esk zhe dua préparé mon aparmán aván son arivé?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur la préparation (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Sécurisez les fenêtres et rangez les produits ménagers. Prévoyez un griffoir, deux gamelles, une litière fermée et une boîte de transport.",
+            "en": "Secure the windows and put household products away. Get a scratching post, two bowls, a covered litter box and a carrier.",
+            "es": "Sékürizé le fenètr e ranzhé le prodüi ménazhé. Prévuayé un grifuar, dö gamel, ün litièr fermé e ün boi de transpor.",
+            "note": "INFORMATION: Préparation du logement + matériel indispensable"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Quand est-ce que je devrais l'adopter, et quel âge faut-il choisir de préférence ?",
+            "en": "I understand better. When should I adopt it, and what age should I preferably choose?",
+            "es": "Zhe konpran miö. Kan esk zhe devrè ladopté, e kel azh fot-il shuair de préférans?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur le moment et l'âge (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un chaton de deux ou trois mois s'habitue vite à un nouveau foyer. Le printemps est une bonne période, il y a plus de choix.",
+            "en": "A two- or three-month-old kitten adapts quickly to a new home. Spring is a good period, the shop then offers more choice.",
+            "es": "Un shaton de döz u trua mua sabitü vit a un nuvo fuayé. L printanp e ün bon pério, il i a plüs de shua.",
+            "note": "INFORMATION: Période et âge conseillés"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Et qui est-ce qui s'occuperait de mon animal si je m'absente quelques jours ?",
+            "en": "Oh, that's interesting. And who would look after my animal if I'm away for a few days?",
+            "es": "A, se intérèsan. E ki esk ki soküperè de mon animal si zhe mabsan kelk zhur?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur la garde (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vous pouvez le confier à une pension ou à une personne de confiance. Nous proposons aussi un service de garde le week-end.",
+            "en": "You can leave it at a boarding facility or with someone you trust. We also offer a pet-sitting service at weekends and during holidays.",
+            "es": "Vu puvé l konfié a ün pansión u a ün person de konfians. Nu propozon osi un servis de gard l veek-an.",
+            "note": "INFORMATION: Solutions de garde"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais mon chat tombe malade la nuit, qui dois-je contacter en urgence ?",
+            "en": "Actually, if ever my cat gets sick during the night, who should I contact in an emergency?",
+            "es": "Zhüstemán, si zhamé mon sha tonb mala la nüi, ki dua-zh kontakté an ürzhans?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — urgence vétérinaire (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Nous travaillons avec une clinique ouverte vingt-quatre heures sur vingt-quatre. Le numéro figure sur votre contrat d'adoption.",
+            "en": "We work with a clinic open twenty-four hours a day. The number appears on your adoption contract.",
+            "es": "Nu travèlon avek ün klinik uvert vingt-katr ör sür vingt-katr. L nüméro figür sür votr kontra dadopsión.",
+            "note": "INFORMATION: Urgence vétérinaire + où trouver le numéro"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que l'adoption reste possible si je pars en vacances deux semaines par an ?",
+            "en": "Noted. And is adoption still possible if I go on holiday for two weeks a year?",
+            "es": "Se noté. E esk ladopsión rest posibl si zhe par an vakans dö semén par an?",
+            "note": "SUIVI 2: \"C'est noté\" — contrainte des vacances"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, mais il faut une solution de garde. La pension coûte quinze euros par jour, sinon un proche peut passer chaque jour.",
+            "en": "Yes, but you need a pet-sitting solution. Boarding costs fifteen euros a day, otherwise a relative can come by every day.",
+            "es": "Ui, me il fo ün solüsión de gard. La pansión kut kinz eró par zhur, sinon un prosh pö pasé shak zhur.",
+            "note": "INFORMATION: Garde pendant les vacances + tarif"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais je change d'avis après quelques semaines, est-ce que je peux vous ramener l'animal ?",
+            "en": "Okay. If ever I change my mind after a few weeks, can I bring the animal back to you?",
+            "es": "Dakor. Si zhamé zhe shanzh davi apre kelk semén, esk zhe pö vu ramené lanimal?",
+            "note": "SUIVI 3: \"Si jamais\" — retour de l'animal (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, dans les trente jours et sans frais, mais il faut respecter le contrat. Nous préférons en parler avant, pour éviter un abandon.",
+            "en": "Yes, within thirty days and free of charge, but you must respect the contract. We prefer to talk about it beforehand to avoid abandonment.",
+            "es": "Ui, dan le tran zhur e san frè, me il fo respekté l kontra. Nu préféron an parlé aván, pur évité un abandon.",
+            "note": "INFORMATION: Conditions de retour + engagement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réfléchir ce week-end et revenir avec ma décision.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll think about it this weekend and come back with my decision.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé réfléshir s veek-an e revenir avek ma désisión.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! N'hésitez pas à revenir, nous vous montrerons les chats disponibles. Bonne journée !",
+            "en": "With pleasure! Feel free to come back, we'll show you the available cats. Have a good day!",
+            "es": "Avek plèzir! Nézité pa a revenir, nu vu montreron le sha disponibl. Bon zhurné!",
+            "note": "RESPONSE: Formule de clôture — disponibilité + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour vos conseils, c'était très gentil. À bientôt et bonne journée !",
+            "en": "Thanks again for your advice, that was very kind. See you soon and have a good day!",
+            "es": "Mersí ankor pur vo konsèl, sétè tre zhantil. A biento e bon zhurné!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

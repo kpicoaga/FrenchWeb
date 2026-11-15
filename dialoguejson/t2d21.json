@@ -1,0 +1,379 @@
+{
+    "title": "Choisir une activité dans un centre culturel et sportif",
+    "task": "tache2",
+    "topic": "7. Sports & fitness",
+    "description": "Vous êtes arrivé au Canada récemment et vous cherchez une activité pour votre temps libre. Vous vous renseignez auprès d'un employé d'un centre culturel et sportif sur les activités proposées, les horaires et les tarifs.",
+    "labels": {
+        "E": "Employé du centre",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "je cherche une activité",
+        "nouveaux arrivants",
+        "Pour commencer",
+        "D'accord",
+        "Je vois",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "N'hésitez pas",
+        "Merci encore"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Choisir une activité dans un centre culturel et sportif",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je suis arrivé au Canada il y a deux mois et je cherche une activité pour mes soirées. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + contexte d'installation + demande polie au conditionnel",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour et bienvenue ! Bien sûr. Notre centre propose du sport et des ateliers culturels. Qu'est-ce qui vous intéresse ?",
+                        "note": "RESPONSE: Accueil + présentation générale de l'offre + invitation à préciser le besoin",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réfléchir et revenir m'inscrire avant le quinze janvier.",
+                        "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir, nous serons ravis de vous accueillir. N'hésitez pas à demander une séance d'essai gratuite. Bonne journée !",
+                        "note": "FERMETURE: Formule de clôture + offre d'essai + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour toutes ces informations, c'était très utile. À bientôt et bonne journée !",
+                        "note": "FERMETURE: Remerciement final + formule de politesse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci ! Pour commencer, quelles activités est-ce que vous me conseilleriez pour un débutant qui n'a jamais rien pratiqué ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — activités adaptées à un débutant (quelles)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Pourquoi est-ce que vous me recommandez la natation plutôt que la salle de sport classique ?",
+                        "note": "RÉACTION: \"D'accord\" — question sur le choix entre deux activités (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien est-ce que coûte l'abonnement mensuel, et est-ce qu'il y a un tarif pour les nouveaux arrivants ?",
+                        "note": "RÉACTION: \"Je vois\" — question sur le tarif et la réduction (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que se trouvent vos salles, près du métro ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — localisation du centre (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je peux m'inscrire, et faut-il apporter un document particulier ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — procédure d'inscription (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que les cours commencent, et à quelle heure ferment les salles ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — calendrier et horaires (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce qui anime les ateliers culturels, des professionnels ou des bénévoles ?",
+                        "note": "RÉACTION: \"C'est noté\" — encadrement des ateliers (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Pourquoi est-ce que vous me recommandez la natation plutôt que la salle de sport classique ?",
+                        "note": "RÉACTION: \"D'accord\" — question sur le choix entre deux activités (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien est-ce que coûte l'abonnement mensuel, et est-ce qu'il y a un tarif pour les nouveaux arrivants ?",
+                        "note": "RÉACTION: \"Je vois\" — question sur le tarif et la réduction (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que se trouvent vos salles, près du métro ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — localisation du centre (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je peux m'inscrire, et faut-il apporter un document particulier ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — procédure d'inscription (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que les cours commencent, et à quelle heure ferment les salles ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — calendrier et horaires (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce qui anime les ateliers culturels, des professionnels ou des bénévoles ?",
+                        "note": "RÉACTION: \"C'est noté\" — encadrement des ateliers (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je ne peux pas venir un soir, est-ce que je peux rattraper le cours une autre fois ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — absence imprévue et rattrapage",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté, merci. Et si je veux essayer deux activités différentes, est-ce que je dois payer deux abonnements ?",
+                        "note": "SUIVI 2: \"C'est noté\" — combinaison de deux activités (relance pratique)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais j'ai un problème de santé pendant l'année, est-ce que l'abonnement peut être suspendu ?",
+                        "note": "SUIVI 3: \"Si jamais\" — suspension pour raison de santé (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je suis arrivé au Canada il y a deux mois et je cherche une activité pour mes soirées. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "CONDITIONNEL POLI: \"Est-ce que je pourrais vous poser\" pour formuler une demande",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parce que c'est plus doux pour le dos et que les cours sont en petit groupe. Il y a des séances libres le samedi matin.",
+                        "note": "COMPARATIF: \"c'est plus doux pour le dos\" pour défendre un choix",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "C'est noté, merci. Et si je veux essayer deux activités différentes, est-ce que je dois payer deux abonnements ?",
+                        "note": "PROPOSITION CONDITIONNELLE: \"si je veux essayer deux activités\" (si + présent)",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je suis arrivé au Canada il y a deux mois et je cherche une activité pour mes soirées. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+            "en": "Hello! I arrived in Canada two months ago and I'm looking for an activity for my evenings. Could I ask you a few questions about it?",
+            "es": "Bonzhur! Zhe süi arivé o kanada il i a dö mua e zhe shersh ün aktivité pur me suarée. Esk zhe puré vu pozé kelk kesión a s süzhe?",
+            "note": "OUVERTURE: Salutation + contexte d'installation + demande polie au conditionnel"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour et bienvenue ! Bien sûr. Notre centre propose du sport et des ateliers culturels. Qu'est-ce qui vous intéresse ?",
+            "en": "Hello and welcome! Of course. Our centre offers sports and cultural workshops. What interests you?",
+            "es": "Bonzhur e bienvenü! Bien sür. Notr santr propos dü spor e dez atelié kültürel. K esk ki vuz intéres?",
+            "note": "RESPONSE: Accueil + présentation générale de l'offre + invitation à préciser le besoin"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci ! Pour commencer, quelles activités est-ce que vous me conseilleriez pour un débutant qui n'a jamais rien pratiqué ?",
+            "en": "Thank you! To start with, which activities would you recommend to a beginner who has never done anything?",
+            "es": "Mersí! Pur konmansé, kel aktivité esk vu me konsèlerié pur un débütan ki na zhamé rien pratiké?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — activités adaptées à un débutant (quelles)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je vous conseille la natation le mardi soir ou l'atelier de poterie le jeudi. Les deux sont accessibles et on y rencontre du monde.",
+            "en": "I'd recommend swimming on Tuesday evenings or the pottery workshop on Thursdays. Both are accessible and you meet people there.",
+            "es": "Zhe vu konsel la natasión l mardi suar u latelié de poteri l zhödi. Le dö son akesibl e on i rankontr dü mon.",
+            "note": "INFORMATION: Deux activités concrètes + justification humaine"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Pourquoi est-ce que vous me recommandez la natation plutôt que la salle de sport classique ?",
+            "en": "Okay. Why do you recommend swimming rather than the traditional gym?",
+            "es": "Dakor. Purkua esk vu me rekonmandé la natasión plüto k la sal de spor klasik?",
+            "note": "RÉACTION: \"D'accord\" — question sur le choix entre deux activités (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce que c'est plus doux pour le dos et que les cours sont en petit groupe. Il y a des séances libres le samedi matin.",
+            "en": "Because it's gentler on the back and the classes are in small groups. There are free sessions on Saturday mornings.",
+            "es": "Pars k se plüs du pur l do e k le kur son an peti grup. Il i a de séans libr l samedi matin.",
+            "note": "INFORMATION: Argument santé + format des cours + créneau libre"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien est-ce que coûte l'abonnement mensuel, et est-ce qu'il y a un tarif pour les nouveaux arrivants ?",
+            "en": "I see. How much does the monthly membership cost, and is there a rate for newcomers?",
+            "es": "Zhe vua. Kombien esk kut labonmán mansül, e esk il i a un tarif pur le nuvo arivan?",
+            "note": "RÉACTION: \"Je vois\" — question sur le tarif et la réduction (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'abonnement coûte cinquante dollars canadiens par mois et donne accès à toutes les activités. Les nouveaux arrivants paient moitié prix les trois premiers mois.",
+            "en": "The membership costs fifty Canadian dollars a month and gives access to all activities. Newcomers pay half price for the first three months.",
+            "es": "Labonmán kut sinkan dolar kanadien par mua e don akè a tut lez aktivité. Le nuvo arivan pè muaié pri le trua premié mua.",
+            "note": "INFORMATION: Prix mensuel + réduction réservée aux nouveaux arrivants"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que se trouvent vos salles, près du métro ?",
+            "en": "Oh, that's good to know. And where are your rooms located, near the metro?",
+            "es": "A, se bon a savuar. E u esk s truv vo sal, prè dü métro?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\" — localisation du centre (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le centre est juste en face de la station Jean-Talon, sortie nord. Un parking gratuit se trouve derrière le bâtiment.",
+            "en": "The centre is right opposite Jean-Talon station, north exit. Free parking is available behind the building.",
+            "es": "L santr e zhüst an fas de la stasión Zhean-talon, sorti nord. Un parkinzh gratüi s truv derièr l batin.",
+            "note": "INFORMATION: Repère de transport + stationnement gratuit"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Comment est-ce que je peux m'inscrire, et faut-il apporter un document particulier ?",
+            "en": "Very good, thank you. How can I register, and do I need to bring a particular document?",
+            "es": "Tre bien, mersí. Komán esk zhe pö minskrir, e fot-il aporté un dokun partikülié?",
+            "note": "RÉACTION: \"Très bien, merci\" — procédure d'inscription (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vous pouvez vous inscrire en ligne ou à l'accueil. Il suffit d'une pièce d'identité et d'un certificat médical pour le sport.",
+            "en": "You can register online or at reception. All you need is ID and a medical certificate for sports.",
+            "es": "Vu puvé vuz inskrir an liñ u a laküil. Il süfi dün piès didantité e dun sertifika médikal pur l spor.",
+            "note": "INFORMATION: Deux canaux d'inscription + documents exigés"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Quand est-ce que les cours commencent, et à quelle heure ferment les salles ?",
+            "en": "I understand better now. When do the classes start, and what time do the rooms close?",
+            "es": "Zhe konpran miö. Kan esk le kur konmans, e a kel ör ferm le sal?",
+            "note": "RÉACTION: \"Je comprends mieux\" — calendrier et horaires (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La nouvelle session commence le quinze janvier. Les salles sont ouvertes de sept heures à vingt-deux heures en semaine.",
+            "en": "The new session starts on 15 January. The rooms are open from seven in the morning to ten in the evening on weekdays.",
+            "es": "La nuvel sesión konmans l kinz zhanvié. Le sal son uvert de set ör a vingt-dö ör an semén.",
+            "note": "INFORMATION: Date de rentrée + amplitude d'ouverture"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et qui est-ce qui anime les ateliers culturels, des professionnels ou des bénévoles ?",
+            "en": "Noted. And who runs the cultural workshops, professionals or volunteers?",
+            "es": "Se noté. E ki esk ki anin lez atelié kültürel, de profesiónel u de bénévol?",
+            "note": "RÉACTION: \"C'est noté\" — encadrement des ateliers (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les ateliers sont animés par des artistes professionnels, souvent québécois. Ils exposent les travaux des participants une fois par an.",
+            "en": "The workshops are led by professional artists, often from Quebec. They also exhibit the participants' work once a year.",
+            "es": "Lez atelié son animé par dez artist profesiónel, suván kébékua. Ilz ekspos le travo de partisipan ün fua par an.",
+            "note": "INFORMATION: Profil des intervenants + valorisation des travaux"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je ne peux pas venir un soir, est-ce que je peux rattraper le cours une autre fois ?",
+            "en": "Actually, if I happen to be unable to come one evening, can I make up the class another time?",
+            "es": "Zhüstemán, si zhamé zhe n pö pa venir un suar, esk zhe pö ratrapé l kur ün otr fua?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — absence imprévue et rattrapage"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, vous pouvez rattraper jusqu'à quatre cours par session. Il suffit de prévenir l'accueil vingt-quatre heures avant.",
+            "en": "Yes, you can make up to four classes per session. You just need to inform reception twenty-four hours in advance.",
+            "es": "Ui, vu puvé ratrapé zhüsk a katr kur par sesión. Il süfi de prévenir laküil vingt-katr ör aván.",
+            "note": "INFORMATION: Limite de rattrapage + procédure d'information"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté, merci. Et si je veux essayer deux activités différentes, est-ce que je dois payer deux abonnements ?",
+            "en": "Noted, thanks. And if I want to try two different activities, do I have to pay for two memberships?",
+            "es": "Se noté, mersí. E si zhe vö eséyé döz aktivité diféran, esk zhe dua péyé döz aboneman?",
+            "note": "SUIVI 2: \"C'est noté\" — combinaison de deux activités (relance pratique)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Non, un seul abonnement suffit pour toutes les activités. Je vous conseille quand même de choisir une discipline au début.",
+            "en": "No, one membership is enough for all activities. Still, I'd advise you to choose a single discipline at the start.",
+            "es": "Non, un söl abonmán süfi pur tut lez aktivité. Zhe vu konsel kan mem de shuair ün dissiplin o débü.",
+            "note": "INFORMATION: Règle d'accès unique + recommandation pédagogique"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais j'ai un problème de santé pendant l'année, est-ce que l'abonnement peut être suspendu ?",
+            "en": "Okay. If I happen to have a health problem during the year, can the membership be suspended?",
+            "es": "Dakor. Si zhamé zhé un problèm de santé pandán lané, esk labonmán pö etr süspandü?",
+            "note": "SUIVI 3: \"Si jamais\" — suspension pour raison de santé (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, sur présentation d'un certificat médical, nous suspendons l'abonnement sans frais. La reprise se fait à la fin de l'arrêt.",
+            "en": "Yes, on presentation of a medical certificate, we suspend the membership free of charge. It resumes at the end of the leave.",
+            "es": "Ui, sür prézantasión dun sertifika médikal, nu süspandon labonmán san frè. La repris s fe a la fin de larè.",
+            "note": "INFORMATION: Condition de suspension + reprise sans frais"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réfléchir et revenir m'inscrire avant le quinze janvier.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll think about it and come back to register before 15 January.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé réfléshir e revenir minskrir aván l kinz zhanvié.",
+            "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir, nous serons ravis de vous accueillir. N'hésitez pas à demander une séance d'essai gratuite. Bonne journée !",
+            "en": "With pleasure, we'll be delighted to welcome you. Feel free to ask for a free trial session. Have a good day!",
+            "es": "Avek plèzir, nu seron ravi de vuz aküilir. Nézité pa a demandé ün séans desè gratüi. Bon zhurné!",
+            "note": "FERMETURE: Formule de clôture + offre d'essai + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour toutes ces informations, c'était très utile. À bientôt et bonne journée !",
+            "en": "Thanks again for all this information, it was very helpful. See you soon and have a good day!",
+            "es": "Mersí ankor pur tut sez informasión, sétè tre ütil. A biento e bon zhurné!",
+            "note": "FERMETURE: Remerciement final + formule de politesse"
+        }
+    ]
+}

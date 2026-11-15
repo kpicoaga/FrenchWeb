@@ -1,0 +1,380 @@
+{
+    "title": "Demander des précisions sur un appartement à acheter auprès d'un agent immobilier",
+    "task": "tache2",
+    "topic": "1. Housing",
+    "description": "Vous souhaitez acheter un appartement et une offre vous intéresse. Vous demandez à l'agent immobilier des précisions sur la superficie, le coût, le quartier et les services à proximité.",
+    "labels": {
+        "E": "Agent immobilier",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "cette offre m'intéresse beaucoup",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Demander des précisions sur un appartement à acheter auprès d'un agent immobilier",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! J'ai vu votre annonce pour l'appartement du centre-ville et cette offre m'intéresse beaucoup. Avant de visiter, j'aimerais quelques précisions. Est-ce que je pourrais vous poser quelques questions ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Bien sûr, c'est un très beau bien, lumineux et bien situé. Je réponds volontiers à vos questions.",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réfléchir et confirmer la visite de jeudi.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! N'hésitez pas à m'appeler si vous avez d'autres questions. À jeudi et bonne journée !",
+                        "note": "RESPONSE: Formule de clôture — disponibilité + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour toutes ces précisions, c'était très clair. À jeudi et bonne journée !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quelle est la superficie exacte de l'appartement, et combien de pièces compte-t-il ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — superficie et pièces (quelle)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que le propriétaire vend maintenant, est-ce qu'il y a un problème particulier ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison de la vente (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien coûte l'appartement, et est-ce que les charges sont comprises dans le prix affiché ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que l'immeuble se trouve exactement, dans quel quartier ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le quartier (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je peux organiser une visite, et quels documents faut-il préparer pour acheter ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur la visite (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que l'appartement serait disponible, et est-ce que les propriétaires actuels sont pressés ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur la disponibilité (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et qui est-ce qui gère l'immeuble, un syndic professionnel ou les copropriétaires ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur la gestion (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que le propriétaire vend maintenant, est-ce qu'il y a un problème particulier ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison de la vente",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien coûte l'appartement, et est-ce que les charges sont comprises dans le prix affiché ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le prix",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que l'immeuble se trouve exactement, dans quel quartier ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le quartier",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je peux organiser une visite, et quels documents faut-il préparer pour acheter ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur la visite",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que l'appartement serait disponible, et est-ce que les propriétaires actuels sont pressés ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur la disponibilité",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et qui est-ce qui gère l'immeuble, un syndic professionnel ou les copropriétaires ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur la gestion",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je veux faire baisser le prix, est-ce que le propriétaire accepterait de négocier un peu ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — négociation (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce qu'il y a une école et une pharmacie près de l'immeuble, pour une famille ?",
+                        "note": "SUIVI 2: \"C'est noté\" — services à proximité",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais ma banque refuse le prêt, est-ce que je récupère l'acompte que j'aurais versé ?",
+                        "note": "SUIVI 3: \"Si jamais\" — remboursement de l'acompte (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! J'ai vu votre annonce pour l'appartement du centre-ville et cette offre m'intéresse beaucoup. Avant de visiter, j'aimerais quelques précisions. Est-ce que je pourrais vous poser quelques questions ?",
+                        "note": "CONDITIONNEL POLI: \"cette offre m'intéresse\" + \"est-ce que je pourrais\"",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Une négociation de cinq à dix mille euros est possible, surtout si vous achetez sans condition de prêt. Au-delà, il refusera.",
+                        "note": "CONDITION \"si\" + FUTUR/CONDITIONNEL: \"surtout si vous achetez sans condition de prêt\"",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Oui, si le refus est écrit et que la condition suspensive est dans le contrat. Sans cette clause, l'acompte serait perdu.",
+                        "note": "CONDITIONNEL PASSÉ: \"l'acompte serait perdu\" pour exprimer une conséquence hypothétique",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! J'ai vu votre annonce pour l'appartement du centre-ville et cette offre m'intéresse beaucoup. Avant de visiter, j'aimerais quelques précisions. Est-ce que je pourrais vous poser quelques questions ?",
+            "en": "Hello! I saw your advert for the downtown flat and this offer interests me a lot. Before visiting, I'd like some details. Could I ask you a few questions?",
+            "es": "Bonzhur! Zhé vü votr anons pur laparmán dü santre-vil e set ofr mintéres boku. Aván de vizité, zhémeré kelk présizión. Esk zhe puré vu pozé kelk kesión?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Bien sûr, c'est un très beau bien, lumineux et bien situé. Je réponds volontiers à vos questions.",
+            "en": "Hello! Of course, it's a very nice property, bright and well located. I'm happy to answer your questions.",
+            "es": "Bonzhur! Bien sür, se un tre bo bien, lüminö e bien sitüe. Zhe répon volontié a vo kesión.",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quelle est la superficie exacte de l'appartement, et combien de pièces compte-t-il ?",
+            "en": "To start with, what's the exact surface area of the flat, and how many rooms does it have?",
+            "es": "Pur konmansé, kel e la süperfisi eksakt de laparmán, e kombien de piès konpte-t-il?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — superficie et pièces (quelle)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Soixante-huit mètres carrés, avec deux chambres, un salon et une cuisine ouverte. Il y a aussi un balcon de six mètres carrés.",
+            "en": "Sixty-eight square metres, with two bedrooms, a living room and an open kitchen. There's also a six-square-metre balcony.",
+            "es": "Suaante-üi mètr karé, avek dö shanbr, un salon e ün küizin uvert. Il i a osi un balkon de sis mètr karé.",
+            "note": "INFORMATION: Superficie et composition"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pourquoi est-ce que le propriétaire vend maintenant, est-ce qu'il y a un problème particulier ?",
+            "en": "Okay. And why is the owner selling now, is there a particular problem?",
+            "es": "Dakor. E purkua esk l propriétèr van mintnán, esk il i a un problèm partikülié?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison de la vente (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il part à l'étranger pour son travail, il n'y a aucun problème. L'appartement est en très bon état, seule la salle de bain est ancienne.",
+            "en": "He's moving abroad for work, there's no problem at all. The flat is in very good condition, only the bathroom is old.",
+            "es": "Il par a létranzhé pur son travai, il ni a okun problèm. Laparmán e an tre bon éta, söl la sal de bin e ansien.",
+            "note": "INFORMATION: Raison de la vente + état du bien"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien coûte l'appartement, et est-ce que les charges sont comprises dans le prix affiché ?",
+            "en": "I see. How much does the flat cost, and are the service charges included in the advertised price?",
+            "es": "Zhe vua. Kombien kut laparmán, e esk le sharzh son konpris dan l pri afishé?",
+            "note": "RÉACTION: \"Je vois\"; question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Deux cent quarante mille euros, hors charges. Comptez quatre-vingts euros par mois de charges et mille deux cents euros de taxe foncière.",
+            "en": "Two hundred and forty thousand euros, excluding charges. Count eighty euros a month in charges and one thousand two hundred euros in property tax.",
+            "es": "Dö san karan mil eró, or sharzh. Konpté katre-vingt eró par mua de sharzh e mil dö san eró de taks fonsièr.",
+            "note": "INFORMATION: Prix et frais annexes"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que l'immeuble se trouve exactement, dans quel quartier ?",
+            "en": "Oh, that's good to know. And where exactly is the building, in which neighbourhood?",
+            "es": "A, se bon a savuar. E u esk linmöbl s truv eksasmán, dan kel kartié?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le quartier (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Au cœur du quartier Saint-Paul, à deux pas des commerces. C'est un quartier calme et très recherché par les familles.",
+            "en": "In the heart of the Saint-Paul neighbourhood, a stone's throw from the shops. It's a quiet neighbourhood much sought after by families.",
+            "es": "O kör dü kartié Sint-pol, a dö pa de konmers. Se un kartié kalm e tre reshershé par le famil.",
+            "note": "INFORMATION: Quartier et environnement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Comment est-ce que je peux organiser une visite, et quels documents faut-il préparer pour acheter ?",
+            "en": "Very good, thank you. How can I organize a visit, and what documents should I prepare to buy?",
+            "es": "Tre bien, mersí. Komán esk zhe pö organizé ün vizi, e kel doküman fot-il préparé pur asheté?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur la visite (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je vous propose une visite jeudi à dix-sept heures. Préparez une pièce d'identité et un accord de prêt de votre banque.",
+            "en": "I suggest a visit on Thursday at five p.m. Bring an ID document and a loan agreement from your bank.",
+            "es": "Zhe vu propos ün vizi zhödi a diks-sep ör. Préparé ün piès didantité e un akor de prè de votr bank.",
+            "note": "INFORMATION: Visite et documents nécessaires"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Quand est-ce que l'appartement serait disponible, et est-ce que les propriétaires actuels sont pressés ?",
+            "en": "I understand better. When would the flat be available, and are the current owners in a hurry?",
+            "es": "Zhe konpran miö. Kan esk laparmán serè disponibl, e esk le propriétèr aktül son presé?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur la disponibilité (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il est libre au premier octobre. Les propriétaires ne sont pas pressés, mais ils refuseront une offre trop basse.",
+            "en": "It's available from the first of October. The owners aren't in a hurry, but they'll refuse an offer that's too low.",
+            "es": "Il e libr o premié oktobr. Le propriétèr n son pa presé, me il refüzeron ün ofr tro bas.",
+            "note": "INFORMATION: Date de disponibilité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Et qui est-ce qui gère l'immeuble, un syndic professionnel ou les copropriétaires ?",
+            "en": "Oh, that's interesting. And who manages the building, a professional manager or the co-owners?",
+            "es": "A, se intérèsan. E ki esk ki zhèr linmöbl, un sindis profesiónel u le kopropriétèr?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur la gestion (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un syndic professionnel, très réactif. L'immeuble a huit appartements et les travaux de toiture ont été faits cette année.",
+            "en": "A professional manager, very responsive. The building has eight flats and the roof work was done this year.",
+            "es": "Un sindis profesiónel, tre réaktif. Linmöbl a üit aparteman e le travo de tuaür on été fè set ané.",
+            "note": "INFORMATION: Gestion de l'immeuble"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je veux faire baisser le prix, est-ce que le propriétaire accepterait de négocier un peu ?",
+            "en": "Actually, if ever I want to lower the price, would the owner agree to negotiate a little?",
+            "es": "Zhüstemán, si zhamé zhe vö fer bèsé l pri, esk l propriétèr akepterè de négosié un pö?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — négociation (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Une négociation de cinq à dix mille euros est possible, surtout si vous achetez sans condition de prêt. Au-delà, il refusera.",
+            "en": "A negotiation of five to ten thousand euros is possible, especially if you buy without a loan condition. Beyond that, he'll refuse.",
+            "es": "Ün négosiasión de sink a dis mil eró e posibl, sürtu si vuz asheté san kondisión de prè. O-dela, il refüzera.",
+            "note": "INFORMATION: Marge de négociation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce qu'il y a une école et une pharmacie près de l'immeuble, pour une famille ?",
+            "en": "Noted. And is there a school and a pharmacy near the building, for a family?",
+            "es": "Se noté. E esk il i a ün ékol e ün farmasi prè de linmöbl, pur ün famiy?",
+            "note": "SUIVI 2: \"C'est noté\" — services à proximité"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, une école primaire à trois cents mètres et une pharmacie en bas de la rue. Il y a aussi un marché tous les samedis.",
+            "en": "Yes, a primary school three hundred metres away and a pharmacy at the bottom of the street. There's also a market every Saturday.",
+            "es": "Ui, ün ékol primèr a trua san mètr e ün farmasi an ba de la rü. Il i a osi un marshé tus le samedi.",
+            "note": "INFORMATION: Services à proximité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais ma banque refuse le prêt, est-ce que je récupère l'acompte que j'aurais versé ?",
+            "en": "Okay. If ever my bank refuses the loan, do I get back the deposit I would have paid?",
+            "es": "Dakor. Si zhamé ma bank refüs l prè, esk zhe réküpèr lakonpt k zhorè versé?",
+            "note": "SUIVI 3: \"Si jamais\" — remboursement de l'acompte (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, si le refus est écrit et que la condition suspensive est dans le contrat. Sans cette clause, l'acompte serait perdu.",
+            "en": "Yes, if the refusal is in writing and the condition is in the contract. Without that clause, the deposit would be lost.",
+            "es": "Ui, si l refü e ékri e k la kondisión süspansiv e dan l kontra. San set klos, lakonpt serè perdü.",
+            "note": "INFORMATION: Condition suspensive et acompte"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réfléchir et confirmer la visite de jeudi.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll think about it and confirm Thursday's visit.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé réfléshir e konfirmé la vizi de zhödi.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! N'hésitez pas à m'appeler si vous avez d'autres questions. À jeudi et bonne journée !",
+            "en": "With pleasure! Feel free to call me if you have other questions. See you Thursday and have a good day!",
+            "es": "Avek plèzir! Nézité pa a mapelé si vuz avé dotr kesión. A zhödi e bon zhurné!",
+            "note": "RESPONSE: Formule de clôture — disponibilité + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour toutes ces précisions, c'était très clair. À jeudi et bonne journée !",
+            "en": "Thanks again for all these details, it was very clear. See you Thursday and have a good day!",
+            "es": "Mersí ankor pur tut se présizión, sétè tre klèr. A zhödi e bon zhurné!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

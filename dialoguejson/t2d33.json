@@ -1,0 +1,380 @@
+{
+    "title": "Chercher des idées de spectacles auprès d'un ami pour un article",
+    "task": "tache2",
+    "topic": "8. Entertainment & culture",
+    "description": "Vous devez écrire un article sur un spectacle pour le bulletin de votre association culturelle francophone. Vous interrogez un ami sur les spectacles qu'il a aimés.",
+    "labels": {
+        "E": "Ami francophone",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'aurais besoin de tes idées",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne continuation",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Chercher des idées de spectacles auprès d'un ami pour un article",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Comme tu vas souvent au spectacle, je dois écrire un article pour notre bulletin culturel et j'aurais besoin de tes idées. Est-ce que je pourrais te poser quelques questions ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Salut ! Avec plaisir, j'adore en parler. Je vais même au théâtre toutes les trois semaines. Dis-moi ce qui t'intéresse.",
+                        "note": "RESPONSE: Formule d'accueil — disponibilité + invitation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais commencer l'article ce soir avec toutes ces idées.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Tiens-moi au courant, j'ai hâte de lire ton article dans le bulletin.",
+                        "note": "RESPONSE: Formule de clôture — intérêt pour l'article",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour ton aide, c'est vraiment gentil. À bientôt et bonne continuation !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quels spectacles est-ce que tu as vus ces derniers mois, et lesquels t'ont le plus marqué ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — spectacles vus (quels)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que cette comédie musicale t'a autant plu, par rapport aux autres ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Où est-ce que tu l'as vue, dans un grand théâtre du centre ou plutôt dans une petite salle ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Combien coûte une place en général, et est-ce qu'il y a un tarif pour les étudiants ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Quand est-ce que les spectacles ont lieu, plutôt en semaine ou le week-end ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur les jours (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Comment est-ce qu'on réserve, en ligne, par téléphone ou directement au guichet ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur la réservation (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est pratique. Et qui est-ce que je pourrais interviewer pour enrichir mon article, un comédien ou le directeur de la salle ?",
+                        "note": "RÉACTION: \"Ah, c'est pratique\"; question sur les personnes à interviewer (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que cette comédie musicale t'a autant plu, par rapport aux autres ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Où est-ce que tu l'as vue, dans un grand théâtre du centre ou plutôt dans une petite salle ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Combien coûte une place en général, et est-ce qu'il y a un tarif pour les étudiants ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le prix",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Quand est-ce que les spectacles ont lieu, plutôt en semaine ou le week-end ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur les jours",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Comment est-ce qu'on réserve, en ligne, par téléphone ou directement au guichet ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur la réservation",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est pratique. Et qui est-ce que je pourrais interviewer pour enrichir mon article, un comédien ou le directeur de la salle ?",
+                        "note": "RÉACTION: \"Ah, c'est pratique\"; question sur l'interview",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je n'obtiens pas d'interview, est-ce que tu as gardé le programme du spectacle ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — documents de secours (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté, merci beaucoup. Et est-ce qu'il y a un autre spectacle au programme ce mois-ci qui vaut le déplacement ?",
+                        "note": "SUIVI 2: \"C'est noté\" — autre spectacle à recommander",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais mon article est publié, est-ce que tu accepterais de le relire avant l'envoi ?",
+                        "note": "SUIVI 3: \"Si jamais\" — relecture de l'article (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Comme tu vas souvent au spectacle, je dois écrire un article pour notre bulletin culturel et j'aurais besoin de tes idées. Est-ce que je pourrais te poser quelques questions ?",
+                        "note": "CONDITIONNEL POLI: \"j'aurais besoin\" + \"est-ce que je pourrais\" pour formuler une demande",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Le directeur est très ouvert, il accepte souvent les interviews. La troupe répète le mardi, tu pourrais passer ensuite.",
+                        "note": "PHRASE AU CONDITIONNEL: \"tu pourrais aussi passer\" pour suggérer poliment",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Bien sûr, avec plaisir ! Envoie-moi le texte deux jours avant, je corrigerai les fautes et les noms propres.",
+                        "note": "FUTUR PROCHE + INFINITIF: \"je vais commencer l'article\" pour annoncer une intention",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! Comme tu vas souvent au spectacle, je dois écrire un article pour notre bulletin culturel et j'aurais besoin de tes idées. Est-ce que je pourrais te poser quelques questions ?",
+            "en": "Hi! Since you often go to shows, you're the ideal person. I have to write an article for our cultural newsletter and I need your ideas. Could I ask you a few questions?",
+            "es": "Salu! Kom tü va suván o spektakl, zhe dua ékrir un artikl pur notr bületin kültürel e zhorè bezuán de tez idée. Esk zhe puré te pozé kelk kesión?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Avec plaisir, j'adore en parler. Je vais même au théâtre toutes les trois semaines. Dis-moi ce qui t'intéresse.",
+            "en": "Hi! With pleasure, I love talking about it. I even go to the theatre every three weeks. Tell me what you're interested in.",
+            "es": "Salu! Avek plèzir, zhador an parlé. Zhe vé mem o téatr tut le trua semén. Dis-mua s ki tintéres.",
+            "note": "RESPONSE: Formule d'accueil — disponibilité + invitation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quels spectacles est-ce que tu as vus ces derniers mois, et lesquels t'ont le plus marqué ?",
+            "en": "To start with, which shows have you seen over the last few months, and which ones struck you the most?",
+            "es": "Pur konmansé, kel spektakl esk tü a vü se dernié mua, e leskel ton l plüs marké?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — spectacles vus (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "J'ai vu une pièce de Molière, un concert de jazz et une comédie musicale. C'est la comédie musicale qui m'a le plus impressionné.",
+            "en": "I saw a Molière play, a jazz concert and a musical. It was the musical that really impressed me, with its sets.",
+            "es": "Zhé vü ün piès de Molièr, un konsé de zhazz e ün komédi müzikal. Se la komédi müzikal ki ma l plüs inpresióné.",
+            "note": "INFORMATION: Spectacles vus + préférence"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pourquoi est-ce que cette comédie musicale t'a autant plu, par rapport aux autres ?",
+            "en": "Okay. And why did this musical appeal to you so much, compared with the others?",
+            "es": "Dakor. E purkua esk set komédi müzikal ta otan plü, par rapor oz otr?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce que les chanteurs étaient excellents et l'histoire parlait d'un sujet actuel. On avait l'impression d'y participer.",
+            "en": "Because the singers were excellent and the story was about a current topic. The audience took part, you really felt part of it.",
+            "es": "Pars k le shantör étè eksselan e listuar parlè dun süzhe aktül. On avè linprsión di partisipé.",
+            "note": "INFORMATION: Raisons du succès du spectacle"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Où est-ce que tu l'as vue, dans un grand théâtre du centre ou plutôt dans une petite salle ?",
+            "en": "I see. Where did you see it, in a big theatre downtown or rather in a small venue?",
+            "es": "Zhe vua. U esk tü la vü, dan un gran téatr dü santr u plüto dan ün peti sal?",
+            "note": "RÉACTION: \"Je vois\"; question sur le lieu (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Au théâtre municipal, une salle de six cents places près de la gare. C'est facile d'accès et l'acoustique est bonne.",
+            "en": "At the municipal theatre, a six-hundred-seat hall near the station. It's easy to get to and the acoustics are really good.",
+            "es": "O téatr münisipal, ün sal de sis san plas prè de la gar. Se fasil dakè e lakustik e bon.",
+            "note": "INFORMATION: Lieu et qualité de la salle"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Combien coûte une place en général, et est-ce qu'il y a un tarif pour les étudiants ?",
+            "en": "Oh, that's good to know. How much does a ticket usually cost, and is there a student rate?",
+            "es": "A, se bon a savuar. Kombien kut ün plas an zhénéral, e esk il i a un tarif pur lez étüdian?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Entre vingt et quarante euros selon la place. Les étudiants paient douze euros, et les moins de seize ans entrent parfois gratuitement.",
+            "en": "Between twenty and forty euros depending on the seat. Students pay twelve euros, and under-sixteens sometimes get in free.",
+            "es": "Antr vinzh e karan eró selon la plas. Lez étüdian pè duz eró, e le muan de sèz an antr parfua gratüimán.",
+            "note": "INFORMATION: Tarifs et réductions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Quand est-ce que les spectacles ont lieu, plutôt en semaine ou le week-end ?",
+            "en": "Very good, thank you. When do the shows take place, mostly on weekdays or at the weekend?",
+            "es": "Tre bien, mersí. Kan esk le spektakl on liö, plüto an semén u l veek-an?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur les jours (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Surtout du jeudi au samedi soir, à vingt heures, avec une séance le dimanche après-midi. Le jeudi, c'est moins cher.",
+            "en": "Mostly from Thursday to Saturday evening, at eight p.m., with a Sunday matinee. Thursday is often the reduced-price day.",
+            "es": "Sürtu dü zhödi o samedi suar, a vinzh ör, avek ün séans l dimansh après-midi. L zhödi, se muan shé.",
+            "note": "INFORMATION: Jours et horaires des représentations"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Comment est-ce qu'on réserve, en ligne, par téléphone ou directement au guichet ?",
+            "en": "I understand better. How do you book, online, by phone or directly at the box office?",
+            "es": "Zhe konpran miö. Komán esk on rézerv, an liñ, par téléfon u diresmán o gishe?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur la réservation (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les trois marchent, mais je te conseille le site internet : on choisit sa place et on reçoit le billet par mail.",
+            "en": "All three work, but I'd advise the website: you choose your seat and get the ticket by email within five minutes.",
+            "es": "Le trua marsh, me zhe te konsel l sit interne: on shuai sa plas e on resua l biyè par mèl.",
+            "note": "INFORMATION: Modes de réservation + conseil"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est pratique. Et qui est-ce que je pourrais interviewer pour enrichir mon article, un comédien ou le directeur de la salle ?",
+            "en": "Oh, that's handy. And who could I interview to enrich my article, an actor or the theatre director?",
+            "es": "A, se pratik. E ki esk zhe puré intervievé pur anrishir mon artikl, un komédien u l direktör de la sal?",
+            "note": "RÉACTION: \"Ah, c'est pratique\"; question sur les personnes à interviewer (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le directeur est très ouvert, il accepte souvent les interviews. La troupe répète le mardi, tu pourrais passer ensuite.",
+            "en": "The director is very open, he often accepts interviews. The troupe rehearses on Tuesdays, you could also drop by at the end.",
+            "es": "L direktör e tre uvé, il akept suván lez interviev. La trup répè l mardi, tü puré pasé ansüit.",
+            "note": "INFORMATION: Contacts possibles pour l'interview"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je n'obtiens pas d'interview, est-ce que tu as gardé le programme du spectacle ?",
+            "en": "Actually, if ever I don't get an interview, have you kept the show's programme?",
+            "es": "Zhüstemán, si zhamé zhe nobtien pa dinterviev, esk tü a gardé l progranm dü spektakl?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — documents de secours (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, avec les photos et le CV des artistes. Je te l'envoie ce soir, tu trouveras des informations utiles.",
+            "en": "Yes, with the photos and the artists' CVs. I'll send it to you tonight, you'll surely find useful information for your article.",
+            "es": "Ui, avek le foto e l Kv dez artist. Zhe te lanvua s suar, tü truvera dez informasión ütil.",
+            "note": "INFORMATION: Programme + documents utiles"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté, merci beaucoup. Et est-ce qu'il y a un autre spectacle au programme ce mois-ci qui vaut le déplacement ?",
+            "en": "Noted, thank you very much. And is there another show on the programme this month that's worth the trip?",
+            "es": "Se noté, mersí boku. E esk il i a un otr spektakl o progranm s mua-si ki vo l déplasmán?",
+            "note": "SUIVI 2: \"C'est noté\" — autre spectacle à recommander"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, une pièce contemporaine sur l'immigration, jouée par une troupe québécoise. C'est émouvant et ça ferait un bon sujet.",
+            "en": "Yes, a contemporary play about immigration, performed by a Quebec troupe. It's powerful, moving, and it would make an excellent article topic.",
+            "es": "Ui, ün piès kontanporin sür linmigrasión, zhué par ün trup kébékua. Se émuvan e sa ferè un bon süzhe.",
+            "note": "INFORMATION: Recommendation d'un second spectacle"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais mon article est publié, est-ce que tu accepterais de le relire avant l'envoi ?",
+            "en": "Okay. If ever my article is published, would you agree to proofread it before sending?",
+            "es": "Dakor. Si zhamé mon artikl e püblié, esk tü akepterè de l relir aván lanvua?",
+            "note": "SUIVI 3: \"Si jamais\" — relecture de l'article (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, avec plaisir ! Envoie-moi le texte deux jours avant, je corrigerai les fautes et les noms propres.",
+            "en": "Of course, with pleasure! Send me the text two days before, I'll correct the mistakes and check the proper nouns.",
+            "es": "Bien sür, avek plèzir! Anvuae-mua l tekst dö zhur aván, zhe korizherè le fo e le non propr.",
+            "note": "INFORMATION: Aide à la relecture"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais commencer l'article ce soir avec toutes ces idées.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll start the article tonight with all these ideas.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé konmansé lartikl s suar avek tut sez idée.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Tiens-moi au courant, j'ai hâte de lire ton article dans le bulletin.",
+            "en": "With pleasure! Keep me posted, I'm looking forward to reading your article in the association's newsletter.",
+            "es": "Avek plèzir! Tiens-mua o kuran, zhé at de lir ton artikl dan l bületin.",
+            "note": "RESPONSE: Formule de clôture — intérêt pour l'article"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour ton aide, c'est vraiment gentil. À bientôt et bonne continuation !",
+            "en": "Thanks again for your help, it's really kind. See you soon and all the best!",
+            "es": "Mersí ankor pur ton èd, se vremán zhantil. A biento e bon kontinüasión!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

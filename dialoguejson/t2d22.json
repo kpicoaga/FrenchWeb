@@ -1,0 +1,378 @@
+{
+    "title": "Se renseigner sur une formation professionnelle pour changer de métier",
+    "task": "tache2",
+    "topic": "4. Education",
+    "description": "Vous travaillez dans la vente depuis dix ans et vous voulez apprendre un nouveau métier. Vous vous renseignez auprès d'un employé d'un centre de formation professionnelle sur le programme, la durée, le coût et l'inscription.",
+    "labels": {
+        "E": "Employé du centre de formation",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "changer de métier",
+        "Pour commencer",
+        "D'accord",
+        "Je vois",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "N'hésitez pas",
+        "Merci encore"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur une formation professionnelle pour changer de métier",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! J'ai travaillé dix ans dans la vente, mais je voudrais changer de métier et me former en pâtisserie. Est-ce que je pourrais vous poser quelques questions sur vos formations ?",
+                        "note": "OUVERTURE: Salutation + parcours personnel + demande polie au conditionnel",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Bien sûr. Nous proposons justement une formation de pâtisserie reconnue, ouverte aux adultes en reconversion. Que voulez-vous savoir ?",
+                        "note": "RESPONSE: Accueil + proposition ciblée + invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais remplir le formulaire avant septembre.",
+                        "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! N'hésitez pas à demander un rendez-vous avec un conseiller pour votre projet. Bonne journée !",
+                        "note": "FERMETURE: Formule de clôture + proposition d'accompagnement",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour votre aide, vos conseils m'ont vraiment donné envie de commencer. À bientôt !",
+                        "note": "FERMETURE: Remerciement final + formule de politesse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci ! Pour commencer, quel est le programme exact de cette formation, et quels diplômes obtient-on à la fin ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — contenu et diplôme de la formation (quel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Pourquoi est-ce que cette formation serait plus adaptée qu'un cours du soir pour quelqu'un de mon âge ?",
+                        "note": "RÉACTION: \"D'accord\" — justification du choix de formation (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien est-ce que coûte la formation, et est-ce qu'il existe des aides pour les adultes ?",
+                        "note": "RÉACTION: \"Je vois\" — question sur le coût et les aides (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que les cours ont lieu, sur le campus principal ou ailleurs ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — lieu des cours (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je dois procéder pour m'inscrire, et y a-t-il un test d'entrée ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — procédure d'inscription (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que la prochaine session commence, et combien de temps dure-t-elle ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — calendrier et durée (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce qui donne les cours pratiques, des chefs en activité ou d'anciens professeurs ?",
+                        "note": "RÉACTION: \"C'est noté\" — profil des formateurs (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Pourquoi est-ce que cette formation serait plus adaptée qu'un cours du soir pour quelqu'un de mon âge ?",
+                        "note": "RÉACTION: \"D'accord\" — justification du choix de formation (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien est-ce que coûte la formation, et est-ce qu'il existe des aides pour les adultes ?",
+                        "note": "RÉACTION: \"Je vois\" — question sur le coût et les aides (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que les cours ont lieu, sur le campus principal ou ailleurs ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — lieu des cours (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que je dois procéder pour m'inscrire, et y a-t-il un test d'entrée ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — procédure d'inscription (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que la prochaine session commence, et combien de temps dure-t-elle ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — calendrier et durée (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce qui donne les cours pratiques, des chefs en activité ou d'anciens professeurs ?",
+                        "note": "RÉACTION: \"C'est noté\" — profil des formateurs (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je dois continuer à travailler en parallèle, est-ce que la formation peut se faire à temps partiel ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — cumul emploi / formation (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté, merci. Et si je rate un module, est-ce que je peux le repasser gratuitement ?",
+                        "note": "SUIVI 2: \"C'est noté\" — échec à un module (relance pratique)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais je décroche un emploi avant la fin, est-ce que je peux arrêter et récupérer mon argent ?",
+                        "note": "SUIVI 3: \"Si jamais\" — abandon en cours de formation (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! J'ai travaillé dix ans dans la vente, mais je voudrais changer de métier et me former en pâtisserie. Est-ce que je pourrais vous poser quelques questions sur vos formations ?",
+                        "note": "CONDITIONNEL POLI: \"Est-ce que je pourrais vous poser\" pour ouvrir la demande",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parce qu'elle inclut trois cent vingt heures de stage, ce qui compte à l'embauche. Un cours du soir ne donne pas d'expérience.",
+                        "note": "RELATIF \"ce qui\": \"ce qui compte à l'embauche\" pour commenter une conséquence",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Oui, le remboursement est calculé au prorata des heures suivies. Il suffit d'envoyer une lettre motivée à l'administration.",
+                        "note": "VOIX PASSIVE: \"le remboursement est calculé au prorata\" pour expliquer une règle",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! J'ai travaillé dix ans dans la vente, mais je voudrais changer de métier et me former en pâtisserie. Est-ce que je pourrais vous poser quelques questions sur vos formations ?",
+            "en": "Hello! I worked in sales for ten years, but I'd like to change careers and train in pastry making. Could I ask you a few questions about your courses?",
+            "es": "Bonzhur! Zhé travèlé dis an dan la van, me zhe vudré shanzhé de métié e me formé an patiseri. Esk zhe puré vu pozé kelk kesión sür vo formasión?",
+            "note": "OUVERTURE: Salutation + parcours personnel + demande polie au conditionnel"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Bien sûr. Nous proposons justement une formation de pâtisserie reconnue, ouverte aux adultes en reconversion. Que voulez-vous savoir ?",
+            "en": "Hello! Of course. We happen to offer a recognised pastry course, open to adults retraining. What would you like to know?",
+            "es": "Bonzhur! Bien sür. Nu propozon zhüstemán ün formasión de patiseri rekonü, uvert oz adült an rekonvésión. K vulez-vu savuar?",
+            "note": "RESPONSE: Accueil + proposition ciblée + invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci ! Pour commencer, quel est le programme exact de cette formation, et quels diplômes obtient-on à la fin ?",
+            "en": "Thank you! To start with, what exactly is the programme of this course, and which qualifications do you get at the end?",
+            "es": "Mersí! Pur konmansé, kel e l progranm eksas de set formasión, e kel diplom obtient-on a la fin?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — contenu et diplôme de la formation (quel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le programme couvre les viennoiseries, les entremets et le travail du chocolat. Vous préparez un diplôme reconnu par les employeurs.",
+            "en": "The programme covers pastries, layered desserts and working with chocolate. You prepare a provincial diploma recognised by employers.",
+            "es": "L progranm kuvr le vienuaerie, lez antreme e l travai dü shokola. Vu préparé un diplom rekonü par lez anpluayör.",
+            "note": "INFORMATION: Contenu concret + diplôme et reconnaissance"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Pourquoi est-ce que cette formation serait plus adaptée qu'un cours du soir pour quelqu'un de mon âge ?",
+            "en": "Okay. Why would this course be more suitable than a simple evening class for someone my age?",
+            "es": "Dakor. Purkua esk set formasión serè plüs adapté k un kur dü suar pur kelk un de mon azh?",
+            "note": "RÉACTION: \"D'accord\" — justification du choix de formation (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce qu'elle inclut trois cent vingt heures de stage, ce qui compte à l'embauche. Un cours du soir ne donne pas d'expérience.",
+            "en": "Because it includes three hundred and twenty hours of internship, which counts when hiring. An evening class gives no practical experience.",
+            "es": "Pars k el inklü trua san vinzh ör de stazh, s ki konpt a lanbosh. Un kur dü suar n don pa dekspériens.",
+            "note": "INFORMATION: Volume de stage + comparaison avec le cours du soir"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien est-ce que coûte la formation, et est-ce qu'il existe des aides pour les adultes ?",
+            "en": "I see. How much does the course cost, and are there any financial aids for adults?",
+            "es": "Zhe vua. Kombien esk kut la formasión, e esk il eksist dez èd pur lez adült?",
+            "note": "RÉACTION: \"Je vois\" — question sur le coût et les aides (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La formation coûte trois mille deux cents dollars, matériel compris. Il existe un prêt sans intérêt, et nous vous aidons à le demander.",
+            "en": "The course costs three thousand two hundred dollars, materials included. There is an interest-free loan, and we help you apply for it.",
+            "es": "La formasión kut trua mil dö san dolar, matériel konpri. Il eksist un prè san intérè, e nu vuz èdon a l demandé.",
+            "note": "INFORMATION: Montant total + dispositif de financement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que les cours ont lieu, sur le campus principal ou ailleurs ?",
+            "en": "Oh, that's good to know. And where do the classes take place, on the main campus or elsewhere?",
+            "es": "A, se bon a savuar. E u esk le kur on liö, sür l kanpü prinsipal u ayör?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\" — lieu des cours (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La théorie se fait dans notre centre, à dix minutes de la gare. Les ateliers pratiques ont lieu au sous-sol.",
+            "en": "Theory takes place in our centre, ten minutes from the station. The practical workshops are held in the basement.",
+            "es": "La téori s fe dan notr santr, a dis minü de la gar. Lez atelié pratike on liö o sus-sol.",
+            "note": "INFORMATION: Séparation théorie / pratique + localisation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Comment est-ce que je dois procéder pour m'inscrire, et y a-t-il un test d'entrée ?",
+            "en": "Very good, thank you. How should I go about enrolling, and is there an entrance test?",
+            "es": "Tre bien, mersí. Komán esk zhe dua prosédé pur minskrir, e i a-t-il un tes dantré?",
+            "note": "RÉACTION: \"Très bien, merci\" — procédure d'inscription (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il faut remplir un formulaire en ligne et passer une entrevue. Aucun diplôme n'est exigé, mais une expérience en cuisine aide.",
+            "en": "You need to fill in an online form and attend an interview. No diploma is required, but kitchen experience helps.",
+            "es": "Il fo ranplir un formülèr an liñ e pasé ün antrevü. Okun diplom ne eksizhé, me ün ekspériens an küizin èd.",
+            "note": "INFORMATION: Étapes d'admission + conditions d'accès"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Quand est-ce que la prochaine session commence, et combien de temps dure-t-elle ?",
+            "en": "I understand better now. When does the next session start, and how long does it last?",
+            "es": "Zhe konpran miö. Kan esk la proshin sesión konmans, e kombien de tanp düre-t-el?",
+            "note": "RÉACTION: \"Je comprends mieux\" — calendrier et durée (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La prochaine session commence en septembre et dure huit mois, à temps plein. Les cours ont lieu en semaine.",
+            "en": "The next session starts in September and lasts eight months, full time. Classes take place from Monday to Friday.",
+            "es": "La proshin sesión konmans an septanbr e dür üit mua, a tanp plin. Le kur on liö an semén.",
+            "note": "INFORMATION: Date de rentrée + durée + rythme hebdomadaire"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et qui est-ce qui donne les cours pratiques, des chefs en activité ou d'anciens professeurs ?",
+            "en": "Noted. And who teaches the practical classes, working chefs or former teachers?",
+            "es": "Se noté. E ki esk ki don le kur pratike, de shef an aktivité u dansien profesör?",
+            "note": "RÉACTION: \"C'est noté\" — profil des formateurs (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les ateliers sont animés par des chefs pâtissiers qui travaillent encore en restaurant. Ils partagent aussi leurs contacts avec les étudiants.",
+            "en": "The workshops are led by pastry chefs who still work in restaurants. They also share their contacts with the students.",
+            "es": "Lez atelié son animé par de shef patisié ki travèl ankor an restoran. Il partazh osi lör kontakt avek lez étüdian.",
+            "note": "INFORMATION: Professionnels en activité + réseau professionnel"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je dois continuer à travailler en parallèle, est-ce que la formation peut se faire à temps partiel ?",
+            "en": "Actually, if I have to keep working at the same time, can the course be done part time?",
+            "es": "Zhüstemán, si zhamé zhe dua kontinür a travèlé an paralèl, esk la formasión pö s fer a tanp partiel?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — cumul emploi / formation (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, nous proposons une version à temps partiel sur quinze mois, avec les cours le soir. Le coût est identique.",
+            "en": "Yes, we offer a part-time version over fifteen months, with evening classes. The cost is the same.",
+            "es": "Ui, nu propozon ün vésión a tanp partiel sür kinz mua, avek le kur l suar. L ku e idantik.",
+            "note": "INFORMATION: Variante aménagée + durée allongée + coût inchangé"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté, merci. Et si je rate un module, est-ce que je peux le repasser gratuitement ?",
+            "en": "Noted, thanks. And if I fail a module, can I retake it without paying again?",
+            "es": "Se noté, mersí. E si zhe rat un modül, esk zhe pö l repasé gratüimán?",
+            "note": "SUIVI 2: \"C'est noté\" — échec à un module (relance pratique)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vous pouvez repasser une évaluation gratuitement. Si le module doit être refait, il y a cent dollars de frais.",
+            "en": "You can retake an assessment free of charge. If the module has to be repeated, there is a hundred-dollar administrative fee.",
+            "es": "Vu puvé repasé ün évalüasión gratüimán. Si l modül dua etr refè, il i a san dolar de frè.",
+            "note": "INFORMATION: Reprise gratuite + frais en cas de redoublement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais je décroche un emploi avant la fin, est-ce que je peux arrêter et récupérer mon argent ?",
+            "en": "Okay. If I happen to land a job before the end, can I stop and get part of my money back?",
+            "es": "Dakor. Si zhamé zhe dékrosh un anplua aván la fin, esk zhe pö arèté e réküpéré mon arzh?",
+            "note": "SUIVI 3: \"Si jamais\" — abandon en cours de formation (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, le remboursement est calculé au prorata des heures suivies. Il suffit d'envoyer une lettre motivée à l'administration.",
+            "en": "Yes, the refund is calculated in proportion to the hours attended. You simply need to send a letter explaining your reasons to the administration.",
+            "es": "Ui, l ranburmán e kalkülé o prorata dez ör süivie. Il süfi danvuayé ün letr motivé a ladministrasión.",
+            "note": "INFORMATION: Règle de remboursement + démarche écrite"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais remplir le formulaire avant septembre.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll fill in the form and call you back before September.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé ranplir l formülèr aván septanbr.",
+            "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! N'hésitez pas à demander un rendez-vous avec un conseiller pour votre projet. Bonne journée !",
+            "en": "With pleasure! Feel free to ask for an appointment with an adviser about your project. Have a good day!",
+            "es": "Avek plèzir! Nézité pa a demandé un randez-vu avek un konsèlé pur votr prozhe. Bon zhurné!",
+            "note": "FERMETURE: Formule de clôture + proposition d'accompagnement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour votre aide, vos conseils m'ont vraiment donné envie de commencer. À bientôt !",
+            "en": "Thanks again for your help, your advice really made me want to get started. See you soon!",
+            "es": "Mersí ankor pur votr èd, vo konsèl mon vremán doné anvi de konmansé. A biento!",
+            "note": "FERMETURE: Remerciement final + formule de politesse"
+        }
+    ]
+}

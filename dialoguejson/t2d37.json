@@ -1,0 +1,380 @@
+{
+    "title": "Choisir une sortie pour le soir auprès d'un ami",
+    "task": "tache2",
+    "topic": "8. Entertainment & culture",
+    "description": "Vous voulez faire une sortie ce soir mais vous hésitez encore. Vous discutez entre amis et vous interrogez votre ami pour choisir une activité adaptée.",
+    "labels": {
+        "E": "Ami",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'hésite encore un peu",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne soirée",
+        "Merci encore",
+        "À tout à l'heure"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Choisir une sortie pour le soir auprès d'un ami",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! J'ai envie de sortir ce soir mais j'hésite encore un peu entre plusieurs idées. Comme tu sors souvent, j'aimerais avoir ton avis. Est-ce que je pourrais te poser quelques questions ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Salut ! Bien sûr, avec plaisir. Ce soir, il y a plusieurs choses sympas dans le centre. Que veux-tu savoir ?",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais préparer le pique-nique et je te retrouve à dix-neuf heures trente.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Super ! N'oublie pas une couverture, il commence à faire frais le soir. À tout à l'heure devant la fontaine !",
+                        "note": "RESPONSE: Formule de clôture — conseil pratique + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour les idées, c'était vraiment sympa de ta part. À tout à l'heure et bonne soirée !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quelles activités est-ce que tu me conseilles ce soir, et lesquelles sont les plus faciles à organiser ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — activités possibles (quelles)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que tu préfères le cinéma en plein air aux autres options pour ce soir ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Où est-ce que ça se passe exactement, et est-ce que c'est facile d'y aller en métro ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Combien coûte l'entrée, et faut-il réserver à l'avance ou on peut venir directement ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Quand est-ce qu'il faut partir de chez moi pour être sûr d'avoir une place ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur l'heure de départ (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Comment est-ce qu'on s'organise si on est plusieurs, chacun apporte quelque chose ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur l'organisation (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est parfait. Et qui est-ce qui vient ce soir, est-ce que d'autres amis sont déjà partants ?",
+                        "note": "RÉACTION: \"Ah, c'est parfait\"; question sur les participants (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que tu préfères le cinéma en plein air aux autres options pour ce soir ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Où est-ce que ça se passe exactement, et est-ce que c'est facile d'y aller en métro ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le lieu",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Combien coûte l'entrée, et faut-il réserver à l'avance ou on peut venir directement ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le prix",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Quand est-ce qu'il faut partir de chez moi pour être sûr d'avoir une place ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur l'heure",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Comment est-ce qu'on s'organise si on est plusieurs, chacun apporte quelque chose ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur l'organisation",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est parfait. Et qui est-ce qui vient ce soir, est-ce que d'autres amis sont déjà partants ?",
+                        "note": "RÉACTION: \"Ah, c'est parfait\"; question sur les participants",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais il pleut ce soir, est-ce que le cinéma en plein air est annulé ou déplacé ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — pluie et annulation (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce qu'il y a des toilettes et un endroit pour acheter à boire sur place ?",
+                        "note": "SUIVI 2: \"C'est noté\" — services sur place",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais je finis tard au travail, est-ce que je peux vous rejoindre sur place pendant le film ?",
+                        "note": "SUIVI 3: \"Si jamais\" — arriver en retard (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! J'ai envie de sortir ce soir mais j'hésite encore un peu entre plusieurs idées. Comme tu sors souvent, j'aimerais avoir ton avis. Est-ce que je pourrais te poser quelques questions ?",
+                        "note": "CONDITIONNEL POLI: \"j'aimerais avoir ton avis\" + \"est-ce que je pourrais\"",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parce qu'il fait très beau et que le film commence au coucher du soleil. C'est gratuit et on apporte un pique-nique.",
+                        "note": "CAUSE \"parce que\" + MÉTÉO: \"parce qu'il fait très beau et que le film commence...\"",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "En cas de pluie, la séance est déplacée dans la salle municipale, juste à côté. L'annonce est faite à dix-sept heures.",
+                        "note": "HYPOTHÈSE \"en cas de\" + NOM: \"En cas de pluie, la séance est déplacée\"",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! J'ai envie de sortir ce soir mais j'hésite encore un peu entre plusieurs idées. Comme tu sors souvent, j'aimerais avoir ton avis. Est-ce que je pourrais te poser quelques questions ?",
+            "en": "Hi! I feel like going out tonight but I'm still hesitating between several ideas. Since you go out often, I'd like your opinion. Could I ask you a few questions?",
+            "es": "Salu! Zhé anvi de sortir s suar me zhézi ankor un pö antr plüziör idée. Kom tü sor suván, zhémeré avuar ton avi. Esk zhe puré te pozé kelk kesión?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Bien sûr, avec plaisir. Ce soir, il y a plusieurs choses sympas dans le centre. Que veux-tu savoir ?",
+            "en": "Hi! Of course, with pleasure. Tonight there are several nice things downtown. What do you want to know?",
+            "es": "Salu! Bien sür, avek plèzir. S suar, il i a plüziör shos simpa dan l santr. K vö-tü savuar?",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quelles activités est-ce que tu me conseilles ce soir, et lesquelles sont les plus faciles à organiser ?",
+            "en": "To start with, which activities do you recommend tonight, and which are the easiest to organize?",
+            "es": "Pur konmansé, kel aktivité esk tü me konsèl s suar, e leskel son le plüs fasil a organizé?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — activités possibles (quelles)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un cinéma en plein air, une soirée jeux ou un concert. Le cinéma est le plus simple, sans réservation.",
+            "en": "An open-air cinema, a games night in a café or a concert in the small club. The cinema is the simplest, with no booking.",
+            "es": "Un sinéma an plin èr, ün suaré zhö u un konsé. L sinéma e l plüs sinpl, san rézervasión.",
+            "note": "INFORMATION: Activités possibles + la plus simple"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pourquoi est-ce que tu préfères le cinéma en plein air aux autres options pour ce soir ?",
+            "en": "Okay. And why do you prefer the open-air cinema to the other options for tonight?",
+            "es": "Dakor. E purkua esk tü préfèr l sinéma an plin èr oz otr opsión pur s suar?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce qu'il fait très beau et que le film commence au coucher du soleil. C'est gratuit et on apporte un pique-nique.",
+            "en": "Because the weather is lovely and the film starts after sunset. It's free and you can bring a picnic.",
+            "es": "Pars k il fe tre bo e k l film konmans o kushé dü solèl. Se gratüi e on aport un pike-nik.",
+            "note": "INFORMATION: Raisons de préférer le cinéma"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Où est-ce que ça se passe exactement, et est-ce que c'est facile d'y aller en métro ?",
+            "en": "I see. Where exactly does it take place, and is it easy to get there by metro?",
+            "es": "Zhe vua. U esk sa s pas eksasmán, e esk se fasil di alé an métro?",
+            "note": "RÉACTION: \"Je vois\"; question sur le lieu (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Sur la place du marché, à cinq minutes du métro Bastille. La sortie est en face de la fontaine.",
+            "en": "On the market square, five minutes from Bastille metro. The exit is right opposite the fountain, impossible to miss.",
+            "es": "Sür la plas dü marshé, a sink minü dü métro Bastil. La sorti e an fas de la fontin.",
+            "note": "INFORMATION: Lieu et accès"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Combien coûte l'entrée, et faut-il réserver à l'avance ou on peut venir directement ?",
+            "en": "Oh, that's good to know. How much is entry, and do we need to book in advance or can we just come?",
+            "es": "A, se bon a savuar. Kombien kut lantré, e fot-il rézervé a lavans u on pö venir diresmán?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "C'est gratuit, il suffit d'arriver avant vingt heures. On peut louer une chaise pour trois euros sur place.",
+            "en": "It's free, you just have to arrive before eight p.m. to get a seat. You can rent a chair for three euros on site.",
+            "es": "Se gratüi, il süfi darivé aván vinzh ör. On pö lué ün shès pur truaz eró sür plas.",
+            "note": "INFORMATION: Gratuité et location de chaise"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Quand est-ce qu'il faut partir de chez moi pour être sûr d'avoir une place ?",
+            "en": "Very good, thank you. When should I leave home to be sure of getting a seat?",
+            "es": "Tre bien, mersí. Kan esk il fo partir de she mua pur etr sür davuar ün plas?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur l'heure de départ (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Pars vers dix-huit heures quarante-cinq, le temps d'arriver et de trouver un bon endroit. Le métro est direct.",
+            "en": "Leave around a quarter to seven, time to arrive and find a good spot. The metro is direct from your place.",
+            "es": "Par ver diks-üi ör karante-sinq, l tanp darivé e de truvé un bon andrua. L métro e dires.",
+            "note": "INFORMATION: Heure de départ conseillée"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Comment est-ce qu'on s'organise si on est plusieurs, chacun apporte quelque chose ?",
+            "en": "I understand better. How do we organize it if there are several of us, does everyone bring something?",
+            "es": "Zhe konpran miö. Komán esk on sorganis si on e plüziör, shakun aport kelk shos?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur l'organisation (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, chacun apporte quelque chose à partager et une couverture. Je m'occupe des boissons, tu prends un gâteau.",
+            "en": "Yes, everyone brings something to share and a blanket. I'll take care of the drinks, you can bring a cake or some fruit.",
+            "es": "Ui, shakun aport kelk shos a partazhé e ün kuvertür. Zhe moküp de buason, tü pran un gato.",
+            "note": "INFORMATION: Organisation du pique-nique"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est parfait. Et qui est-ce qui vient ce soir, est-ce que d'autres amis sont déjà partants ?",
+            "en": "Oh, that's perfect. And who's coming tonight, are other friends already up for it?",
+            "es": "A, se parfè. E ki esk ki vi s suar, esk dotr ami son dézha partan?",
+            "note": "RÉACTION: \"Ah, c'est parfait\"; question sur les participants (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Léa et Thomas viennent avec nous, et peut-être Julie. On se retrouve devant la fontaine à dix-neuf heures trente.",
+            "en": "Léa and Thomas are coming with us, and maybe Julie. We'll meet in front of the fountain at seven thirty.",
+            "es": "Léa e Toma vien avek nu, e pöt-ètr Zhüli. On s retruv devan la fontin a diks-nöf ör tran.",
+            "note": "INFORMATION: Participants et point de rendez-vous"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais il pleut ce soir, est-ce que le cinéma en plein air est annulé ou déplacé ?",
+            "en": "Actually, if ever it rains tonight, is the open-air cinema cancelled or moved?",
+            "es": "Zhüstemán, si zhamé il plö s suar, esk l sinéma an plin èr e anülé u déplasé?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — pluie et annulation (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "En cas de pluie, la séance est déplacée dans la salle municipale, juste à côté. L'annonce est faite à dix-sept heures.",
+            "en": "If it rains, the screening is moved to the town hall room, just next door. The announcement is made on their page at five p.m.",
+            "es": "An ka de plüi, la séans e déplasé dan la sal münisipal, zhüst a koté. Lanons e fè a diks-sep ör.",
+            "note": "INFORMATION: Solution en cas de pluie"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce qu'il y a des toilettes et un endroit pour acheter à boire sur place ?",
+            "en": "Noted. And are there toilets and a place to buy drinks on site?",
+            "es": "Se noté. E esk il i a de tualet e un andrua pur asheté a buar sür plas?",
+            "note": "SUIVI 2: \"C'est noté\" — services sur place"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, il y a des toilettes publiques et un petit kiosque. Les prix sont corrects, deux euros la limonade.",
+            "en": "Yes, there are public toilets and a small kiosk selling drinks. The prices are reasonable, two euros for lemonade.",
+            "es": "Ui, il i a de tualet püblike e un peti kiosk. Le pri son korekt, döz eró la limona.",
+            "note": "INFORMATION: Services et tarifs sur place"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais je finis tard au travail, est-ce que je peux vous rejoindre sur place pendant le film ?",
+            "en": "Okay. If ever I finish work late, can I join you on site during the film?",
+            "es": "Dakor. Si zhamé zhe fini tard o travai, esk zhe pö vu rezhuándr sür plas pandán l film?",
+            "note": "SUIVI 3: \"Si jamais\" — arriver en retard (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr, envoie-moi un message et on te garde une place. Le film dure deux heures.",
+            "en": "Of course, send me a message and we'll save you a seat. The film lasts two hours, you'll surely arrive before the end.",
+            "es": "Bien sür, anvuae-mua un mesazh e on te gard ün plas. L film dür döz ör.",
+            "note": "INFORMATION: Rejoindre le groupe plus tard"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais préparer le pique-nique et je te retrouve à dix-neuf heures trente.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll prepare the picnic and meet you at seven thirty.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé préparé l pike-nik e zhe te retruv a diks-nöf ör tran.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Super ! N'oublie pas une couverture, il commence à faire frais le soir. À tout à l'heure devant la fontaine !",
+            "en": "Great! Don't forget a blanket, it's starting to get chilly in the evening. See you later in front of the fountain!",
+            "es": "Süpé! Nubli pa ün kuvertür, il konmans a fer frè l suar. A tu a lör devan la fontin!",
+            "note": "RESPONSE: Formule de clôture — conseil pratique + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour les idées, c'était vraiment sympa de ta part. À tout à l'heure et bonne soirée !",
+            "en": "Thanks again for the ideas, that was really nice of you. See you later and have a good evening!",
+            "es": "Mersí ankor pur lez idée, sétè vremán simpa de ta par. A tu a lör e bon suaré!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

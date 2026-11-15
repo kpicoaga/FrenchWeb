@@ -1,0 +1,380 @@
+{
+    "title": "Se renseigner sur les quartiers à visiter à pied auprès d'un ami",
+    "task": "tache2",
+    "topic": "3. Travel & tourism",
+    "description": "Vous passez quelques jours chez un ami francophone et vous aimeriez explorer sa ville à pied. Vous lui demandez des conseils sur les quartiers, les lieux à visiter et les prix.",
+    "labels": {
+        "E": "Ami francophone",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'aurais besoin de tes conseils",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne balade",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur les quartiers à visiter à pied auprès d'un ami",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Je reste trois jours chez toi et j'aimerais découvrir la ville à pied. J'aurais besoin de tes conseils pour organiser mes balades. Est-ce que je pourrais te poser quelques questions ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Salut ! Avec plaisir, je connais chaque rue du centre. Cette ville se visite très bien à pied. Que veux-tu savoir ?",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais préparer mon itinéraire pour demain matin.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Prends de bonnes chaussures et n'oublie pas ton appareil photo. Bonne balade et à ce soir !",
+                        "note": "RESPONSE: Formule de clôture — encouragement + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour tous ces conseils, c'est vraiment gentil. À ce soir et bonne journée !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quels quartiers est-ce que tu me conseilles de visiter, et lesquels sont les plus agréables à pied ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — quartiers à visiter (quels)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que le vieux centre est si agréable, qu'est-ce qu'on y trouve exactement ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Où est-ce que je devrais commencer la balade, et dans quel ordre visiter les quartiers ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le point de départ (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Combien coûte une visite guidée, et est-ce que la balade libre est moins chère ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Quand est-ce que c'est le meilleur moment pour marcher, le matin ou en fin d'après-midi ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur le meilleur moment (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Comment est-ce que je peux trouver un plan du centre, à l'office de tourisme ou en ligne ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur le plan (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est pratique. Et qui est-ce que je pourrais questionner sur place si je me perds dans les ruelles ?",
+                        "note": "RÉACTION: \"Ah, c'est pratique\"; question sur les personnes à qui demander (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que le vieux centre est si agréable, qu'est-ce qu'on y trouve exactement ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Où est-ce que je devrais commencer la balade, et dans quel ordre visiter les quartiers ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le point de départ",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Combien coûte une visite guidée, et est-ce que la balade libre est moins chère ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le prix",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Quand est-ce que c'est le meilleur moment pour marcher, le matin ou en fin d'après-midi ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur le moment",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Comment est-ce que je peux trouver un plan du centre, à l'office de tourisme ou en ligne ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur le plan",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est pratique. Et qui est-ce que je pourrais questionner sur place si je me perds dans les ruelles ?",
+                        "note": "RÉACTION: \"Ah, c'est pratique\"; question sur les personnes à questionner",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais il pleut pendant mes balades, est-ce qu'il y a des visites à l'intérieur ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — plan de secours en cas de pluie (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que les quartiers sont accessibles avec une poussette ou un fauteuil roulant ?",
+                        "note": "SUIVI 2: \"C'est noté\" — accessibilité",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais je veux prolonger la balade, est-ce qu'il y a un quartier plus loin qui vaut le détour ?",
+                        "note": "SUIVI 3: \"Si jamais\" — prolonger la balade (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Je reste trois jours chez toi et j'aimerais découvrir la ville à pied. J'aurais besoin de tes conseils pour organiser mes balades. Est-ce que je pourrais te poser quelques questions ?",
+                        "note": "CONDITIONNEL POLI: \"j'aurais besoin\" + \"est-ce que je pourrais\"",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Commence à la gare, traverse le vieux centre puis descends vers le fleuve. La promenade dure environ trois heures.",
+                        "note": "IMPÉRATIF + ENCHAÎNEMENT D'ÉTAPES: \"Commence... traverse... puis descends\"",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Le vieux centre est plat et bien aménagé. Les bords du fleuve aussi, mais certaines ruelles ont des pavés difficiles.",
+                        "note": "SUPERLATIF ET COMPARAISON: \"le plus charmant\", \"les plus agréables\"",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! Je reste trois jours chez toi et j'aimerais découvrir la ville à pied. J'aurais besoin de tes conseils pour organiser mes balades. Est-ce que je pourrais te poser quelques questions ?",
+            "en": "Hi! I'm staying with you for three days and I'd like to discover the city on foot, neighbourhood by neighbourhood. I need your advice to plan my walks. Could I ask you a few questions?",
+            "es": "Salu! Zhe rest trua zhur she tua e zhémeré dékuvrir la vil a pie. Zhorè bezuán de te konsèl pur organizé me bala. Esk zhe puré te pozé kelk kesión?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Avec plaisir, je connais chaque rue du centre. Cette ville se visite très bien à pied. Que veux-tu savoir ?",
+            "en": "Hi! With pleasure, I know every street downtown. It's a city that's very easy to visit on foot. What do you want to know?",
+            "es": "Salu! Avek plèzir, zhe konè shak rü dü santr. Set vil s vizi tre bien a pie. K vö-tü savuar?",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quels quartiers est-ce que tu me conseilles de visiter, et lesquels sont les plus agréables à pied ?",
+            "en": "To start with, which neighbourhoods do you recommend I visit, and which are the most pleasant on foot?",
+            "es": "Pur konmansé, kel kartié esk tü me konsèl de vizité, e leskel son le plüs agréabl a pie?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — quartiers à visiter (quels)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le vieux centre, le quartier des artistes et les bords du fleuve. Tous se font à pied, mais le vieux centre est le plus beau.",
+            "en": "The old town centre, the artists' quarter and the riverside. All three are easy to do on foot, but the old centre is the most charming.",
+            "es": "L viö santr, l kartié dez artist e le bord dü flöv. Tus s fon a pie, me l viö santr e l plüs bo.",
+            "note": "INFORMATION: Quartiers conseillés + préférence"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pourquoi est-ce que le vieux centre est si agréable, qu'est-ce qu'on y trouve exactement ?",
+            "en": "Okay. And why is the old centre so pleasant, what exactly do you find there?",
+            "es": "Dakor. E purkua esk l viö santr e si agréabl, k'esk on i truv eksasmán?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Des ruelles pavées, un marché couvert et beaucoup de cafés. On y trouve aussi de belles fresques peintes sur les murs.",
+            "en": "Cobbled streets, a covered market and lots of cafés. There are also painted murals on the walls, beautiful to photograph.",
+            "es": "De rül pavée, un marshé kuvé e boku de kafé. On i truv osi de bel freske pin sür le mür.",
+            "note": "INFORMATION: Attraits du vieux centre"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Où est-ce que je devrais commencer la balade, et dans quel ordre visiter les quartiers ?",
+            "en": "I see. Where should I start the walk, and in what order should I visit the neighbourhoods?",
+            "es": "Zhe vua. U esk zhe devrè konmansé la bala, e dan kel ordr vizité le kartié?",
+            "note": "RÉACTION: \"Je vois\"; question sur le point de départ (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Commence à la gare, traverse le vieux centre puis descends vers le fleuve. La promenade dure environ trois heures.",
+            "en": "Start at the station, cross the old centre then go down to the river. It all follows on without transport and the walk takes about three hours.",
+            "es": "Konmans a la gar, travers l viö santr püi dessan ver l flöv. La promena dür anviron truaz ör.",
+            "note": "INFORMATION: Itinéraire conseillé"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Combien coûte une visite guidée, et est-ce que la balade libre est moins chère ?",
+            "en": "Oh, that's good to know. How much does a guided tour cost, and is a self-guided walk cheaper?",
+            "es": "A, se bon a savuar. Kombien kut ün vizi gidé, e esk la bala libr e muan shèr?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La visite guidée coûte douze euros, mais une balade libre ne coûte rien. Il suffit de suivre les panneaux numérotés.",
+            "en": "The guided tour costs twelve euros for two hours, but a self-guided walk costs nothing. You just follow the numbered signs downtown.",
+            "es": "La vizi gidé kut duz eró, me ün bala libr n kut rien. Il süfi de süivr le pano nüméroté.",
+            "note": "INFORMATION: Tarifs visite guidée et balade libre"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Quand est-ce que c'est le meilleur moment pour marcher, le matin ou en fin d'après-midi ?",
+            "en": "Very good, thank you. When is the best time to walk, in the morning or late afternoon?",
+            "es": "Tre bien, mersí. Kan esk se l meyör momán pur marshé, l matin u an fin daprès-midi?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur le meilleur moment (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le matin avant dix heures, il y a peu de monde. En fin d'après-midi, la lumière sur le fleuve est magnifique.",
+            "en": "In the morning before ten, there are few people and the cafés open. In the late afternoon, the light on the river is magnificent.",
+            "es": "L matin aván dis ör, il i a pö de mon. An fin daprès-midi, la lümièr sür l flöv e mañifik.",
+            "note": "INFORMATION: Moments les plus agréables"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Comment est-ce que je peux trouver un plan du centre, à l'office de tourisme ou en ligne ?",
+            "en": "I understand better. How can I find a map of the centre, at the tourist office or online?",
+            "es": "Zhe konpran miö. Komán esk zhe pö truvé un plan dü santr, a lofis de turism u an liñ?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur le plan (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "À l'office de tourisme, devant la gare. Les plans sont gratuits, un petit guide est proposé.",
+            "en": "At the tourist office, right in front of the station. The maps are free and they also offer a small guide in French that's very well done.",
+            "es": "A lofis de turism, devan la gar. Le plan son gratüi, un peti gi e propozé.",
+            "note": "INFORMATION: Où obtenir un plan + guide"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est pratique. Et qui est-ce que je pourrais questionner sur place si je me perds dans les ruelles ?",
+            "en": "Oh, that's handy. And who could I ask on the spot if I get lost in the alleys?",
+            "es": "A, se pratik. E ki esk zhe puré kestióné sür plas si zhe me perd dan le rül?",
+            "note": "RÉACTION: \"Ah, c'est pratique\"; question sur les personnes à qui demander (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les commerçants sont très sympas, surtout dans les petites boutiques. Les habitants t'aideront sans problème.",
+            "en": "Shopkeepers are very friendly, especially in the small shops. Locals will help you without any problem, there's no danger.",
+            "es": "Le konmersan son tre simpa, sürtu dan le peti butike. Lez abitan tèderon san problèm.",
+            "note": "INFORMATION: À qui demander son chemin"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais il pleut pendant mes balades, est-ce qu'il y a des visites à l'intérieur ?",
+            "en": "Actually, if ever it rains during my walks, are there indoor visits?",
+            "es": "Zhüstemán, si zhamé il plö pandán me bala, esk il i a de vizi a lintériör?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — plan de secours en cas de pluie (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, le musée des beaux-arts et le marché couvert sont parfaits. Le musée est gratuit le premier dimanche du mois.",
+            "en": "Yes, the fine arts museum and the covered market are perfect. The museum is free on the first Sunday of the month, otherwise it costs ten euros.",
+            "es": "Ui, l müzé de boks-art e l marshé kuvé son parfè. L müzé e gratüi l premié dimansh dü mua.",
+            "note": "INFORMATION: Solutions en cas de pluie"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que les quartiers sont accessibles avec une poussette ou un fauteuil roulant ?",
+            "en": "Noted. And are the neighbourhoods accessible with a pushchair or a wheelchair?",
+            "es": "Se noté. E esk le kartié son akesibl avek ün puset u un fotöil rulan?",
+            "note": "SUIVI 2: \"C'est noté\" — accessibilité"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le vieux centre est plat et bien aménagé. Les bords du fleuve aussi, mais certaines ruelles ont des pavés difficiles.",
+            "en": "The old centre is flat and well laid out. The riverside is accessible too, but some alleys have difficult cobblestones.",
+            "es": "L viö santr e pla e bien aménazhé. Le bord dü flöv osi, me sertin rül on de pavé difisil.",
+            "note": "INFORMATION: Accessibilité des quartiers"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais je veux prolonger la balade, est-ce qu'il y a un quartier plus loin qui vaut le détour ?",
+            "en": "Okay. If ever I want to extend the walk, is there a neighbourhood further away that's worth the detour?",
+            "es": "Dakor. Si zhamé zhe vö prolonzhé la bala, esk il i a un kartié plüs luán ki vo l détur?",
+            "note": "SUIVI 3: \"Si jamais\" — prolonger la balade (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, le quartier des jardins, à vingt minutes à pied. Il y a un parc, un potager partagé et un café agréable.",
+            "en": "Yes, the garden district, twenty minutes on foot. There's a park, a shared vegetable garden and a small café where the food is excellent.",
+            "es": "Ui, l kartié de zhardin, a vinzh minü a pie. Il i a un pars, un potazhé partazhé e un kafé agréabl.",
+            "note": "INFORMATION: Quartier supplémentaire conseillé"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais préparer mon itinéraire pour demain matin.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll prepare my route for tomorrow morning.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé préparé mon itinérèr pur demin matin.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Prends de bonnes chaussures et n'oublie pas ton appareil photo. Bonne balade et à ce soir !",
+            "en": "With pleasure! Wear good shoes and don't forget your camera. Have a good walk and see you tonight!",
+            "es": "Avek plèzir! Pran de bon shosür e nubli pa ton aparèl foto. Bon bala e a s suar!",
+            "note": "RESPONSE: Formule de clôture — encouragement + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour tous ces conseils, c'est vraiment gentil. À ce soir et bonne journée !",
+            "en": "Thanks again for all this advice, that's really kind. See you tonight and have a good day!",
+            "es": "Mersí ankor pur tus se konsèl, se vremán zhantil. A s suar e bon zhurné!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

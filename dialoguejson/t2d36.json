@@ -1,0 +1,380 @@
+{
+    "title": "Se renseigner sur une opportunité de travail à l'étranger auprès de son supérieur",
+    "task": "tache2",
+    "topic": "5. Work & employment",
+    "description": "Votre entreprise vous propose un poste à l'étranger. Avant de décider, vous demandez à votre supérieur des précisions sur les missions, le salaire et les avantages.",
+    "labels": {
+        "E": "Supérieur",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'aimerais en savoir davantage",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur une opportunité de travail à l'étranger auprès de son supérieur",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Vous m'avez parlé d'un poste à l'étranger et je vous remercie de cette opportunité. Avant de répondre, j'aimerais en savoir davantage. Est-ce que je pourrais vous poser quelques questions ?",
+                        "note": "OUVERTURE: Salutation + remerciement + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Bien sûr, c'est une décision importante et je comprends que vous vouliez tous les détails. Posez-moi vos questions.",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais en parler à ma famille et vous répondrai vendredi.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Prenez le temps de réfléchir, c'est une belle opportunité. Je reste disponible si vous avez d'autres questions.",
+                        "note": "RESPONSE: Formule de clôture — disponibilité + encouragement",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour votre temps et pour ces précisions, c'était très clair. À vendredi et bonne journée !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quelles seraient mes missions exactes là-bas, et est-ce que le poste est différent du mien ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — missions du poste (quelles)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que l'entreprise a choisi de m'envoyer moi plutôt qu'un collègue plus ancien ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien est-ce que le salaire serait augmenté, et y a-t-il une prime de départ à l'étranger ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le salaire (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que le poste se trouve exactement, dans quelle ville et dans quel quartier ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que le départ serait organisé, avec une formation avant de partir ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur l'organisation (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que le poste commence, et combien de temps est-ce qu'il dure ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur la durée (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et qui est-ce que je devrais contacter sur place en cas de problème administratif ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur le contact (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que l'entreprise a choisi de m'envoyer moi plutôt qu'un collègue plus ancien ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien est-ce que le salaire serait augmenté, et y a-t-il une prime de départ à l'étranger ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le salaire",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que le poste se trouve exactement, dans quelle ville et dans quel quartier ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Comment est-ce que le départ serait organisé, avec une formation avant de partir ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur l'organisation",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Quand est-ce que le poste commence, et combien de temps est-ce qu'il dure ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur la durée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et qui est-ce que je devrais contacter sur place en cas de problème administratif ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur le contact",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je veux rentrer en France pour raisons familiales, est-ce que c'est possible en cours de mission ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — retour anticipé (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que ma famille pourrait venir avec moi, et est-ce que l'entreprise aide pour l'école des enfants ?",
+                        "note": "SUIVI 2: \"C'est noté\" — famille et scolarité",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais je refuse cette offre, est-ce que cela aura des conséquences sur mon poste actuel ?",
+                        "note": "SUIVI 3: \"Si jamais\" — refus de l'offre (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Vous m'avez parlé d'un poste à l'étranger et je vous remercie de cette opportunité. Avant de répondre, j'aimerais en savoir davantage. Est-ce que je pourrais vous poser quelques questions ?",
+                        "note": "CONDITIONNEL POLI: \"j'aimerais en savoir davantage\" + \"est-ce que je pourrais\"",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Vous dirigeriez une équipe de huit personnes et vous ouvririez le nouveau bureau, avec plus de responsabilités.",
+                        "note": "CONDITIONNEL PRÉSENT: \"Vous dirigeriez... vous ouvririez\" pour décrire un poste hypothétique",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Aucune, votre poste reste le même. Nous proposerons l'opportunité à quelqu'un d'autre, sans aucune conséquence pour vous.",
+                        "note": "FUTUR SIMPLE: \"resterait disponible\" — exprimer une condition future",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Vous m'avez parlé d'un poste à l'étranger et je vous remercie de cette opportunité. Avant de répondre, j'aimerais en savoir davantage. Est-ce que je pourrais vous poser quelques questions ?",
+            "en": "Hello! You told me about a position abroad and I thank you for this opportunity. Before answering, I'd like to know more. Could I ask you a few questions?",
+            "es": "Bonzhur! Vu mavé parlé dun post a létranzhé e zhe vu remersi de set oportünité. Aván de répondr, zhémeré an savuar davantazh. Esk zhe puré vu pozé kelk kesión?",
+            "note": "OUVERTURE: Salutation + remerciement + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Bien sûr, c'est une décision importante et je comprends que vous vouliez tous les détails. Posez-moi vos questions.",
+            "en": "Hello! Of course, it's an important decision and I understand you want all the details. Ask me your questions.",
+            "es": "Bonzhur! Bien sür, se ün désisión inportan e zhe konpran k vu vulié tus le détèl. Pozez-mua vo kesión.",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quelles seraient mes missions exactes là-bas, et est-ce que le poste est différent du mien ?",
+            "en": "To start with, what would my exact tasks be over there, and is the position different from mine?",
+            "es": "Pur konmansé, kel serè me misión eksakt la-ba, e esk l post e difér dü mien?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — missions du poste (quelles)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vous dirigeriez une équipe de huit personnes et vous ouvririez le nouveau bureau, avec plus de responsabilités.",
+            "en": "You'd manage a team of eight people and open the new office. The tasks are broader, with more responsibility.",
+            "es": "Vu dirizherié ün ékip de üit person e vuz uvririé l nuvo büro, avek plüs de responsabilité.",
+            "note": "INFORMATION: Missions et responsabilités"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pourquoi est-ce que l'entreprise a choisi de m'envoyer moi plutôt qu'un collègue plus ancien ?",
+            "en": "Okay. And why did the company decide to send me rather than a more senior colleague?",
+            "es": "Dakor. E purkua esk lantrepris a shuai de manvuayé mua plüto k un kolèg plüs ansien?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce que vous parlez anglais et connaissez nos méthodes. Votre expérience de gestion correspond au poste.",
+            "en": "Because you speak English and you know our methods. Your management experience matches exactly what the position requires.",
+            "es": "Pars k vu parlé anglè e konèsé no méto. Votr ekspériens de zhsión korespon o post.",
+            "note": "INFORMATION: Raisons du choix du candidat"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien est-ce que le salaire serait augmenté, et y a-t-il une prime de départ à l'étranger ?",
+            "en": "I see. How much would the salary increase be, and is there an overseas relocation bonus?",
+            "es": "Zhe vua. Kombien esk l salèr serè ogmanté, e i a-t-il ün prin de dépar a létranzhé?",
+            "note": "RÉACTION: \"Je vois\"; question sur le salaire (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le salaire augmenterait de vingt pour cent, avec une prime de trois mille euros. Le logement est pris en charge six mois.",
+            "en": "The salary would increase by twenty per cent, with a three-thousand-euro relocation bonus. Housing is also covered for six months.",
+            "es": "L salèr ogmanterè de vinzh pur san, avek ün prin de trua mil eró. L lozhmán e pri an sharzh sis mua.",
+            "note": "INFORMATION: Salaire, prime et logement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que le poste se trouve exactement, dans quelle ville et dans quel quartier ?",
+            "en": "Oh, that's good to know. And where exactly is the position, in which city and which neighbourhood?",
+            "es": "A, se bon a savuar. E u esk l post s truv eksasmán, dan kel vil e dan kel kartié?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "À Montréal, dans le quartier des affaires. Le bureau est à dix minutes à pied du métro.",
+            "en": "In Montreal, in the business district. The office is ten minutes on foot from the metro, in a modern building.",
+            "es": "A Montréal, dan l kartié dez afèr. L büro e a dis minü a pie dü métro.",
+            "note": "INFORMATION: Ville et emplacement du bureau"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Comment est-ce que le départ serait organisé, avec une formation avant de partir ?",
+            "en": "Very good, thank you. How would the departure be organized, with training before leaving?",
+            "es": "Tre bien, mersí. Komán esk l dépar serè organizé, avek ün formasión aván de partir?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur l'organisation du départ (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Deux semaines de formation à Paris, puis un accompagnement sur place pendant un mois. Nous payons les billets et le visa.",
+            "en": "Two weeks of training in Paris, then support on site for a month. We pay for the tickets and the visa procedures.",
+            "es": "Dö semén de formasión a Pari, püi un akonpañmán sür plas pandán un mua. Nu péyon le biyè e l viza.",
+            "note": "INFORMATION: Formation et accompagnement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Quand est-ce que le poste commence, et combien de temps est-ce qu'il dure ?",
+            "en": "I understand better. When does the position start, and how long does it last?",
+            "es": "Zhe konpran miö. Kan esk l post konmans, e kombien de tanp esk il dür?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur la durée (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le poste commence en janvier et dure deux ans, renouvelable une fois. Un retour en France est prévu à la fin.",
+            "en": "The position starts in January and lasts two years, renewable once. A return to France is planned at the end of the mission.",
+            "es": "L post konmans an zhanvié e dür döz an, renuvelabl ün fua. Un retur an Frans e prévü a la fin.",
+            "note": "INFORMATION: Date de début et durée"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Et qui est-ce que je devrais contacter sur place en cas de problème administratif ?",
+            "en": "Oh, that's interesting. And who should I contact on site in case of an administrative problem?",
+            "es": "A, se intérèsan. E ki esk zhe devrè kontakté sür plas an ka de problèm administratif?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\"; question sur le contact sur place (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Notre responsable des ressources humaines à Montréal, madame Tremblay. Elle vous aidera pour le logement, la banque et les papiers.",
+            "en": "Our human resources manager in Montreal, Mrs Tremblay. She'll help you with housing, the bank and the paperwork.",
+            "es": "Notr responsabl de resurs ümin a Montréal, madam Tranbléy. El vuz èdera pur l lozhmán, la bank e le papié.",
+            "note": "INFORMATION: Contact sur place"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je veux rentrer en France pour raisons familiales, est-ce que c'est possible en cours de mission ?",
+            "en": "Actually, if ever I want to return to France for family reasons, is that possible during the mission?",
+            "es": "Zhüstemán, si zhamé zhe vö rantré an frans pur rèzon familial, esk se posibl an kur de misión?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — retour anticipé (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, avec un préavis de deux mois et l'accord du directeur. Votre poste actuel resterait disponible pendant les six premiers mois.",
+            "en": "Yes, with two months' notice and the director's approval. Your current position would remain available for the first six months.",
+            "es": "Ui, avek un préavi de dö mua e lakor dü direktör. Votr post aktül resterè disponibl pandán le sis premié mua.",
+            "note": "INFORMATION: Conditions de retour anticipé"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que ma famille pourrait venir avec moi, et est-ce que l'entreprise aide pour l'école des enfants ?",
+            "en": "Noted. And could my family come with me, and does the company help with the children's school?",
+            "es": "Se noté. E esk ma famiy puré venir avek mua, e esk lantrepris èd pur lékol dez anfán?",
+            "note": "SUIVI 2: \"C'est noté\" — famille et scolarité"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, votre famille peut vous accompagner. Nous participons aux frais de scolarité à hauteur de cinquante pour cent la première année.",
+            "en": "Yes, your family can come with you. We cover fifty per cent of school fees in the first year.",
+            "es": "Ui, votr famiy pö vuz akonpañé. Nu partisipon o frè de skolarité a otör de sinkan pur san la premièr ané.",
+            "note": "INFORMATION: Accompagnement de la famille"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais je refuse cette offre, est-ce que cela aura des conséquences sur mon poste actuel ?",
+            "en": "Okay. If ever I turn down this offer, will it have consequences for my current position?",
+            "es": "Dakor. Si zhamé zhe refüs set ofr, esk sela ora de konsékans sür mon post aktül?",
+            "note": "SUIVI 3: \"Si jamais\" — refus de l'offre (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Aucune, votre poste reste le même. Nous proposerons l'opportunité à quelqu'un d'autre, sans aucune conséquence pour vous.",
+            "en": "None, your position stays the same. We'll offer the opportunity to someone else, with no consequence for you.",
+            "es": "Okun, votr post rest l mem. Nu propozeron loportünité a kelk un dotr, san okun konsékans pur vu.",
+            "note": "INFORMATION: Absence de conséquence en cas de refus"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais en parler à ma famille et vous répondrai vendredi.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll discuss it with my family and give you my answer on Friday.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé an parlé a ma famiy e vu répondrè vandredi.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Prenez le temps de réfléchir, c'est une belle opportunité. Je reste disponible si vous avez d'autres questions.",
+            "en": "With pleasure! Take your time to think, it's a great opportunity. I remain available if you have other questions.",
+            "es": "Avek plèzir! Prené l tanp de réfléshir, se ün bel oportünité. Zhe rest disponibl si vuz avé dotr kesión.",
+            "note": "RESPONSE: Formule de clôture — disponibilité + encouragement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour votre temps et pour ces précisions, c'était très clair. À vendredi et bonne journée !",
+            "en": "Thanks again for your time and for these details, it was very clear. See you Friday and have a good day!",
+            "es": "Mersí ankor pur votr tanp e pur se présizión, sétè tre klèr. A vandredi e bon zhurné!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

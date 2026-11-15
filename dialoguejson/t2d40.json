@@ -1,0 +1,380 @@
+{
+    "title": "Se renseigner sur une association qui distribue des repas aux sans-abri",
+    "task": "tache2",
+    "topic": "14. Leisure & outdoor activities",
+    "description": "Vous souhaitez vous engager dans une association qui offre des repas aux personnes sans abri. Vous interrogez un ami bénévole sur les missions, les règles et les horaires.",
+    "labels": {
+        "E": "Ami bénévole",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "je voudrais m'engager aussi",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est bon à savoir",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "Si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bon courage",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur une association qui distribue des repas aux sans-abri",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Tu m'as parlé de ton association et ça m'a beaucoup touché. Je voudrais m'engager aussi et donner un peu de mon temps. Est-ce que je pourrais te poser quelques questions ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Salut ! Bien sûr, avec plaisir. On manque toujours de bénévoles le week-end. Que veux-tu savoir ?",
+                        "note": "RESPONSE: Formule d'accueil — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais envoyer un mail et venir à la réunion mardi.",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Super nouvelle, tu verras, c'est très enrichissant. À mardi et bon courage pour ta première semaine !",
+                        "note": "RESPONSE: Formule de clôture — encouragement + salutation",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour ton accueil, c'est vraiment gentil. À mardi et bonne semaine !",
+                        "note": "FERMETURE: remerciement + formule de politesse finale",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, quelles missions est-ce que je pourrais avoir, et lesquelles sont les plus utiles pour commencer ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — missions possibles (quelles)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que tu t'es engagé, qu'est-ce qui t'a donné envie de venir chaque semaine ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien d'heures est-ce que je devrais donner par semaine, et est-ce qu'il y a une durée minimale ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le temps à donner (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que les repas sont servis, dans un local de l'association ou en plein air ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Quand est-ce que je pourrais commencer, et est-ce qu'il y a une réunion avant de débuter ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur le début (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Comment est-ce que je m'inscris, et est-ce qu'il faut une formation ou un diplôme particulier ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur l'inscription (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est rassurant. Et qui est-ce qui encadre les bénévoles, un salarié de l'association ou un responsable bénévole ?",
+                        "note": "RÉACTION: \"Ah, c'est rassurant\"; question sur l'encadrement (qui)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et pourquoi est-ce que tu t'es engagé, qu'est-ce qui t'a donné envie de venir chaque semaine ?",
+                        "note": "RÉACTION: \"D'accord\"; question sur la raison",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Combien d'heures est-ce que je devrais donner par semaine, et est-ce qu'il y a une durée minimale ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur le temps à donner",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que les repas sont servis, dans un local de l'association ou en plein air ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Quand est-ce que je pourrais commencer, et est-ce qu'il y a une réunion avant de débuter ?",
+                        "note": "RÉACTION: \"Très bien, merci\"; question sur le début",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Comment est-ce que je m'inscris, et est-ce qu'il faut une formation ou un diplôme particulier ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; question sur l'inscription",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est rassurant. Et qui est-ce qui encadre les bénévoles, un salarié de l'association ou un responsable bénévole ?",
+                        "note": "RÉACTION: \"Ah, c'est rassurant\"; question sur l'encadrement",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je suis malade un samedi, est-ce que je dois prévenir quelqu'un ou trouver un remplaçant ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — absence imprévue (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce qu'il y a des règles particulières à respecter pendant la distribution, pour la discrétion ?",
+                        "note": "SUIVI 2: \"C'est noté\" — règles et discrétion",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais je veux aider davantage, est-ce que je peux participer à la collecte de nourriture ?",
+                        "note": "SUIVI 3: \"Si jamais\" — participer davantage (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Tu m'as parlé de ton association et ça m'a beaucoup touché. Je voudrais m'engager aussi et donner un peu de mon temps. Est-ce que je pourrais te poser quelques questions ?",
+                        "note": "CONDITIONNEL POLI: \"je voudrais m'engager\" + \"est-ce que je pourrais\"",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Un simple message suffit, on s'organise entre nous. L'important est de prévenir la veille, pour ne pas laisser l'équipe.",
+                        "note": "CONSÉQUENCE \"pour ne pas\" + INFINITIF: \"pour ne pas laisser l'équipe en difficulté\"",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parce que je me sentais inutile le dimanche. Maintenant, je vois les mêmes personnes et un vrai lien s'est créé.",
+                        "note": "IMPARFAIT ET PASSÉ COMPOSÉ: \"j'avais l'impression\" / \"un vrai lien s'est créé\"",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! Tu m'as parlé de ton association et ça m'a beaucoup touché. Je voudrais m'engager aussi et donner un peu de mon temps. Est-ce que je pourrais te poser quelques questions ?",
+            "en": "Hi! You told me about your association and it really touched me. I'd like to get involved too and give some of my time. Could I ask you a few questions?",
+            "es": "Salu! Tü ma parlé de ton asosiasión e sa ma boku tushé. Zhe vudré mangazhé osi e doné un pö de mon tanp. Esk zhe puré te pozé kelk kesión?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Bien sûr, avec plaisir. On manque toujours de bénévoles le week-end. Que veux-tu savoir ?",
+            "en": "Hi! Of course, with pleasure. We're always short of volunteers at the weekend. What do you want to know?",
+            "es": "Salu! Bien sür, avek plèzir. On mank tuzhur de bénévol l veek-an. K vö-tü savuar?",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, quelles missions est-ce que je pourrais avoir, et lesquelles sont les plus utiles pour commencer ?",
+            "en": "To start with, which tasks could I have, and which are the most useful to start with?",
+            "es": "Pur konmansé, kel misión esk zhe puré avuar, e leskel son le plüs ütil pur konmansé?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — missions possibles (quelles)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Préparer les repas, servir les gens ou faire la vaisselle. Pour débuter, servir est le plus utile, on parle beaucoup.",
+            "en": "Preparing meals, serving people or doing the washing-up. To start with, serving is the most useful, you talk a lot with the people.",
+            "es": "Préparé le repa, servir le zhan u fer la vèsel. Pur débüté, servir e l plüs ütil, on parl boku.",
+            "note": "INFORMATION: Missions possibles + conseil"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et pourquoi est-ce que tu t'es engagé, qu'est-ce qui t'a donné envie de venir chaque semaine ?",
+            "en": "Okay. And why did you get involved, what made you want to come every week?",
+            "es": "Dakor. E purkua esk tü te angazhé, k esk ki ta doné anvi de venir shak semén?",
+            "note": "RÉACTION: \"D'accord\"; question sur la raison (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce que je me sentais inutile le dimanche. Maintenant, je vois les mêmes personnes et un vrai lien s'est créé.",
+            "en": "Because I felt I was useless on Sundays. Now I see the same people and a real bond has formed.",
+            "es": "Pars k zhe me santè inütil l dimansh. Mintnán, zhe vua le mem person e un vrè lien se kréé.",
+            "note": "INFORMATION: Motivation personnelle du bénévole"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Combien d'heures est-ce que je devrais donner par semaine, et est-ce qu'il y a une durée minimale ?",
+            "en": "I see. How many hours should I give per week, and is there a minimum duration?",
+            "es": "Zhe vua. Kombien dör esk zhe devrè doné par semén, e esk il i a ün düré minimal?",
+            "note": "RÉACTION: \"Je vois\"; question sur le temps à donner (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Deux heures par semaine suffisent, par exemple le samedi de onze à treize heures. L'engagement minimum est de trois mois.",
+            "en": "Two hours a week is enough, for example on Saturdays from eleven to one. The minimum commitment is three months.",
+            "es": "Döz ör par semén süfis, par eksanpl l samedi de onz a trèz ör. Langazhmán minimun e de trua mua.",
+            "note": "INFORMATION: Temps demandé et engagement minimum"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que les repas sont servis, dans un local de l'association ou en plein air ?",
+            "en": "Oh, that's good to know. And where are the meals served, in the association's premises or outdoors?",
+            "es": "A, se bon a savuar. E u esk le repa son servi, dan un lokal de lasosiasión u an plin èr?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\"; question sur le lieu (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Dans le local près de la gare, au numéro douze de la rue des Lilas. En été, on distribue aussi des repas au parc.",
+            "en": "In the premises near the station, at number twelve rue des Lilas. In summer, we also hand out meals in the park on Sundays.",
+            "es": "Dan l lokal prè de la gar, o nüméro duz de la rü de Lila. An été, on distribü osi de repa o pars.",
+            "note": "INFORMATION: Lieux de distribution"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Quand est-ce que je pourrais commencer, et est-ce qu'il y a une réunion avant de débuter ?",
+            "en": "Very good, thank you. When could I start, and is there a meeting before starting?",
+            "es": "Tre bien, mersí. Kan esk zhe puré konmansé, e esk il i a ün réünión aván de débüté?",
+            "note": "RÉACTION: \"Très bien, merci\"; question sur le début de l'engagement (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a une réunion d'information mardi prochain. On peut commencer dès le samedi qui suit, avec un bénévole.",
+            "en": "There's an information meeting next Tuesday at six p.m. You can start the following Saturday, with a volunteer who accompanies you.",
+            "es": "Il i a ün réünión dinformasión mardi proshin. On pö konmansé dè l samedi ki süi, avek un bénévol.",
+            "note": "INFORMATION: Réunion et démarrage"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Comment est-ce que je m'inscris, et est-ce qu'il faut une formation ou un diplôme particulier ?",
+            "en": "I understand better. How do I register, and is any special training or qualification required?",
+            "es": "Zhe konpran miö. Komán esk zhe minskri, e esk il fo ün formasión u un diplom partikülié?",
+            "note": "RÉACTION: \"Je comprends mieux\"; question sur l'inscription (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un simple mail à l'association suffit, aucun diplôme n'est demandé. On reçoit une formation sur la sécurité alimentaire.",
+            "en": "A simple email to the association is enough, no qualification is required. You get a short one-hour training on food safety.",
+            "es": "Un sinpl mèl a lasosiasión süfi, okun diplom ne demandé. On resua ün formasión sür la sékürité alimantèr.",
+            "note": "INFORMATION: Inscription et formation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est rassurant. Et qui est-ce qui encadre les bénévoles, un salarié de l'association ou un responsable bénévole ?",
+            "en": "Oh, that's reassuring. And who supervises the volunteers, an association employee or a volunteer coordinator?",
+            "es": "A, se rasüran. E ki esk ki ankadr le bénévol, un salarié de lasosiasión u un responsabl bénévol?",
+            "note": "RÉACTION: \"Ah, c'est rassurant\"; question sur l'encadrement (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un responsable bénévole, présent à chaque service. Il y a aussi deux salariés pour la cuisine, du lundi au vendredi.",
+            "en": "A volunteer coordinator, present at every service. There are also two employees for the kitchen and the meals, from Monday to Friday.",
+            "es": "Un responsabl bénévol, prés a shak servis. Il i a osi dö salarié pur la küizin, dü lundi o vandredi.",
+            "note": "INFORMATION: Encadrement des bénévoles"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je suis malade un samedi, est-ce que je dois prévenir quelqu'un ou trouver un remplaçant ?",
+            "en": "Actually, if ever I'm ill on a Saturday, do I need to tell someone or find a replacement?",
+            "es": "Zhüstemán, si zhamé zhe süi mala un samedi, esk zhe dua prévenir kelk un u truvé un ranplasan?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — absence imprévue (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un simple message suffit, on s'organise entre nous. L'important est de prévenir la veille, pour ne pas laisser l'équipe.",
+            "en": "A simple message is enough, we organize among ourselves. The important thing is to let us know the day before, so as not to leave the team struggling.",
+            "es": "Un sinpl mesazh süfi, on sorganis antr nu. Linportan e de prévenir la vèl, pur n pa lèsé lékip.",
+            "note": "INFORMATION: Gestion des absences"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce qu'il y a des règles particulières à respecter pendant la distribution, pour la discrétion ?",
+            "en": "Noted. And are there particular rules to follow during the distribution, for discretion?",
+            "es": "Se noté. E esk il i a de règl partikülièr a respekté pandán la distribüsión, pur la diskrésión?",
+            "note": "SUIVI 2: \"C'est noté\" — règles et discrétion"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "On ne prend pas de photos et on ne demande pas pourquoi les gens sont là. On les traite avec respect.",
+            "en": "We don't take photos and we don't ask why people are there. We treat them with respect, without any familiarity.",
+            "es": "On n pran pa de foto e on n deman pa purkua le zhan son la. On le trè avek respes.",
+            "note": "INFORMATION: Règles de la distribution"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais je veux aider davantage, est-ce que je peux participer à la collecte de nourriture ?",
+            "en": "Okay. If ever I want to help more, can I take part in the food collection?",
+            "es": "Dakor. Si zhamé zhe vö èdé davantazh, esk zhe pö partisipé a la kolekt de nuritür?",
+            "note": "SUIVI 3: \"Si jamais\" — participer davantage (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, la collecte a lieu une fois par mois dans les supermarchés. On a besoin de bras pour trier les produits.",
+            "en": "Yes, the collection takes place once a month in the supermarkets. We need hands to carry and sort the products.",
+            "es": "Ui, la kolekt a liö ün fua par mua dan le süpermarshé. On a bezuán de bra pur trié le prodüi.",
+            "note": "INFORMATION: Collecte de nourriture"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais envoyer un mail et venir à la réunion mardi.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll send an email and come to the meeting on Tuesday.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé anvuayé un mèl e venir a la réünión mardi.",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Super nouvelle, tu verras, c'est très enrichissant. À mardi et bon courage pour ta première semaine !",
+            "en": "Great news, you'll see, it's very rewarding. See you Tuesday and good luck for your first week!",
+            "es": "Süpé nuvel, tü vera, se tre anrishisan. A mardi e bon kurazh pur ta premièr semén!",
+            "note": "RESPONSE: Formule de clôture — encouragement + salutation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour ton accueil, c'est vraiment gentil. À mardi et bonne semaine !",
+            "en": "Thanks again for your welcome, that's really kind. See you Tuesday and have a good week!",
+            "es": "Mersí ankor pur ton aküil, se vremán zhantil. A mardi e bon semén!",
+            "note": "FERMETURE: remerciement + formule de politesse finale"
+        }
+    ]
+}

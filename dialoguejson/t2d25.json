@@ -1,0 +1,385 @@
+{
+    "title": "Se renseigner sur la location d'objets dans un magasin spécialisé",
+    "task": "tache2",
+    "topic": "9. Shopping & services",
+    "description": "Vous avez besoin d'outils et de matériel pour un déménagement et un week-end de camping. Vous interrogez un employé d'un magasin qui loue des objets utilisés occasionnellement.",
+    "labels": {
+        "E": "Employé du magasin de location",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "J'ai entendu dire",
+        "qu'on n'utilise qu'occasionnellement",
+        "poser quelques questions",
+        "Pour commencer",
+        "D'accord",
+        "Je vois",
+        "Très bien, merci",
+        "Ah, c'est bon à savoir",
+        "Je comprends mieux",
+        "C'est noté",
+        "Justement",
+        "si jamais",
+        "ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée",
+        "Merci encore"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur la location d'objets dans un magasin spécialisé",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! J'ai entendu dire que votre magasin loue du matériel qu'on n'utilise qu'occasionnellement, comme des outils ou des accessoires de camping. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + contexte (location d'objets occasionnels) + demande polie au conditionnel",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Bien sûr, avec plaisir. C'est justement notre spécialité : la location d'objets qu'on utilise rarement. Que souhaitez-vous savoir ?",
+                        "note": "RESPONSE: Accueil professionnel + rappel du principe de la boutique",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réserver le diable pour samedi sur votre site.",
+                        "note": "FERMETURE: remerciement + \"ça répond à toutes mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! N'oubliez pas votre pièce d'identité et venez avant dix-huit heures. Bonne journée et à samedi !",
+                        "note": "RESPONSE: Rappel pratique + formule de clôture",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour toutes ces explications, c'était très clair. À samedi et bonne journée !",
+                        "note": "FERMETURE: remerciement final + formule de politesse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien. Pour commencer, quel type de matériel est-ce que vous proposez, et que me conseilleriez-vous pour un déménagement ?",
+                        "note": "RÉACTION: \"Très bien\" + \"Pour commencer\" — gamme de matériel (quel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et combien coûte une location, par exemple pour un diable et une perceuse ?",
+                        "note": "RÉACTION: \"D'accord\" — question sur les prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et comment est-ce que la réservation fonctionne ? Il faut s'y prendre à l'avance ?",
+                        "note": "RÉACTION: \"Je vois\" — procédure de réservation (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et quand est-ce que le magasin est ouvert, le soir et le dimanche ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — question sur les horaires (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que je récupère le matériel ? Au magasin même ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — lieu de retrait (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et qui est-ce qui doit se présenter au comptoir ? Moi ou quelqu'un d'autre ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — personne habilitée au retrait (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et pourquoi est-ce que vous demandez une caution, justement ?",
+                        "note": "RÉACTION: \"C'est noté\" + \"justement\" — raison de la caution (pourquoi)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien. Pour commencer, quel type de matériel est-ce que vous proposez, et que me conseilleriez-vous pour un déménagement ?",
+                        "note": "RÉACTION: \"Très bien\" + \"Pour commencer\" — gamme de matériel (quel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et combien coûte une location, par exemple pour un diable et une perceuse ?",
+                        "note": "RÉACTION: \"D'accord\" — question sur les prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et comment est-ce que la réservation fonctionne ? Il faut s'y prendre à l'avance ?",
+                        "note": "RÉACTION: \"Je vois\" — procédure de réservation (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et quand est-ce que le magasin est ouvert, le soir et le dimanche ?",
+                        "note": "RÉACTION: \"Très bien, merci\" — question sur les horaires (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et où est-ce que je récupère le matériel ? Au magasin même ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" — lieu de retrait (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et qui est-ce qui doit se présenter au comptoir ? Moi ou quelqu'un d'autre ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" — personne habilitée au retrait (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et pourquoi est-ce que vous demandez une caution, justement ?",
+                        "note": "RÉACTION: \"C'est noté\" + \"justement\" — raison de la caution (pourquoi)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je rends l'objet avec un jour de retard, est-ce qu'il y a une pénalité ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — retard de restitution (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et pour le retour, justement, il faut nettoyer le matériel avant de le rendre ?",
+                        "note": "SUIVI 2: \"C'est noté\" + \"justement\" — état du matériel au retour",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et si jamais je casse quelque chose, comment est-ce que ça se passe avec l'assurance ?",
+                        "note": "SUIVI 3: \"si jamais\" — casse et assurance (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! J'ai entendu dire que votre magasin loue du matériel qu'on n'utilise qu'occasionnellement, comme des outils ou des accessoires de camping. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+                        "note": "CONDITIONNEL POLI: \"je pourrais vous poser\" — demande adoucie auprès d'un commerçant",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "La personne qui a signé le contrat doit venir, avec une pièce d'identité. Si c'est un ami, il suffit qu'il apporte votre autorisation écrite.",
+                        "note": "SUBJONCTIF après \"il suffit que\": \"il suffit qu'il apporte votre autorisation\"",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Une caution de cent cinquante euros est demandée pour les objets fragiles. Elle est rendue en entier si le matériel revient en bon état.",
+                        "note": "VOIX PASSIVE: \"Une caution est demandée\" + \"Elle est rendue en entier\" — sans complément d'agent",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! J'ai entendu dire que votre magasin loue du matériel qu'on n'utilise qu'occasionnellement, comme des outils ou des accessoires de camping. Est-ce que je pourrais vous poser quelques questions à ce sujet ?",
+            "en": "Hello! I heard that your shop rents out equipment that people only use occasionally, such as tools or camping accessories. Could I ask you a few questions about it?",
+            "es": "Bonzhur! zhé Antandü dir k votr magazin lu dü matériel k on nütilis k okaziónelmán, kom dez util u dez akesuar de kanpinzh. esk zhe puré vu pozé kelk kesión a s süzhe?",
+            "note": "OUVERTURE: Salutation + contexte (location d'objets occasionnels) + demande polie au conditionnel"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Bien sûr, avec plaisir. C'est justement notre spécialité : la location d'objets qu'on utilise rarement. Que souhaitez-vous savoir ?",
+            "en": "Hello! Of course, with pleasure. That's exactly our speciality: renting objects people rarely use. What would you like to know?",
+            "es": "Bonzhur! Bien sür, avek plèzir. Se zhüstemán notr spésialité: la lokasión dobzhe k on ütilis rarmán. K suètez-vu savuar?",
+            "note": "RESPONSE: Accueil professionnel + rappel du principe de la boutique"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Pour commencer, quel type de matériel est-ce que vous proposez, et que me conseilleriez-vous pour un déménagement ?",
+            "en": "Very good. To start with, what type of equipment do you offer, and what would you recommend for a move?",
+            "es": "Tre bien. Pur konmansé, kel tip de matériel esk vu propozé, e k me konsèlerié-vu pur un déménazhmán?",
+            "note": "RÉACTION: \"Très bien\" + \"Pour commencer\" — gamme de matériel (quel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Nous avons des outils, du matériel de cuisine et des accessoires de camping. Pour un déménagement, je conseille les diables et les couvertures.",
+            "en": "We have tools, kitchen equipment and camping accessories. For a move, I recommend the hand trucks and the protective covers.",
+            "es": "Nuz avon dez util, dü matériel de küizin e dez akesuar de kanpinzh. Pur un déménazhmán, zhe konsel le diabl e le kuvertür.",
+            "note": "INFORMATION: Trois familles de matériel + conseil ciblé"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et combien coûte une location, par exemple pour un diable et une perceuse ?",
+            "en": "Okay. And how much does a rental cost, for example for a hand truck and a drill?",
+            "es": "Dakor. E kombien kut ün lokasión, par eksanpl pur un diabl e ün persös?",
+            "note": "RÉACTION: \"D'accord\" — question sur les prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La perceuse coûte douze euros par jour, et le diable huit euros. À la semaine, vous bénéficiez d'une réduction de trente pour cent.",
+            "en": "The drill costs twelve euros a day, and the hand truck eight euros. For a week, you get a thirty percent discount.",
+            "es": "La persös kut duz eró par zhur, e l diabl üit eró. A la semén, vu bénéfisié dün rédüssión de tran pur san.",
+            "note": "INFORMATION: Tarifs à la journée + réduction hebdomadaire"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et comment est-ce que la réservation fonctionne ? Il faut s'y prendre à l'avance ?",
+            "en": "I see. And how does booking work? Do you have to do it in advance?",
+            "es": "Zhe vua. E komán esk la rézervasión fonktión? Il fo si prandr a lavans?",
+            "note": "RÉACTION: \"Je vois\" — procédure de réservation (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vous pouvez réserver en ligne ou par téléphone, puis retirer votre matériel deux jours plus tard. En été, réservez une semaine avant.",
+            "en": "You can book online or by phone, then pick up your equipment two days later. In summer, it's better to book a week in advance.",
+            "es": "Vu puvé rézervé an liñ u par téléfon, püi retiré votr matériel dö zhur plüs tard. An été, rézervé ün semén aván.",
+            "note": "INFORMATION: Deux canaux de réservation + délai de retrait + conseil saisonnier"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et quand est-ce que le magasin est ouvert, le soir et le dimanche ?",
+            "en": "Very good, thank you. And when is the shop open, in the evening and on Sundays?",
+            "es": "Tre bien, mersí. E kan esk l magazin e uvé, l suar e l dimansh?",
+            "note": "RÉACTION: \"Très bien, merci\" — question sur les horaires (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Nous sommes ouverts du lundi au samedi, de neuf heures à dix-neuf heures, et le dimanche matin pour les retours.",
+            "en": "We're open Monday to Saturday, from nine a.m. to seven p.m., and on Sunday mornings for returns.",
+            "es": "Nu som uvert dü lundi o samedi, de nöf ör a diks-nöf ör, e l dimansh matin pur le retur.",
+            "note": "INFORMATION: Horaires précis + créneau du dimanche réservé aux retours"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et où est-ce que je récupère le matériel ? Au magasin même ?",
+            "en": "Oh, good to know. And where do I pick up the equipment? At the shop itself?",
+            "es": "A, se bon a savuar. E u esk zhe réküpèr l matériel? O magazin mem?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\" — lieu de retrait (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, au comptoir du fond, après la caisse. Vous présentez votre contrat et une pièce d'identité, et on vous prépare le matériel.",
+            "en": "Yes, at the counter at the back, past the checkout. You show your contract and an ID document, and we get the equipment ready for you.",
+            "es": "Ui, o konptuar dü fon, apre la kès. Vu prézanté votr kontra e ün piès didantité, e on vu prépar l matériel.",
+            "note": "INFORMATION: Emplacement du comptoir + pièces à présenter"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et qui est-ce qui doit se présenter au comptoir ? Moi ou quelqu'un d'autre ?",
+            "en": "I understand better. And who has to come to the counter? Me or someone else?",
+            "es": "Zhe konpran miö. E ki esk ki dua s prézanté o konptuar? Mua u kelk un dotr?",
+            "note": "RÉACTION: \"Je comprends mieux\" — personne habilitée au retrait (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La personne qui a signé le contrat doit venir, avec une pièce d'identité. Si c'est un ami, il suffit qu'il apporte votre autorisation écrite.",
+            "en": "The person who signed the contract must come, with an ID document. If it's a friend, they just need to bring your written authorisation.",
+            "es": "La person ki a siñé l kontra dua venir, avek ün piès didantité. Si se un ami, il süfi k il aport votr otorizasión ékri.",
+            "note": "INFORMATION: Règle du signataire + exception avec autorisation écrite"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et pourquoi est-ce que vous demandez une caution, justement ?",
+            "en": "Noted. And why do you ask for a deposit, actually?",
+            "es": "Se noté. E purkua esk vu demandé ün kosión, zhüstemán?",
+            "note": "RÉACTION: \"C'est noté\" + \"justement\" — raison de la caution (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Une caution de cent cinquante euros est demandée pour les objets fragiles. Elle est rendue en entier si le matériel revient en bon état.",
+            "en": "A deposit of one hundred and fifty euros is required for fragile items. It is returned in full if the equipment comes back in good condition.",
+            "es": "Ün kosión de san sinkan eró e demandé pur lez obzhe frazhil. El e randü an antié si l matériel revi an bon éta.",
+            "note": "INFORMATION: Montant de la caution + conditions de restitution"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je rends l'objet avec un jour de retard, est-ce qu'il y a une pénalité ?",
+            "en": "Actually, if ever I return the item a day late, is there a penalty?",
+            "es": "Zhüstemán, si zhamé zhe ran lobzhe avek un zhur de retard, esk il i a ün pénalité?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — retard de restitution (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, cinq euros par jour de retard, plafonnés à vingt euros. Mais un simple appel suffit souvent pour prolonger la location.",
+            "en": "Yes, five euros per day of delay, capped at twenty euros. But a simple phone call is often enough to extend the rental.",
+            "es": "Ui, sink eró par zhur de retard, plafoné a vinzh eró. Me un sinpl apel süfi suván pur prolonzhé la lokasión.",
+            "note": "INFORMATION: Tarif du retard + plafond + possibilité de prolongation"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et pour le retour, justement, il faut nettoyer le matériel avant de le rendre ?",
+            "en": "Noted. And for the return, actually, do I have to clean the equipment before giving it back?",
+            "es": "Se noté. E pur l retur, zhüstemán, il fo netuayé l matériel aván de l randr?",
+            "note": "SUIVI 2: \"C'est noté\" + \"justement\" — état du matériel au retour"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Rendez-le propre et complet, un coup de chiffon suffit souvent. On vérifie tout devant vous, en cinq minutes environ.",
+            "en": "Bring it back clean and complete, a quick wipe is usually enough. We check everything in front of you, in about five minutes.",
+            "es": "Randez-l propr e konple, un kup de shifon süfi suván. On vérifi tu devan vu, an sink minü anviron.",
+            "note": "INFORMATION: Niveau de propreté exigé + vérification sur place"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et si jamais je casse quelque chose, comment est-ce que ça se passe avec l'assurance ?",
+            "en": "Okay. And if ever I break something, how does it work with the insurance?",
+            "es": "Dakor. E si zhamé zhe kas kelk shos, komán esk sa s pas avek lasürans?",
+            "note": "SUIVI 3: \"si jamais\" — casse et assurance (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Une assurance est incluse jusqu'à trois cents euros de dommages. Au-delà, vous payez la réparation, mais le devis est toujours établi avec vous.",
+            "en": "Insurance is included up to three hundred euros of damage. Beyond that, you pay for the repair, but the quote is always drawn up with you.",
+            "es": "Ün asürans e inklüs zhüsk a trua san eró de donmazh. O-dela, vu péyé la réparasión, me l devi e tuzhur établi avek vu.",
+            "note": "INFORMATION: Plafond de l'assurance + procédure du devis"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais réserver le diable pour samedi sur votre site.",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll book the hand truck for Saturday on your website.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé rézervé l diabl pur samedi sür votr sit.",
+            "note": "FERMETURE: remerciement + \"ça répond à toutes mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! N'oubliez pas votre pièce d'identité et venez avant dix-huit heures. Bonne journée et à samedi !",
+            "en": "With pleasure! Don't forget your ID document and come before six p.m. Have a good day and see you Saturday!",
+            "es": "Avek plèzir! Nublié pa votr piès didantité e vené aván diks-üi ör. Bon zhurné e a samedi!",
+            "note": "RESPONSE: Rappel pratique + formule de clôture"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour toutes ces explications, c'était très clair. À samedi et bonne journée !",
+            "en": "Thanks again for all these explanations, it was very clear. See you Saturday and have a good day!",
+            "es": "Mersí ankor pur tut sez eksplikasión, sétè tre klèr. A samedi e bon zhurné!",
+            "note": "FERMETURE: remerciement final + formule de politesse"
+        }
+    ]
+}

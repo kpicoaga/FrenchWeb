@@ -1,0 +1,395 @@
+{
+    "title": "Se renseigner sur la surveillance d'un appartement pendant un voyage",
+    "task": "tache2",
+    "topic": "1. Housing",
+    "description": "Votre voisin confie la surveillance de son appartement et l'entretien de ses plantes à une personne quand il part en voyage. Vous aimeriez faire la même chose et vous vous renseignez sur cette organisation.",
+    "labels": {
+        "E": "Un voisin",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "Tu m'avais dit que",
+        "Ça m'intéresse",
+        "à ce sujet",
+        "D'accord",
+        "Je vois",
+        "Très bien, merci",
+        "Ah, c'est bon à savoir",
+        "Je comprends mieux",
+        "C'est noté",
+        "Ah, c'est intéressant",
+        "Justement",
+        "Si jamais",
+        "au cas où",
+        "tout de suite",
+        "ça répond à toutes mes questions",
+        "Avec plaisir"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur la surveillance d'un appartement pendant un voyage",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Tu m'avais dit que, quand tu pars en voyage, quelqu'un surveille ton appartement et arrose tes plantes. Ça m'intéresse. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + rappel du contexte + demande polie de poser des questions",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Salut ! Oui, je fais ça depuis deux ans, surtout quand je pars plusieurs semaines. Bien sûr, pose tes questions, je t'écoute.",
+                        "note": "RESPONSE: Accueil chaleureux — ancienneté de la pratique et invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais demander à ma voisine du dessus avant mon départ.",
+                        "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! N'hésite pas si tu as d'autres questions. Bon voyage et bonne journée !",
+                        "note": "FERMETURE: \"Avec plaisir\" + disponibilité + formule de clôture",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore, tu m'as beaucoup aidé. À bientôt et bon voyage à toi aussi !",
+                        "note": "FERMETURE: Remerciement final + formule de politesse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et où est-ce que tu laisses tes clés, à un voisin ou dans une boîte ?",
+                        "note": "ENCHAINEMENT: \"D'accord\" + question sur le lieu de dépôt des clés (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et quand est-ce que tu préviens la personne, longtemps à l'avance ?",
+                        "note": "RÉACTION: \"Je vois\" + question sur le moment où la personne est prévenue (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et pourquoi tu choisis une voisine plutôt qu'une entreprise spécialisée ?",
+                        "note": "RÉACTION: \"Très bien, merci\" + question sur la raison du choix (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et comment tu t'assures que la personne fait bien toutes les tâches prévues ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" + question sur le contrôle des tâches (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et combien est-ce que tu lui donnes pour ce service, c'est un forfait ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" + question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce qui garde un double de tes clés, au cas où la personne serait absente ?",
+                        "note": "RÉACTION: \"C'est noté\" + \"au cas où\" — question sur le double des clés (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et quelle est la tâche la plus importante pour toi, celle dont tu ne peux pas te passer ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\" + question sur la tâche essentielle (quelle)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et où est-ce que tu laisses tes clés, à un voisin ou dans une boîte ?",
+                        "note": "ENCHAINEMENT: \"D'accord\" + question sur le lieu de dépôt des clés (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et quand est-ce que tu préviens la personne, longtemps à l'avance ?",
+                        "note": "RÉACTION: \"Je vois\" + question sur le moment où la personne est prévenue (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et pourquoi tu choisis une voisine plutôt qu'une entreprise spécialisée ?",
+                        "note": "RÉACTION: \"Très bien, merci\" + question sur la raison du choix (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et comment tu t'assures que la personne fait bien toutes les tâches prévues ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" + question sur le contrôle des tâches (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et combien est-ce que tu lui donnes pour ce service, c'est un forfait ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" + question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce qui garde un double de tes clés, au cas où la personne serait absente ?",
+                        "note": "RÉACTION: \"C'est noté\" + \"au cas où\" — question sur le double des clés (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et quelle est la tâche la plus importante pour toi, celle dont tu ne peux pas te passer ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\" + question sur la tâche essentielle (quelle)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, si jamais il y a un problème d'eau ou une coupure, comment est-ce que la personne doit réagir ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — procédure en cas de problème technique",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que tu lui demandes aussi de faire le ménage ou de sortir les poubelles ?",
+                        "note": "SUIVI 2: \"C'est noté\" — délimitation précise des tâches confiées",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais il y a un problème d'eau ou une coupure, comment est-ce que la personne doit réagir ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — procédure en cas de problème technique",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce que tu lui demandes aussi de faire le ménage ou de sortir les poubelles ?",
+                        "note": "SUIVI 2: \"C'est noté\" — délimitation précise des tâches confiées",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais la personne tombe malade pendant mon absence, qu'est-ce que je pourrais prévoir ?",
+                        "note": "SUIVI 3: \"Si jamais\" — imprévu lié à la maladie de la personne",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Tu m'avais dit que, quand tu pars en voyage, quelqu'un surveille ton appartement et arrose tes plantes. Ça m'intéresse. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "CONDITIONNEL POLI: \"Est-ce que je pourrais te poser...\" pour demander la permission avec tact",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je la préviens deux semaines avant pour qu'elle bloque les dates. Elle part parfois en vacances, il faut vérifier.",
+                        "note": "SUBJONCTIF après \"pour que\": \"pour qu'elle bloque les dates\" exprime le but",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Elle m'appelle tout de suite et, en attendant, elle coupe le robinet général. Le gardien a aussi mon numéro.",
+                        "note": "GÉRONDIF: \"en attendant, elle coupe le robinet général\" exprime une action simultanée",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! Tu m'avais dit que, quand tu pars en voyage, quelqu'un surveille ton appartement et arrose tes plantes. Ça m'intéresse. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hi! You told me that, when you go travelling, someone keeps an eye on your flat and waters your plants. I'm interested. Could I ask you a few questions about it?",
+            "es": "Salu! Tü mavè dit k, kan tü par an vwayazh, kelk un sürvèl ton aparmán e aros te plan. Sa mintéres. Esk zhe puré te pozé kelk kesión a s süzhe?",
+            "note": "OUVERTURE: Salutation + rappel du contexte + demande polie de poser des questions"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Oui, je fais ça depuis deux ans, surtout quand je pars plusieurs semaines. Bien sûr, pose tes questions, je t'écoute.",
+            "en": "Hi! Yes, I've been doing that for two years, especially when I leave for several weeks. Of course, ask your questions, I'm listening.",
+            "es": "Salu! Ui, zhe fè sa dopüi döz an, sürtu kan zhe par plüziör semén. Bien sür, pos te kesión, zhe téku.",
+            "note": "RESPONSE: Accueil chaleureux — ancienneté de la pratique et invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et où est-ce que tu laisses tes clés, à un voisin ou dans une boîte ?",
+            "en": "Okay. And where do you leave your keys, with a neighbour or in a box?",
+            "es": "Dakor. E u esk tü lès te klé, a un vuain u dan ün boi?",
+            "note": "ENCHAINEMENT: \"D'accord\" + question sur le lieu de dépôt des clés (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je laisse un double chez ma sœur, qui habite à dix minutes. La personne passe le prendre et me le rend après.",
+            "en": "I leave a spare set at my sister's, who lives ten minutes away. The person comes to get it and gives it back to me afterwards.",
+            "es": "Zhe lès un dubl she ma sör, ki abi a dis minü. La person pas l prandr e me l ran apre.",
+            "note": "INFORMATION: Lieu des clés + procédure de récupération et de restitution"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et quand est-ce que tu préviens la personne, longtemps à l'avance ?",
+            "en": "I see. And when do you tell the person, long in advance?",
+            "es": "Zhe vua. E kan esk tü prévien la person, longtanp a lavans?",
+            "note": "RÉACTION: \"Je vois\" + question sur le moment où la personne est prévenue (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je la préviens deux semaines avant pour qu'elle bloque les dates. Elle part parfois en vacances, il faut vérifier.",
+            "en": "I tell her two weeks in advance so that she blocks the dates. She sometimes goes on holiday, you have to check.",
+            "es": "Zhe la prévien dö semén aván pur k el blok le dat. El par parfua an vakans, il fo vérifié.",
+            "note": "INFORMATION: Délai de prévenance + précaution liée aux absences de la personne"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et pourquoi tu choisis une voisine plutôt qu'une entreprise spécialisée ?",
+            "en": "Very good, thank you. And why do you choose a neighbour rather than a specialised company?",
+            "es": "Tre bien, mersí. E purkua tü shuai ün vuain plüto k ün antrepris spésializé?",
+            "note": "RÉACTION: \"Très bien, merci\" + question sur la raison du choix (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "C'est moins cher et elle connaît l'immeuble. S'il y a une fuite, elle peut réagir tout de suite.",
+            "en": "It's cheaper and she knows the building. If there's a leak, she can react straight away.",
+            "es": "Se muan shé e el konai linmöbl. Sil i a ün füi, el pö réazhir tu de süi.",
+            "note": "INFORMATION: Deux avantages concrets d'une voisine + exemple de réactivité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et comment tu t'assures que la personne fait bien toutes les tâches prévues ?",
+            "en": "Oh, that's good to know. And how do you make sure the person actually does all the planned tasks?",
+            "es": "A, se bon a savuar. E komán tü tasür k la person fe bien tut le tash prévü?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\" + question sur le contrôle des tâches (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "On a fait une liste ensemble : arroser les plantes deux fois par semaine, relever le courrier. Elle m'envoie des photos.",
+            "en": "We made a list together: water the plants twice a week, collect the mail. She sends me photos.",
+            "es": "On a fe ün list ansanbl: arozé le plan dö fua par semén, relevé l kurié. El manvua de foto.",
+            "note": "INFORMATION: Liste des tâches + moyen simple de vérification"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et combien est-ce que tu lui donnes pour ce service, c'est un forfait ?",
+            "en": "I understand better. And how much do you give her for this service, is it a flat rate?",
+            "es": "Zhe konpran miö. E kombien esk tü lüi don pur s servis, se un forfè?",
+            "note": "RÉACTION: \"Je comprends mieux\" + question sur le prix (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vingt euros par semaine, plus ce que je rapporte de mes voyages. Elle refuse l'argent, mais je tiens à la remercier.",
+            "en": "Twenty euros a week, plus what I bring back from my trips. She refuses money, but I insist on thanking her.",
+            "es": "Vinzh eró par semén, plüs s k zhe raport de me vwayazh. El refüs larzh, me zhe tien a la remersié.",
+            "note": "INFORMATION: Tarif hebdomadaire + cadeaux et relation de bon voisinage"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et qui est-ce qui garde un double de tes clés, au cas où la personne serait absente ?",
+            "en": "Noted. And who keeps a spare set of your keys, in case the person were away?",
+            "es": "Se noté. E ki esk ki gard un dubl de te klé, o ka u la person serè absan?",
+            "note": "RÉACTION: \"C'est noté\" + \"au cas où\" — question sur le double des clés (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Ma sœur garde toujours un double. Si la voisine est absente, elle peut passer et vérifier l'appartement à ma place.",
+            "en": "My sister always keeps a spare set. If the neighbour is away, she can come by and check the flat in my place.",
+            "es": "Ma sör gard tuzhur un dubl. Si la vuain e absan, el pö pasé e vérifié laparmán a ma plas.",
+            "note": "INFORMATION: Personne de secours + solution si la personne principale est absente"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Et quelle est la tâche la plus importante pour toi, celle dont tu ne peux pas te passer ?",
+            "en": "Oh, that's interesting. And what is the most important task for you, the one you can't do without?",
+            "es": "A, se intérèsan. E kel e la tash la plüs inportan pur tua, sel don tü n pö pa te pasé?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\" + question sur la tâche essentielle (quelle)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'arrosage, parce que mes plantes sont fragiles. Tout le reste peut attendre, mais trois jours sans eau et c'est fini.",
+            "en": "Watering, because my plants are fragile. Everything else can wait, but three days without water and it's over.",
+            "es": "Larozazh, pars k me plan son frazhil. Tu l rest pö atandr, me trua zhur san o e se fini.",
+            "note": "INFORMATION: Tâche prioritaire + justification par l'urgence"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais il y a un problème d'eau ou une coupure, comment est-ce que la personne doit réagir ?",
+            "en": "Actually, if ever there's a water problem or a power cut, how is the person supposed to react?",
+            "es": "Zhüstemán, si zhamé il i a un problèm do u ün kupür, komán esk la person dua réazhir?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — procédure en cas de problème technique"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Elle m'appelle tout de suite et, en attendant, elle coupe le robinet général. Le gardien a aussi mon numéro.",
+            "en": "She calls me straight away and, in the meantime, turns off the main water valve. The caretaker also has my number.",
+            "es": "El mapel tu de süi e, an atandan, el kup l robine zhénéral. L gardien a osi mon nüméro.",
+            "note": "INFORMATION: Réflexes en urgence + personne ressource supplémentaire"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que tu lui demandes aussi de faire le ménage ou de sortir les poubelles ?",
+            "en": "Noted. And do you also ask her to clean or to take out the bins?",
+            "es": "Se noté. E esk tü lüi deman osi de fer l ménazh u de sortir le pubel?",
+            "note": "SUIVI 2: \"C'est noté\" — délimitation précise des tâches confiées"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Seulement les poubelles et aérer de temps en temps. Pour le ménage, je préfère le faire moi-même en rentrant.",
+            "en": "Only the bins and airing the place out from time to time. For cleaning, I prefer to do it myself when I get back.",
+            "es": "Sölmán le pubel e aéré de tanp an tanp. Pur l ménazh, zhe préfèr l fer mua-mèm an rantran.",
+            "note": "INFORMATION: Tâches secondaires acceptées + limite claire du service"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais la personne tombe malade pendant mon absence, qu'est-ce que je pourrais prévoir ?",
+            "en": "Okay. If ever the person falls ill during my absence, what could I plan for?",
+            "es": "Dakor. Si zhamé la person tonb mala pandán mon absans, k'esk zhe puré prévuar?",
+            "note": "SUIVI 3: \"Si jamais\" — imprévu lié à la maladie de la personne"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Prévois une deuxième personne de secours, par exemple un autre voisin. Un simple message suffit pour lui demander de passer.",
+            "en": "Plan a second backup person, for example another neighbour. A simple message is enough to ask them to come by.",
+            "es": "Prévua ün döièm person de sekur, par eksanpl un otr vuain. Un sinpl mesazh süfi pur lüi demandé de pasé.",
+            "note": "INFORMATION: Solution concrète + simplicité de la mise en place"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais demander à ma voisine du dessus avant mon départ.",
+            "en": "Perfect, that answers all my questions. Thanks a lot, I'll ask my upstairs neighbour before I leave.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé demandé a ma vuain dü desü aván mon dépar.",
+            "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! N'hésite pas si tu as d'autres questions. Bon voyage et bonne journée !",
+            "en": "With pleasure! Don't hesitate if you have other questions. Have a good trip and a good day!",
+            "es": "Avek plèzir! Nézi pa si tü a dotr kesión. Bon vwayazh e bon zhurné!",
+            "note": "FERMETURE: \"Avec plaisir\" + disponibilité + formule de clôture"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore, tu m'as beaucoup aidé. À bientôt et bon voyage à toi aussi !",
+            "en": "Thanks again, you've helped me a lot. See you soon and have a good trip too!",
+            "es": "Mersí ankor, tü ma boku èdé. A biento e bon vwayazh a tua osi!",
+            "note": "FERMETURE: Remerciement final + formule de politesse"
+        }
+    ]
+}

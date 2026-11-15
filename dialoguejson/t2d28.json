@@ -1,0 +1,395 @@
+{
+    "title": "Se renseigner sur les possibilités de bénévolat dans une ville",
+    "task": "tache2",
+    "topic": "5. Work & employment",
+    "description": "Vous passez quelques jours dans la ville de votre ami francophone et vous aimeriez participer à une activité de bénévolat. Vous vous renseignez sur les missions, les associations et les personnes aidées.",
+    "labels": {
+        "E": "Un ami francophone",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "j'aimerais",
+        "Est-ce que je pourrais",
+        "à ce sujet",
+        "D'accord",
+        "Je vois",
+        "Très bien, merci",
+        "Ah, c'est bon à savoir",
+        "Je comprends mieux",
+        "C'est noté",
+        "Ah, c'est intéressant",
+        "Justement",
+        "Si jamais",
+        "tout à fait",
+        "par exemple",
+        "ça répond à toutes mes questions",
+        "Avec plaisir"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur les possibilités de bénévolat dans une ville",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Je passe quelques jours dans ta ville et j'aimerais faire un peu de bénévolat pendant mon séjour. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "OUVERTURE: Salutation + contexte du séjour + demande polie de poser des questions",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Salut ! Excellente idée, c'est très courant ici, même pour quelques jours. Bien sûr, vas-y, je réponds à tes questions.",
+                        "note": "RESPONSE: Accueil enthousiaste — normalise le bénévolat de courte durée et invite à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais passer à la maison des associations dès demain matin.",
+                        "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! Tu vas voir, c'est une très belle expérience. Bon séjour et bonne journée !",
+                        "note": "FERMETURE: \"Avec plaisir\" + encouragement + formule de clôture",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour ton aide, tu m'as donné envie de commencer. À bientôt et bonne journée !",
+                        "note": "FERMETURE: Remerciement final + formule de politesse",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et où est-ce que je peux trouver des associations qui acceptent les bénévoles de passage ?",
+                        "note": "ENCHAINEMENT: \"D'accord\" + question sur le lieu d'information (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et quand est-ce que les missions ont lieu, plutôt le week-end ou en semaine ?",
+                        "note": "RÉACTION: \"Je vois\" + question sur le moment des missions (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et pourquoi tu me conseilles plutôt l'aide alimentaire que le jardinage partagé ?",
+                        "note": "RÉACTION: \"Très bien, merci\" + question sur la raison du conseil (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et comment est-ce que je m'inscris si je ne peux rester que trois jours ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" + question sur la procédure d'inscription (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et combien de temps est-ce que je devrais prévoir, deux heures par jour suffisent ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" + question sur la durée (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce que j'aiderais concrètement, des familles, des personnes âgées, des étudiants ?",
+                        "note": "RÉACTION: \"C'est noté\" + question sur le public aidé (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et quelle mission serait la plus adaptée à quelqu'un qui parle bien français ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\" + question sur la mission adaptée (quelle)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord. Et où est-ce que je peux trouver des associations qui acceptent les bénévoles de passage ?",
+                        "note": "ENCHAINEMENT: \"D'accord\" + question sur le lieu d'information (où)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Et quand est-ce que les missions ont lieu, plutôt le week-end ou en semaine ?",
+                        "note": "RÉACTION: \"Je vois\" + question sur le moment des missions (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et pourquoi tu me conseilles plutôt l'aide alimentaire que le jardinage partagé ?",
+                        "note": "RÉACTION: \"Très bien, merci\" + question sur la raison du conseil (pourquoi)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est bon à savoir. Et comment est-ce que je m'inscris si je ne peux rester que trois jours ?",
+                        "note": "RÉACTION: \"Ah, c'est bon à savoir\" + question sur la procédure d'inscription (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Et combien de temps est-ce que je devrais prévoir, deux heures par jour suffisent ?",
+                        "note": "RÉACTION: \"Je comprends mieux\" + question sur la durée (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et qui est-ce que j'aiderais concrètement, des familles, des personnes âgées, des étudiants ?",
+                        "note": "RÉACTION: \"C'est noté\" + question sur le public aidé (qui)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Et quelle mission serait la plus adaptée à quelqu'un qui parle bien français ?",
+                        "note": "RÉACTION: \"Ah, c'est intéressant\" + question sur la mission adaptée (quelle)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, si jamais je n'ai aucune expérience dans ce domaine, est-ce que je serai quand même accepté ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — absence d'expérience",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce qu'il faut apporter quelque chose, des vêtements particuliers par exemple ?",
+                        "note": "SUIVI 2: \"C'est noté\" — logistique et tenue vestimentaire",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, si jamais je n'ai aucune expérience dans ce domaine, est-ce que je serai quand même accepté ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — absence d'expérience",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté. Et est-ce qu'il faut apporter quelque chose, des vêtements particuliers par exemple ?",
+                        "note": "SUIVI 2: \"C'est noté\" — logistique et tenue vestimentaire",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Si jamais je veux continuer à distance après mon retour, est-ce que c'est possible ?",
+                        "note": "SUIVI 3: \"Si jamais\" — poursuite de l'engagement à distance",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! Je passe quelques jours dans ta ville et j'aimerais faire un peu de bénévolat pendant mon séjour. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "CONDITIONNEL POLI: \"j'aimerais\" + \"Est-ce que je pourrais te poser...\" pour formuler une demande avec tact",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, si jamais je n'ai aucune expérience dans ce domaine, est-ce que je serai quand même accepté ?",
+                        "note": "FUTUR SIMPLE: \"est-ce que je serai quand même accepté ?\" après \"si jamais\" + présent",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Oui, tout à fait, on forme les nouveaux bénévoles en une heure. L'important, c'est d'être ponctuel et de prévenir en cas d'absence.",
+                        "note": "MISE EN RELIEF: \"L'important, c'est d'être ponctuel et de prévenir...\" avec infinitif substantivé",
+                        "role": "e"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! Je passe quelques jours dans ta ville et j'aimerais faire un peu de bénévolat pendant mon séjour. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+            "en": "Hi! I'm spending a few days in your city and I'd like to do some volunteering during my stay. Could I ask you a few questions about it?",
+            "es": "Salu! Zhe pas kelk zhur dan ta vil e zhémeré fer un pö de bénévola pandán mon sézhur. Esk zhe puré te pozé kelk kesión a s süzhe?",
+            "note": "OUVERTURE: Salutation + contexte du séjour + demande polie de poser des questions"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Excellente idée, c'est très courant ici, même pour quelques jours. Bien sûr, vas-y, je réponds à tes questions.",
+            "en": "Hi! Great idea, it's very common here, even for a few days. Of course, go ahead, I'll answer your questions.",
+            "es": "Salu! Eksselan idé, se tre kuran isi, mem pur kelk zhur. Bien sür, vas-i, zhe répon a te kesión.",
+            "note": "RESPONSE: Accueil enthousiaste — normalise le bénévolat de courte durée et invite à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et où est-ce que je peux trouver des associations qui acceptent les bénévoles de passage ?",
+            "en": "Okay. And where can I find associations that accept passing volunteers?",
+            "es": "Dakor. E u esk zhe pö truvé dez asosiasión ki akept le bénévol de pasazh?",
+            "note": "ENCHAINEMENT: \"D'accord\" + question sur le lieu d'information (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a une maison des associations près de la gare. Elle tient une permanence le mardi et le jeudi, de quatorze à dix-huit heures.",
+            "en": "There's a community association centre near the station. It holds a drop-in session on Tuesdays and Thursdays, from 2 to 6 pm.",
+            "es": "Il i a ün mèzon dez asosiasión prè de la gar. El ti ün permanans l mardi e l zhödi, de katorz a diks-üi ör.",
+            "note": "INFORMATION: Lieu précis + jours et horaires de permanence"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et quand est-ce que les missions ont lieu, plutôt le week-end ou en semaine ?",
+            "en": "I see. And when do the assignments take place, rather at the weekend or during the week?",
+            "es": "Zhe vua. E kan esk le misión on liö, plüto l veek-an u an semén?",
+            "note": "RÉACTION: \"Je vois\" + question sur le moment des missions (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Surtout en semaine, le matin. Mais les distributions alimentaires du samedi cherchent toujours des mains, surtout en fin de mois.",
+            "en": "Mostly during the week, in the morning. But Saturday food distributions are always looking for extra hands, especially at the end of the month.",
+            "es": "Sürtu an semén, l matin. Me le distribüsión alimantèr dü samedi shersh tuzhur de min, sürtu an fin de mua.",
+            "note": "INFORMATION: Créneaux habituels + besoin spécifique du samedi"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et pourquoi tu me conseilles plutôt l'aide alimentaire que le jardinage partagé ?",
+            "en": "Very good, thank you. And why do you recommend food aid rather than shared gardening?",
+            "es": "Tre bien, mersí. E purkua tü me konsèl plüto lèd alimantèr k l zhardinazh partazhé?",
+            "note": "RÉACTION: \"Très bien, merci\" + question sur la raison du conseil (pourquoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parce qu'il faut moins de formation et que l'équipe est très accueillante. En deux heures, tu vois déjà des résultats.",
+            "en": "Because it requires less training and the team is very welcoming. In two hours, you already see results.",
+            "es": "Pars k il fo muan de formasión e k lékip e tre aküilan. An döz ör, tü vua dézha de rézülta.",
+            "note": "INFORMATION: Deux arguments concrets + effet visible rapidement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est bon à savoir. Et comment est-ce que je m'inscris si je ne peux rester que trois jours ?",
+            "en": "Oh, that's good to know. And how do I sign up if I can only stay three days?",
+            "es": "A, se bon a savuar. E komán esk zhe minskri si zhe n pö resté k trua zhur?",
+            "note": "RÉACTION: \"Ah, c'est bon à savoir\" + question sur la procédure d'inscription (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Tu envoies un mail à l'association avec tes dates. Elle te propose un créneau et une courte rencontre.",
+            "en": "You send the association an email with your dates. It offers you a slot and a short meeting.",
+            "es": "Tü anvuae un mèl a lasosiasión avek te dat. El te propos un kréno e ün kurt rankontr.",
+            "note": "INFORMATION: Procédure simple par mail + étape de rencontre préalable"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et combien de temps est-ce que je devrais prévoir, deux heures par jour suffisent ?",
+            "en": "I understand better. And how much time should I plan for, are two hours a day enough?",
+            "es": "Zhe konpran miö. E kombien de tanp esk zhe devrè prévuar, döz ör par zhur süfis?",
+            "note": "RÉACTION: \"Je comprends mieux\" + question sur la durée (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Deux ou trois heures par jour, c'est parfait. Les équipes préfèrent des créneaux réguliers plutôt qu'une seule journée entière.",
+            "en": "Two or three hours a day is perfect. The teams prefer regular slots rather than a single whole day.",
+            "es": "Döz u truaz ör par zhur, se parfè. Lez ékip préfèr de kréno régülié plüto k ün söl zhurné antièr.",
+            "note": "INFORMATION: Durée recommandée + préférence des équipes"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et qui est-ce que j'aiderais concrètement, des familles, des personnes âgées, des étudiants ?",
+            "en": "Noted. And who exactly would I be helping, families, elderly people, students?",
+            "es": "Se noté. E ki esk zhèderè konkrèmán, de famil, de person azhée, dez étüdian?",
+            "note": "RÉACTION: \"C'est noté\" + question sur le public aidé (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Surtout des familles nombreuses et des personnes âgées isolées. La plupart viennent deux fois par semaine, elles apprécient beaucoup la conversation.",
+            "en": "Mostly large families and isolated elderly people. Most of them come twice a week, they really appreciate the conversation.",
+            "es": "Sürtu de famil nonbrös e de person azhée izolée. La plüpar vien dö fua par semén, elz aprési boku la konversasión.",
+            "note": "INFORMATION: Public précis + fréquence des bénéficiaires"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Et quelle mission serait la plus adaptée à quelqu'un qui parle bien français ?",
+            "en": "Oh, that's interesting. And which assignment would be best suited to someone who speaks good French?",
+            "es": "A, se intérèsan. E kel misión serè la plüs adapté a kelk un ki parl bien fransè?",
+            "note": "RÉACTION: \"Ah, c'est intéressant\" + question sur la mission adaptée (quelle)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'accueil et l'aide aux devoirs : tu peux discuter librement. La chorale du mercredi cherche aussi des gens pour accompagner les enfants.",
+            "en": "Reception and homework help: you can chat freely. The Wednesday choir is also looking for people to accompany the children.",
+            "es": "Laküil e lèd o devuar: tü pö disküté librmán. La shoral dü merkredi shersh osi de zhan pur akonpañé lez anfán.",
+            "note": "INFORMATION: Deux missions adaptées + rôle dans chacune"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, si jamais je n'ai aucune expérience dans ce domaine, est-ce que je serai quand même accepté ?",
+            "en": "Actually, if ever I have no experience in this field, will I still be accepted?",
+            "es": "Zhüstemán, si zhamé zhe né okun ekspériens dan s domin, esk zhe serè kan mem akepté?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — absence d'expérience"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, tout à fait, on forme les nouveaux bénévoles en une heure. L'important, c'est d'être ponctuel et de prévenir en cas d'absence.",
+            "en": "Yes, absolutely, new volunteers are trained in one hour. The important thing is to be punctual and to give notice if you're absent.",
+            "es": "Ui, tu a fe, on form le nuvo bénévol an ün ör. Linportan, se detr ponktül e de prévenir an ka dabsans.",
+            "note": "INFORMATION: Rassurance + formation courte + qualités attendues"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce qu'il faut apporter quelque chose, des vêtements particuliers par exemple ?",
+            "en": "Noted. And do I need to bring anything, particular clothes for example?",
+            "es": "Se noté. E esk il fo aporté kelk shos, de vèteman partikülié par eksanpl?",
+            "note": "SUIVI 2: \"C'est noté\" — logistique et tenue vestimentaire"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Des vêtements simples et des chaussures fermées, rien de plus. Pour l'extérieur, on te prête un gilet de l'association.",
+            "en": "Simple clothes and closed shoes, nothing more. For outdoor work, the association lends you one of their jackets.",
+            "es": "De vèteman sinpl e de shosür fermée, rien de plüs. Pur lekstériör, on te prè un zhile de lasosiasión.",
+            "note": "INFORMATION: Tenue exigée + matériel fourni"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Si jamais je veux continuer à distance après mon retour, est-ce que c'est possible ?",
+            "en": "Okay. If ever I want to continue remotely after I get back, is that possible?",
+            "es": "Dakor. Si zhamé zhe vö kontinür a distans apre mon retur, esk se posibl?",
+            "note": "SUIVI 3: \"Si jamais\" — poursuite de l'engagement à distance"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Certaines associations proposent des missions en ligne, comme la traduction ou l'aide aux devoirs. Tu pourras regarder ça vers la fin de ton séjour.",
+            "en": "Some associations offer online assignments, such as translation or homework help. You can look into that towards the end of your stay.",
+            "es": "Sertin asosiasión propos de misión an liñ, kom la tradüssión u lèd o devuar. Tü pura regardé sa ver la fin de ton sézhur.",
+            "note": "INFORMATION: Missions à distance possibles + moment pour s'informer"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais passer à la maison des associations dès demain matin.",
+            "en": "Perfect, that answers all my questions. Thanks a lot, I'll go to the association centre first thing tomorrow morning.",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé pasé a la mèzon dez asosiasión dè demin matin.",
+            "note": "FERMETURE: Remerciement + \"ça répond à toutes mes questions\" + prochaine étape"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! Tu vas voir, c'est une très belle expérience. Bon séjour et bonne journée !",
+            "en": "With pleasure! You'll see, it's a really beautiful experience. Enjoy your stay and have a good day!",
+            "es": "Avek plèzir! Tü va vuar, se ün tre bel ekspériens. Bon sézhur e bon zhurné!",
+            "note": "FERMETURE: \"Avec plaisir\" + encouragement + formule de clôture"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour ton aide, tu m'as donné envie de commencer. À bientôt et bonne journée !",
+            "en": "Thanks again for your help, you've made me want to get started. See you soon and have a good day!",
+            "es": "Mersí ankor pur ton èd, tü ma doné anvi de konmansé. A biento e bon zhurné!",
+            "note": "FERMETURE: Remerciement final + formule de politesse"
+        }
+    ]
+}
