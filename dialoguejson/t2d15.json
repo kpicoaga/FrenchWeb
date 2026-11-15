@@ -1,0 +1,275 @@
+{
+    "title": "Se renseigner sur un parc de loisirs auprès d'un employé d'office de tourisme",
+    "task": "tache2",
+    "topic": "3. Travel & Tourism",
+    "description": "Vous voulez visiter un parc de loisirs (aquarium, zoo, nature park) et demander des informations sur les horaires, les prix, les services de restauration, etc.",
+    "labels": {
+        "E": "Employé",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "je prévois de visiter",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est intéressant",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est super",
+        "C'est noté",
+        "Justement",
+        "Parfait, ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur un parc de loisirs",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je prévois de visiter un parc de loisirs, aquarium ou zoo, et je voudrais en savoir plus. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Ouverture réelle du dialogue — salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! N'hésitez pas à revenir si vous avez d'autres questions. Bonne journée !",
+                        "note": "Formule d'accueil du collègue — disponibilité + formule de clôture",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour votre aide, c'est très gentil. À bientôt, et bonne visite au parc !",
+                        "note": "Formule de politesse finale — remerciement + salutation",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, comment est-ce que je peux m'inscrire et est-ce qu'il faut réserver à l'avance ?",
+                        "note": "« Pour commencer » — première question ancrée dans le scénario (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et quand est-ce que le parc ouvre et à quelle heure il ferme le soir ?",
+                        "note": "« Et quand » — nouveau thème, les horaires d'ouverture",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Combien coûte le billet d'adulte et y a-t-il des réductions pour les étudiants ?",
+                        "note": "« Ah, c'est intéressant » — réaction + question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et où est-ce que les restaurants et les snack-bars se trouvent dans le parc ?",
+                        "note": "« Et où » — question sur le lieu dans le parc",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quelles sont les activités principales et quels sont les animaux à voir ?",
+                        "note": "« Je vois. Quels » — accuser réception puis enchaîner vers les activités",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ah, c'est intéressant.",
+                        "note": "Réaction engagée — gagner du temps",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est parfait !",
+                        "note": "Satisfaction — information qui correspond au besoin",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux.",
+                        "note": "Accusé de réception — information clarifiée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté.",
+                        "note": "Accusé de réception + relance",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, est-ce que les animaux sont visibles toute la journée, et à quelle heure sont les spectacles ?",
+                        "note": "Suivi sur un détail — « Justement » + alternative (spectacles)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est une activité ludique pour les enfants, et les parents profitent du cadre. De plus, ça reste abordable pour une sortie.",
+                        "note": "\"Justement\" — question pratique liée au coût et à l'utilité",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Conditionnel de politesse (pourrais + infinitif)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je prévois de visiter un parc de loisirs",
+                        "note": "« venir de + infinitif » — projet futur",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, est-ce que les animaux sont visibles",
+                        "note": "« Juste » (raison connue) + question de suite",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Combien coûte le billet d'adulte",
+                        "note": "« Combien de » + structure de question sur le prix",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je prévois de visiter un parc de loisirs, aquarium ou zoo, et je voudrais en savoir plus. Est-ce que je pourrais te poser quelques questions à ce sujet ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Je serai ravi de vous aider. Je connais bien la région, posez-moi vos questions."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci. Pour commencer, comment est-ce que je peux m'inscrire et est-ce qu'il faut réserver à l'avance ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Pour l'instant, la réservation en ligne est obligatoire. Vous pouvez le faire sur notre site en quelques minutes."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et quand est-ce que le parc ouvre et à quelle heure il ferme le soir ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le parc ouvre à neuf heures et ferme à vingt-deux heures. Les dernières entrées sont à vingt-et-une heures."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Combien coûte le billet d'adulte et y a-t-il des réductions pour les étudiants ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le billet coûte vingt-cinq euros par adult. Les étudiants paient la moitié, et les enfants moins de douze ans sont gratuits."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et où est-ce que les restaurants et les snack-bars se trouvent dans le parc ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Ils sont situés à l'entrée et au milieu du parc. Il y a un self-service avec des sandwichs et des salades."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Quelles sont les activités principales et quels sont les animaux à voir ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le parc propose des spectacles de dauphins, des visites guidées et des expositions. On y trouve des pingouins, des ours et des requins."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est super. Pourquoi est-ce que c'est une bonne idée d'y aller en famille le week-end ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "C'est une activité ludique pour les enfants, et les parents profitent du cadre. De plus, ça reste abordable pour une sortie."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et qui est-ce que je dois emmener, et est-ce qu'il y a des attractions pour les petits enfants ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vous pouvez emmener toute la famille. Il y a un parcours pour les tout-petits, avec des toboggans et des animatrices."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, est-ce que les animaux sont visibles toute la journée, et à quelle heure sont les spectacles ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les animaux sont visibles de neuf heures à dix-huit heures, et les spectacles de dauphins ont lieu à midi et seize heures."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce que le parc est facile d'accès en transport en commun ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, le bus numéro vingt-trois s'arrête à deux pas du parc. Le trajet dure environ quarante minutes depuis le centre-ville."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et combien de temps faut-il pour y aller en voiture, et est-ce qu'il y a un parking ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "En voiture, le trajet prend une vingtaine de minutes. Le parking est gratuit pour les clients du parc."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup pour ces informations, je vais réserver en ligne dès ce soir."
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! N'hésitez pas à revenir si vous avez d'autres questions. Bonne journée !"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour votre aide, c'est très gentil. À bientôt, et bonne visite au parc !"
+        }
+    ]
+}
