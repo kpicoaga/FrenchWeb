@@ -1,0 +1,275 @@
+{
+    "title": "Se renseigner sur une croisière canadienne auprès d'un agent de voyage",
+    "task": "tache2",
+    "topic": "3. Travel & Tourism",
+    "description": "Vous planifiez une croisière au Canada et vous interrogez un employé d'agence de voyage sur les coûts, la durée, les activités proposées, etc.",
+    "labels": {
+        "E": "Agent de voyage",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "je prévois de faire",
+        "est-ce que je pourrais",
+        "Pour commencer",
+        "D'accord",
+        "Ah, c'est intéressant",
+        "Très bien, merci",
+        "Je vois",
+        "Je comprends mieux",
+        "C'est super",
+        "C'est noté",
+        "Justement",
+        "Parfait, ça répond à toutes mes questions",
+        "Avec plaisir",
+        "Bonne journée",
+        "Merci encore",
+        "À bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Se renseigner sur une croisière au Canada",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Je prévois de faire une croisière au Canada cet été et je voudrais m'informer sur les options. Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Ouverture réelle du dialogue — salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Avec plaisir ! N'hésitez pas si vous avez d'autres questions. Bonne journée et bon voyage !",
+                        "note": "Formule d'accueil de l'agent — disponibilité + formule de clôture",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Merci encore pour votre aide, c'est très gentil. À bientôt, et bonne préparation pour la croisière !",
+                        "note": "Formule de politesse finale — remerciement + salutation",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, comment est-ce que je peux réserver une cabine et quels sont les modes de paiement ?",
+                        "note": "« Pour commencer » — première question ancrée dans le scénario (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord. Et quand est-ce que les croisières partent généralement et combien de temps durent-elles ?",
+                        "note": "« Et quand » — nouveau thème, les dates et durée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ah, c'est intéressant. Combien coûte une croisière standard pour deux personnes en juillet ?",
+                        "note": "« Ah, c'est intéressant » — réaction + question sur le prix (combien)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Très bien, merci. Et où est-ce que le bateau fait escale pendant le voyage ?",
+                        "note": "« Et où » — question sur les escales",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je vois. Quelles sont les activités proposées à bord pendant la navigation ?",
+                        "note": "« Je vois. Quelles » — accuser réception puis enchaîner vers les activités",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Ah, c'est intéressant.",
+                        "note": "Réaction engagée — gagner du temps",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est super !",
+                        "note": "Satisfaction — information qui correspond au besoin",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux.",
+                        "note": "Accusé de réception — information clarifiée",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est noté.",
+                        "note": "Accusé de réception + relance",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Justement, est-ce que les repas sont inclus dans le prix ou faut-il payer les restaurants à part ?",
+                        "note": "Suivi sur un détail — « Justement » + question sur l'inclusivité des repas",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Pourquoi est-ce que c'est recommandé de réserver tôt pour l'été ?",
+                        "note": "« Pourquoi » — question sur la recommandation de réservation anticipée",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Est-ce que je pourrais te poser quelques questions à ce sujet ?",
+                        "note": "Conditionnel de politesse (pourrais + infinitif)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je prévois de faire une croisière",
+                        "note": "« prévoir de + infinitif » — projet futur",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Justement, est-ce que les repas sont inclus",
+                        "note": "« Justement » (raison connue) + question de suite",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Combien coûte une croisière standard",
+                        "note": "« Combien » + structure de question sur le prix",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Je prévois de faire une croisière au Canada cet été et je voudrais m'informer sur les options. Est-ce que je pourrais te poser quelques questions à ce sujet ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Avec plaisir, je connais bien les croisières au Canada. Que souhaitez-vous savoir ?"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci. Pour commencer, comment est-ce que je peux réserver une cabine avec balcon ou intérieure et quels sont les modes de paiement acceptés ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vous pouvez réserver en ligne ou par téléphone. Le paiement se fait par carte ou virement, un acompte est demandé."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Et quand est-ce que les croisières partent généralement et combien de temps durent-elles ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La saison principale va de mai à octobre. Les croisières durent de trois à quatorze nuits selon l'itinéraire."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est intéressant. Combien coûte une croisière standard pour deux personnes en juillet ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Pour une semaine en juillet, comptez environ mille huit cents euros pour deux en cabine intérieure, taxes comprises."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien, merci. Et où est-ce que le bateau fait escale pendant le voyage ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Ça dépend de l'itinéraire, mais souvent Québec, Tadoussac, Gaspé, les îles de la Madeleine et Terre-Neuve."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Quelles sont les activités proposées à bord pendant la navigation, et y a-t-il des animations pour les enfants ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il y a des spectacles, des conférences sur la faune, un spa, une piscine, des ateliers cuisine locale et un club enfants."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ah, c'est super. Pourquoi est-ce que c'est recommandé de réserver tôt pour l'été ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Les cabines se remplissent vite en haute saison, surtout les cabines avec balcon. Réserver tôt assure le choix."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Et qui est-ce qui s'occupe des excursions à terre, faut-il les réserver à l'avance ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "L'agence propose des forfaits excursions, mais vous pouvez aussi réserver sur place. Mieux vaut réserver à l'avance."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Justement, est-ce que les repas sont inclus dans le prix ou faut-il payer les restaurants à part ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "La pension complète est incluse. Les restaurants de spécialités sont en supplément, sur réservation."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et est-ce qu'il y a une assurance annulation proposée par l'agence ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, nous proposons une assurance annulation à quatre pour cent du montant total. Elle couvre maladie et imprévus."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et quels documents faut-il fournir pour l'embarquement, passeport ou carte d'identité ?"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un passeport valide est obligatoire. Pour les ressortissants canadiens, une pièce d'identité avec photo suffit."
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci beaucoup, je vais comparer les itinéraires et réserver cette semaine."
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Avec plaisir ! N'hésitez pas si vous avez d'autres questions. Bonne journée et bon voyage !"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci encore pour votre aide, c'est très gentil. À bientôt, et bonne préparation pour la croisière !"
+        }
+    ]
+}
