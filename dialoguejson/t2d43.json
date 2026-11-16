@@ -1,0 +1,62 @@
+{
+    "title": "TITLE_EN_FRANCAIS",
+    "task": "tache2",
+    "topic": "NN. TOPIC_CATEGORY",
+    "description": "Votre directeur vous annonce que vous allez partir en stage de formation au Canada pendant 15 jours. Avant votre départ, vous lui posez des questions sur l’organisation du séjour, notamment sur l’hébergement et les transports.",
+    "labels": {
+        "E": "ROLE_DU_LOCUTEUR",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [],
+    "templateBank": {
+        "title": "Boîte à outils — SUJET",
+        "sub": "Structures utiles extraites de la simulation TCF (B1/B2) : accepter, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": []
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": []
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": []
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": []
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": []
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": []
+}

@@ -35,12 +35,12 @@
                 "role": "c",
                 "items": [
                     {
-                        "fr": "Salut ! J'ai entendu dire que tu as changé de travail. Je voudrais changer de travail aussi. Est-ce que je pourrais te poser quelques questions sur ta nouvelle société ?",
+                        "fr": "Salut ! J'ai entendu dire que tu as changé de travail. Je voudrais changer de travail aussi. Est-ce que je pourrais te poser quelques questions ?",
                         "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
                         "role": "c"
                     },
                     {
-                        "fr": "Parfait, ça répond à toutes mes questions. Merci encore, je vais préparer mon dossier de candidature. À bientôt et bonne continuation dans ton nouveau poste !",
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci encore, je vais préparer ma candidature. À bientôt et bonne continuation !",
                         "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
                         "role": "c"
                     }
@@ -64,7 +64,7 @@
                 "role": "c",
                 "items": [
                     {
-                        "fr": "Je m'occupe du suivi des clients et de la préparation des offres. C'est un mélange de bureau et de réunions avec les équipes techniques.",
+                        "fr": "Je m'occupe du suivi des clients et de la préparation des offres. C'est un mélange de bureau et de réunions.",
                         "note": "INFORMATION: Contenu du poste quotidien",
                         "role": "e"
                     },
@@ -113,7 +113,7 @@
                 "role": "c",
                 "items": [
                     {
-                        "fr": "Salut ! J'ai entendu dire que tu as changé de travail. Je voudrais changer de travail aussi. Est-ce que je pourrais te poser quelques questions sur ta nouvelle société ?",
+                        "fr": "Salut ! J'ai entendu dire que tu as changé de travail. Je voudrais changer de travail aussi. Est-ce que je pourrais te poser quelques questions ?",
                         "note": "conditionnel de politesse",
                         "role": "c"
                     },
@@ -148,14 +148,14 @@
     "turns": [
         {
             "speaker": "Speaker 2",
-            "text": "Salut ! J'ai entendu dire que tu as changé de travail. Je voudrais changer de travail aussi. Est-ce que je pourrais te poser quelques questions sur ta nouvelle société ?",
+            "text": "Salut ! J'ai entendu dire que tu as changé de travail. Je voudrais changer de travail aussi. Est-ce que je pourrais te poser quelques questions ?",
             "en": "Hi! I heard you changed jobs last month, and it interests me a lot. I'd like to change too. Could I ask you a few questions about your new company?",
             "es": "Salu! Zhe è n'entendu diray k tü a shanjé d' travay l mês dernie e sa maintèn boqu. Zhe vudré zhe mwa osi an shanjé. Esk zhe puré te pozé kelk kesión sur ta nuvèl sociéte?",
             "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
         },
         {
             "speaker": "Speaker 1",
-            "text": "Salut ! Bien sûr, avec plaisir. Je suis encore tout nouveau, mais je répondrai avec plaisir. Qu'est-ce que tu veux savoir ? Et est-ce adapté à quelqu'un qui débute ?",
+            "text": "Salut ! Bien sûr, avec plaisir. Je suis encore tout nouveau, mais je répondrai avec plaisir. Qu'est-ce que tu veux savoir ?",
             "en": "Hi! Of course, with pleasure. I'm still very new, but I'll answer with pleasure. What do you want to know?",
             "es": "Salu! Bien sür, avek plèzir. Zhe süi ankòr tüt nuvo, mé zhe répondré avek plèzir. K esk k tü vö savuar?",
             "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
@@ -169,7 +169,7 @@
         },
         {
             "speaker": "Speaker 1",
-            "text": "Je m'occupe du suivi des clients et de la préparation des offres. C'est un mélange de bureau et de réunions avec les équipes techniques.",
+            "text": "Je m'occupe du suivi des clients et de la préparation des offres. C'est un mélange de bureau et de réunions.",
             "en": "I handle client follow-up and proposal preparation. It's a mix of office work and meetings with technical teams.",
             "es": "Zhe m okup du svwi dê klian e dê la préparazion dê zofr. Sé ün mèlaj dê birô e dê rêunión avek l ekip tekník.",
             "note": "INFORMATION: Contenu du poste quotidien"
@@ -211,7 +211,7 @@
         },
         {
             "speaker": "Speaker 1",
-            "text": "Deux jours de télétravail par semaine et des horaires assez libres. Il y a aussi une prime de fin d'année.",
+            "text": "Deux jours de télétravail par semaine et des horaires libres. Il y a aussi une prime de fin d'année.",
             "en": "Two days of teleworking per week and fairly flexible hours. There is also a year-end bonus and a good mutual insurance.",
             "es": "Döz jör dê télétravay par semén e d zorér asè libré. Il i a osi ün pren d fin d'ân e ün bön mutèl.",
             "note": "INFORMATION: Avantages sociaux et conditions de travail"
@@ -225,7 +225,7 @@
         },
         {
             "speaker": "Speaker 1",
-            "text": "Je commence vers neuf heures et je finis vers dix-sept heures trente. Le vendredi, tout le monde part plus tôt.",
+            "text": "Je commence vers neuf heures et je finis vers dix-sept heures trente. Le vendredi tout le monde part plus tôt.",
             "en": "I start around nine and finish around five-thirty. On Fridays, everyone leaves a bit earlier.",
             "es": "Zhe komansé vèr nœf ör e zhe finis vèr diz-sèt ör trant. L vandredi, tüt l mónd par ün pö plüs tôt.",
             "note": "INFORMATION: Horaires de travail"
@@ -253,7 +253,7 @@
         },
         {
             "speaker": "Speaker 1",
-            "text": "En métro, c'est direct depuis chez moi et ça prend vingt minutes. Il y a aussi un parking, mais il est souvent complet.",
+            "text": "En métro, c'est direct depuis chez moi et ça prend vingt minutes. Il y a un parking, mais souvent complet.",
             "en": "By metro, it's direct from my home and takes twenty minutes. There is also a parking lot, but it's often full.",
             "es": "An métrô, sé direkè dêrché chez mwa e sa pran vân mint. Il i a osi ün parkèn,mé i sé svàn komplè.",
             "note": "INFORMATION: Transport pour se rendre au travail"
@@ -295,7 +295,7 @@
         },
         {
             "speaker": "Speaker 1",
-            "text": "Une période de trois mois, et deux semaines d'accompagnement avec un collègue. En cas de problème, on peut aussi changer de service.",
+            "text": "Une période de trois mois et deux semaines d'accompagnement avec un collègue. En cas de problème on change de service.",
             "en": "A period of three months, and two weeks of onboarding with a colleague. In case of a problem, you can also change departments.",
             "es": "Ün pérjod d trua mua, e dö sémèn d akompagnmân avek un kolèg. An kaz d prôblèm, on pö osi shanjé d sévis.",
             "note": "INFORMATION: Période d'essai et accompagnement"
@@ -330,7 +330,7 @@
         },
         {
             "speaker": "Speaker 2",
-            "text": "Parfait, ça répond à toutes mes questions. Merci encore, je vais préparer mon dossier de candidature. À bientôt et bonne continuation dans ton nouveau poste !",
+            "text": "Parfait, ça répond à toutes mes questions. Merci encore, je vais préparer ma candidature. À bientôt et bonne continuation !",
             "en": "Perfect, that answers all my questions. Thank you very much, I'll prepare my application file. See you soon and good luck in your new job!",
             "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé préparé mô dosye d kandidatûr. A bönto e bön kontinyuásyan dan tô nuvèl post!",
             "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
