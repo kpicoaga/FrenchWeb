@@ -1,0 +1,350 @@
+{
+    "title": "Demander à un voisin de garder son enfant le week-end",
+    "task": "tache2",
+    "topic": "12. Family & childcare",
+    "description": "Simulation TCF : un voisin propose de garder votre enfant pendant le week-end — vous acceptez et demandez les détails pratiques (temps de garde, repas, sorties, coucher).",
+    "labels": {
+        "E": "Voisin(e)",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "ça me rend vraiment service",
+        "Pour commencer",
+        "de quand à quand",
+        "C'est parfait",
+        "comment est-ce que ça se passe",
+        "Ça me rassure",
+        "C'est noté",
+        "Justement",
+        "si jamais",
+        "Au cas où",
+        "En fait",
+        "ça répond à toutes mes questions"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — Garde d'un enfant par un voisin",
+        "sub": "Structures utiles extraites de la simulation TCF (B1/B2) : accepter, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Merci beaucoup de me proposer de garder mon fils ce week-end : ça me rend vraiment service. Est-ce que je pourrais vous poser quelques questions pratiques ?",
+                        "note": "OUVERTURE: Salutation + remerciement + acceptation + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bonjour ! Avec plaisir. Mon week-end est libre et j'adore les enfants. Qu'est-ce que vous voulez savoir ?",
+                        "note": "RÉPONSE: Accueil chaleureux — invitation à poser les questions",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Ça répond à toutes mes questions. Merci beaucoup, vraiment. Je vous dépose mon fils samedi à neuf heures. À samedi !",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + confirmation du rendez-vous",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Pour commencer, de quand à quand pourriez-vous le garder exactement, samedi et dimanche ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — temps de garde (quand)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Bien sûr. En fait, je voulais aussi vous demander : est-ce que je vous dois quelque chose pour le week-end ?",
+                        "note": "ENCHAINEMENT: \"En fait\" — question délicate (rémunération)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Samedi à partir de neuf heures et jusqu'à dimanche soir, vers dix-huit heures. Si besoin, je peux m'adapter.",
+                        "note": "INFORMATION: Disponibilité du week-end et souplesse",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "C'est parfait. Et pour les repas, comment est-ce que ça se passe ? Il est encore un peu difficile.",
+                        "note": "RÉACTION: \"C'est parfait\" — question sur les repas (comment)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je cuisine simple : pâtes, riz, légumes. Vous pouvez me dire ce qu'il aime et s'il a des allergies.",
+                        "note": "INFORMATION: Repas simples — demande de précisions sur ses goûts",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Je vois. Est-ce que vous prévoyez des sorties, et où est-ce que vous iriez avec lui ?",
+                        "note": "RÉACTION: \"Je vois\"; question sur les sorties (où)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Très bien. Justement, si jamais il a de la fièvre pendant la nuit, qu'est-ce que vous ferez ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — imprévu santé (fièvre)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Merci, ça me rassure. Au cas où je rentrerais en retard dimanche, est-ce que je pourrais vous prévenir par message ?",
+                        "note": "SUIVI 2: \"Au cas où\" + conditionnel — imprévu d'horaire (retard)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "C'est gentil. Si jamais il a peur la nuit, est-ce qu'il dormira dans une chambre à part ?",
+                        "note": "SUIVI 3: \"Si jamais\" — imprévu du sommeil (peur la nuit)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Bonjour ! Merci beaucoup de me proposer de garder mon fils ce week-end : ça me rend vraiment service. Est-ce que je pourrais vous poser quelques questions pratiques ?",
+                        "note": "conditionnel de politesse",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Pour commencer, de quand à quand pourriez-vous le garder exactement, samedi et dimanche ?",
+                        "note": "conditionnel de politesse",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je cuisine simple : pâtes, riz, légumes. Vous pouvez me dire ce qu'il aime et s'il a des allergies.",
+                        "note": "voix passive",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "D'accord. Puisqu'il est allergique aux arachides, qui est-ce que je dois prévenir en cas de problème ?",
+                        "note": "« puisque » — cause",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Bonjour ! Merci beaucoup de me proposer de garder mon fils ce week-end : ça me rend vraiment service. Est-ce que je pourrais vous poser quelques questions pratiques ?",
+            "en": "Hello! Thank you very much for offering to look after my son this weekend: it really helps me out. Could I ask you a few practical questions?",
+            "es": "Bonzhur ! Mersí bokou de m propozé de gardé mè fis se wik-and : sa m ran vréman servis. Es k zhe puré vu pozé kelk kestión pratik ?",
+            "note": "OUVERTURE: Salutation + remerciement + acceptation + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bonjour ! Avec plaisir. Mon week-end est libre et j'adore les enfants. Qu'est-ce que vous voulez savoir ?",
+            "en": "Hello! With pleasure. My weekend is free and I love children. What would you like to know?",
+            "es": "Bonzhur ! Avek plèzir, vréman. Mon wik-and e libr e zhadòr lez anfan. K esk vu vulé savwar ?",
+            "note": "RÉPONSE: Accueil chaleureux — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Pour commencer, de quand à quand pourriez-vous le garder exactement, samedi et dimanche ?",
+            "en": "To start with, from when to when exactly could you look after him, on Saturday and Sunday?",
+            "es": "Pur komansé, de kan a kan purié-vu le gardé egzakteman, samdi e dimansh ?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — temps de garde (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Samedi à partir de neuf heures et jusqu'à dimanche soir, vers dix-huit heures. Si besoin, je peux m'adapter.",
+            "en": "Saturday from nine o'clock until Sunday evening, around six. If needed, I can adapt.",
+            "es": "Samdi a partir de neuf er e zhusk a dimansh swar, ver dizüit er. Si bezwen, zhe pé madaté.",
+            "note": "INFORMATION: Disponibilité du week-end et souplesse"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est parfait. Et pour les repas, comment est-ce que ça se passe ? Il est encore un peu difficile.",
+            "en": "That's perfect. And for meals, how does it work? He is still a bit picky.",
+            "es": "Se parfe. E pur le repa, komman es k sa s pas ? Il e ankor eun pe difisil.",
+            "note": "RÉACTION: \"C'est parfait\" — question sur les repas (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je cuisine simple : pâtes, riz, légumes. Vous pouvez me dire ce qu'il aime et s'il a des allergies.",
+            "en": "I cook simple food: pasta, rice, vegetables. You can tell me what he likes and whether he has allergies.",
+            "es": "Zhe küzine sèmpl : pat, ri, légüm. Vu puvé m dir se k il èm e s il a dez alérzhi.",
+            "note": "INFORMATION: Repas simples — demande de précisions sur ses goûts"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Est-ce que vous prévoyez des sorties, et où est-ce que vous iriez avec lui ?",
+            "en": "I see. Are you planning any outings, and where would you go with him?",
+            "es": "Zhe vwa. Es k vu prévwayé de sorti, e u es k vu irié avek lui ?",
+            "note": "RÉACTION: \"Je vois\"; question sur les sorties (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le parc près de l'immeuble et la bibliothèque, mais pas de grande sortie loin d'ici.",
+            "en": "A bit of both: the park near the building and the library, but no big outing far from here.",
+            "es": "Eun pe le deu : le park pré de limobl e la bibliotèk, mé pa de grand sorti lwin disi.",
+            "note": "INFORMATION: Sorties de proximité — pas de long déplacement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ça me rassure. Et pour le coucher, à quelle heure est-ce qu'il doit dormir le soir ?",
+            "en": "That reassures me. And for bedtime, what time does he have to sleep in the evening?",
+            "es": "Sa m rasür. E pur le kushé, a kel er es k il dwa dormir le swar ?",
+            "note": "RÉACTION: \"Ça me rassure\"; question sur le coucher (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Vers vingt heures trente. On fera une petite routine : le bain et un livre avant d'éteindre.",
+            "en": "Around eight thirty. We'll have a little routine: bath, a book and a story before turning off the light.",
+            "es": "Ver vin er trant. On fera eun pet routine : le bin, eun livre e eun istwar avan détendr.",
+            "note": "INFORMATION: Routine du coucher — bain, livre, histoire"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord. Puisqu'il est allergique aux arachides, qui est-ce que je dois prévenir en cas de problème ?",
+            "en": "Okay. Since he is allergic to peanuts, who should I contact in case of a problem?",
+            "es": "Dakor. Puisk il e alérzhik o zarashid, ki es k zhe dwa prévenir an ka de problém ?",
+            "note": "RÉACTION: \"D'accord\" + \"Puisqu'il…\"; question sur les personnes à contacter (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Moi, d'abord. Et j'ai le numéro du médecin et le vôtre, que je garde affichés dans la cuisine.",
+            "en": "Me, first of all. And I have the doctor's number and yours, which I keep posted in the kitchen.",
+            "es": "Mwa, dabor. E zhe è le numéro dü médsen e le votr, ke zhe gard afishé dan la küzine.",
+            "note": "INFORMATION: Numéros utiles affichés — précaution santé"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est noté. Et les écrans, combien de temps est-ce qu'il peut utiliser la tablette ou la télé ?",
+            "en": "Noted. And screens, how much time can he spend on the tablet or the TV?",
+            "es": "Se noté. E lez ekran, kombien de tan es k il pe ütilizé la tablèt u la télé ?",
+            "note": "RÉACTION: \"C'est noté\"; question sur les écrans (combien)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Une demi-heure maximum l'après-midi. Plutôt des dessins animés ou un jeu éducatif, pas plus.",
+            "en": "Half an hour maximum in the afternoon. Rather cartoons or an educational game, no more.",
+            "es": "Ün demi-er maksimom lapré-midi. Plutö de desin animé u eun zhe ükatif, pa plü.",
+            "note": "INFORMATION: Limite d'écran — contenu éducatif"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Très bien. Justement, si jamais il a de la fièvre pendant la nuit, qu'est-ce que vous ferez ?",
+            "en": "Very good. As it happens, if he ever has a fever during the night, what will you do?",
+            "es": "Tré bien. Zhüstman, si zhamé il a de la fièvr pandan la nui, k esk vu féré ?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — imprévu santé (fièvre)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je vous appellerai tout de suite, même tard. Le médecin de garde est à dix minutes.",
+            "en": "I will call you right away, even late. I stay reachable and the on-call doctor is ten minutes away.",
+            "es": "Zhe vu apelré tut de süit, mem tar. Zhe rest zhuinyabl e le médsen de gard e a di minüt.",
+            "note": "INFORMATION: Réaction en cas de fièvre — appel immédiat + médecin de garde"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci, ça me rassure. Au cas où je rentrerais en retard dimanche, est-ce que je pourrais vous prévenir par message ?",
+            "en": "Thank you, that reassures me. In case I come back late on Sunday, could I let you know by message?",
+            "es": "Mersí, sa m rasür. O ka u zhe rantreré an retard dimansh, es k zhe puré vu prévenir par mésazh ?",
+            "note": "SUIVI 2: \"Au cas où\" + conditionnel — imprévu d'horaire (retard)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Bien sûr. Prévenez-moi avant dix-huit heures et je le garderai sans problème jusqu'à votre retour.",
+            "en": "Of course. Let me know before six and I will keep him without any problem until you return.",
+            "es": "Bien sür. Prévné-mwa avan dizüit er e zhe le gardré san problém zhusk a votr rütor.",
+            "note": "INFORMATION: Disponibilité prolongée — réponse rassurante"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est gentil. Si jamais il a peur la nuit, est-ce qu'il dormira dans une chambre à part ?",
+            "en": "That's kind. If he ever gets scared at night, will he sleep in a separate room?",
+            "es": "Se zhanti. Si zhamé il a peur la nui, es k il dormira dan zün shanbr a par ?",
+            "note": "SUIVI 3: \"Si jamais\" — imprévu du sommeil (peur la nuit)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Dans la chambre d'amis, juste à côté de la mienne. Prévoyez son pyjama, son doudou et sa brosse à dents.",
+            "en": "In the guest room, right next to mine. Bring his pyjamas, his cuddly toy and his toothbrush.",
+            "es": "Dan la shanbr dami, zhüst a koté de la mien. Prévwayé son pizhama, son dudu e sa bros a dan.",
+            "note": "INFORMATION: Chambre d'amis + affaires à prévoir"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Bien sûr. En fait, je voulais aussi vous demander : est-ce que je vous dois quelque chose pour le week-end ?",
+            "en": "Of course. Actually, I also wanted to ask you: do I owe you anything for the weekend?",
+            "es": "Bien sür. An fet, zhe vulé ousi vu demandé : es k zhe vu dwa kelk shoz pur le wik-and ?",
+            "note": "ENCHAINEMENT: \"En fait\" — question délicate (rémunération)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Rien du tout, c'est entre voisins. Un jour, vous me rendrez le service, c'est tout.",
+            "en": "Nothing at all, it's between neighbours. If one day I am away, you will return the favour, that's all.",
+            "es": "Rien dü tu, se antr vwazin. Si eun zhur zhe süi absent, vu m randré le servis, se tu.",
+            "note": "INFORMATION: Aide gratuite entre voisins — réciprocité"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Avec plaisir. Et qu'est-ce qu'il aime faire en général, pour que je vous prépare ses affaires ?",
+            "en": "With pleasure. And what does he like doing in general, so that I can prepare his things?",
+            "es": "Avek plèzir. E k esk il èm fer an zheneral, pur k zhe vu préparé sez afer ?",
+            "note": "RÉACTION: \"Avec plaisir\"; question sur ses habitudes (qu'est-ce qu'il aime)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Il adore dessiner et jouer au ballon. Je peux aussi lui proposer des jeux calmes.",
+            "en": "He loves drawing and playing ball. I can also offer him quiet games.",
+            "es": "Il ador desiné e zhué o balon. Zhe pé ousi lui propozé de zhe kalm aprè le repa.",
+            "note": "INFORMATION: Activités préférées — jeux calmes après le repas"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Super. Je vous laisse mon numéro et une petite liste écrite des consignes, au cas où.",
+            "en": "Great. I'll leave you my number and a short written list of instructions, just in case.",
+            "es": "Süpèr. Zhe vu lès mon numéro e ün pet list ékrit de konsiñ, o ka u.",
+            "note": "RÉACTION: \"Super\" + préparation des consignes"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Parfait, je la mettrai sur le frigo avec une photo de sa carte d'assurance maladie.",
+            "en": "Perfect, I'll put it on the fridge. Also send me a photo of his health insurance card.",
+            "es": "Parfe, zhe la métré sur le frigo. Anvwayé-mwa ousi ün foto de sa kart dasürans maladi.",
+            "note": "INFORMATION: Organisation pratique — carte d'assurance maladie"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Ça répond à toutes mes questions. Merci beaucoup, vraiment. Je vous dépose mon fils samedi à neuf heures. À samedi !",
+            "en": "That answers all my questions. Thank you very much, really. I'll drop my son off on Saturday at nine. See you Saturday!",
+            "es": "Sa répond a tut mé kestión. Mersí bokou, vréman. Zhe vu dépoz mon fis samdi a neuf er. A samdi !",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + confirmation du rendez-vous"
+        }
+    ]
+}

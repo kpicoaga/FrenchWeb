@@ -1,0 +1,339 @@
+{
+    "title": "S'informer sur la nouvelle société d'un ancien collègue",
+    "task": "tache2",
+    "topic": "5. Work & employment",
+    "description": "Je suis un(e) ancien(ne) collègue et j’ai récemment commencé un nouvel emploi. Vous envisagez de changer de travail et vous me demandez des informations sur ma société (tâches, environnement, avantages, etc.).",
+    "labels": {
+        "E": "Ancien collègue",
+        "C": "Vous"
+    },
+    "roles": {
+        "Speaker 1": "E",
+        "Speaker 2": "C"
+    },
+    "expressions": [
+        "je voudrais changer de travail",
+        "en quoi consiste",
+        "qu'est-ce qui distingue",
+        "est-ce adapté à",
+        "que me conseilleriez-vous",
+        "si jamais",
+        "au cas où",
+        "ça répond à toutes mes questions",
+        "avec plaisir",
+        "merci encore",
+        "à bientôt"
+    ],
+    "templateBank": {
+        "title": "Boîte à outils — S'informer sur la nouvelle société d'un ancien collègue",
+        "sub": "Structures utiles extraites du dialogue TCF (B1/B2) : ouvrir, enchaîner, réagir, gérer l'imprévu et repérer la grammaire.",
+        "toggle": "Afficher les structures utiles",
+        "categories": [
+            {
+                "name": "L'Ouverture & Clôture",
+                "icon": "🚪",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! J'ai entendu dire que tu as changé de travail. Je voudrais changer de travail aussi. Est-ce que je pourrais te poser quelques questions sur ta nouvelle société ?",
+                        "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Parfait, ça répond à toutes mes questions. Merci encore, je vais préparer mon dossier de candidature. À bientôt et bonne continuation dans ton nouveau poste !",
+                        "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Enchaînements",
+                "icon": "🔗",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Merci beaucoup. Pour commencer, en quoi consiste exactement ton nouveau poste au quotidien ? Et est-ce adapté à quelqu'un qui débute ?",
+                        "note": "ENCHAINEMENT: \"Pour commencer\" — contenu du poste (en quoi)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "Les Réactions",
+                "icon": "😌",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Je m'occupe du suivi des clients et de la préparation des offres. C'est un mélange de bureau et de réunions avec les équipes techniques.",
+                        "note": "INFORMATION: Contenu du poste quotidien",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "D'accord, je vois bien le genre de travail. Et qu'est-ce qui distingue cette société de ton ancienne entreprise ?",
+                        "note": "RÉACTION: \"D'accord\"; question de comparaison (qu'est-ce qui distingue)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Ici, les décisions se prennent vite et on nous demande notre avis. Avant, chaque changement passait par trois réunions.",
+                        "note": "INFORMATION: Différence de fonctionnement entre les deux entreprises",
+                        "role": "e"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Puisque je pense à changer aussi, que me conseilleriez-vous pour quelqu'un comme moi ?",
+                        "note": "RÉACTION: \"Je comprends mieux\"; demande de conseil (que me conseilleriez-vous)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "L'Imprévu",
+                "icon": "⚠️",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "D'accord, je vais regarder ce soir. Justement, si jamais j'ai un entretien, est-ce qu'il y a une période d'essai ?",
+                        "note": "SUIVI 1: \"Justement\" + \"si jamais\" — entretien et période d'essai (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Au cas où mon employeur actuel demande un préavis, est-ce que je peux décaler mon arrivée ?",
+                        "note": "SUIVI 2: \"Au cas où\" — préavis et décalage (imprévu)",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Si jamais je dois continuer à travailler en parallèle, est-ce que le poste peut se faire à temps partiel ?",
+                        "note": "SUIVI 3: \"Si jamais\" — temps partiel (imprévu)",
+                        "role": "c"
+                    }
+                ]
+            },
+            {
+                "name": "La Grammaire Utile",
+                "icon": "📘",
+                "role": "c",
+                "items": [
+                    {
+                        "fr": "Salut ! J'ai entendu dire que tu as changé de travail. Je voudrais changer de travail aussi. Est-ce que je pourrais te poser quelques questions sur ta nouvelle société ?",
+                        "note": "conditionnel de politesse",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Je comprends mieux. Puisque je pense à changer aussi, que me conseilleriez-vous pour quelqu'un comme moi ?",
+                        "note": "« puisque » — cause",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "D'accord, je vais regarder ce soir. Justement, si jamais j'ai un entretien, est-ce qu'il y a une période d'essai ?",
+                        "note": "« si jamais » — éventualité",
+                        "role": "c"
+                    },
+                    {
+                        "fr": "Au cas où mon employeur actuel demande un préavis, est-ce que je peux décaler mon arrivée ?",
+                        "note": "« au cas où » — hypothèse éventuelle",
+                        "role": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "speakers": {
+        "Speaker 1": {
+            "voice": "Kore"
+        },
+        "Speaker 2": {
+            "voice": "Puck"
+        }
+    },
+    "turns": [
+        {
+            "speaker": "Speaker 2",
+            "text": "Salut ! J'ai entendu dire que tu as changé de travail. Je voudrais changer de travail aussi. Est-ce que je pourrais te poser quelques questions sur ta nouvelle société ?",
+            "en": "Hi! I heard you changed jobs last month, and it interests me a lot. I'd like to change too. Could I ask you a few questions about your new company?",
+            "es": "Salu! Zhe è n'entendu diray k tü a shanjé d' travay l mês dernie e sa maintèn boqu. Zhe vudré zhe mwa osi an shanjé. Esk zhe puré te pozé kelk kesión sur ta nuvèl sociéte?",
+            "note": "OUVERTURE: Salutation + contexte + demande polie (conditionnel)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Salut ! Bien sûr, avec plaisir. Je suis encore tout nouveau, mais je répondrai avec plaisir. Qu'est-ce que tu veux savoir ? Et est-ce adapté à quelqu'un qui débute ?",
+            "en": "Hi! Of course, with pleasure. I'm still very new, but I'll answer with pleasure. What do you want to know?",
+            "es": "Salu! Bien sür, avek plèzir. Zhe süi ankòr tüt nuvo, mé zhe répondré avek plèzir. K esk k tü vö savuar?",
+            "note": "RESPONSE: Formule d'accueil — invitation à poser les questions"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci beaucoup. Pour commencer, en quoi consiste exactement ton nouveau poste au quotidien ? Et est-ce adapté à quelqu'un qui débute ?",
+            "en": "Thank you very much. To start with, what exactly does your new job consist of on a daily basis?",
+            "es": "Mersí boku. Pur konmansé, en kwä konsistègz akmektman tô nuvèl post o kotidién?",
+            "note": "ENCHAINEMENT: \"Pour commencer\" — contenu du poste (en quoi)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je m'occupe du suivi des clients et de la préparation des offres. C'est un mélange de bureau et de réunions avec les équipes techniques.",
+            "en": "I handle client follow-up and proposal preparation. It's a mix of office work and meetings with technical teams.",
+            "es": "Zhe m okup du svwi dê klian e dê la préparazion dê zofr. Sé ün mèlaj dê birô e dê rêunión avek l ekip tekník.",
+            "note": "INFORMATION: Contenu du poste quotidien"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord, je vois bien le genre de travail. Et qu'est-ce qui distingue cette société de ton ancienne entreprise ?",
+            "en": "Okay, I see the kind of work. And what distinguishes this company from your previous company?",
+            "es": "Dakor, zhe vua bän le zhor dê travay. E k esk ki distingé sèt sociéte de tô zankien anzprisi?",
+            "note": "RÉACTION: \"D'accord\"; question de comparaison (qu'est-ce qui distingue)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Ici, les décisions se prennent vite et on nous demande notre avis. Avant, chaque changement passait par trois réunions.",
+            "en": "Here, decisions are made quickly and they ask for our opinion. Before, every change went through three meetings and two signatures.",
+            "es": "Ici, l dezisyon son pren vit e on n demanda nôt avi. Aván, shak shanjmé pasá par trwa rêunión e dö signatur.",
+            "note": "INFORMATION: Différence de fonctionnement entre les deux entreprises"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je comprends mieux. Puisque je pense à changer aussi, que me conseilleriez-vous pour quelqu'un comme moi ?",
+            "en": "I understand better. Since I'm thinking of changing too, what would you advise for someone like me?",
+            "es": "Zhe konpran miö. Püske zhe panz a shanjé osi, k mé konsieréyév-pur kelk'un kum mwa?",
+            "note": "RÉACTION: \"Je comprends mieux\"; demande de conseil (que me conseilleriez-vous)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je te conseillerais de postuler, franchement. Ils cherchent des personnes avec de l'expérience, et ton profil correspond bien.",
+            "en": "I would advise you to apply, frankly. They are looking for people with experience, and your profile fits well.",
+            "es": "Zhe te konsierére dè postulér, frankmân. Il chërsh dê persón avek d l'esperans e tô profil koréspond bjèn.",
+            "note": "INFORMATION: Conseil de postuler"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Merci, ça m'encourage. Et pour les avantages, le télétravail et les horaires, comment est-ce que ça se passe ?",
+            "en": "Thanks, that's encouraging. And for the benefits, teleworking and hours, how does it work?",
+            "es": "Mersí, sa m ankurajé. E pur l avantaj, l télétravay e l zorér, komán esk sa se pas?",
+            "note": "RÉACTION: \"Merci, ça m'encourage\"; question sur les conditions (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Deux jours de télétravail par semaine et des horaires assez libres. Il y a aussi une prime de fin d'année.",
+            "en": "Two days of teleworking per week and fairly flexible hours. There is also a year-end bonus and a good mutual insurance.",
+            "es": "Döz jör dê télétravay par semén e d zorér asè libré. Il i a osi ün pren d fin d'ân e ün bön mutèl.",
+            "note": "INFORMATION: Avantages sociaux et conditions de travail"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est intéressant. Et quand est-ce que tu commences et tu finis ta journée, en général ?",
+            "en": "That's interesting. And when do you start and finish your day, in general?",
+            "es": "Se entrèsánt. E kan esk tü komansés e tü finis tô zurné, zan jenéral?",
+            "note": "RÉACTION: \"C'est intéressant\"; question sur les horaires (quand)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Je commence vers neuf heures et je finis vers dix-sept heures trente. Le vendredi, tout le monde part plus tôt.",
+            "en": "I start around nine and finish around five-thirty. On Fridays, everyone leaves a bit earlier.",
+            "es": "Zhe komansé vèr nœf ör e zhe finis vèr diz-sèt ör trant. L vandredi, tüt l mónd par ün pö plüs tôt.",
+            "note": "INFORMATION: Horaires de travail"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est agréable. Et où se trouvent exactement vos bureaux, dans le centre ou en banlieue ?",
+            "en": "That's pleasant. And where exactly are your offices, in the city center or in the suburbs?",
+            "es": "Se agrébaj. E u se trovégz akmektman vô birô, dan l sâñtr u an bunlyâ?",
+            "note": "RÉACTION: \"C'est agréable\"; question sur le lieu (où)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Dans un immeuble près du vieux port, au troisième étage. La vue sur l'eau est vraiment agréable le matin.",
+            "en": "In a building near the old port, on the third floor. The view over the water is really pleasant in the morning.",
+            "es": "Dan ün imèbl prè du vü pô, o trwaéz ètaj. La vy sûr l'o se vremán agrébaj l matén.",
+            "note": "INFORMATION: Localisation des bureaux"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Je vois. Et comment est-ce que tu t'y rends, en métro, en bus ou en voiture ?",
+            "en": "I see. And how do you get there, by metro, bus or car?",
+            "es": "Zhe vua. E komán esk tû ti râv, an métrô, an büs u an vatur?",
+            "note": "RÉACTION: \"Je vois\"; question sur le transport (comment)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "En métro, c'est direct depuis chez moi et ça prend vingt minutes. Il y a aussi un parking, mais il est souvent complet.",
+            "en": "By metro, it's direct from my home and takes twenty minutes. There is also a parking lot, but it's often full.",
+            "es": "An métrô, sé direkè dêrché chez mwa e sa pran vân mint. Il i a osi ün parkèn,mé i sé svàn komplè.",
+            "note": "INFORMATION: Transport pour se rendre au travail"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est pratique. Et qui est-ce qui encadre l'équipe, un chef de service ou un responsable par projet ?",
+            "en": "That's convenient. And who supervises the team, a department head or a project manager?",
+            "es": "Se praktik. E ki esk ki ankadr l ekip, ün chef d sévis u ün responsabl pur projé?",
+            "note": "RÉACTION: \"C'est pratique\"; question sur l'encadrement (qui)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Un responsable par projet, et un directeur très accessible. On peut frapper à sa porte quand on a une question.",
+            "en": "A project manager, and a very accessible director. You can knock on his door whenever you have a question.",
+            "es": "Un responsabl pur projé, e ün diretòr trè aksésabl. On pö frappé a sà pòrt kan on a ün kesión.",
+            "note": "INFORMATION: Encadrement et accessibilité du management"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "C'est rassurant. Et comment est-ce que je dois postuler, par courriel ou par leur site Internet ?",
+            "en": "That's reassuring. And how do I apply, by email or via their website?",
+            "es": "Se rasüran. E komán esk zhe dwa postulér, par korèyèl u par lór sït Intèrnè?",
+            "note": "RÉACTION: \"C'est rassurant\"; question sur la procédure de candidature"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Le plus simple, c'est le site Internet, il y a une rubrique carrières. Tu remplis un formulaire et tu joins ton CV.",
+            "en": "The simplest is the website, there is a careers section. You fill out a form and attach your CV.",
+            "es": "L pü sinpl, sé l sït Intèrnè, il i a Ün rubrik kariér. Tü remplés ün formulé eü Zhons tô si vé.",
+            "note": "INFORMATION: Procédure de candidature"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "D'accord, je vais regarder ce soir. Justement, si jamais j'ai un entretien, est-ce qu'il y a une période d'essai ?",
+            "en": "Okay, I'll look tonight. Actually, if ever I have an interview, is there a probation period and training at the beginning?",
+            "es": "Dakor, zhe vé règardé swa. Zhüstemán, si zhamé zhe y ün antantrè, esk il i a Ün pérjod d'essy e Ün formasión o débu?",
+            "note": "SUIVI 1: \"Justement\" + \"si jamais\" — entretien et période d'essai (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Une période de trois mois, et deux semaines d'accompagnement avec un collègue. En cas de problème, on peut aussi changer de service.",
+            "en": "A period of three months, and two weeks of onboarding with a colleague. In case of a problem, you can also change departments.",
+            "es": "Ün pérjod d trua mua, e dö sémèn d akompagnmân avek un kolèg. An kaz d prôblèm, on pö osi shanjé d sévis.",
+            "note": "INFORMATION: Période d'essai et accompagnement"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Au cas où mon employeur actuel demande un préavis, est-ce que je peux décaler mon arrivée ?",
+            "en": "In case my current employer asks for notice, can I postpone my start date?",
+            "es": "O kazu môm anployér aktyèl domanda ün prèvi,esk zhe pù dekalé mô arivé?",
+            "note": "SUIVI 2: \"Au cas où\" — préavis et décalage (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Oui, c'est possible. Préviens-les dès que tu as une date, et on s'organisera.",
+            "en": "Yes, it's possible. Let them know as soon as you have a date, and we'll organize ourselves.",
+            "es": "Ui, sé pòsibl. Prévi-nèy dè k tü as ün dat, e on sorganiséra.",
+            "note": "INFORMATION: Flexibilité sur la date d'entrée"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Si jamais je dois continuer à travailler en parallèle, est-ce que le poste peut se faire à temps partiel ?",
+            "en": "If ever I need to keep working in parallel, can the position be part-time?",
+            "es": "Si zhamé zhe duwa kontinyé a travay an parlèl, esk l post pö se fer a tân partiel?",
+            "note": "SUIVI 3: \"Si jamais\" — temps partiel (imprévu)"
+        },
+        {
+            "speaker": "Speaker 1",
+            "text": "Non, c'est un poste à temps plein. Mais après l'essai, on peut discuter d'aménagement d'horaires.",
+            "en": "No, it's a full-time position. But after probation, we can discuss flexible hours.",
+            "es": "No, sé Ün post a tân plèn. Mé aprèz l'essy, on pö diskutér d'aménagement d'zore.",
+            "note": "INFORMATION: Temps plein ou partiel"
+        },
+        {
+            "speaker": "Speaker 2",
+            "text": "Parfait, ça répond à toutes mes questions. Merci encore, je vais préparer mon dossier de candidature. À bientôt et bonne continuation dans ton nouveau poste !",
+            "en": "Perfect, that answers all my questions. Thank you very much, I'll prepare my application file. See you soon and good luck in your new job!",
+            "es": "Parfè, sa répon a tut me kesión. Mersí boku, zhe vé préparé mô dosye d kandidatûr. A bönto e bön kontinyuásyan dan tô nuvèl post!",
+            "note": "FERMETURE: remerciement + \"ça répond à mes questions\" + prochaine étape"
+        }
+    ]
+}
